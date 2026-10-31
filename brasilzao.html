@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b1020">
 <link rel="icon" href="data:,">
-<title>Brasilzão TV — O canal do tamanho do Brasil.</title>
+<title>Brasilzão TV — Cinema e documentários em domínio público (teste)</title>
 <style>
 :root{--bg:#070b16;--panel:#0f1628;--line:#1f2a44;--txt:#e8eefc;--mut:#8fa0c4;--acc:#ff2d55;--acc2:#ffb020;--ok:#2bd67b;--blue:#2f7cff}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -392,6 +392,14 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
 #grid .fl.cur{background:linear-gradient(90deg,#ff2d5526,#0b1222);border:1px solid var(--acc)}
 #grid .fl.cur b{color:#fff}
 .tipos .row .tog.on{background:var(--acc);color:#fff}
+/* ===== domínio público: <video> HTML5 + crédito ===== */
+#ytstage .slot.h5 video{width:100%;height:100%;object-fit:contain;background:#000;display:block}
+.dpcred{position:absolute;left:12px;top:56px;max-width:min(78%,520px);background:#000000b3;border-left:4px solid #ffd400;border-radius:8px;padding:7px 11px;display:flex;flex-direction:column;gap:2px;pointer-events:none;animation:dpin .6s ease}
+.dpcred .tag{font-size:10px;font-weight:900;letter-spacing:1px;color:#ffd400}
+.dpcred b{font-size:clamp(14px,2.2vw,22px);color:#fff;line-height:1.15}
+.dpcred small{font-size:clamp(10px,1.3vw,13px);color:#e5e7eb}
+@keyframes dpin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width:600px){.dpcred{top:44px;left:8px;padding:5px 8px}.dpcred b{font-size:13px}.dpcred small{font-size:10px}}
 </style>
 </head>
 <body>
@@ -488,6 +496,7 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
       <div class="m" id="pEmAlta"><i></i>Em alta <b id="vEmAlta">—</b></div>
       <div class="m" id="pFicha"><i></i>Ficha <b id="vFicha">—</b></div>
       <div class="m" id="pDocs"><i></i>Documentários <b id="vDocs">—</b></div>
+      <div class="m" id="pCine"><i></i>Cinema (domínio público) <b id="vCine">—</b></div>
       <div class="m" id="pClipes"><i></i>Clipes <b id="vClipes">—</b></div>
       <div class="m" id="pCurio"><i></i>Curiosidades <b id="vCurio">—</b></div>
       <div class="m" id="pReceitas"><i></i>Receitas <b id="vReceitas">—</b></div>
@@ -516,6 +525,10 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
    Novo: EXTRATOR (matéria completa + imagens via os proxies já usados).
    Parâmetros: ?rapido=1 (durações curtas) · ?ligar=1 (liga sem toque)
    · ?parte=SEG · ?zerar=1 (apaga posição do documentário/config de teste)
+   · brasilzao-dp.html: + CINEMA e documentários em DOMÍNIO PÚBLICO tocados
+     com <video> HTML5 direto da fonte (DP_CATALOGO logo abaixo).
+     ?comecar=TIPO (começa a rotação nesse tipo, ex.: documentario) ·
+     ?dpbusca=1 (busca extra no archive.org, experimental, desligada)
    · ?video=0 (só imagem).
    ---------------------------------------------------------------------
    TV IA YouTube — v4.2 (protótipo) — parte do teste-v4.html
@@ -545,7 +558,7 @@ const Q = new URLSearchParams(location.search);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const RAPIDO = Q.get("rapido")==="1";
 const fx = s => RAPIDO ? Math.max(4, Math.round(s*0.55)) : s;   // encurta tempos fixos no modo rápido
-if(Q.get("zerar")==="1"){ try{ ["tvia.teste.partes","tvia.teste.config"].forEach(k=>localStorage.removeItem(k)); }catch(e){} }
+if(Q.get("zerar")==="1"){ try{ ["tvia.dp.partes","tvia.dp.cine","tvia.dp.config"].forEach(k=>localStorage.removeItem(k)); }catch(e){} }
 function comTimeout(p, ms, motivo){ return Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(motivo || ("timeout " + ms + " ms"))), ms))]); }
 async function fetchJSON(url, ms){ const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), ms || 8000); try { const r = await fetch(url, { signal: ctl.signal }); if (!r.ok) throw new Error("HTTP " + r.status); return await r.json(); } finally { clearTimeout(t); } }
 
@@ -737,6 +750,115 @@ const EMALTA_EMBUTIDO = {"versao": 1, "gerado_em": "2026-10-30T23:44:00-03:00", 
 // Só os de estilo neutro (túnel neon, moldura neon, bokeh, partículas, nuvens); os de aniversário/corações/casamento ficaram de fora.
 const TRANSICOES = [{"id": "CCHrWQ4uY_A", "dur": 20, "titulo": "4K Sci-Fi Neon Tunnel VJ Motion Background || Neon Light Tunnel Free VJ Loops || 4K VJ Loops"}, {"id": "dpXYCU0Ke20", "dur": 40, "titulo": "4K Sci-Fi Neon Tunnel VJ Motion Background || Neon Light Tunnel Free VJ Loops || 4K VJ Loops"}, {"id": "05jASKxj6Yc", "dur": 67, "titulo": "4K Sci-Fi Tunnel VJ Motion Background- Sci fi  Motion Tunnel Background For Edits  - VJ Loops 2020"}, {"id": "RA2OxeCMskc", "dur": 120, "titulo": "4K Sci-Fi Neon Tunnel VJ Motion Background || Neon Light Tunnel Free VJ Loops || 4K VJ Loops"}, {"id": "W4c-cMRmImA", "dur": 60, "titulo": "Golden Bokeh - HD Video Background Loop - bokeh particles with flare left fly 3d space"}, {"id": "9Ea9bqHx9W4", "dur": 67, "titulo": "Free VJ loops - Free video backgrounds loops - Neon Light wall arrow motion background"}, {"id": "Us-gM-TSyzw", "dur": 30, "titulo": "Neon Light Border | Glowing Frame | Hd Background Loop | Animated | Green Screen | VFX |Black Screen"}, {"id": "XaVYyalcgPU", "dur": 60, "titulo": "Motion Backgrounds For Edits - Particle background - Free Video Background Loops"}, {"id": "eNtxHgFvm7M", "dur": 480, "titulo": "Flying above the clouds royalty free footage 4K  - Motion background for Edits #FlyingThroughClouds"}];
 // Documentários em português, canais públicos/jornalísticos oficiais (DW Brasil, TV Brasil, TV Cultura). dur em segundos.
+/* =====================================================================
+   DP_CATALOGO — CINEMA e DOCUMENTÁRIOS em DOMÍNIO PÚBLICO (edite aqui)
+   Conferido em 31/10/2026: cada "src" respondeu HTTP 200 (HEAD) e 206 com
+   Range, com o tipo de mídia indicado. Tocados com <video> HTML5 direto
+   da fonte (não é YouTube). Ordem do array = ordem de exibição.
+   Campos: id único · tipo "cinema" | "doc" · ativo (false = fora da fila)
+   · dur (s) · fontes (o navegador usa a 1ª que souber tocar) · licenca
+   (como está na página da fonte) · nota (riscos / observações).
+   Regra usada: obra brasileira divulgada até 1955 → domínio público no
+   Brasil (Lei 9.610/98, art. 44: 70 anos contados de 1º/jan do ano
+   seguinte à divulgação). Trilhas sonoras acrescentadas às cópias e
+   remasterizações podem ter direitos próprios: ver "nota".
+   ===================================================================== */
+const DP_CATALOGO = [
+  { id:"cm-ganga-bruta-1933", tipo:"cinema", ativo:true,
+    titulo:"Ganga Bruta", ano:1933, direcao:"Humberto Mauro", dur:4712,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:Ganga_Bruta_-_Humberto_Mauro_(1933).webm",
+    licenca:"Domínio público (PD-BR-1935)",
+    nota:"Brasil, Cinédia. Commons: PD-BR-1935. Cópia enviada a partir de vídeo do YouTube (canal cine ufsc).",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm/960px--Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/2/27/Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm/Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm.480p.vp9.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/2/27/Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm/Ganga_Bruta_-_Humberto_Mauro_%281933%29.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-labios-sem-beijos-1930", tipo:"cinema", ativo:true,
+    titulo:"Lábios sem Beijos", ano:1930, direcao:"Humberto Mauro", dur:4349,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:L%C3%A1bios_sem_Beijos_(1930)_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm",
+    licenca:"Domínio público (PD-BR-1935)",
+    nota:"Brasil, mudo, Cinédia. Commons: PD-BR-1935. Cópia vinda do YouTube (canal Velho Cinema).",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/L%C3%A1bios_sem_Beijos_%281930%29_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm/330px--L%C3%A1bios_sem_Beijos_%281930%29_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/c/cc/L%C3%A1bios_sem_Beijos_%281930%29_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cc/L%C3%A1bios_sem_Beijos_%281930%29_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm/L%C3%A1bios_sem_Beijos_%281930%29_-_Humberto_Mauro_-_Filme_Brasileiro_Completo.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"ia-The_General_Buster_Keaton", tipo:"cinema", ativo:true,
+    titulo:"A General (The General)", ano:1926, direcao:"Buster Keaton e Clyde Bruckman", dur:4724,
+    fonte:"Internet Archive", pagina:"https://archive.org/details/The_General_Buster_Keaton",
+    licenca:"Domínio público (marcado na página: http://creativecommons.org/licenses/publicdomain/)",
+    nota:"EUA, mudo (intertítulos em inglês). Trilha da cópia: NÃO DEFINIDO (pode ter música gravada depois).",
+    thumb:"https://archive.org/services/img/The_General_Buster_Keaton",
+    fontes:[ { src:"https://archive.org/download/The_General_Buster_Keaton/The_General.mp4", type:"video/mp4" } ] },
+  { id:"ia-CC_1916_10_02_ThePawnshop", tipo:"cinema", ativo:true,
+    titulo:"Carlitos Prestamista (The Pawnshop)", ano:1916, direcao:"Charles Chaplin", dur:1222,
+    fonte:"Internet Archive", pagina:"https://archive.org/details/CC_1916_10_02_ThePawnshop",
+    licenca:"Domínio público (marcado na página: http://creativecommons.org/licenses/publicdomain/)",
+    nota:"EUA, mudo, curta (Mutual). Trilha da cópia: NÃO DEFINIDO. Título em português: NÃO DEFINIDO.",
+    thumb:"https://archive.org/services/img/CC_1916_10_02_ThePawnshop",
+    fontes:[ { src:"https://archive.org/download/CC_1916_10_02_ThePawnshop/CC_1916_10_02_ThePawnshop_512kb.mp4", type:"video/mp4" } ] },
+  { id:"cm-limite-1931", tipo:"cinema", ativo:false,
+    titulo:"Limite", ano:1931, direcao:"Mário Peixoto", dur:6889,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:Limite_(1931).webm",
+    licenca:"Domínio público (PD-Brazil-media)",
+    nota:"DESLIGADO: o filme se passa num barco no mar (regra de identidade do canal: nada de mar/praia). Brasil, mudo, experimental. Commons: PD-Brazil-media. Trilha de restauração (gravações de música clássica) pode ter direito conexo: NÃO DEFINIDO.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Limite_%281931%29.webm/960px--Limite_%281931%29.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/2/26/Limite_%281931%29.webm/Limite_%281931%29.webm.480p.vp9.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/2/26/Limite_%281931%29.webm/Limite_%281931%29.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"ia-his_girl_friday", tipo:"cinema", ativo:false,
+    titulo:"Jejum de Amor (His Girl Friday)", ano:1940, direcao:"Howard Hawks", dur:5505,
+    fonte:"Internet Archive", pagina:"https://archive.org/details/his_girl_friday",
+    licenca:"Domínio público (marcado na página: http://creativecommons.org/licenses/publicdomain/)",
+    nota:"EUA, falado em INGLÊS sem legenda PT → desligado por padrão (ativo:false).",
+    thumb:"https://archive.org/services/img/his_girl_friday",
+    fontes:[ { src:"https://archive.org/download/his_girl_friday/his_girl_friday.mp4", type:"video/mp4" } ] },
+  { id:"cm-vitoria-regia-1937", tipo:"doc", ativo:true,
+    titulo:"Vitória-Régia", ano:1937, direcao:"Humberto Mauro (INCE)", dur:344,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm",
+    licenca:"Domínio público (PD-Brazil-Gov)",
+    nota:"Brasil, INCE, narração de Roquette-Pinto. Commons: PD-Brazil-Gov.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm/500px--%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/0/08/%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/0/08/%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm/%22Vit%C3%B3ria-R%C3%A9gia%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1937_e_produzido_pelo_INCE_-_p%26b.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-ceramica-de-marajo-1939", tipo:"doc", ativo:true,
+    titulo:"Cerâmica de Marajó", ano:1939, direcao:"Humberto Mauro (INCE)", dur:156,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm",
+    licenca:"Domínio público (PD-Brazil-Gov)",
+    nota:"Brasil, INCE (acervo do Museu Nacional). Commons: PD-Brazil-Gov.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm/960px--%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/9/99/%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm/%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm.480p.vp9.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/9/99/%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm/%22Cer%C3%A2mica_de_Maraj%C3%B3%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1939.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-engenhos-e-usinas-1955", tipo:"doc", ativo:true,
+    titulo:"Engenhos e Usinas", ano:1955, direcao:"Humberto Mauro (INCE)", dur:454,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm",
+    licenca:"Domínio público (PD-Brazil-Gov)",
+    nota:"Brasil, INCE, série Brasilianas. Commons: PD-Brazil-Gov. Lançado em 1955 → prazo do art. 44 venceu em 31/12/2025.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm/500px--%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/1/11/%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/1/11/%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm/%22Engenhos_e_Usinas%22_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_em_1955.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-os-bandeirantes-1940", tipo:"doc", ativo:true,
+    titulo:"Os Bandeirantes", ano:1940, direcao:"Humberto Mauro (INCE)", dur:2305,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:Os_Bandeirantes_(1940)_Filme_Brasileiro_Remasterizado_(Humberto_Mauro).webm",
+    licenca:"Domínio público (PD-Brazil-Gov)",
+    nota:"Brasil, INCE. Versão 'remasterizada' (canal TV Remaster Brasil): a remasterização pode gerar reivindicação de Content ID.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm/960px--Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm/Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm.480p.vp9.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm/Os_Bandeirantes_%281940%29_Filme_Brasileiro_Remasterizado_%28Humberto_Mauro%29.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-sp-sinfonia-metropole-1929", tipo:"doc", ativo:true,
+    titulo:"São Paulo, Sinfonia da Metrópole", ano:1929, direcao:"Adalberto Kemeny e Rudolf Rex Lustig", dur:5717,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:S%C3%A3o_Paulo,_A_Sinfonia_da_Metr%C3%B3pole_(1929).webm",
+    licenca:"Domínio público (PD-Brazil-media)",
+    nota:"Brasil, mudo. Commons: PD-Brazil-media. Trilha sonora da cópia: NÃO DEFINIDO.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm/960px--S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d1/S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm/S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm.480p.vp9.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d1/S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm/S%C3%A3o_Paulo%2C_A_Sinfonia_da_Metr%C3%B3pole_%281929%29.webm.360p.mpeg4.mov", type:"video/quicktime" } ] },
+  { id:"cm-cidade-do-salvador-1949", tipo:"doc", ativo:true,
+    titulo:"Cidade do Salvador", ano:1949, direcao:"Humberto Mauro (INCE)", dur:1288,
+    fonte:"Wikimedia Commons", pagina:"https://commons.wikimedia.org/wiki/File:%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm",
+    licenca:"Domínio público (PD-Brazil-Gov)",
+    nota:"Brasil, INCE. Commons: PD-Brazil-Gov. Cópia vinda do YouTube (canal Terra do Sol). Mostra a orla/Baía de Todos os Santos em trechos: avaliar pela regra de identidade.",
+    thumb:"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm/500px--%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm.jpg",
+    fontes:[ { src:"https://upload.wikimedia.org/wikipedia/commons/e/e8/%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm", type:"video/webm; codecs=\"vp9, opus\"" },
+      { src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e8/%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm/%22Cidade_do_Salvador%22_-_%E2%9C%AA_-_document%C3%A1rio_dirigido_por_Humberto_Mauro_e_produzido_pelo_INCE_em_1949.webm.360p.mpeg4.mov", type:"video/quicktime" } ] }
+];
+const DP_ATIVOS = t => DP_CATALOGO.filter(d=>d.ativo!==false && d.tipo===t).map(d=>Object.assign({ canal:d.fonte, dp:true }, d));
 const DOCS_VERIF = [{"id": "mBxE8KaZKbs", "titulo": "A realidade dentro das prisões na Alemanha | Documentário", "canal": "DW Brasil", "dur": 1772}, {"id": "gFND0bcqTG4", "titulo": "A vida em um dos vales mais isolados da Suíça | Documentário", "canal": "DW Brasil", "dur": 1556}, {"id": "PlumCK5WotM", "titulo": "Documentário | A batalha existencial de Portugal contra o avanço do mar", "canal": "DW Brasil", "dur": 1670}, {"id": "pveBbv-3UkM", "titulo": "Parque Nacional do Itatiaia | Parques do Brasil", "canal": "TV Brasil", "dur": 1799}, {"id": "TCeRkEk1KRA", "titulo": "Mata Atlântica: a floresta mais antiga da América do Sul | Nossos Biomas", "canal": "TV Brasil", "dur": 1516}, {"id": "tG_pVkhzr1c", "titulo": "Paulo Freire, 100 anos | Documentário", "canal": "TV Cultura", "dur": 1805}, {"id": "peR3MzJnxOQ", "titulo": "Documentário | Caravaggio - O Mestre dos Pincéis e da Espada", "canal": "TV Cultura", "dur": 3143}];
 // Canais onde a TV procura documentários novos no RSS (título contém "Documentário"); cada ID novo passa no oEmbed antes de ir ao ar.
 const CANAIS_DOCS = [{ id:"UCkJ8uPxz6UvoI6ihgQJZnww", nome:"DW Brasil" },{ id:"UCSv9d0kQegylHWpP83jWSQg", nome:"TV Brasil" },{ id:"UCjOJvvYe6tyEHY21OD33h8A", nome:"TV Cultura" }];
@@ -779,7 +901,7 @@ const FONTES = {
   wikibooks:    { nome:"Wikilivros (pt) — Livro de receitas (API, CORS *)" }
 };
 const FONTES_SEG = { brasil:["agenciabrasil","g1","bbc","snapshot"], mundo:["bbc","g1","agenciabrasil","snapshot"], clima:["openmeteo","snapshot"], mercado:["awesomeapi","snapshot"], historia:["wikipedia","snapshot"], cinema:["snapshot"], intervalo:["snapshot"], social:["snapshot"], grade:["snapshot"], documentario:["docs"], clipes:["itunes"], curiosidades:["wikidyk"], receitas:["wikibooks"] };
-const NOMES_SEG = { brasil:"Notícias do Brasil", mundo:"Mundo", social:"Redes Sociais", cinema:"Cinema e Séries", clima:"Clima e Alertas", grade:"Grade de Programas", historia:"Hoje na História", mercado:"Mercado", intervalo:"Intervalo Comercial", documentario:"Documentário", clipes:"Clipes", curiosidades:"Curiosidades", receitas:"Receitas" };
+const NOMES_SEG = { filme:"Cinema", brasil:"Notícias do Brasil", mundo:"Mundo", social:"Redes Sociais", cinema:"Cinema e Séries", clima:"Clima e Alertas", grade:"Grade de Programas", historia:"Hoje na História", mercado:"Mercado", intervalo:"Intervalo Comercial", documentario:"Documentário", clipes:"Clipes", curiosidades:"Curiosidades", receitas:"Receitas" };
 const normLink = u => { try{ const x=new URL(u); return (x.host+x.pathname).replace(/\/$/,"").toLowerCase(); }catch(e){ return String(u||""); } };
 const semTags = h => { const d=new DOMParser().parseFromString("<div>"+(h||"")+"</div>","text/html"); return (d.body.textContent||"").replace(/\s+/g," ").trim(); };
 const corta = (s,n) => s.length>n ? s.slice(0,n).replace(/\s+\S*$/,"")+"…" : s;
@@ -793,9 +915,9 @@ const pad=n=>String(n).padStart(2,"0");
    coletados; salva em localStorage; aplicada por cima a cada remontagem.
    ===================================================================== */
 // Tipos da fila contínua (liga/desliga no painel). Ordem de alternância = ROTACAO.
-const TIPOS_FILA = { noticias:"Notícias (matérias dos feeds)", documentario:"Documentário em partes (com intervalo)", clipes:"Clipes (parada iTunes Brasil)", curiosidades:"Curiosidades (Wikipédia)", receitas:"Receitas (Wikilivros)", emalta:"Em alta (X)", shorts:"Giro de notícias (Shorts)", historia:"Hoje na História", clima:"Clima (Brasília-DF)" };
-const ROTACAO = ["noticias","documentario","clipes","curiosidades","noticias","receitas","emalta","noticias","shorts","historia","noticias","clima"];
-const LS_KEY = "tvia.teste.config", LS_KEY_V4 = "tvia.v42.config";
+const TIPOS_FILA = { noticias:"Notícias (matérias dos feeds)", cinema:"Cinema (filme clássico em domínio público, em partes)", documentario:"Documentário em partes (domínio público + embeds oficiais)", clipes:"Clipes (parada iTunes Brasil)", curiosidades:"Curiosidades (Wikipédia)", receitas:"Receitas (Wikilivros)", emalta:"Em alta (X)", shorts:"Giro de notícias (Shorts)", historia:"Hoje na História", clima:"Clima (Brasília-DF)" };
+const ROTACAO = ["noticias","cinema","clipes","curiosidades","noticias","documentario","receitas","emalta","noticias","shorts","historia","noticias","clima"];
+const LS_KEY = "tvia.dp.config", LS_KEY_V4 = "tvia.teste.config";
 const EXTRAS_PADRAO = { shortsCada:2, shortsPorVez:1, shortMax:30, emAltaCada:3, vinhetas:true, aSeguir:true, fichaModo:"voz", breakCada:2, breakItens:3, breakComerciais:false, docParteMin:8, docPartesSeguidas:2, clipesPorVez:3, clipeMax:90, vozProgramas:"voz", abertura:true };
 const EXTRAS_OPC = { shortsCada:[0,1,2,3,4], shortsPorVez:[1,2,3], shortMax:[15,20,30,45,60], emAltaCada:[0,2,3,4,6], vinhetas:[true,false], aSeguir:[true,false], fichaModo:["voz","legenda","off"], breakCada:[0,1,2,3,4], breakItens:[2,3,4], breakComerciais:[false,true], docParteMin:[2,5,8,10,15], docPartesSeguidas:[1,2,3], clipesPorVez:[2,3,4,5], clipeMax:[45,60,90,120,240], vozProgramas:["voz","legenda"], abertura:[true,false] };
 const Config = {
@@ -971,7 +1093,7 @@ const Roteirista = {
    e volta na próxima rodada → nunca espera a programação ficar completa.
    ===================================================================== */
 const Montador = {
-  r:0, n:0, vistas:new Set(), pulos:{}, hist:[],
+  r:Math.max(0, ROTACAO.indexOf(Q.get("comecar")||"")), n:0, vistas:new Set(), pulos:{}, hist:[],
   ativo(t){ return !Config.atual.tipos || Config.atual.tipos[t]!==false; },
   inicial(){ const f=[]; const add=b=>b.forEach(s=>{ s._b=this.n; f.push(s); });
     while(f.length<5) add(this.proximoBloco()); return f; },
@@ -983,7 +1105,7 @@ const Montador = {
     for(let tent=0; tent<ROTACAO.length; tent++){
       const t=ROTACAO[this.r++ % ROTACAO.length]; if(!this.ativo(t)) continue;
       let out=null; try{ out=this["m_"+t](); }catch(e){ log("Montador: "+t+" falhou ("+e.message+") → pulando"); }
-      if(out && out.length){ this.n++; if(X.aSeguir && this.n>1 && this.n%3===0 && t!=="documentario") out.unshift(Inter.aSeguir()); status("Diretor","ok","fila contínua · "+this.n+" programas montados"); return out; }
+      if(out && out.length){ this.n++; if(X.aSeguir && this.n>1 && this.n%3===0 && t!=="documentario" && t!=="cinema") out.unshift(Inter.aSeguir()); status("Diretor","ok","fila contínua · "+this.n+" programas montados"); return out; }
       this.pulos[t]=(this.pulos[t]||0)+1;
     }
     this.n++; const r=this.m_noticias(); return r || [Inter.aSeguir()];   // reserva: sempre há matéria (snapshot)
@@ -998,15 +1120,18 @@ const Montador = {
     this.vistas.add(normLink(x.n.link)); Extrator.pedir(novas.slice(0,4).map(y=>y.n)); return x;
   },
   m_noticias(){ const x=this.escolherNoticia(); return x ? this.comVinheta(Roteirista.materia(x)) : null; },
-  m_documentario(){
-    const X=Config.atual.extras, p1=Partes.segmento(); if(!p1) return null;
-    const d=p1.cenas[0].doc, tot=Partes.totalPartes(d), base=Partes.parteNum(d.id); p1.parte=base; p1.nome=NOMES_SEG.documentario+" · parte "+base;
+  // programa em partes: parte N → "A seguir" → intervalo → parte N+1 (retoma do ponto salvo)
+  emPartes(P){
+    const X=Config.atual.extras, p1=P.segmento(); if(!p1) return null;
+    const d=p1.cenas[0].doc, tot=P.totalPartes(d), base=P.parteNum(d.id); p1.parte=base; p1.nome=P.rotulo+" · parte "+base;
     const out=[]; if(X.vinhetas) out.push(Inter.vinheta(p1)); out.push(p1);
     if(tot && base>=tot) return out;   // última parte: sem continuação
-    const p2=Partes.segmento(); p2.parte=base+1; p2.retomada=true; p2.nome=NOMES_SEG.documentario+" · parte "+(base+1);
-    out.push(Inter.aSeguir({ tag:"A SEGUIR", nome:p1.cenas[0].h, quando:"Depois do intervalo: parte "+(base+1)+(tot?" de "+tot:"")+" (continua de onde parou)", agora:NOMES_SEG.documentario }));
+    const p2=P.segmento(); p2.parte=base+1; p2.retomada=true; p2.nome=P.rotulo+" · parte "+(base+1);
+    out.push(Inter.aSeguir({ tag:"A SEGUIR", nome:p1.cenas[0].h, quando:"Depois do intervalo: parte "+(base+1)+(tot?" de "+tot:"")+" (continua de onde parou)", agora:P.rotulo }));
     out.push(...Intervalo.montar(X, null, p2.nome)); out.push(p2); return out;
   },
+  m_documentario(){ return this.emPartes(Partes); },
+  m_cinema(){ return Estacao.h5On ? this.emPartes(PartesCine) : null; },   // sem vídeo (?video=0) não há o que mostrar
   m_clipes(){ const s=Clipes.segmento(); return s ? this.comVinheta(s) : null; },
   m_curiosidades(){ const s=Curio.segmento(); return s ? this.comVinheta(s) : null; },
   m_receitas(){ const s=Receitas.segmento(); return s ? this.comVinheta(s) : null; },
@@ -1139,8 +1264,9 @@ const Video = {
   },
   chave(c){ return c.vid.id+"@"+c.vid.trecho[0]+"-"+c.vid.trecho[1]; },
   preparar(c){
-    if(!Estacao.videoOn || !c.vid) return null;
+    if(!c.vid || !Estacao.temVid(c)) return null;
     const k = this.chave(c); if(this.slots.has(k)) return this.slots.get(k);
+    if(c.vid.html5) return this.prepararH5(c, k);
     const div = document.createElement("div"); div.className = "slot"+(c.tipo==="short"?" vert":""); const inner = document.createElement("div"); div.appendChild(inner); $("ytstage").appendChild(div);
     const slot = { k, c, div, player:null, pronto:false, tocando:false, erro:null, visivel:false, preCarga:true };
     this.slots.set(k, slot);
@@ -1156,18 +1282,42 @@ const Video = {
     }).catch(err=>{ slot.erro = err.message; if(slot.visivel) this.falhar(slot, err.message); });
     return slot;
   },
+  // <video> direto da fonte (domínio público). Expõe getCurrentTime/seekTo/playVideo…
+  // como o player do YouTube → Partes, Watchdog e intervalo funcionam sem mudança.
+  prepararH5(c, k){
+    const div=document.createElement("div"); div.className="slot h5"; const v=document.createElement("video");
+    v.muted=true; v.defaultMuted=true; v.playsInline=true; v.setAttribute("playsinline",""); v.setAttribute("webkit-playsinline",""); v.preload="auto"; v.disablePictureInPicture=true; v.controls=false;
+    div.appendChild(v); $("ytstage").appendChild(div);
+    const slot={ k, c, div, player:null, pronto:false, tocando:false, erro:null, visivel:false, preCarga:true, h5:v };
+    this.slots.set(k, slot);
+    const f=(c.vid.fontes||[]).find(x=>!x.type || v.canPlayType(x.type)!=="") || null;
+    slot.player={ getCurrentTime:()=>v.currentTime||0, getDuration:()=>isFinite(v.duration)?v.duration:0, pauseVideo:()=>{ try{ v.pause(); }catch(e){} },
+      playVideo:()=>{ const p=v.play(); if(p&&p.catch) p.catch(e=>{ if(e.name==="AbortError") return; slot.erro="play() recusado ("+e.name+")"; if(slot.visivel) this.falhar(slot, slot.erro); }); },
+      seekTo:t=>{ try{ if(Math.abs((v.currentTime||0)-t)>0.8) v.currentTime=t; }catch(e){} }, mute:()=>{ v.muted=true; }, unMute:()=>{ v.muted=false; }, setVolume:x=>{ v.volume=Math.max(0,Math.min(1,x/100)); }, isMuted:()=>v.muted,
+      destroy:()=>{ try{ v.pause(); v.removeAttribute("src"); v.load(); }catch(e){} } };
+    if(!f){ slot.erro="formato não suportado neste navegador"; return slot; }
+    slot.fonteUsada=f.src;
+    v.addEventListener("loadedmetadata", ()=>{ slot.pronto=true; if(slot.visivel) this.tocar(slot); else slot.player.seekTo(c.vid.trecho[0]); });
+    v.addEventListener("playing", ()=>this.estado(slot, 1));
+    v.addEventListener("timeupdate", ()=>{ if(slot.visivel && slot.tocando && slot.fimT && v.currentTime>=slot.fimT){ v.pause(); this.estado(slot, 0); } });
+    v.addEventListener("ended", ()=>this.estado(slot, 0));
+    v.addEventListener("error", ()=>{ const e=v.error; slot.erro="erro de mídia "+(e?e.code:"?")+(e&&e.message?" ("+e.message+")":""); if(slot.visivel) this.falhar(slot, slot.erro); });
+    v.addEventListener("waiting", ()=>{ if(slot.visivel && slot.tocando) $("vbadge").textContent="⏳ carregando (rede)"; });
+    v.src=f.src;
+    return slot;
+  },
   estado(slot, s){
-    const YS = window.YT.PlayerState;
+    const YS = (window.YT && window.YT.PlayerState) || { PLAYING:1, ENDED:0 };
     if(s===YS.PLAYING){
       if(!slot.visivel){ if(slot.preCarga){ slot.player.pauseVideo(); slot.player.seekTo(slot.c.vid.trecho[0], true); slot.preCarga=false; } return; }
       if(slot.falhou) { slot.player.pauseVideo(); return; }
       slot.tocando = true; clearTimeout(slot.wd); $("screen").classList.add("vidok");
       try{ const vd=slot.player.getVideoData&&slot.player.getVideoData(); $("aoVivo").hidden=!(vd&&vd.isLive); }catch(e){}
       if(slot.c.tipo==="clipe"){ Radio.duck(true,"clipe"); Radio.aplicarVolume(0,true); } $("vmsg").classList.remove("on");
-      status("Video","ok","no ar · trecho "+slot.c.vid.trecho.join("–")+" s"); $("vbadge").textContent="▶ trecho "+slot.c.vid.trecho[0]+"–"+slot.c.vid.trecho[1]+" s";
+      status("Video","ok","no ar · trecho "+slot.c.vid.trecho.map(Math.round).join("–")+" s"+(slot.h5?" · HTML5 ("+slot.c.doc.fonte+")":"")); $("vbadge").textContent="▶ trecho "+Math.round(slot.c.vid.trecho[0])+"–"+Math.round(slot.c.vid.trecho[1])+" s"+(slot.h5?" · domínio público":"");
       if(slot.c.tipo!=="clipe") setTimeout(()=>{ if(!slot.player||!slot.visivel) return; const comSom = slot.player.isMuted && !slot.player.isMuted(); if(comSom) Radio.duck(true,"vídeo com som"); else if(!Narrador.falando) Radio.duck(false); }, 1200);
     }
-    if(s===YS.ENDED && slot.visivel && slot.tocando){ if(slot.c.vid.fundo) return; if(slot.c.tipo==="doc"){ try{ Partes.marcar(slot.c.vid.id, slot.player.getCurrentTime(), slot.player.getDuration()); }catch(e){} } if(slot.c.tipo==="emalta"){ slot.div.classList.remove("on"); $("screen").classList.remove("vidok"); log("Em alta: vídeo de fundo terminou → imagem"); return; } log("Vídeo: trecho terminou (end) → próxima cena"); Estacao.proximaCena(); }
+    if(s===YS.ENDED && slot.visivel && slot.tocando){ if(slot.c.vid.fundo) return; if(slot.c.tipo==="doc"){ try{ (slot.c.P||Partes).marcar(slot.c.vid.id, slot.player.getCurrentTime(), slot.player.getDuration()); }catch(e){} } if(slot.c.tipo==="emalta"){ slot.div.classList.remove("on"); $("screen").classList.remove("vidok"); log("Em alta: vídeo de fundo terminou → imagem"); return; } log("Vídeo: trecho terminou (end) → próxima cena"); Estacao.proximaCena(); }
   },
   tocar(slot){
     if(!slot.pronto) return;
@@ -1179,10 +1329,11 @@ const Video = {
   exibir(c){
     this.esconderTudo();
     const slot = this.preparar(c); if(!slot) return;
-    this.atual = slot; slot.visivel = true; slot.falhou = false; slot.ini = c.vid.trecho[0]; slot.div.classList.add("on");
+    this.atual = slot; slot.visivel = true; slot.falhou = false; slot.ini = c.vid.trecho[0]; slot.fimT = c.vid.trecho[1]; slot.div.classList.add("on");
+    const to = slot.h5 ? Math.max(this.timeout, 15) : this.timeout;   // arquivo grande de acervo demora mais a começar
     status("Video","run","carregando… (watchdog "+this.timeout+" s)"); $("vbadge").textContent = "⏳ carregando vídeo";
     clearTimeout(slot.wd);
-    if(Estacao.playing) slot.wd = setTimeout(()=>{ if(!slot.tocando && slot.visivel) this.falhar(slot, "não tocou em "+this.timeout+" s"); }, this.timeout*1000);
+    if(Estacao.playing) slot.wd = setTimeout(()=>{ if(!slot.tocando && slot.visivel) this.falhar(slot, "não tocou em "+to+" s"); }, to*1000);
     if(slot.erro) return this.falhar(slot, slot.erro);
     if(slot.pronto){ slot.preCarga=false; this.tocar(slot); }
   },
@@ -1194,6 +1345,7 @@ const Video = {
     if(slot.c.vid.fundo){ log("Transição: vídeo de fundo "+slot.c.vid.id+" não tocou ("+motivo+") → vinheta em CSS"); $("vbadge").textContent="transição em CSS ("+motivo+")"; return; }
     if(slot.c.tipo==="clipe"){ Clipes.ruins.add(slot.c.vid.id); log("Clipes: "+slot.c.vid.titulo+" — "+motivo+" → pulado"); $("vbadge").textContent="clipe pulado: "+motivo; Radio.duck(false); Estacao.encurtar(0.3); return; }
     if(slot.c.tipo==="short"){ log("Watchdog Short: "+slot.c.vid.titulo+" — "+motivo+" → pulado"); $("vbadge").textContent="Short pulado: "+motivo; Estacao.encurtar(0.3); return; }
+    if(slot.h5){ const P=slot.c.P||Partes; P.ruins.add(slot.c.vid.id); log("Domínio público: "+slot.c.vid.titulo+" — "+motivo+" → pulado (sai da fila nesta sessão)"); $("vbadge").textContent="vídeo pulado: "+motivo; Radio.duck(false); Estacao.encurtar(0.3); return; }
     if(slot.c.tipo==="emalta"){ log("Em alta: vídeo de fundo não tocou ("+motivo+") → imagem com Ken Burns"); $("vbadge").textContent="Em alta: fundo em imagem ("+motivo+")"; return; }
     log("Watchdog vídeo: "+slot.c.vid.titulo+" — "+motivo+" → miniatura + rádio por "+Estacao.budgetFallback+" s");
     $("vbadge").textContent="🖼 prévia em imagem";
@@ -1255,6 +1407,9 @@ const Estacao = {
   fila:[], seg:0, cena:0, dur:7, vdur:30, playing:true, cur:0, t0:0, pausaAcum:0, pausadoEm:0, budgetFallback:6, galTimer:null,
   pendente:null, pendenteMotivo:"", ultimoId:null, renderN:0, trocas:0,
   videoOn: PODE_VIDEO && Q.get("video")!=="0",
+  // <video> HTML5 (domínio público) não depende do YouTube → funciona até em file://
+  get h5On(){ return Q.get("video")!=="0" && (this.videoOn || !PODE_VIDEO); },
+  temVid(c){ return !!(c && c.vid && (c.vid.html5 ? this.h5On : this.videoOn)); },
   get elapsed(){ const agora=this.playing?Date.now():(this.pausadoEm||Date.now()); return (agora-this.t0-this.pausaAcum)/1000; },
   iniciar(f){ this.fila=f; this.seg=0; Montador.registrar(f[0]); this.render();
     setInterval(()=>this.tick(),250); const raf=()=>{ $("prog").style.width=Math.min(100,this.elapsed/this.cur*100)+"%"; requestAnimationFrame(raf); }; requestAnimationFrame(raf); },
@@ -1264,10 +1419,10 @@ const Estacao = {
   cenaAtual(){ return this.atual().cenas[this.cena]; },
   proxima(){ const s=this.atual(); if(this.cena<s.cenas.length-1) return { c:s.cenas[this.cena+1], i:this.cena+1 }; if(!this.fila[this.seg+1]) Montador.completar(); const ns=this.fila[this.seg+1]; return ns ? { c:ns.cenas[0], i:0 } : { c:null, i:0 }; },
   duracao(c){ let d; const X=Config.atual.extras;
-    const cv=!!(c.vid && this.videoOn);
+    const cv=this.temVid(c);
     if(c.tipo==="vinheta") return cv?4:2.8; if(c.tipo==="bumper") return cv?4:3; if(c.tipo==="aseguir") return 4.5; if(c.tipo==="nd") return 2;
     if(["promo","transicao","abertura","agora"].includes(c.tipo)) return 5; if(c.tipo==="manchetes") return 9; if(c.tipo==="topclipes") return fx(10);
-    if(c.tipo==="doc"){ if(!cv) return fx(10); const t=c.vid.trecho; return t[1]-t[0]<5 ? 0.3 : t[1]-t[0]+2; }
+    if(c.tipo==="doc"){ if(c.vid.html5 && (c.P||Partes).ruins.has(c.vid.id)) return 0.3; if(!cv) return c.vid.html5 ? 0.3 : fx(10); const t=c.vid.trecho; return t[1]-t[0]<5 ? 0.3 : t[1]-t[0]+2; }
     if(c.tipo==="clipe") return cv && !Clipes.ruins.has(c.vid.id) ? c.vid.trecho[1]-c.vid.trecho[0]+1 : 0.3;
     if(c.tipo==="curio") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.h) : fx(12);
     if(c.tipo==="receita") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.fala) : fx(16);
@@ -1293,11 +1448,11 @@ const Estacao = {
     return { tag:"A SEGUIR", nome:prox?prox.nome:CANAL.nome, quando:agora?"Agora há pouco: "+agora.nome:CANAL.slogan, agora:"" };
   },
   async render(){
-    if(this._ultima && this._ultima.tipo==="doc") Partes.salvarAgora();
+    if(this._ultima && this._ultima.tipo==="doc") (this._ultima.P||Partes).salvarAgora();
     Voz.parar(); clearInterval(this.eaTimer); clearTimeout(this.vcaTimer);
     const s=this.atual(), c=this.cenaAtual(), n=++this.renderN, X=Config.atual.extras; this._ultima=c;
     this.t0=Date.now(); this.pausaAcum=0; this.pausadoEm=this.playing?0:Date.now(); this.cur=this.duracao(c);
-    const sc=$("screen"), comVid=!!(c.vid && this.videoOn), inter=!!s.inter || Inter.tipos.includes(c.tipo);
+    const sc=$("screen"), comVid=this.temVid(c), inter=!!s.inter || Inter.tipos.includes(c.tipo);
     sc.classList.toggle("vid", comVid && !c.vid.fundo); sc.classList.toggle("ad", !!c.ad); sc.classList.toggle("inter", inter);
     ["short","emalta","clipe","doc","curio","receita"].forEach(k=>sc.classList.toggle(k, c.tipo===k));
     sc.classList.toggle("fundo", comVid && !!c.vid.fundo);
@@ -1321,7 +1476,7 @@ const Estacao = {
         Creditos.img = m.cred + (m.reserva?" (imagem de reserva)":""); Creditos.imgLink = m.link||c.imgLink||null; Creditos.render(); });
     } else { Creditos.img = c.tipo==="nd"?ND:(inter?"vinheta da estação (CSS)":"sem foto (painel de dados)"); Creditos.imgLink=null; }
     $("aoVivo").hidden=true;
-    if(comVid){ Video.exibir(c); Creditos.vid = c.vid.titulo+" — "+c.vid.canal+" (YouTube, trecho "+c.vid.trecho[0]+"–"+c.vid.trecho[1]+" s"+(c.vid.fundo?", fundo mudo":"")+")"; }
+    if(comVid){ Video.exibir(c); Creditos.vid = c.vid.html5 ? c.vid.titulo+" ("+c.doc.ano+") — "+c.doc.fonte+" · "+c.doc.licenca+" · <video> HTML5, trecho "+Math.round(c.vid.trecho[0])+"–"+Math.round(c.vid.trecho[1])+" s" : c.vid.titulo+" — "+c.vid.canal+" (YouTube, trecho "+c.vid.trecho[0]+"–"+c.vid.trecho[1]+" s"+(c.vid.fundo?", fundo mudo":"")+")"; }
     else { Video.esconderTudo(); Creditos.vid = c.vid ? "prévia em imagem — "+c.vid.canal : "—"; status("Video", this.videoOn?"ok":"", this.videoOn?"ocioso":(PODE_VIDEO?"desligado":"só imagem (página sem http/https)"));
       $("vmsg").textContent = c.vid ? (PODE_VIDEO ? "vídeo desligado — prévia em imagem" : "página sem http(s): o YouTube recusa (Error 153) — prévia em imagem") : "—"; }
     Creditos.render();
@@ -1351,6 +1506,7 @@ const Estacao = {
     else if(c.tipo==="receita") o=`<div class="rec"><div class="cx"><span class="tag">${esc(c.k)}</span><h2>${esc(c.h)}</h2>${c.parte==="ing"?`<div class="st">Ingredientes</div><ul>${c.itens.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:`<ol start="${c.ini}">${c.itens.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>`}</div></div>`;
     else if(c.tipo==="emalta"){ const ps=c.posts.slice(0,6); o=`<div class="ea"><div class="top"><span class="tag">EM ALTA</span><b>${esc(c.h)}</b><small>${esc(c.topico.assunto||"")}</small></div><div class="posts">${ps.map((p,i)=>`<div class="post${i===0?" on":""}"><div class="who">${esc(p.handle)}</div><div class="tx">${esc(EmAlta.limpa(p.texto))}</div></div>`).join("")}</div></div>`;
       let k=0; const passo=Math.max(4, (this.cur-1.5)/Math.max(1,ps.length)); this.eaTimer=setInterval(()=>{ if(n!==this.renderN) return clearInterval(this.eaTimer); const el=$("ovl").querySelectorAll(".ea .post"); if(!el.length) return; k=(k+1)%el.length; el.forEach((e,j)=>e.classList.toggle("on",j===k)); }, passo*1000); }
+    else if(c.tipo==="doc" && c.vid && c.vid.html5) o=dpCredito(c, s);
     else if(c.tipo==="nd") o=`<div class="calma">${CANAL.logoSVG?canalLogo("calmalogo"):`<b>${esc(CANAL.curto)}</b>`}</div>`;
     $("big").className="big"+(["trends","post","clima","grade","mercado","topclipes","manchetes"].includes(c.tipo)?" panel":"")+(c.trecho?" trecho":"");
     $("big").innerHTML=h; $("ovl").innerHTML=o;
@@ -1364,7 +1520,7 @@ const Estacao = {
     const lt=$("lt"); lt.classList.add("hide");
     if(!semLT) setTimeout(()=>{ if(n!==this.renderN) return;
       $("ltK").textContent = c.tipo==="clipe" ? "#"+c.pos+" NO iTUNES" : (c.tipo==="doc" && s.retomada ? "CONTINUAÇÃO"+(c.vid.trecho[0]>0?" · de "+mmss(c.vid.trecho[0]):"") : c.k);
-      $("ltB").textContent = c.tipo==="doc" ? NOMES_SEG.documentario+" · parte "+(s.parte||Partes.parteNum(c.vid.id))+(Partes.totalPartes(c.doc)?" de "+Partes.totalPartes(c.doc):"") : (c.ad&&c.vid&&c.vid.marca ? c.vid.marca : s.nome);
+      $("ltB").textContent = c.tipo==="doc" ? (c.P||Partes).rotulo+" · parte "+(s.parte||(c.P||Partes).parteNum(c.vid.id))+((c.P||Partes).totalPartes(c.doc)?" de "+(c.P||Partes).totalPartes(c.doc):"") : (c.ad&&c.vid&&c.vid.marca ? c.vid.marca : s.nome);
       $("ltH").textContent = c.trecho ? c.titulo : c.h;
       lt.classList.remove("hide"); },260);
     // "Você está assistindo" depois do intervalo
@@ -1378,7 +1534,7 @@ const Estacao = {
     else if(c.tipo==="receita") Voz.cena(c.fala, n, X.vozProgramas, fx(16), "receita");
     else if(Narrador.on) Narrador.falar(Narrador.textoCena(c));
     const nx = this.proxima(); Producao.preparar(nx.c, nx.i);
-    const manter = [c, nx.c].filter(x=>x&&x.vid&&this.videoOn).map(x=>Video.chave(x)); Video.limpar(manter);
+    const manter = [c, nx.c].filter(x=>this.temVid(x)).map(x=>Video.chave(x)); Video.limpar(manter);
   }
 };
 
@@ -1487,7 +1643,8 @@ const Admin = {
     q.push(`<div class="lista">`+Shorts.pool.slice(0,12).map(s=>`<div>${L("https://www.youtube.com/shorts/"+s.id, s.id)} · ${esc(s.canal)} · ${esc(corta(s.titulo,80))}</div>`).join("")+`</div>`);
     if(EmAlta.pac){ q.push(`<div class="sec">EM ALTA — pacote ${esc(EmAlta.pac.gerado_em_txt)} · ${esc(EmAlta.origem)} · atualização manual</div><div class="lista">`+EmAlta.pac.topicos.map(t=>{ const v=EmAlta.video[t.id]; return `<div><b>${esc(t.titulo)}</b> (trend nº ${t.posicao||"?"}) · fundo: ${v?L("https://www.youtube.com/watch?v="+v.id, v.id)+" — "+esc(v.origem):"imagem"}<br>${t.posts.map(p=>`${L(p.url, p.handle)} — ${esc(EmAlta.postSt[p.id]||"não conferido")}`).join("<br>")}</div>`; }).join("")+`</div>`); }
     q.push(`<div class="sec">FICHAS DOS TRAILERS (Wikidata)</div><div class="lista">`+Object.entries(FICHA_QID).map(([vid,qid])=>{ const f=Ficha.dados[qid]||FICHAS_SNAPSHOT[qid]||{}; return `<div>${L("https://www.youtube.com/watch?v="+vid, vid)} → ${L("https://www.wikidata.org/wiki/"+qid, qid)} · ${esc(f.titulo||"—")} · IMDb ${f.imdb?L("https://www.imdb.com/title/"+f.imdb+"/", f.imdb):"—"} · ${esc(f.origem||"snapshot")}</div>`; }).join("")+`</div>`);
-    q.push(`<div class="sec">DOCUMENTÁRIOS — parte de ${Math.round(Partes.seg()/6)/10} min · ${esc(Partes.origem)}</div><div class="lista">`+Partes.lista().map(d=>{ const e=Partes.est[d.id]; return `<div>${d.id===Partes.atualId?"▶ ":""}${L("https://www.youtube.com/watch?v="+d.id, d.id)} · ${esc(d.canal)} · ${esc(corta(d.titulo,70))} · ${d.dur?mmss(d.dur):"?"} · posição salva ${e?mmss(e.pos)+(e.fim?" (terminado)":""):"00:00"}</div>`; }).join("")+`</div>`);
+    q.push(`<div class="sec">CINEMA (domínio público) — ${esc(PartesCine.origem)}</div><div class="lista">`+PartesCine.lista().map(d=>{ const e=PartesCine.est[d.id]; return `<div>${d.id===PartesCine.atualId?"▶ ":""}${L(d.pagina, d.titulo+" ("+d.ano+")")} · ${esc(d.fonte)} · ${esc(d.licenca)} · ${mmss(d.dur)} · posição ${e?mmss(e.pos)+(e.fim?" (terminado)":""):"00:00"}${PartesCine.ruins.has(d.id)?" · ✖ falhou (pulado)":""}</div>`; }).join("")+`</div>`);
+    q.push(`<div class="sec">DOCUMENTÁRIOS — parte de ${Math.round(Partes.seg()/6)/10} min · ${esc(Partes.origem)}</div><div class="lista">`+Partes.lista().map(d=>{ const e=Partes.est[d.id]; return `<div>${d.id===Partes.atualId?"▶ ":""}${L(d.pagina||"https://www.youtube.com/watch?v="+d.id, d.dp?d.titulo+" ("+d.ano+")":d.id)} · ${esc(d.canal)} · ${esc(corta(d.titulo,70))} · ${d.dur?mmss(d.dur):"?"} · posição salva ${e?mmss(e.pos)+(e.fim?" (terminado)":""):"00:00"}</div>`; }).join("")+`</div>`);
     q.push(`<div class="sec">CLIPES — ${esc(Clipes.origem)}</div><div class="lista">`+(Clipes.chart?Clipes.chart.itens:[]).map(it=>{ const v=Clipes.video(it); return `<div>#${it.pos} ${esc(it.artista)} — ${esc(it.musica)} · ${v?L("https://www.youtube.com/watch?v="+v.id, v.id)+" ("+esc(v.canal)+", "+esc(v.tipo)+")":"sem vídeo oficial conferido (só no cartão)"}</div>`; }).join("")+`</div>`);
     q.push(`<div class="sec">CURIOSIDADES — ${esc(Curio.origem)}</div><div class="lista">`+Curio.itens.map(it=>`<div>${L(it.link, String(it.artigo||"—").replace(/_/g," "))} · ${esc(corta(it.texto,90))}</div>`).join("")+`</div>`);
     q.push(`<div class="sec">RECEITAS — ${esc(Receitas.origem)}</div><div class="lista">`+Receitas.lista.map(r=>`<div>${L(r.link, r.titulo)} · ${r.ingredientes.length} ingredientes · ${r.passos.length} passos · foto: ${r.img?esc(r.arquivo||"sim"):"reserva"}</div>`).join("")+`</div>`);
@@ -1831,28 +1988,29 @@ const Intervalo = {
    troca de cena e no pagehide → recarregar a página também retoma.
    ?parte=SEG encurta a parte para teste.
    ===================================================================== */
-const LS_PARTES="tvia.teste.partes";   // separado da página principal
+const LS_PARTES="tvia.dp.partes", LS_CINE="tvia.dp.cine";   // separados da página principal
 const Partes = {
-  est:{}, atualId:null, extras:[], origem:"lista conferida",
-  carregar(){ try{ const j=JSON.parse(localStorage.getItem(LS_PARTES)||"null"); if(j&&j.est){ this.est=j.est; this.atualId=j.atual||null; } }catch(e){} },
-  salvar(){ try{ localStorage.setItem(LS_PARTES, JSON.stringify({ est:this.est, atual:this.atualId, t:Date.now() })); }catch(e){} },
+  est:{}, atualId:null, extras:[], origem:"domínio público + lista conferida", ruins:new Set(), ls:LS_PARTES, rotulo:"Documentário", segId:"documentario", cor:["#0f3d2e","#111827"],
+  base(){ return DP_ATIVOS("doc").concat(DOCS_VERIF); },   // domínio público primeiro, depois embeds oficiais
+  carregar(){ try{ const j=JSON.parse(localStorage.getItem(this.ls)||"null"); if(j&&j.est){ this.est=j.est; this.atualId=j.atual||null; } }catch(e){} },
+  salvar(){ try{ localStorage.setItem(this.ls, JSON.stringify({ est:this.est, atual:this.atualId, t:Date.now() })); }catch(e){} },
   seg(){ const q=+(Q.get("parte")||0); return q>0 ? q : (RAPIDO ? 30 : Config.atual.extras.docParteMin*60); },
-  lista(){ return DOCS_VERIF.concat(this.extras); },
+  lista(){ return this.base().concat(this.extras); },
   doc(id){ return this.lista().find(d=>d.id===id); },
   pos(id){ return (this.est[id]&&this.est[id].pos)||0; },
   parteNum(id){ return Math.floor(this.pos(id)/this.seg()+0.02)+1; },
   totalPartes(d){ return d.dur ? Math.max(1, Math.ceil(d.dur/this.seg())) : null; },
   fim(d){ const e=this.est[d.id]; return !!(e && e.fim); },
   escolher(){
-    const l=this.lista(); let d=this.atualId && this.doc(this.atualId);
-    if(!d || this.fim(d)) d=l.find(x=>!this.fim(x));
+    const l=this.lista(), ok=x=>!this.ruins.has(x.id) && (x.dp ? Estacao.h5On : Estacao.videoOn || !Estacao.h5On); let d=this.atualId && this.doc(this.atualId);
+    if(!d || this.fim(d) || !ok(d)) d=l.find(x=>!this.fim(x) && ok(x)) || l.find(x=>!this.fim(x));
     if(!d){ l.forEach(x=>delete this.est[x.id]); d=l[0]; log("Documentários: todos assistidos — recomeçando a lista"); }
     if(d && d.id!==this.atualId){ this.atualId=d.id; this.salvar(); }
     return d;
   },
   trecho(id){ const p=Math.floor(this.pos(id)), d=this.doc(id), f=p+this.seg(); return [p, d&&d.dur ? Math.min(d.dur, f) : f]; },
   marcar(id, t, dur){ const e=this.est[id]||(this.est[id]={pos:0}); if(t>e.pos-0.5 || t<e.pos-5) e.pos=t; if(dur) e.dur=dur; const d=this.doc(id); const D=dur||(d&&d.dur); if(D && e.pos>=D-15){ e.fim=true; log("Documentário: "+(d?d.titulo:id)+" terminou"); } e.t=Date.now(); this.salvar(); },
-  salvarAgora(){ const s=Video.atual; if(!s||!s.player||!s.c||s.c.tipo!=="doc"||!s.tocando) return; try{ const t=s.player.getCurrentTime(), D=s.player.getDuration(); if(t>0) this.marcar(s.c.vid.id, t, D); }catch(e){} },
+  salvarAgora(){ const s=Video.atual; if(!s||!s.player||!s.c||s.c.tipo!=="doc"||!s.tocando||(s.c.P||Partes)!==this) return; try{ const t=s.player.getCurrentTime(), D=s.player.getDuration(); if(t>0) this.marcar(s.c.vid.id, t, D); }catch(e){} },
   iniciar(){
     this.carregar();
     setInterval(()=>{ const s=Video.atual; if(s&&s.visivel&&s.tocando&&s.c.tipo==="doc"&&Estacao.playing) this.salvarAgora(); }, 2000);
@@ -1869,9 +2027,49 @@ const Partes = {
     log("Documentários: RSS conferido — "+this.extras.length+" novo(s)"); status("Docs","ok",this.lista().length+" documentários ("+this.origem+")");
   },
   segmento(){
-    const d=this.escolher(); if(!d) return null; const self=this;
-    const vid={ id:d.id, titulo:d.titulo, canal:d.canal, thumb:"https://i.ytimg.com/vi/"+d.id+"/hqdefault.jpg", get trecho(){ return self.trecho(d.id); } };
-    return { id:"documentario", nome:NOMES_SEG.documentario, cor:["#0f3d2e","#111827"], cenas:[{ tipo:"doc", key:"doc:"+d.id+":"+Date.now()+":"+Math.random().toString(36).slice(2,6), k:"DOCUMENTÁRIO", get h(){ return d.titulo.replace(/\s*\|\s*Document[aá]rio\s*/i," ").replace(/^\s*Document[aá]rio\s*\|\s*/i,"").trim(); }, doc:d, vid, fonte:"YouTube · "+d.canal, link:"https://www.youtube.com/watch?v="+d.id, coletado:"lista conferida 30/10/2026" }] };
+    const d=this.escolher(); if(!d) return null; const self=this, dp=!!d.dp;
+    const vid={ id:d.id, titulo:d.titulo, canal:d.canal, html5:dp, fontes:d.fontes||null, thumb:dp ? (d.thumb||null) : "https://i.ytimg.com/vi/"+d.id+"/hqdefault.jpg", get trecho(){ return self.trecho(d.id); } };
+    return { id:this.segId, nome:this.rotulo, cor:this.cor, cenas:[{ tipo:"doc", P:this, key:"doc:"+d.id+":"+Date.now()+":"+Math.random().toString(36).slice(2,6), k:this.rotulo.toUpperCase()+(dp?" · DOMÍNIO PÚBLICO":""),
+      get h(){ return dp ? d.titulo+" ("+d.ano+")" : d.titulo.replace(/\s*\|\s*Document[aá]rio\s*/i," ").replace(/^\s*Document[aá]rio\s*\|\s*/i,"").trim(); },
+      doc:d, vid, fonte: dp ? d.fonte+" · "+d.licenca : "YouTube · "+d.canal, link: dp ? d.pagina : "https://www.youtube.com/watch?v="+d.id, coletado: dp ? "catálogo DP conferido 31/10/2026" : "lista conferida 30/10/2026" }] };
+  }
+};
+
+// CINEMA — mesmo motor de partes do documentário, com lista e posição próprias
+const PartesCine = Object.assign(Object.create(Partes), {
+  est:{}, atualId:null, extras:[], origem:"catálogo de domínio público", ruins:new Set(), ls:LS_CINE, rotulo:NOMES_SEG.filme, segId:"cinema", cor:["#3b0a0a","#111827"],
+  base(){ return DP_ATIVOS("cinema"); },
+  iniciar(){
+    this.carregar();
+    setInterval(()=>{ const s=Video.atual; if(s&&s.visivel&&s.tocando&&s.c.tipo==="doc"&&s.c.P===this&&Estacao.playing) this.salvarAgora(); }, 2000);
+    addEventListener("pagehide", ()=>this.salvarAgora()); document.addEventListener("visibilitychange", ()=>{ if(document.hidden) this.salvarAgora(); });
+    status("Cine","ok",this.lista().length+" filmes · parte de "+Math.round(this.seg()/60*10)/10+" min");
+    if(Q.get("dpbusca")==="1") setTimeout(()=>DPBusca.rodar(this), 6000);
+  }
+});
+
+// crédito fixo na tela para obra em domínio público
+function dpCredito(c, s){ const d=c.doc;
+  return `<div class="dpcred"><span class="tag">${esc(c.P.rotulo.toUpperCase())}${s.parte?" · PARTE "+s.parte:""}</span><b>${esc(d.titulo)}</b><small>${esc(String(d.ano))}${d.direcao?" · "+esc(d.direcao):""}</small><small>Fonte: ${esc(d.fonte)} · ${esc(d.licenca.replace(/\s*\(marcado na página:[^)]*\)/,""))}</small></div>`; }
+
+/* BUSCA DINÂMICA (opcional, ?dpbusca=1) — archive.org advancedsearch + metadata,
+   sem chave, CORS liberado. EXPERIMENTAL: a marcação "public domain" no
+   archive.org é feita por quem envia (há dublagens/legendas recentes marcadas
+   assim) → filtros rígidos e entra só no FIM da lista fixa. */
+const DPBusca = {
+  ruim:/dublag|redublag|dublado|legendad|redub|tom e jerry|superman|magoo|merrie|disney|looney|popeye|trailer|sem t[ií]tulo|sex|madness|nudist|mar\b|praia|paraty/i,
+  async rodar(P){
+    try{
+      const q='mediatype:movies AND licenseurl:*publicdomain* AND year:[1895 TO 1955] AND language:(Portuguese OR por) AND collection:(feature_films OR silent_films OR short_films)';
+      const u="https://archive.org/advancedsearch.php?q="+encodeURIComponent(q)+"&fl[]=identifier&fl[]=title&fl[]=year&rows=40&output=json";
+      const j=JSON.parse(await fetchTexto(u, {}, 12000)); const docs=(j.response&&j.response.docs)||[], conhecidos=new Set(P.lista().map(d=>d.id)); let n=0;
+      for(const x of docs){ if(n>=4) break; if(!x.year||+x.year>1955||this.ruim.test(x.title||"")||conhecidos.has("ia-"+x.identifier)) continue;
+        try{ const m=JSON.parse(await fetchTexto("https://archive.org/metadata/"+encodeURIComponent(x.identifier), {}, 12000));
+          const f=(m.files||[]).find(f=>/\.mp4$/i.test(f.name) && /h\.264|MPEG4/i.test(f.format||"") && +f.length>600); if(!f) continue;
+          P.extras.push({ id:"ia-"+x.identifier, tipo:"cinema", dp:true, busca:true, titulo:x.title, ano:+x.year, direcao:"", dur:Math.round(+f.length), fonte:"Internet Archive (busca)", canal:"Internet Archive", pagina:"https://archive.org/details/"+x.identifier, licenca:"Domínio público (marcado por quem enviou — conferir)", thumb:"https://archive.org/services/img/"+x.identifier, fontes:[{ src:"https://archive.org/download/"+x.identifier+"/"+encodeURIComponent(f.name), type:"video/mp4" }] }); n++;
+        }catch(e){} }
+      P.origem="catálogo fixo + "+P.extras.length+" da busca no archive.org"; log("Cinema: busca no archive.org — "+P.extras.length+" título(s) extra(s) no fim da lista");
+    }catch(e){ log("Cinema: busca no archive.org falhou ("+e.message+") → só a lista fixa"); }
   }
 };
 
@@ -2016,7 +2214,7 @@ $("bLigarMudo").onclick=()=>ligarTV(false);
   setInterval(tickClock,1000); vidLabel(); Radio.mostrar();
   const dados=Pauteiro.ler(); dados.trailers.forEach(t=>t.thumb="https://i.ytimg.com/vi/"+t.id+"/hqdefault.jpg"); dados.comerciais.forEach(t=>t.thumb="https://i.ytimg.com/vi/"+t.id+"/hqdefault.jpg");
   Coletor.dados=dados; status("Pauteiro","ok","snapshot carregado (reserva)");
-  Partes.iniciar(); Clipes.iniciar(); Curio.iniciar(); Receitas.iniciar();
+  Partes.iniciar(); PartesCine.iniciar(); window.__dp={ Partes, PartesCine, Video, Estacao }; Clipes.iniciar(); Curio.iniciar(); Receitas.iniciar();
   Shorts.iniciar(); Ficha.iniciar().then(()=>Producao.remontar("fichas do Wikidata")); EmAlta.iniciar();
   tickClock(); renderTicker(dados);
   if(Estacao.videoOn) Video.carregarAPI(); else status("Video","",PODE_VIDEO?"desligado":"só imagem (sem http/https)");
