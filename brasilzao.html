@@ -384,6 +384,14 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
 .ident.grande .cnlogo.idlogo{width:clamp(170px,38vw,460px)}
 .calma .cnlogo{width:clamp(120px,24vw,280px)}
 @media (max-width:600px){header .logo.comlogo .cnlogo{height:34px}header .logo.comlogo small{display:none}}
+/* ===== versão de TESTE: fila contínua ===== */
+.big.trecho h2{font-size:clamp(14px,2.5vw,30px);font-weight:700;line-height:1.28;max-width:92%}
+@media (max-width:600px){.big.trecho h2{font-size:13px}}
+#grid .fl{display:flex;gap:8px;align-items:center;padding:6px 9px;border-radius:8px;background:#0b1222;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#grid .fl b{font-size:10px;color:var(--mut);min-width:62px;font-weight:800;letter-spacing:.5px}
+#grid .fl.cur{background:linear-gradient(90deg,#ff2d5526,#0b1222);border:1px solid var(--acc)}
+#grid .fl.cur b{color:#fff}
+.tipos .row .tog.on{background:var(--acc);color:#fff}
 </style>
 </head>
 <body>
@@ -433,7 +441,7 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
     </div>
   </section>
   <aside>
-    <h3><span>GRADE 24H</span><span id="gDay">Horário de Brasília</span></h3>
+    <h3><span>NA FILA</span><span id="gDay">fila contínua · teste</span></h3>
     <div id="grid"></div>
     <div class="next" id="nextInfo">—</div>
   </aside>
@@ -444,10 +452,9 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
 <div class="adm fechado" id="adm">
   <button class="alca" id="admAlca">⚙ Sala de controle <small id="admResumo">toque para abrir</small><span id="admSeta">▲</span></button>
   <div class="admCorpo">
-    <div class="tabs"><button data-tab="grade" class="on">Grade</button><button data-tab="itens">Itens</button><button data-tab="fontes">Fontes</button><button data-tab="status">Status</button><button data-tab="bast">Bastidores</button></div>
+    <div class="tabs"><button data-tab="fila" class="on">Fila</button><button data-tab="fontes">Fontes</button><button data-tab="status">Status</button><button data-tab="bast">Bastidores</button></div>
     <div class="aviso" id="admAviso"></div>
-    <div class="tab" id="tab-grade"></div>
-    <div class="tab" id="tab-itens" hidden></div>
+    <div class="tab" id="tab-fila"></div>
     <div class="tab" id="tab-fontes" hidden></div>
     <div class="tab" id="tab-status" hidden></div>
     <div class="tab" id="tab-bast" hidden>
@@ -468,8 +475,9 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
       <div class="pipe">
       <div class="m" id="pPauteiro"><i></i>Pauteiro <b id="vPauteiro">—</b></div>
       <div class="m" id="pColetor"><i></i>Coletor <b id="vColetor">—</b></div>
+      <div class="m" id="pExtrator"><i></i>Extrator <b id="vExtrator">—</b></div>
       <div class="m" id="pRoteirista"><i></i>Roteirista <b id="vRoteirista">—</b></div>
-      <div class="m" id="pDiretor"><i></i>Diretor <b id="vDiretor">—</b></div>
+      <div class="m" id="pDiretor"><i></i>Diretor (montador de fila) <b id="vDiretor">—</b></div>
       <div class="m" id="pProducao"><i></i>Produção <b id="vProducao">—</b></div>
       <div class="m" id="pEstacao"><i></i>Estação <b id="vEstacao">—</b></div>
       <div class="m" id="pWatchdog"><i></i>Watchdog <b id="vWatchdog">—</b></div>
@@ -486,12 +494,12 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
     </div>
       <div class="sec">LOG</div>
       <div class="log" id="log"></div>
-      <div class="sec">FILA DA ESTAÇÃO <span id="pendTag" style="color:var(--acc2)"></span></div>
+      <div class="sec">FILA DA ESTAÇÃO (contínua) <span id="pendTag" style="color:var(--acc2)"></span></div>
       <div class="queue" id="queue"></div>
       <div id="bastDyn"></div>
       <div class="sec">LICENÇAS E AVISOS</div>
       <div class="sec">FOTOS DE RESERVA (usadas quando uma imagem falha)</div><div class="lista"><div>Congresso Nacional, Brasília-DF — Eurico Zimbres, CC BY-SA 2.5 · <a href="https://commons.wikimedia.org/wiki/File:Brazilian_National_Congress.jpg" target="_blank" rel="noopener">Wikimedia Commons ↗</a></div><div>Chapada dos Veadeiros, Goiás — Marcelo Camargo/Agência Brasil, CC BY 3.0 br · <a href="https://commons.wikimedia.org/wiki/File:Chapada_dos_Veadeiros_18.jpg" target="_blank" rel="noopener">Wikimedia Commons ↗</a></div><div>Rio Negro no Pantanal, Mato Grosso do Sul — Charles J. Sharp, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Rio_Negro,_The_Pantanal,_Mato_Grosso_do_Sul,_Brazil.jpg" target="_blank" rel="noopener">Wikimedia Commons ↗</a></div></div>
-      <div class="cred">Brasilzão TV (projeto TV IA YouTube) — TV ao vivo autônoma no navegador, por <b>Arthur Hector</b>. Versão 4 (protótipo): notícias ao vivo (Agência Brasil RSS; g1 e BBC News Brasil via rss2json) com reserva no snapshot de 30/10/2026; rádio lo-fi ao vivo de terceiros (<b>não autorizada para retransmissão</b> — uso só para teste pessoal); reserva musical Kevin MacLeod (CC BY 3.0, via Wikimedia Commons); vídeos via YouTube IFrame API; imagens com reserva embutida (Wikimedia Commons, CC BY / CC BY-SA). Manchetes, vídeos e marcas pertencem aos respectivos donos.</div>
+      <div class="cred">Brasilzão TV (projeto TV IA YouTube) — TV ao vivo autônoma no navegador, por <b>Arthur Hector</b>. Versão de TESTE (fila contínua, sem grade de 24 h; derivada da v4.2): notícias ao vivo (Agência Brasil RSS; g1 e BBC News Brasil via rss2json) com reserva no snapshot de 30/10/2026; rádio lo-fi ao vivo de terceiros (<b>não autorizada para retransmissão</b> — uso só para teste pessoal); reserva musical Kevin MacLeod (CC BY 3.0, via Wikimedia Commons); vídeos via YouTube IFrame API; imagens com reserva embutida (Wikimedia Commons, CC BY / CC BY-SA). Manchetes, vídeos e marcas pertencem aos respectivos donos.</div>
       <div class="cred"><b>v4.2 — de onde vem cada coisa (sem afirmação jurídica; ver notas-v4-2.md):</b> Shorts, trailers, documentários (DW Brasil, TV Brasil, TV Cultura), clipes oficiais e transições (playlist do Arthur, canal “Free Video Background loops”) tocam pelo player oficial do YouTube (embed), sem cópia do vídeo; cada ID foi conferido no oEmbed. Posts do X: pacote estático em-alta.json com texto literal, autor e link, conferidos ao vivo no oEmbed público do X. Fichas: Wikidata (CC0); pôsteres da Wikipédia em inglês são arquivos de uso restrito (“fair use”) — só exibidos, não redistribuídos. Curiosidades: “Sabia que…” da Wikipédia em português (CC BY-SA). Receitas: Livro de receitas do Wikilivros (CC BY-SA). Parada musical: RSS público do iTunes Store Brasil. Ser “embedável” não equivale a autorização de retransmissão em uma TV pública — revisar antes de divulgar.</div>
     </div>
   </div>
@@ -499,6 +507,17 @@ header .logo.comlogo small{display:block;font-size:11px;font-weight:700;color:#f
 <script>
 "use strict";
 /* =====================================================================
+   BRASILZÃO TV — VERSÃO DE TESTE (brasilzao-teste.html), derivada do
+   brasilzao.html (v4.2). SEM grade de 24 h / sem depender de horário:
+   o Diretor virou um MONTADOR DE FILA contínua que alterna os tipos
+   (notícias, documentário em partes, clipes, curiosidades, receitas,
+   em alta, shorts, história, clima), monta só alguns programas à frente
+   com o que já estiver pronto e acrescenta o resto conforme carrega.
+   Novo: EXTRATOR (matéria completa + imagens via os proxies já usados).
+   Parâmetros: ?rapido=1 (durações curtas) · ?ligar=1 (liga sem toque)
+   · ?parte=SEG · ?zerar=1 (apaga posição do documentário/config de teste)
+   · ?video=0 (só imagem).
+   ---------------------------------------------------------------------
    TV IA YouTube — v4.2 (protótipo) — parte do teste-v4.html
    v4.2: Shorts de notícias entre os programas, tela limpa (bastidores no
    painel), vinhetas/bumpers/"A seguir", ficha falada antes do trailer, Em alta.
@@ -524,6 +543,9 @@ const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;
 const ND = "NÃO DEFINIDO";
 const Q = new URLSearchParams(location.search);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const RAPIDO = Q.get("rapido")==="1";
+const fx = s => RAPIDO ? Math.max(4, Math.round(s*0.55)) : s;   // encurta tempos fixos no modo rápido
+if(Q.get("zerar")==="1"){ try{ ["tvia.teste.partes","tvia.teste.config"].forEach(k=>localStorage.removeItem(k)); }catch(e){} }
 function comTimeout(p, ms, motivo){ return Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(motivo || ("timeout " + ms + " ms"))), ms))]); }
 async function fetchJSON(url, ms){ const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), ms || 8000); try { const r = await fetch(url, { signal: ctl.signal }); if (!r.ok) throw new Error("HTTP " + r.status); return await r.json(); } finally { clearTimeout(t); } }
 
@@ -770,27 +792,19 @@ const pad=n=>String(n).padStart(2,"0");
    CONFIG — camada de configuração (overrides do painel) SEPARADA dos dados
    coletados; salva em localStorage; aplicada por cima a cada remontagem.
    ===================================================================== */
-const SLOTS = [[0,6],[6,9],[9,12],[12,14],[14,17],[17,19],[19,21],[21,24]];
-const TEMAS = [
-  { key:"madrugada", nome:"Madrugada / Reprises",          segs:["documentario","historia","clipes","mundo","curiosidades","cinema","brasil"] },
-  { key:"abertura",  nome:"Abertura / Notícias do Brasil", segs:["brasil","clima","receitas","mercado","mundo","curiosidades"] },
-  { key:"mundo",     nome:"Mundo",                         segs:["mundo","documentario","brasil","mercado","social"] },
-  { key:"clima",     nome:"Clima e Alertas",               segs:["clima","brasil","receitas","curiosidades","mundo"] },
-  { key:"redes",     nome:"Redes Sociais",                 segs:["social","clipes","brasil","curiosidades","mundo"] },
-  { key:"cinema",    nome:"Cinema e Séries",               segs:["cinema","documentario","clipes","brasil"] },
-  { key:"grade",     nome:"Grade de Programas",            segs:["grade","clipes","cinema","receitas","brasil"] },
-  { key:"nobre",     nome:"Horário Nobre (resumo do dia)", segs:["brasil","documentario","cinema","clipes","mundo","curiosidades","social","clima"] }
-];
-const LS_KEY = "tvia.v42.config", LS_KEY_V4 = "tvia.v4.config";
+// Tipos da fila contínua (liga/desliga no painel). Ordem de alternância = ROTACAO.
+const TIPOS_FILA = { noticias:"Notícias (matérias dos feeds)", documentario:"Documentário em partes (com intervalo)", clipes:"Clipes (parada iTunes Brasil)", curiosidades:"Curiosidades (Wikipédia)", receitas:"Receitas (Wikilivros)", emalta:"Em alta (X)", shorts:"Giro de notícias (Shorts)", historia:"Hoje na História", clima:"Clima (Brasília-DF)" };
+const ROTACAO = ["noticias","documentario","clipes","curiosidades","noticias","receitas","emalta","noticias","shorts","historia","noticias","clima"];
+const LS_KEY = "tvia.teste.config", LS_KEY_V4 = "tvia.v42.config";
 const EXTRAS_PADRAO = { shortsCada:2, shortsPorVez:1, shortMax:30, emAltaCada:3, vinhetas:true, aSeguir:true, fichaModo:"voz", breakCada:2, breakItens:3, breakComerciais:false, docParteMin:8, docPartesSeguidas:2, clipesPorVez:3, clipeMax:90, vozProgramas:"voz", abertura:true };
 const EXTRAS_OPC = { shortsCada:[0,1,2,3,4], shortsPorVez:[1,2,3], shortMax:[15,20,30,45,60], emAltaCada:[0,2,3,4,6], vinhetas:[true,false], aSeguir:[true,false], fichaModo:["voz","legenda","off"], breakCada:[0,1,2,3,4], breakItens:[2,3,4], breakComerciais:[false,true], docParteMin:[2,5,8,10,15], docPartesSeguidas:[1,2,3], clipesPorVez:[2,3,4,5], clipeMax:[45,60,90,120,240], vozProgramas:["voz","legenda"], abertura:[true,false] };
 const Config = {
   atual:null,
-  padrao(){ return { versao:1, grade:TEMAS.map(t=>({ key:t.key, ativo:true, segs:t.segs.slice() })), fontes:{}, itens:{}, extras:Object.assign({},EXTRAS_PADRAO) }; },
-  valida(c){ if(!c||c.versao!==1||!Array.isArray(c.grade)||c.grade.length!==8) return false; const ks=TEMAS.map(t=>t.key); if(!c.grade.every(g=>ks.includes(g.key)&&Array.isArray(g.segs)&&g.segs.every(s=>NOMES_SEG[s]))) return false; c.fontes=c.fontes||{}; c.itens=c.itens||{}; const x=Object.assign({},EXTRAS_PADRAO,c.extras||{}); Object.keys(EXTRAS_OPC).forEach(k=>{ if(!EXTRAS_OPC[k].includes(x[k])) x[k]=EXTRAS_PADRAO[k]; }); c.extras=x; return true; },
+  padrao(){ return { versao:1, fontes:{}, itens:{}, extras:Object.assign({},EXTRAS_PADRAO), tipos:Object.fromEntries(Object.keys(TIPOS_FILA).map(t=>[t,true])) }; },
+  valida(c){ if(!c||c.versao!==1) return false; delete c.grade; c.tipos=Object.assign(Object.fromEntries(Object.keys(TIPOS_FILA).map(t=>[t,true])), c.tipos||{}); c.fontes=c.fontes||{}; c.itens=c.itens||{}; const x=Object.assign({},EXTRAS_PADRAO,c.extras||{}); Object.keys(EXTRAS_OPC).forEach(k=>{ if(!EXTRAS_OPC[k].includes(x[k])) x[k]=EXTRAS_PADRAO[k]; }); c.extras=x; return true; },
   carregar(){ try{ let c=JSON.parse(localStorage.getItem(LS_KEY)||"null"), de="v4.2"; if(!c){ c=JSON.parse(localStorage.getItem(LS_KEY_V4)||"null"); de="v4 (migrado)"; } if(this.valida(c)){ this.atual=c; log("Config: overrides do painel carregados do localStorage ("+de+")"); return; } }catch(e){} this.atual=this.padrao(); },
-  salvar(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(this.atual)); }catch(e){ log("Config: localStorage bloqueado ("+e.name+") — mudança vale só nesta sessão"); } },
-  tema(key){ return TEMAS.find(t=>t.key===key); },
+  modoRapido(){ if(!RAPIDO) return; Object.assign(this.atual.extras, { clipesPorVez:2, clipeMax:20, shortMax:12, shortsPorVez:2, breakItens:2 }); log("Modo rápido (?rapido=1): parte do documentário "+Partes.seg()+" s, clipes de 20 s, Shorts de 12 s, intervalo com 2 itens"); },
+  salvar(){ if(RAPIDO){ log("Config: modo rápido — mudança vale só nesta sessão (não salva)"); return; } try{ localStorage.setItem(LS_KEY, JSON.stringify(this.atual)); }catch(e){ log("Config: localStorage bloqueado ("+e.name+") — mudança vale só nesta sessão"); } },
   fonte(seg){ return this.atual.fontes[seg] || FONTES_SEG[seg][0]; },
   itens(seg){ return this.atual.itens[seg] || (this.atual.itens[seg] = { edit:{}, rem:[], add:[] }); },
   // aplica edições/remoções/adições de itens por cima das cenas geradas dos dados coletados
@@ -909,7 +923,18 @@ const Pauteiro = {
    ===================================================================== */
 const Roteirista = {
   nd(motivo){ return [{ tipo:"nd", motivo }]; },
-  segmentos(d){
+  // matéria (Pauteiro → Extrator → Roteirista): teaser + trechos do texto completo + fonte
+  materia(x){
+    const n=x.n, mundo=x.sec==="mundo", nome=mundo?NOMES_SEG.mundo:NOMES_SEG.brasil, cor=mundo?["#7c3aed","#1d4ed8"]:["#1d4ed8","#0f766e"], ex=Extrator.de(n.link), kk="n:"+normLink(n.link);
+    const base={ fonte:n.fonte, link:n.link, coletado:n.coletado, extra:"publicado "+n.publicado+(ex?" · texto via Extrator ("+ex.via+")":" · só resumo do RSS"), titulo:n.titulo };
+    const imgs=[...new Set([n.img].concat(ex?ex.imgs:[]).filter(Boolean))];
+    const cenas=[Object.assign({ tipo:"noticia", key:kk, k:nome.toUpperCase(), h:n.titulo, p:n.resumo, img:imgs[0]||null, imgCred:n.imgCred||(n.fonte+" (imagem da matéria)") }, base)];
+    if(ex){ const ps=ex.pars.slice(0,3);
+      ps.forEach((t,i)=>cenas.push(Object.assign({ tipo:"noticia", trecho:true, key:kk+":"+i, k:"A MATÉRIA · "+(i+1)+"/"+ps.length, h:corta(t,210), p:"", img:imgs[(i+1)%imgs.length]||null, imgCred:n.fonte+" (imagem da matéria, via Extrator)" }, base)));
+      cenas.push(Object.assign({ tipo:"noticia", trecho:true, key:kk+":fim", k:"FONTE", h:"Matéria completa: "+n.fonte, p:corta(n.titulo,140), img:imgs[0]||null, imgCred:n.imgCred||(n.fonte+" (imagem da matéria)") }, base)); }
+    return { id:x.sec, nome, cor, materia:true, cenas };
+  },
+  segmentos(d, leve){
     const S = [];
     const news = (arr, id, nome, c1, c2) => ({ id, nome, cor:[c1,c2], cenas: arr.length ? arr.map(n=>({tipo:"noticia", key:"n:"+normLink(n.link), k:nome.toUpperCase(), h:n.titulo, p:n.resumo, img:n.img, imgCred:n.imgCred||(n.fonte+" (og:image da matéria)"), fonte:n.fonte, link:n.link, coletado:n.coletado, extra:"publicado "+n.publicado})) : this.nd("Nenhuma manchete real coletada") });
     S.push(news(d.noticiasBrasil,"brasil",NOMES_SEG.brasil,"#1d4ed8","#0f766e"));
@@ -925,6 +950,7 @@ const Roteirista = {
     if (d.imagemDoDia) hist.push({tipo:"imgdia", key:"imgdia", k:"IMAGEM DO DIA", h:d.imagemDoDia.titulo, img:d.imagemDoDia.img, imgCred:"Imagem do dia: Wikimedia Commons, "+d.imagemDoDia.licenca, fonte:"Wikipédia (pt) / Wikimedia Commons", link:d.imagemDoDia.link, coletado:d.imagemDoDia.coletado});
     S.push({ id:"historia", nome:NOMES_SEG.historia, cor:["#92400e","#1e3a8a"], cenas: hist.length?hist:this.nd("Wikipédia não respondeu") });
     S.push({ id:"mercado", nome:NOMES_SEG.mercado, cor:["#065f46","#1e3a8a"], cenas: d.cambio && d.cambio.itens.length ? [{tipo:"mercado", key:"mercado", k:"MERCADO · CÂMBIO", h:"Câmbio: dólar, euro e bitcoin em reais", p:d.cambio.itens.map(m=>m.nome+" a "+brl(m.bid,m.bid>1000?0:2)).join(", ")+".", cambio:d.cambio, fonte:d.cambio.fonte, link:d.cambio.link, coletado:d.cambio.coletado}] : this.nd("Câmbio não respondeu") });
+    if(leve) return { S, intervalo:null };
     const prog=(id, f, motivo)=>{ let x=null; try{ x=f(); }catch(e){ log("Roteirista: "+id+" falhou ("+e.message+")"); } S.push(x || { id, nome:NOMES_SEG[id], cor:["#111827","#0a1230"], cenas:this.nd(motivo) }); };
     prog("documentario", ()=>Partes.segmento(), "nenhum documentário conferido");
     prog("clipes", ()=>Clipes.segmento(), "parada musical indisponível");
@@ -938,34 +964,59 @@ const Roteirista = {
 };
 
 /* =====================================================================
-   DIRETOR — grade 24h vinda da Config (ordem/ativo/segmentos por bloco)
+   DIRETOR → MONTADOR DE FILA CONTÍNUA (versão de teste, sem grade 24 h)
+   Mantém só ~5 programas à frente; cada programa é montado na hora em que
+   entra na fila, com os dados que já chegaram (snapshot no início, ao vivo
+   depois). Tipo sem dado pronto (ex.: Em alta ainda carregando) é pulado
+   e volta na próxima rodada → nunca espera a programação ficar completa.
    ===================================================================== */
-const Diretor = {
-  slotIdx(){ const h=+partsNow().hour; return SLOTS.findIndex(([a,b])=>h>=a&&h<b); },
-  bloco(i){ const g=Config.atual.grade[i], t=Config.tema(g.key); return { i, ini:SLOTS[i][0], fim:SLOTS[i][1], key:g.key, nome:t.nome, ativo:g.ativo, segs:g.segs }; },
-  blocoAtual(){ return this.bloco(this.slotIdx()); },
-  montarFila(seg){
-    const b=this.blocoAtual(), por=Object.fromEntries(seg.S.map(s=>[s.id,s]));
-    const ordem = b.ativo ? b.segs.filter(id=>por[id]) : seg.S.map(s=>s.id);   // bloco desativado → programação contínua (todos)
-    const X=Config.atual.extras, fila=[], lista=(ordem.length?ordem:["brasil"]).filter(id=>por[id]); let desde=0;
-    const nomeDe=k=>{ const p=por[lista[k%lista.length]]; return p?p.nome:null; };
-    lista.forEach((id,i)=>{
-      const p=por[id];
-      if(X.vinhetas) fila.push(Inter.vinheta(p));
-      if(id==="documentario" && p.cenas[0].tipo==="doc"){
-        // documentário em partes: parte → "A seguir: parte N" → intervalo → volta do ponto salvo
-        for(let k=0;k<X.docPartesSeguidas;k++){ fila.push(p); if(k<X.docPartesSeguidas-1){ fila.push(Inter.aSeguir()); fila.push(...Intervalo.montar(X, seg, p.nome)); } }
-        desde=Math.max(desde, X.breakCada-1);
-      } else fila.push(p);
-      if(X.aSeguir && lista.length>1) fila.push(Inter.aSeguir());
-      const n=i+1;
-      if(X.shortsCada>0 && Estacao.videoOn && n%X.shortsCada===0){ const sh=Shorts.segmento(X.shortsPorVez); if(sh) fila.push(sh); }
-      if(X.emAltaCada>0 && n%X.emAltaCada===0){ const ea=EmAlta.segmento(); if(ea){ if(X.vinhetas) fila.push(Inter.vinheta(ea)); fila.push(ea); } }
-      desde++;
-      if(X.breakCada>0 && desde>=X.breakCada){ fila.push(...Intervalo.montar(X, seg, nomeDe(i+1))); desde=0; }
-    });
-    return fila;
-  }
+const Montador = {
+  r:0, n:0, vistas:new Set(), pulos:{}, hist:[],
+  ativo(t){ return !Config.atual.tipos || Config.atual.tipos[t]!==false; },
+  inicial(){ const f=[]; const add=b=>b.forEach(s=>{ s._b=this.n; f.push(s); });
+    while(f.length<5) add(this.proximoBloco()); return f; },
+  completar(){ const F=Estacao.fila; let g=0; while(F.length-Estacao.seg<5 && g++<8){ const b=this.proximoBloco(); b.forEach(s=>{ s._b=this.n; F.push(s); }); } renderFila(); renderGrade(); },
+  // descarta o que ainda não começou (a partir do próximo programa inteiro) e monta de novo
+  replanejar(motivo){ const F=Estacao.fila, cur=F[Estacao.seg]; let i=Estacao.seg+1; while(i<F.length && cur && F[i]._b===cur._b) i++; const n=F.length-i; F.splice(i); log("Montador: "+n+" segmento(s) futuros remontados ("+motivo+")"); this.completar(); },
+  proximoBloco(){
+    const X=Config.atual.extras;
+    for(let tent=0; tent<ROTACAO.length; tent++){
+      const t=ROTACAO[this.r++ % ROTACAO.length]; if(!this.ativo(t)) continue;
+      let out=null; try{ out=this["m_"+t](); }catch(e){ log("Montador: "+t+" falhou ("+e.message+") → pulando"); }
+      if(out && out.length){ this.n++; if(X.aSeguir && this.n>1 && this.n%3===0 && t!=="documentario") out.unshift(Inter.aSeguir()); status("Diretor","ok","fila contínua · "+this.n+" programas montados"); return out; }
+      this.pulos[t]=(this.pulos[t]||0)+1;
+    }
+    this.n++; const r=this.m_noticias(); return r || [Inter.aSeguir()];   // reserva: sempre há matéria (snapshot)
+  },
+  comVinheta(seg){ return Config.atual.extras.vinhetas ? [Inter.vinheta(seg), seg] : [seg]; },
+  escolherNoticia(){
+    const d=Coletor.dados||{}, b=d.noticiasBrasil||[], m=d.noticiasMundo||[], l=[];
+    for(let i=0;i<Math.max(b.length,m.length);i++){ if(b[i]) l.push({ n:b[i], sec:"brasil" }); if(m[i]) l.push({ n:m[i], sec:"mundo" }); }
+    if(!l.length) return null;
+    let novas=l.filter(x=>!this.vistas.has(normLink(x.n.link))); if(!novas.length){ this.vistas.clear(); novas=l; }
+    const x=novas.slice(0,4).find(y=>Extrator.de(y.n.link)) || novas[0];   // prefere matéria já extraída, sem esperar
+    this.vistas.add(normLink(x.n.link)); Extrator.pedir(novas.slice(0,4).map(y=>y.n)); return x;
+  },
+  m_noticias(){ const x=this.escolherNoticia(); return x ? this.comVinheta(Roteirista.materia(x)) : null; },
+  m_documentario(){
+    const X=Config.atual.extras, p1=Partes.segmento(); if(!p1) return null;
+    const d=p1.cenas[0].doc, tot=Partes.totalPartes(d), base=Partes.parteNum(d.id); p1.parte=base; p1.nome=NOMES_SEG.documentario+" · parte "+base;
+    const out=[]; if(X.vinhetas) out.push(Inter.vinheta(p1)); out.push(p1);
+    if(tot && base>=tot) return out;   // última parte: sem continuação
+    const p2=Partes.segmento(); p2.parte=base+1; p2.retomada=true; p2.nome=NOMES_SEG.documentario+" · parte "+(base+1);
+    out.push(Inter.aSeguir({ tag:"A SEGUIR", nome:p1.cenas[0].h, quando:"Depois do intervalo: parte "+(base+1)+(tot?" de "+tot:"")+" (continua de onde parou)", agora:NOMES_SEG.documentario }));
+    out.push(...Intervalo.montar(X, null, p2.nome)); out.push(p2); return out;
+  },
+  m_clipes(){ const s=Clipes.segmento(); return s ? this.comVinheta(s) : null; },
+  m_curiosidades(){ const s=Curio.segmento(); return s ? this.comVinheta(s) : null; },
+  m_receitas(){ const s=Receitas.segmento(); return s ? this.comVinheta(s) : null; },
+  m_emalta(){ const s=EmAlta.segmento(); return s ? this.comVinheta(s) : null; },
+  m_shorts(){ if(!Estacao.videoOn) return null; const s=Shorts.segmento(Config.atual.extras.shortsPorVez||1); return s ? [s] : null; },
+  leve(id){ const s=Roteirista.segmentos(Coletor.dados, true).S.find(x=>x.id===id); return s && s.cenas[0].tipo!=="nd" ? this.comVinheta(s) : null; },
+  m_historia(){ return this.leve("historia"); },
+  m_clima(){ return this.leve("clima"); },
+  proximosNomes(k){ const F=Estacao.fila, out=[]; for(let i=Estacao.seg+1;i<F.length && out.length<k;i++){ const s=F[i]; if(!s.inter && !s.ad && !out.includes(s.nome)) out.push(s.nome); } return out; },
+  registrar(s){ if(!s) return; const it={ t:hhmmss(), nome:s.nome, id:s.id, tipo:s.inter||s.id, parte:s.parte||null, retomada:!!s.retomada }; this.hist.push(it); if(this.hist.length>200) this.hist.shift(); window.__seq=this.hist; }
 };
 
 /* =====================================================================
@@ -1141,7 +1192,7 @@ const Video = {
     status("Video","warn","não tocou: "+motivo); status("Watchdog","warn","vídeo → imagem"); setTimeout(()=>status("Watchdog","ok","vigiando"),3000);
     slot.div.classList.remove("on"); $("screen").classList.remove("vidok");
     if(slot.c.vid.fundo){ log("Transição: vídeo de fundo "+slot.c.vid.id+" não tocou ("+motivo+") → vinheta em CSS"); $("vbadge").textContent="transição em CSS ("+motivo+")"; return; }
-    if(slot.c.tipo==="clipe"){ log("Clipes: "+slot.c.vid.titulo+" — "+motivo+" → pulado"); $("vbadge").textContent="clipe pulado: "+motivo; Radio.duck(false); Estacao.encurtar(0.3); return; }
+    if(slot.c.tipo==="clipe"){ Clipes.ruins.add(slot.c.vid.id); log("Clipes: "+slot.c.vid.titulo+" — "+motivo+" → pulado"); $("vbadge").textContent="clipe pulado: "+motivo; Radio.duck(false); Estacao.encurtar(0.3); return; }
     if(slot.c.tipo==="short"){ log("Watchdog Short: "+slot.c.vid.titulo+" — "+motivo+" → pulado"); $("vbadge").textContent="Short pulado: "+motivo; Estacao.encurtar(0.3); return; }
     if(slot.c.tipo==="emalta"){ log("Em alta: vídeo de fundo não tocou ("+motivo+") → imagem com Ken Burns"); $("vbadge").textContent="Em alta: fundo em imagem ("+motivo+")"; return; }
     log("Watchdog vídeo: "+slot.c.vid.titulo+" — "+motivo+" → miniatura + rádio por "+Estacao.budgetFallback+" s");
@@ -1184,11 +1235,11 @@ const Producao = {
     Promise.all(ps).then(()=>{ this.prontas++; status("Producao","ok",this.prontas+" cenas prontas"); });
   },
   // monta a fila nova e deixa PENDENTE: entra só na próxima troca de bloco (segmento)
+  // fila contínua: nada é remontado; o dado novo entra no PRÓXIMO programa que o Montador montar
   remontar(motivo){
-    const seg=Roteirista.segmentos(Coletor.dados); Estacao.pendente=Diretor.montarFila(seg); Estacao.pendenteMotivo=motivo;
-    status("Roteirista","ok",seg.S.reduce((a,s)=>a+s.cenas.length,0)+seg.intervalo.cenas.length+" cenas");
-    $("pendTag").textContent="⟳ nova fila no próximo bloco"; log("Produção: fila remontada ("+motivo+") — entra no próximo bloco");
-    renderFila(); Admin.renderSeAberto();
+    log("Produção: dado novo ("+motivo+") — entra nos próximos programas da fila");
+    const d=Coletor.dados||{}; Extrator.pedir([].concat(d.noticiasBrasil||[], d.noticiasMundo||[]).slice(0,8));
+    status("Roteirista","ok","cenas montadas na hora (fila contínua)"); renderFila(); Admin.renderSeAberto();
   }
 };
 
@@ -1205,52 +1256,41 @@ const Estacao = {
   pendente:null, pendenteMotivo:"", ultimoId:null, renderN:0, trocas:0,
   videoOn: PODE_VIDEO && Q.get("video")!=="0",
   get elapsed(){ const agora=this.playing?Date.now():(this.pausadoEm||Date.now()); return (agora-this.t0-this.pausaAcum)/1000; },
-  iniciar(f){ this.fila=f; const q=+(Q.get("seg")||0); if(q>0&&q<f.length) this.seg=q; this.render();
+  iniciar(f){ this.fila=f; this.seg=0; Montador.registrar(f[0]); this.render();
     setInterval(()=>this.tick(),250); const raf=()=>{ $("prog").style.width=Math.min(100,this.elapsed/this.cur*100)+"%"; requestAnimationFrame(raf); }; requestAnimationFrame(raf); },
   tick(){ if(this.playing && this.elapsed>=this.cur) this.proximaCena(); },
   setPlaying(v){ if(v===this.playing) return; if(!v) this.pausadoEm=Date.now(); else { if(this.pausadoEm) this.pausaAcum+=Date.now()-this.pausadoEm; this.pausadoEm=0; } this.playing=v; },
   atual(){ return this.fila[this.seg]; },
   cenaAtual(){ return this.atual().cenas[this.cena]; },
-  proxima(){ const s=this.atual(); if(this.cena<s.cenas.length-1) return { c:s.cenas[this.cena+1], i:this.cena+1 }; const f=this.pendente||this.fila; const ns=f[(this.seg+1)%f.length]; return { c:ns.cenas[0], i:0 }; },
+  proxima(){ const s=this.atual(); if(this.cena<s.cenas.length-1) return { c:s.cenas[this.cena+1], i:this.cena+1 }; if(!this.fila[this.seg+1]) Montador.completar(); const ns=this.fila[this.seg+1]; return ns ? { c:ns.cenas[0], i:0 } : { c:null, i:0 }; },
   duracao(c){ let d; const X=Config.atual.extras;
     const cv=!!(c.vid && this.videoOn);
     if(c.tipo==="vinheta") return cv?4:2.8; if(c.tipo==="bumper") return cv?4:3; if(c.tipo==="aseguir") return 4.5; if(c.tipo==="nd") return 2;
-    if(["promo","transicao","abertura","agora"].includes(c.tipo)) return 5; if(c.tipo==="manchetes") return 9; if(c.tipo==="topclipes") return 10;
-    if(c.tipo==="doc"){ if(!cv) return 10; const t=c.vid.trecho; return t[1]-t[0]<5 ? 0.3 : t[1]-t[0]+2; }
-    if(c.tipo==="clipe") return cv ? c.vid.trecho[1]-c.vid.trecho[0]+1 : 0.3;
-    if(c.tipo==="curio") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.h) : 12;
-    if(c.tipo==="receita") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.fala) : 16;
+    if(["promo","transicao","abertura","agora"].includes(c.tipo)) return 5; if(c.tipo==="manchetes") return 9; if(c.tipo==="topclipes") return fx(10);
+    if(c.tipo==="doc"){ if(!cv) return fx(10); const t=c.vid.trecho; return t[1]-t[0]<5 ? 0.3 : t[1]-t[0]+2; }
+    if(c.tipo==="clipe") return cv && !Clipes.ruins.has(c.vid.id) ? c.vid.trecho[1]-c.vid.trecho[0]+1 : 0.3;
+    if(c.tipo==="curio") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.h) : fx(12);
+    if(c.tipo==="receita") return X.vozProgramas==="voz"&&Radio.ligada&&Narrador.suportado ? Voz.dur(c.fala) : fx(16);
     if(c.tipo==="short") return this.videoOn ? X.shortMax : 0.3;
     if(c.tipo==="ficha") return Math.max(8, Math.min(26, Ficha.texto(c).length/13 + 2));
     if(c.tipo==="emalta") return Math.max(12, Math.min(34, c.posts.length*5.5 + 1.5));
-    if(c.tipo==="video") d=Math.min(this.vdur, c.vid.trecho[1]-c.vid.trecho[0]); else if(["grade","clima","trends","mercado"].includes(c.tipo)) d=Math.max(this.dur,10); else d=this.dur;
+    if(c.tipo==="video") d=Math.min(this.vdur, c.vid.trecho[1]-c.vid.trecho[0]); else if(["grade","clima","trends","mercado"].includes(c.tipo)) d=Math.max(this.dur,fx(10)); else if(c.trecho) d=Math.max(this.dur, Math.min(14, c.h.length/18)); else d=this.dur;
     if(Narrador.on){ const t=Narrador.textoCena(c); if(t && !(c.tipo==="video"&&this.videoOn)) d=Math.max(d, Math.min(28, corta(t,260).length/13+1.5)); } return d; },
   encurtar(s){ this.cur = Math.min(this.cur, this.elapsed + s); },
   proximaCena(){ if(this.cena<this.atual().cenas.length-1){ this.cena++; this.render(); } else this.proximoSegmento(); },
   proximoSegmento(){
-    if(this.atual().unico){ this.fila.splice(this.seg,1); this.seg=(this.seg-1+this.fila.length)%this.fila.length; }
-    if(this.urgente){ const u=this.urgente; this.urgente=null; this.fila.splice(this.seg+1,0,u); this.seg++; this.cena=0; log("Estação: abertura da hora cheia no ar"); return this.render(); }
-    const atual=this.atual(); if(!atual.ad && !atual.inter) this.ultimoId=atual.id;
-    if(this.pendente){
-      const nova=this.pendente; this.pendente=null; $("pendTag").textContent="";
-      const i=nova.findIndex(s=>s.id===this.ultimoId); let prox = i>=0 ? i+1 : 0;
-      for(let g=0; g<3 && nova[prox%nova.length] && nova[prox%nova.length].inter==="aseguir"; g++) prox++;
-      if(atual.ad && nova[prox%nova.length] && nova[prox%nova.length].ad) prox++;
-      this.fila=nova; this.seg=prox%nova.length; this.trocas++;
-      log("Estação: fila nova aplicada na virada de bloco ("+this.pendenteMotivo+") → "+this.fila[this.seg].nome);
-      Producao.podar();
-    } else this.seg=(this.seg+1)%this.fila.length;
-    this.cena=0; this.render();
+    const atual=this.atual(); if(atual && !atual.ad && !atual.inter) this.ultimoId=atual.id;
+    this.seg++; Montador.completar();
+    if(this.seg>14){ const k=this.seg-6; this.fila.splice(0,k); this.seg-=k; Producao.podar(); }
+    this.trocas++; this.cena=0; Montador.registrar(this.atual()); this.render();
   },
   // próximo programa de conteúdo na fila (pula vinhetas, Shorts, intervalos)
-  proximoConteudo(){ const f=this.fila; for(let k=1;k<f.length;k++){ const s=f[(this.seg+k)%f.length]; if(!s.inter && !s.ad) return s; } return null; },
-  conteudoAnterior(){ const f=this.fila; for(let k=1;k<f.length;k++){ const s=f[(this.seg-k+f.length)%f.length]; if(!s.inter && !s.ad) return s; } return null; },
+  proximoConteudo(){ const f=this.fila; for(let i=this.seg+1;i<f.length;i++){ const s=f[i]; if(!s.inter && !s.ad) return s; } return null; },
+  conteudoAnterior(){ const f=this.fila; for(let i=this.seg-1;i>=0;i--){ const s=f[i]; if(!s.inter && !s.ad) return s; } return null; },
   textoASeguir(c){
-    const agora=this.conteudoAnterior(), prox=this.proximoConteudo(), p=partsNow(), mins=(60-(+p.minute))%60, b=Diretor.blocoAtual(), nb=Diretor.bloco((b.i+1)%8);
-    const viraLogo = (+p.hour+1)%24===nb.ini%24 && mins<=15 && mins>0;
-    if(agora && agora.id==="documentario" && prox && prox.id==="documentario"){ const d=agora.cenas[0].doc; return { tag:"A SEGUIR", nome:agora.cenas[0].h, quando:"Depois do intervalo: parte "+Partes.parteNum(d.id)+(Partes.totalPartes(d)?" de "+Partes.totalPartes(d):""), agora:"Documentário" }; }
-    if(viraLogo) return { tag:"DAQUI A POUCO", nome:nb.nome, quando:"às "+pad(nb.ini)+":00 · em "+mins+" min", agora:agora?agora.nome:b.nome };
-    return { tag:"A SEGUIR", nome:prox?prox.nome:b.nome, quando:"Agora: "+(agora?agora.nome:b.nome), agora:agora?agora.nome:"" };
+    if(c.extra && c.extra.nome) return c.extra;
+    const agora=this.conteudoAnterior(), prox=this.proximoConteudo();
+    return { tag:"A SEGUIR", nome:prox?prox.nome:CANAL.nome, quando:agora?"Agora há pouco: "+agora.nome:CANAL.slogan, agora:"" };
   },
   async render(){
     if(this._ultima && this._ultima.tipo==="doc") Partes.salvarAgora();
@@ -1312,7 +1352,7 @@ const Estacao = {
     else if(c.tipo==="emalta"){ const ps=c.posts.slice(0,6); o=`<div class="ea"><div class="top"><span class="tag">EM ALTA</span><b>${esc(c.h)}</b><small>${esc(c.topico.assunto||"")}</small></div><div class="posts">${ps.map((p,i)=>`<div class="post${i===0?" on":""}"><div class="who">${esc(p.handle)}</div><div class="tx">${esc(EmAlta.limpa(p.texto))}</div></div>`).join("")}</div></div>`;
       let k=0; const passo=Math.max(4, (this.cur-1.5)/Math.max(1,ps.length)); this.eaTimer=setInterval(()=>{ if(n!==this.renderN) return clearInterval(this.eaTimer); const el=$("ovl").querySelectorAll(".ea .post"); if(!el.length) return; k=(k+1)%el.length; el.forEach((e,j)=>e.classList.toggle("on",j===k)); }, passo*1000); }
     else if(c.tipo==="nd") o=`<div class="calma">${CANAL.logoSVG?canalLogo("calmalogo"):`<b>${esc(CANAL.curto)}</b>`}</div>`;
-    $("big").className="big"+(["trends","post","clima","grade","mercado","topclipes","manchetes"].includes(c.tipo)?" panel":"");
+    $("big").className="big"+(["trends","post","clima","grade","mercado","topclipes","manchetes"].includes(c.tipo)?" panel":"")+(c.trecho?" trecho":"");
     $("big").innerHTML=h; $("ovl").innerHTML=o;
     // bastidores (painel) — nada disso aparece na tela
     $("chip").textContent = c.tipo==="nd"? ND+" — "+s.nome+": "+c.motivo : (c.ad&&c.vid&&c.vid.marca? "INTERVALO COMERCIAL · "+c.vid.marca : (c.fonte||"")) + (c.editado?" · EDITADO":"");
@@ -1323,9 +1363,9 @@ const Estacao = {
     const semLT = inter || ["nd","short","ficha","emalta","topclipes","curio","receita","manchetes"].includes(c.tipo);
     const lt=$("lt"); lt.classList.add("hide");
     if(!semLT) setTimeout(()=>{ if(n!==this.renderN) return;
-      $("ltK").textContent = c.tipo==="clipe" ? "#"+c.pos+" NO iTUNES" : c.k;
-      $("ltB").textContent = c.tipo==="doc" ? s.nome+" · parte "+Partes.parteNum(c.vid.id)+(Partes.totalPartes(c.doc)?" de "+Partes.totalPartes(c.doc):"") : (c.ad&&c.vid&&c.vid.marca ? c.vid.marca : s.nome);
-      $("ltH").textContent = c.h;
+      $("ltK").textContent = c.tipo==="clipe" ? "#"+c.pos+" NO iTUNES" : (c.tipo==="doc" && s.retomada ? "CONTINUAÇÃO"+(c.vid.trecho[0]>0?" · de "+mmss(c.vid.trecho[0]):"") : c.k);
+      $("ltB").textContent = c.tipo==="doc" ? NOMES_SEG.documentario+" · parte "+(s.parte||Partes.parteNum(c.vid.id))+(Partes.totalPartes(c.doc)?" de "+Partes.totalPartes(c.doc):"") : (c.ad&&c.vid&&c.vid.marca ? c.vid.marca : s.nome);
+      $("ltH").textContent = c.trecho ? c.titulo : c.h;
       lt.classList.remove("hide"); },260);
     // "Você está assistindo" depois do intervalo
     if(!inter && !c.ad && this.vcaPend){ this.vcaPend=false; const v=$("vca"); v.innerHTML=`<small>VOCÊ ESTÁ ASSISTINDO</small><b>${esc(s.nome)}</b>`; v.classList.add("on"); this.vcaTimer=setTimeout(()=>v.classList.remove("on"), 6000); }
@@ -1334,8 +1374,8 @@ const Estacao = {
     if(this.cena===0) log("Estação: no ar → "+s.nome);
     renderFila();
     if(c.tipo==="ficha") Ficha.iniciarCena(c, n);
-    else if(c.tipo==="curio") Voz.cena(c.h, n, X.vozProgramas, 12, "curiosidade");
-    else if(c.tipo==="receita") Voz.cena(c.fala, n, X.vozProgramas, 16, "receita");
+    else if(c.tipo==="curio") Voz.cena(c.h, n, X.vozProgramas, fx(12), "curiosidade");
+    else if(c.tipo==="receita") Voz.cena(c.fala, n, X.vozProgramas, fx(16), "receita");
     else if(Narrador.on) Narrador.falar(Narrador.textoCena(c));
     const nx = this.proxima(); Producao.preparar(nx.c, nx.i);
     const manter = [c, nx.c].filter(x=>x&&x.vid&&this.videoOn).map(x=>Video.chave(x)); Video.limpar(manter);
@@ -1345,11 +1385,11 @@ const Estacao = {
 const Watchdog = { folga:5, iniciar(){ status("Watchdog","ok","vigiando"); setInterval(()=>{ if(!Estacao.playing) return; if(Estacao.elapsed>Estacao.cur+this.folga){ status("Watchdog","warn","cena estourou! pulando"); log("Watchdog: cena excedeu o tempo — forçando próximo segmento"); Estacao.proximoSegmento(); setTimeout(()=>status("Watchdog","ok","vigiando"),2500);} },1000); } };
 
 /* ---------- painéis ---------- */
-function renderGrade(){ const b=Diretor.blocoAtual(); $("grid").innerHTML=SLOTS.map((_,i)=>{ const g=Diretor.bloco(i); return `<div class="blk${i===b.i?" cur":""}" style="${g.ativo?"":"opacity:.45"}"><span class="h">${pad(g.ini)}:00–${pad(g.fim%24)}:00</span><span class="n">${esc(g.nome)}${g.ativo?"":" (desativado)"}</span><span class="tag">NO AR</span></div>`; }).join(""); const nx=Diretor.bloco((b.i+1)%8); $("nextInfo").innerHTML=`A seguir, às <b>${pad(nx.ini)}:00</b>: <b>${esc(nx.nome)}</b>`; status("Diretor","ok",b.nome+(b.ativo?"":" (desativado → contínua)")); }
-function renderFila(){ $("queue").innerHTML=Estacao.fila.map((s,i)=>`<div class="${i===Estacao.seg?"on":""}">${i===Estacao.seg?"▶ ":(i+1)+". "}${esc(s.nome)} (${s.cenas.length} cena${s.cenas.length>1?"s":""})</div>`).join("")+(Estacao.pendente?`<div style="color:var(--acc2)">⟳ próxima fila: ${Estacao.pendente.filter(s=>!s.ad).map(s=>esc(s.nome)).join(" → ")}</div>`:""); }
-let ultimoBloco=null;
-function tickClock(){ const p=partsNow();
-  if(p.minute==="00" && Config.atual && Config.atual.extras.abertura && Abertura.ultima!==p.hour && Estacao.fila.length && !Estacao.urgente){ Abertura.ultima=p.hour; Estacao.urgente=Abertura.segmento(); log("Abertura das "+p.hour+"h entra depois do programa atual"); } $("clk").textContent=p.hour+":"+p.minute+":"+p.second; $("bugClk").textContent=p.hour+":"+p.minute; $("dt").textContent=p.weekday+", "+p.day+"/"+p.month+" · Horário de Brasília"; const b=Diretor.slotIdx(); if(b!==ultimoBloco){ if(ultimoBloco!==null){ log("Diretor: virada de bloco da grade → "+Diretor.blocoAtual().nome); Producao.remontar("virada de bloco da grade"); } ultimoBloco=b; renderGrade(); } }
+function renderGrade(){ const F=Estacao.fila; if(!F.length) return; const rot=s=>s.inter?({vinheta:"VINHETA",bumper:"INTERVALO",aseguir:"A SEGUIR",intervalo:"INTERVALO",shorts:"SHORTS",emalta:"EM ALTA"})[s.inter]||"ESTAÇÃO":(s.id==="documentario"?"DOC":(NOMES_SEG[s.id]||s.id).toUpperCase().slice(0,10));
+  $("grid").innerHTML=F.slice(Estacao.seg, Estacao.seg+7).map((s,i)=>`<div class="fl${i===0?" cur":""}"><b>${i===0?"NO AR":esc(rot(s))}</b>${esc(s.nome)}</div>`).join("");
+  const nx=Estacao.proximoConteudo(); $("nextInfo").innerHTML = nx ? `A seguir: <b>${esc(nx.nome)}</b> · fila contínua, sem horário fixo` : "Fila contínua"; }
+function renderFila(){ if(!$("queue")) return; $("queue").innerHTML=Estacao.fila.map((s,i)=>`<div class="${i===Estacao.seg?"on":""}">${i===Estacao.seg?"▶ ":(i+1)+". "}${esc(s.nome)} (${s.cenas.length} cena${s.cenas.length>1?"s":""})</div>`).join("")+(Estacao.pendente?`<div style="color:var(--acc2)">⟳ próxima fila: ${Estacao.pendente.filter(s=>!s.ad).map(s=>esc(s.nome)).join(" → ")}</div>`:""); }
+function tickClock(){ const p=partsNow(); $("clk").textContent=p.hour+":"+p.minute+":"+p.second; $("bugClk").textContent=p.hour+":"+p.minute; $("dt").textContent=p.weekday+", "+p.day+"/"+p.month+" · Horário de Brasília"; }
 function renderTicker(d){ const it=[...d.noticiasBrasil.map(n=>["BRASIL",n]),...d.noticiasMundo.map(n=>["MUNDO",n])].map(([k,n])=>`<span><b>${k}</b>${esc(n.titulo)}</span>`); it.push(`<span><b>CLIMA BRASÍLIA</b>${Math.round(d.clima.atual.temp)}°C, ${esc(wmo(d.clima.atual.codigo))}</span>`); if(d.cambio) it.push(`<span><b>CÂMBIO</b>${d.cambio.itens.map(m=>esc(m.nome)+" "+esc(brl(m.bid,m.bid>1000?0:2))).join(" · ")}</span>`); $("tk").innerHTML=it.join(""); }
 
 /* =====================================================================
@@ -1357,18 +1397,14 @@ function renderTicker(d){ const it=[...d.noticiasBrasil.map(n=>["BRASIL",n]),...
    podeEditar() é o ponto para plugar login depois (hoje: sem login).
    ===================================================================== */
 const Admin = {
-  aba:"grade", aberto:false, segItens:"brasil", editando:null, adicionando:false,
+  aba:"fila", aberto:false, segItens:"brasil", editando:null, adicionando:false,
   podeEditar(){ return true; /* TODO login: verificar sessão/token aqui */ },
   aviso(t){ const a=$("admAviso"); a.textContent=t; a.classList.toggle("on",!!t); },
   aplicar(acao){
     if(!this.podeEditar()){ this.aviso("Sem permissão para editar."); return false; }
-    const C=Config.atual, G=C.grade; let ok=true;
+    const C=Config.atual; let ok=true;
     switch(acao.tipo){
-      case "moverBloco": { const j=acao.para!=null?acao.para:acao.i+acao.dir; if(j<0||j>7||j===acao.i){ ok=false; break; } const [x]=G.splice(acao.i,1); G.splice(j,0,x); break; }
-      case "toggleBloco": G[acao.i].ativo=!G[acao.i].ativo; break;
-      case "moverSeg": { const s=G[acao.bi].segs, j=acao.i+acao.dir; if(j<0||j>=s.length){ ok=false; break; } [s[acao.i],s[j]]=[s[j],s[acao.i]]; break; }
-      case "removerSeg": { const s=G[acao.bi].segs; if(s.length<=1){ ok=false; this.aviso("O bloco precisa de pelo menos 1 segmento."); break; } s.splice(acao.i,1); break; }
-      case "adicionarSeg": { const s=G[acao.bi].segs; if(!NOMES_SEG[acao.seg]||s.includes(acao.seg)){ ok=false; break; } s.push(acao.seg); break; }
+      case "toggleTipo": { if(!TIPOS_FILA[acao.t]){ ok=false; break; } const on=C.tipos[acao.t]!==false; if(on && Object.keys(TIPOS_FILA).filter(t=>C.tipos[t]!==false).length<=1){ ok=false; this.aviso("Deixe pelo menos 1 tipo ligado."); break; } C.tipos[acao.t]=!on; break; }
       case "editarItem": Config.itens(acao.seg).edit[acao.key]=acao.campos; break;
       case "removerItem": { const o=Config.itens(acao.seg); if(acao.key.startsWith("add:")) o.add=o.add.filter(a=>a.key!==acao.key); else if(!o.rem.includes(acao.key)) o.rem.push(acao.key); delete o.edit[acao.key]; break; }
       case "adicionarItem": Config.itens(acao.seg).add.push(acao.item); break;
@@ -1381,36 +1417,31 @@ const Admin = {
     }
     if(!ok){ this.render(); return false; }
     Config.salvar(); log("Painel: "+acao.tipo+" aplicado");
-    Producao.remontar("painel: "+acao.tipo); renderGrade();
-    this.aviso("✔ Salvo. Alterações entram no próximo bloco da fila — a cena atual não é cortada.");
+    if(acao.tipo==="restaurar"||acao.tipo==="importar") Config.modoRapido();
+    Montador.replanejar("painel: "+acao.tipo);
+    this.aviso("✔ Salvo. Vale a partir do próximo programa da fila — a cena atual não é cortada.");
     this.render(); return true;
   },
   abrir(v){ this.aberto=v; $("adm").classList.toggle("fechado",!v); $("admSeta").textContent=v?"▼":"▲"; document.body.style.paddingBottom = v?(innerWidth>900?"46vh":"62vh"):"60px"; if(v) this.render(); },
-  renderSeAberto(){ if(this.aberto && this.aba!=="itens") this.render(); else if(!this.aberto) $("admResumo").textContent=(Estacao.pendente?"⟳ mudanças pendentes · ":"")+"bloco: "+Diretor.blocoAtual().nome; },
+  resumo(){ const s=Estacao.atual(); return "fila contínua · no ar: "+(s?s.nome:"—"); },
+  renderSeAberto(){ if(this.aberto) this.render(); else $("admResumo").textContent=this.resumo(); },
   render(){
-    $("admResumo").textContent = (Estacao.pendente?"⟳ mudanças pendentes · ":"")+"bloco: "+Diretor.blocoAtual().nome;
+    $("admResumo").textContent = this.resumo();
     if(!this.aberto) return;
     document.querySelectorAll(".tabs button").forEach(b=>b.classList.toggle("on",b.dataset.tab===this.aba));
-    ["grade","itens","fontes","status","bast"].forEach(t=>$("tab-"+t).hidden = t!==this.aba);
+    ["fila","fontes","status","bast"].forEach(t=>$("tab-"+t).hidden = t!==this.aba);
     this["r_"+this.aba]();
   },
-  r_grade(){
-    const b=Diretor.blocoAtual(), G=Config.atual.grade;
-    let h=`<div class="sec">GRADE 24H — arraste (desktop) ou use ↑↓. Os horários ficam fixos; o tema troca de faixa.</div>`;
-    h+=SLOTS.map((sl,i)=>{ const g=Diretor.bloco(i); return `<div class="row${g.ativo?"":" off"}" draggable="true" data-i="${i}"><span class="h">${pad(sl[0])}–${pad(sl[1]%24)}h${i===b.i?"<br><b style='color:var(--acc)'>NO AR</b>":""}</span><span class="n">${esc(g.nome)}<small>${g.segs.map(s=>NOMES_SEG[s]).join(" · ")}</small></span><button class="ib" data-a="moverBloco" data-i="${i}" data-dir="-1" aria-label="subir">↑</button><button class="ib" data-a="moverBloco" data-i="${i}" data-dir="1" aria-label="descer">↓</button><button class="ib tog" data-a="toggleBloco" data-i="${i}">${g.ativo?"ativo":"inativo"}</button></div>`; }).join("");
-    h+=`<div class="sec">SEGMENTOS DO BLOCO NO AR (${esc(b.nome)})</div>`;
-    h+=G[b.i].segs.map((s,i)=>`<div class="row"><span class="n">${i+1}. ${esc(NOMES_SEG[s])}<small>fonte: ${esc(FONTES[Config.fonte(s)].nome)}</small></span><button class="ib" data-a="moverSeg" data-bi="${b.i}" data-i="${i}" data-dir="-1">↑</button><button class="ib" data-a="moverSeg" data-bi="${b.i}" data-i="${i}" data-dir="1">↓</button><button class="ib dang" data-a="removerSeg" data-bi="${b.i}" data-i="${i}">✕</button></div>`).join("");
-    const faltam=Object.keys(NOMES_SEG).filter(s=>s!=="intervalo"&&!G[b.i].segs.includes(s));
-    if(faltam.length) h+=`<div class="bts"><select id="addSeg">${faltam.map(s=>`<option value="${s}">${esc(NOMES_SEG[s])}</option>`).join("")}</select><button class="bt" data-a="adicionarSeg" data-bi="${b.i}">+ adicionar segmento</button></div>`;
-    const X=Config.atual.extras, cada=n=>n?"a cada "+n+" programa"+(n>1?"s":""):"desligado", sel=(k,rot,fmt)=>`<div class="row"><span class="n">${esc(rot)}</span><select data-extra="${k}" style="max-width:55%">${EXTRAS_OPC[k].map(v=>`<option value="${esc(JSON.stringify(v))}"${X[k]===v?" selected":""}>${esc(fmt(v))}</option>`).join("")}</select></div>`;
-    h+=`<div class="sec">VARIEDADE NA PROGRAMAÇÃO</div>`;
-    h+=sel("shortsCada","Shorts de notícias",cada)+sel("shortsPorVez","Shorts por pausa",v=>v+" Short"+(v>1?"s":""))+sel("shortMax","Duração máx. do Short",v=>v+" s");
-    h+=sel("emAltaCada","Em alta (X)",cada)+sel("vinhetas","Vinhetas e bumpers",v=>v?"ligados":"desligados")+sel("aSeguir","Cartão “A seguir”",v=>v?"ligado":"desligado");
-    h+=sel("fichaModo","Ficha antes do trailer",v=>({voz:"com voz (legenda se não houver voz)",legenda:"só legenda",off:"desligada"})[v]);
-    h+=`<div class="sec">INTERVALO</div>`+sel("breakCada","Intervalo",cada)+sel("breakItens","Itens por intervalo",v=>v+" itens")+sel("breakComerciais","Comerciais oficiais do snapshot",v=>v?"incluir":"não incluir")+sel("abertura","Abertura na hora cheia",v=>v?"ligada":"desligada");
-    h+=`<div class="sec">PROGRAMAS NOVOS</div><small style="color:var(--mut)">Ligue/desligue e ordene Documentário, Clipes, Curiosidades e Receitas em cada bloco acima (✕ remove, ↑↓ ordena, “+ adicionar segmento”).</small>`;
-    h+=sel("docParteMin","Documentário: tamanho da parte",v=>v+" min")+sel("docPartesSeguidas","Documentário: partes seguidas",v=>v+" parte"+(v>1?"s":""))+sel("clipesPorVez","Clipes por bloco",v=>v+" clipes")+sel("clipeMax","Duração máx. do clipe",v=>v>=120?(v/60)+" min":v+" s")+sel("vozProgramas","Curiosidades e Receitas",v=>v==="voz"?"com voz (legenda se não houver)":"só legenda");
-    $("tab-grade").innerHTML=h;
+  r_fila(){
+    const C=Config.atual, X=C.extras, F=Estacao.fila;
+    let h=`<div class="sec">FILA CONTÍNUA — sem grade de 24 h. Os tipos se alternam nesta ordem: ${ROTACAO.map(t=>esc((TIPOS_FILA[t]||t).split(" (")[0])).join(" → ")}</div><div class="tipos">`;
+    h+=Object.keys(TIPOS_FILA).map(t=>{ const on=C.tipos[t]!==false; return `<div class="row${on?"":" off"}"><span class="n">${esc(TIPOS_FILA[t])}<small>${Montador.pulos[t]?"pulado "+Montador.pulos[t]+"× (sem dado pronto na hora)":"&nbsp;"}</small></span><button class="ib tog${on?" on":""}" data-a="toggleTipo" data-t="${t}">${on?"ligado":"desligado"}</button></div>`; }).join("")+`</div>`;
+    h+=`<div class="sec">PRÓXIMOS NA FILA</div>`+F.slice(Estacao.seg, Estacao.seg+10).map((s,i)=>`<div class="row"><span class="n">${i===0?"▶ NO AR · ":""}${esc(s.nome)}<small>${s.cenas.length} cena${s.cenas.length>1?"s":""}${s.retomada?" · retoma do ponto salvo":""}</small></span></div>`).join("");
+    const sel=(k,rot,fmt)=>`<div class="row"><span class="n">${esc(rot)}</span><select data-extra="${k}" style="max-width:55%">${EXTRAS_OPC[k].map(v=>`<option value="${esc(JSON.stringify(v))}"${X[k]===v?" selected":""}>${esc(fmt(v))}</option>`).join("")}</select></div>`;
+    h+=`<div class="sec">AJUSTES${RAPIDO?" (modo rápido ativo: valores curtos só nesta sessão)":""}</div>`;
+    h+=sel("vinhetas","Vinhetas",v=>v?"ligadas":"desligadas")+sel("aSeguir","Cartão “A seguir”",v=>v?"ligado":"desligado")+sel("breakItens","Itens no intervalo do documentário",v=>v+" itens")+sel("breakComerciais","Comerciais oficiais no intervalo",v=>v?"incluir":"não incluir");
+    h+=sel("docParteMin","Documentário: tamanho da parte",v=>v+" min")+sel("clipesPorVez","Clipes por vez",v=>v+" clipes")+sel("clipeMax","Duração máx. do clipe",v=>v>=120?(v/60)+" min":v+" s")+sel("shortsPorVez","Shorts por vez",v=>v+" Short"+(v>1?"s":""))+sel("shortMax","Duração máx. do Short",v=>v+" s")+sel("vozProgramas","Curiosidades e Receitas",v=>v==="voz"?"com voz (legenda se não houver)":"só legenda");
+    $("tab-fila").innerHTML=h;
   },
   segAtualObj(seg){ const f=Estacao.pendente||Estacao.fila; return f.find(s=>s.id===seg) || (Roteirista.segmentos(Coletor.dados).S.concat([Roteirista.segmentos(Coletor.dados).intervalo]).find(s=>s.id===seg)); },
   r_itens(){
@@ -1460,13 +1491,14 @@ const Admin = {
     q.push(`<div class="sec">CLIPES — ${esc(Clipes.origem)}</div><div class="lista">`+(Clipes.chart?Clipes.chart.itens:[]).map(it=>{ const v=Clipes.video(it); return `<div>#${it.pos} ${esc(it.artista)} — ${esc(it.musica)} · ${v?L("https://www.youtube.com/watch?v="+v.id, v.id)+" ("+esc(v.canal)+", "+esc(v.tipo)+")":"sem vídeo oficial conferido (só no cartão)"}</div>`; }).join("")+`</div>`);
     q.push(`<div class="sec">CURIOSIDADES — ${esc(Curio.origem)}</div><div class="lista">`+Curio.itens.map(it=>`<div>${L(it.link, String(it.artigo||"—").replace(/_/g," "))} · ${esc(corta(it.texto,90))}</div>`).join("")+`</div>`);
     q.push(`<div class="sec">RECEITAS — ${esc(Receitas.origem)}</div><div class="lista">`+Receitas.lista.map(r=>`<div>${L(r.link, r.titulo)} · ${r.ingredientes.length} ingredientes · ${r.passos.length} passos · foto: ${r.img?esc(r.arquivo||"sim"):"reserva"}</div>`).join("")+`</div>`);
+    q.push(`<div class="sec">EXTRATOR — ${esc(Extrator.resumo())}</div><div class="lista">`+[...Extrator.res.entries()].slice(-10).map(([k,r])=>`<div>${esc(corta(k,70))} · ${r.ok?"✔ "+r.pars.length+" parágrafos, "+r.imgs.length+" imagens via "+esc(r.via):"✖ "+esc(r.erro||"falhou")}</div>`).join("")+`</div>`);
     q.push(`<div class="sec">TRANSIÇÕES (playlist do Arthur)</div><div class="lista"><div>`+TRANSICOES.map(t=>L("https://www.youtube.com/watch?v="+t.id, t.id)).join(" · ")+`</div></div>`);
     $("bastDyn").innerHTML=q.join("");
   },
 
   r_status(){
     const mem=performance.memory?(performance.memory.usedJSHeapSize/1048576).toFixed(1)+" MB":"não disponível neste navegador";
-    const kv=[["Próxima coleta",Coletor.tarefas.map(t=>t.nome+" "+mmss((t.proxima-Date.now())/1000)).join(" · ")],["Última coleta",Coletor.ultima?hhmmBRT(Coletor.ultima)+" BRT":"— (snapshot)"],["Fila pendente",Estacao.pendente?"sim — entra no próximo bloco ("+Estacao.pendenteMotivo+")":"não"],["Trocas de fila",Estacao.trocas],["Rádio",Radio.credito()],["Narração",Narrador.on?"ligada":"desligada"],["Vídeo",Estacao.videoOn?"YouTube ligado":(PODE_VIDEO?"desligado":"só imagem (página sem http/https)")],["Players YouTube vivos",Video.slots.size],["Shorts no estoque",Shorts.pool.length+" ("+Shorts.origem+")"],["Em alta",EmAlta.pac?EmAlta.pac.topicos.length+" tópicos · "+EmAlta.origem+" · "+EmAlta.pac.gerado_em_txt:"—"],["Ficha / narração (última)",Ficha.estado],["Documentário",Partes.atualId?(Partes.doc(Partes.atualId)||{}).titulo+" · parte "+Partes.parteNum(Partes.atualId)+" · posição "+mmss(Partes.pos(Partes.atualId)):"—"],["Clipes",Clipes.tocaveis().length+" tocáveis · "+Clipes.origem],["Curiosidades",Curio.itens.length+" · "+Curio.origem],["Receitas",Receitas.lista.length+" · "+Receitas.origem],["Elementos no DOM",document.getElementsByTagName("*").length],["Memória JS",mem],["Aberta há",mmss((Date.now()-T_INICIO)/1000)],["Config",localStorage.getItem(LS_KEY)?"personalizada (localStorage)":"padrão"]];
+    const kv=[["Próxima coleta",Coletor.tarefas.map(t=>t.nome+" "+mmss((t.proxima-Date.now())/1000)).join(" · ")],["Última coleta",Coletor.ultima?hhmmBRT(Coletor.ultima)+" BRT":"— (snapshot)"],["Fila","contínua · "+(Estacao.fila.length-Estacao.seg)+" segmentos à frente · "+Montador.n+" programas montados"],["Trocas de segmento",Estacao.trocas],["Extrator",Extrator.resumo()],["Rádio",Radio.credito()],["Narração",Narrador.on?"ligada":"desligada"],["Vídeo",Estacao.videoOn?"YouTube ligado":(PODE_VIDEO?"desligado":"só imagem (página sem http/https)")],["Players YouTube vivos",Video.slots.size],["Shorts no estoque",Shorts.pool.length+" ("+Shorts.origem+")"],["Em alta",EmAlta.pac?EmAlta.pac.topicos.length+" tópicos · "+EmAlta.origem+" · "+EmAlta.pac.gerado_em_txt:"—"],["Ficha / narração (última)",Ficha.estado],["Documentário",Partes.atualId?(Partes.doc(Partes.atualId)||{}).titulo+" · parte "+Partes.parteNum(Partes.atualId)+" · posição "+mmss(Partes.pos(Partes.atualId)):"—"],["Clipes",Clipes.tocaveis().length+" tocáveis · "+Clipes.origem],["Curiosidades",Curio.itens.length+" · "+Curio.origem],["Receitas",Receitas.lista.length+" · "+Receitas.origem],["Elementos no DOM",document.getElementsByTagName("*").length],["Memória JS",mem],["Aberta há",mmss((Date.now()-T_INICIO)/1000)],["Config",localStorage.getItem(LS_KEY)?"personalizada (localStorage)":"padrão"]];
     $("tab-status").innerHTML=`<div class="kv">${kv.map(([a,b])=>`<b>${esc(a)}</b><span>${esc(b)}</span>`).join("")}</div><div class="sec">CONFIGURAÇÃO</div><div class="bts"><button class="bt" data-a="exportar">⬇ Exportar JSON</button><button class="bt" data-a="importar">⬆ Importar JSON</button><button class="bt dang" data-a="restaurar">↺ Restaurar padrão</button></div><textarea id="cfgTxt" rows="4" style="width:100%;font:12px monospace;background:#070b16;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px" placeholder="Cole aqui o JSON para importar"></textarea>`;
   },
   ligar(){
@@ -1474,9 +1506,7 @@ const Admin = {
     document.querySelector(".tabs").onclick=e=>{ const b=e.target.closest("button"); if(!b) return; this.aba=b.dataset.tab; this.aviso(""); this.render(); };
     const corpo=document.querySelector(".admCorpo");
     corpo.addEventListener("click", e=>{ const b=e.target.closest("[data-a]"); if(!b) return; const a=b.dataset.a, i=+b.dataset.i, bi=+b.dataset.bi, dir=+b.dataset.dir;
-      if(a==="moverBloco") this.aplicar({tipo:a,i,dir}); else if(a==="toggleBloco") this.aplicar({tipo:a,i});
-      else if(a==="moverSeg") this.aplicar({tipo:a,bi,i,dir}); else if(a==="removerSeg") this.aplicar({tipo:a,bi,i});
-      else if(a==="adicionarSeg") this.aplicar({tipo:a,bi,seg:$("addSeg").value});
+      if(a==="toggleTipo") this.aplicar({tipo:a,t:b.dataset.t});
       else if(a==="novoItem"){ this.adicionando=true; this.editando=null; this.render(); }
       else if(a==="editarItem"){ const s=this.segAtualObj(this.segItens); this.editando=s.cenas.find(c=>c.key===b.dataset.key); this.adicionando=false; this.render(); }
       else if(a==="removerItem") this.aplicar({tipo:a,seg:this.segItens,key:b.dataset.key});
@@ -1488,14 +1518,10 @@ const Admin = {
       else if(a==="restaurar"){ if(confirm("Restaurar a configuração padrão? Os ajustes do painel serão apagados.")) this.aplicar({tipo:"restaurar"}); }
     });
     corpo.addEventListener("change", e=>{ if(e.target.dataset.extra){ this.aplicar({tipo:"extras",campo:e.target.dataset.extra,valor:JSON.parse(e.target.value)}); return; } if(e.target.id==="selSeg"){ this.segItens=e.target.value; this.editando=null; this.adicionando=false; this.render(); } if(e.target.dataset.fonte) this.aplicar({tipo:"fonte",seg:e.target.dataset.fonte,fonte:e.target.value}); });
-    // arrastar (desktop)
-    let de=null;
-    corpo.addEventListener("dragstart", e=>{ const r=e.target.closest(".row[draggable]"); if(r){ de=+r.dataset.i; r.classList.add("drag"); } });
-    corpo.addEventListener("dragover", e=>{ if(de!==null && e.target.closest(".row[draggable]")) e.preventDefault(); });
-    corpo.addEventListener("drop", e=>{ const r=e.target.closest(".row[draggable]"); if(r&&de!==null){ e.preventDefault(); this.aplicar({tipo:"moverBloco",i:de,para:+r.dataset.i}); } de=null; });
-    corpo.addEventListener("dragend", ()=>{ de=null; });
+
     setInterval(()=>{ if(this.aberto && this.aba==="status") this.r_status(); },1000);
     setInterval(()=>{ if(this.aberto && this.aba==="bast") this.r_bast(); },3000);
+    setInterval(()=>{ if(this.aberto && this.aba==="fila") this.r_fila(); else if(!this.aberto) $("admResumo").textContent=this.resumo(); },4000);
   }
 };
 
@@ -1508,6 +1534,46 @@ const semAcento = s => String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g
 const YTNS = "http://www.youtube.com/xml/schemas/2015";
 // confere um ID no oEmbed do YouTube (CORS ok). 200 = existe e permite embed; 401/403/404 = não usar.
 async function oembedYT(id, short){ try{ const r=await fetch("https://www.youtube.com/oembed?format=json&url="+encodeURIComponent((short?"https://www.youtube.com/shorts/":"https://www.youtube.com/watch?v=")+id)); return r.status; }catch(e){ return 0; } }
+
+/* =====================================================================
+   EXTRATOR — baixa a matéria completa (HTML) pelos MESMOS proxies CORS já
+   usados nos feeds (r.jina.ai / allorigins) e tira texto + imagens.
+   Readability.js NÃO está embutido (não há URL dele no código: NÃO DEFINIDO)
+   → usa só a heurística: articleBody/article/main → parágrafos ≥ 70
+   caracteres, sem lixo (assine, cookies, leia também…), og:image + <img>.
+   Roda em segundo plano, 1 matéria por vez; a matéria vai ao ar com o
+   resumo do RSS se o texto ainda não chegou (nunca espera).
+   ===================================================================== */
+const Extrator = {
+  res:new Map(), fila:[], rodando:false, ok:0, falhas:0,
+  de(link){ const r=this.res.get(normLink(link)); return r && r.ok ? r : null; },
+  resumo(){ return this.ok+" matérias extraídas · "+this.falhas+" falhas · "+this.fila.length+" na fila"; },
+  pedir(lista){ (lista||[]).forEach(n=>{ if(!n||!n.link) return; const k=normLink(n.link); if(!this.res.has(k) && !this.fila.some(x=>normLink(x.link)===k)) this.fila.push(n); }); this.rodar(); },
+  async rodar(){
+    if(this.rodando) return; this.rodando=true;
+    while(this.fila.length){ const n=this.fila.shift(), k=normLink(n.link); status("Extrator","run","extraindo "+n.fonte);
+      try{ const r=await this.extrair(n.link); this.res.set(k, r); if(r.ok){ this.ok++; log("Extrator: "+n.fonte+" — "+r.pars.length+" parágrafos, "+r.imgs.length+" imagens ("+r.via+")"); } else { this.falhas++; log("Extrator: "+n.fonte+" — "+r.erro+" → vai ao ar só com o resumo"); } }
+      catch(e){ this.res.set(k,{ ok:false, erro:e.message }); this.falhas++; log("Extrator: "+n.fonte+" falhou ("+e.message+") → vai ao ar só com o resumo"); }
+      status("Extrator", this.ok?"ok":"warn", this.resumo()); await sleep(300); }
+    this.rodando=false;
+  },
+  async baixar(url){ let erro="sem resposta";
+    for(const px of PROXIES_FEED){ try{ const t=await fetchTexto(px.url(url), px.headers(0), 12000); if(t && t.length>1500 && /<p[\s>]/i.test(t)) return { t, via:px.nome }; erro=px.nome+": resposta sem HTML da matéria"; }catch(e){ erro=px.nome+": "+e.message; } }
+    throw new Error(erro); },
+  parse(html, url){
+    const doc=new DOMParser().parseFromString(html,"text/html"), abs=u=>{ try{ return new URL(u, url).href; }catch(e){ return null; } };
+    const meta=p=>{ const m=doc.querySelector('meta[property="'+p+'"],meta[name="'+p+'"]'); return m ? m.getAttribute("content") : null; };
+    const imgs=[], add=u=>{ u=u&&abs(u.trim()); if(u && /^https:/.test(u) && !/\.svg|\.gif|logo|icon|avatar|sprite|pixel|placeholder|blank|banner|selo/i.test(u) && !imgs.includes(u)) imgs.push(u); };
+    add(meta("og:image"));
+    doc.querySelectorAll("script,style,noscript,nav,footer,header,aside,form,iframe,svg,figcaption,button").forEach(e=>e.remove());
+    const box=doc.querySelector('[itemprop="articleBody"]')||doc.querySelector("article")||doc.querySelector("main")||doc.body; if(!box) return { ok:false, pars:[], imgs };
+    const lixo=/cookie|assine|assinante|newsletter|inscreva|todos os direitos|leia (também|mais)|publicidade|whatsapp|telegram|clique aqui|siga (o|a|nos)|baixe o app|copyright|reprodução proibida|termos de uso/i, vis=new Set(), pars=[];
+    box.querySelectorAll("p").forEach(p=>{ const t=(p.textContent||"").replace(/\s+/g," ").trim(); if(t.length<70||t.length>1500||lixo.test(t)||vis.has(t)) return; vis.add(t); pars.push(t); });
+    box.querySelectorAll("img").forEach(im=>{ const s=im.getAttribute("data-src")||im.getAttribute("src"), w=+(im.getAttribute("width")||0); if(s && !s.startsWith("data:") && (w===0||w>=300)) add(s); });
+    return { ok:pars.length>=2, pars:pars.slice(0,6), imgs:imgs.slice(0,5), erro:pars.length>=2?null:"texto não encontrado ("+pars.length+" parágrafo(s))" };
+  },
+  async extrair(url){ const b=await this.baixar(url); const r=this.parse(b.t, url); r.via=b.via; r.quando=new Date(); return r; }
+};
 
 /* =====================================================================
    SHORTS — descoberta em tempo de execução nos feeds RSS dos canais de
@@ -1728,13 +1794,11 @@ const Inter = {
 const Promo = {
   i:0,
   cena(){
-    const b=Diretor.blocoAtual(), cand=[];
-    for(let k=1;k<=7;k++){ const g=Diretor.bloco((b.i+k)%8); if(g.ativo) cand.push({ quando:(k===1?"Daqui a pouco, às ":"Hoje às ")+pad(g.ini)+":00", nome:g.nome, segs:g.segs }); }
-    const progs=[...new Set([].concat(...cand.map(c=>c.segs)))].filter(id=>["documentario","clipes","curiosidades","receitas","cinema","historia"].includes(id));
-    const op=[]; cand.slice(0,3).forEach(c=>op.push({ titulo:c.nome, sub:c.quando })); progs.forEach(id=>{ const c=cand.find(x=>x.segs.includes(id)); if(c) op.push({ titulo:NOMES_SEG[id], sub:c.quando+" · "+c.nome }); });
-    if(!op.length) op.push({ titulo:b.nome, sub:"No ar agora" });
+    const op=Montador.proximosNomes(3).map(n=>({ titulo:n, sub:"Daqui a pouco no "+CANAL.curto }));
+    Object.keys(TIPOS_FILA).filter(t=>Montador.ativo(t)&&t!=="noticias").forEach(t=>op.push({ titulo:TIPOS_FILA[t].split(" (")[0], sub:"Na programação contínua do "+CANAL.curto }));
+    if(!op.length) op.push({ titulo:CANAL.nome, sub:CANAL.slogan });
     const o=op[this.i++ % op.length], v=Transicao.prox(7);
-    return { tipo:"promo", key:"promo:"+o.titulo, get k(){ return "NA "+CANAL.curto.toUpperCase(); }, h:o.titulo, t2:o.sub, vid:v, fonte:"chamada da própria TV (grade 24h)", coletado:"—" };
+    return { tipo:"promo", key:"promo:"+o.titulo, get k(){ return "NA "+CANAL.curto.toUpperCase(); }, h:o.titulo, t2:o.sub, vid:v, fonte:"chamada da própria TV (fila contínua)", coletado:"—" };
   }
 };
 
@@ -1759,18 +1823,7 @@ const Intervalo = {
   }
 };
 
-// abertura da hora cheia: vinheta grande → "Agora / A seguir" → manchetes
-const Abertura = {
-  ultima:null,
-  segmento(){
-    const p=partsNow(), b=Diretor.blocoAtual(), nx=Diretor.bloco((b.i+1)%8), d=Coletor.dados||{};
-    const man=(d.noticiasBrasil||[]).slice(0,3).map(n=>n.titulo);
-    const cenas=[{ tipo:"abertura", key:"abre:"+p.hour, k:"ABERTURA", h:p.hour+":00", t2:b.nome, vid:Transicao.prox(7), fonte:"abertura da hora cheia", coletado:"—" },
-      { tipo:"agora", key:"agora:"+p.hour, k:"AGORA", h:b.nome, t2:"A seguir, às "+pad(nx.ini)+":00: "+nx.nome, fonte:"grade 24h", coletado:"—" }];
-    if(man.length) cenas.push({ tipo:"manchetes", key:"man:"+p.hour, k:"MANCHETES", h:"Manchetes das "+p.hour+"h", lista:man, fonte:"manchetes do Coletor", coletado:"—" });
-    return { id:"abertura", inter:"abertura", unico:true, nome:"Abertura das "+p.hour+"h", cor:["#0a1230","#03050c"], cenas };
-  }
-};
+// (abertura da hora cheia removida nesta versão de teste: dependia da grade de 24 h)
 
 /* =====================================================================
    DOCUMENTÁRIOS EM PARTES — toca N minutos, intervalo, volta do ponto
@@ -1778,12 +1831,12 @@ const Abertura = {
    troca de cena e no pagehide → recarregar a página também retoma.
    ?parte=SEG encurta a parte para teste.
    ===================================================================== */
-const LS_PARTES="tvia.v42.partes";
+const LS_PARTES="tvia.teste.partes";   // separado da página principal
 const Partes = {
   est:{}, atualId:null, extras:[], origem:"lista conferida",
   carregar(){ try{ const j=JSON.parse(localStorage.getItem(LS_PARTES)||"null"); if(j&&j.est){ this.est=j.est; this.atualId=j.atual||null; } }catch(e){} },
   salvar(){ try{ localStorage.setItem(LS_PARTES, JSON.stringify({ est:this.est, atual:this.atualId, t:Date.now() })); }catch(e){} },
-  seg(){ const q=+(Q.get("parte")||0); return q>0 ? q : Config.atual.extras.docParteMin*60; },
+  seg(){ const q=+(Q.get("parte")||0); return q>0 ? q : (RAPIDO ? 30 : Config.atual.extras.docParteMin*60); },
   lista(){ return DOCS_VERIF.concat(this.extras); },
   doc(id){ return this.lista().find(d=>d.id===id); },
   pos(id){ return (this.est[id]&&this.est[id].pos)||0; },
@@ -1818,7 +1871,7 @@ const Partes = {
   segmento(){
     const d=this.escolher(); if(!d) return null; const self=this;
     const vid={ id:d.id, titulo:d.titulo, canal:d.canal, thumb:"https://i.ytimg.com/vi/"+d.id+"/hqdefault.jpg", get trecho(){ return self.trecho(d.id); } };
-    return { id:"documentario", nome:NOMES_SEG.documentario, cor:["#0f3d2e","#111827"], cenas:[{ tipo:"doc", key:"doc:"+d.id, k:"DOCUMENTÁRIO", get h(){ return d.titulo.replace(/\s*\|\s*Document[aá]rio\s*/i," ").replace(/^\s*Document[aá]rio\s*\|\s*/i,"").trim(); }, doc:d, vid, fonte:"YouTube · "+d.canal, link:"https://www.youtube.com/watch?v="+d.id, coletado:"lista conferida 30/10/2026" }] };
+    return { id:"documentario", nome:NOMES_SEG.documentario, cor:["#0f3d2e","#111827"], cenas:[{ tipo:"doc", key:"doc:"+d.id+":"+Date.now()+":"+Math.random().toString(36).slice(2,6), k:"DOCUMENTÁRIO", get h(){ return d.titulo.replace(/\s*\|\s*Document[aá]rio\s*/i," ").replace(/^\s*Document[aá]rio\s*\|\s*/i,"").trim(); }, doc:d, vid, fonte:"YouTube · "+d.canal, link:"https://www.youtube.com/watch?v="+d.id, coletado:"lista conferida 30/10/2026" }] };
   }
 };
 
@@ -1829,7 +1882,7 @@ const Partes = {
    ===================================================================== */
 const chaveMusica=(a,m)=>semAcento(a).replace(/[^a-z0-9]/g,"")+"|"+semAcento(String(m).replace(/\s*[\(\[].*?[\)\]]/g,"").trim()).replace(/[^a-z0-9]/g,"");
 const Clipes = {
-  chart:null, origem:"snapshot", i:0,
+  chart:null, origem:"snapshot", i:0, ruins:new Set(),
   async iniciar(){
     this.chart=CHART_SNAPSHOT; this.origem="snapshot ("+hmBRT(new Date(CHART_SNAPSHOT.atualizado))+")";
     try{ const j=await fetchJSON("https://itunes.apple.com/br/rss/topsongs/limit=25/json", 9000); const e=j.feed.entry;
@@ -1839,7 +1892,7 @@ const Clipes = {
     Producao.remontar("parada de clipes");
   },
   video(it){ return CLIPES_VERIF[chaveMusica(it.artista, it.musica)] || null; },
-  tocaveis(){ return (this.chart?this.chart.itens:[]).filter(it=>this.video(it)); },
+  tocaveis(){ return (this.chart?this.chart.itens:[]).filter(it=>this.video(it) && !this.ruins.has(this.video(it).id)); },
   segmento(){
     const X=Config.atual.extras, tc=this.tocaveis(), top=(this.chart?this.chart.itens:[]).slice(0,10);
     if(!top.length) return null;
@@ -1959,17 +2012,17 @@ $("bLigarMudo").onclick=()=>ligarTV(false);
     const h1=document.querySelector("#ligar h1"); h1.innerHTML=canalLogo("inicio"); h1.insertAdjacentHTML("afterend",`<div class="slogan">${esc(CANAL.slogan)}</div>`);
     const bug=document.querySelector(".tvlogo"); bug.innerHTML=canalLogo("bugl"); bug.classList.add("comlogo");
   }
-  Config.carregar(); Admin.ligar();
+  Config.carregar(); Config.modoRapido(); Admin.ligar();
   setInterval(tickClock,1000); vidLabel(); Radio.mostrar();
   const dados=Pauteiro.ler(); dados.trailers.forEach(t=>t.thumb="https://i.ytimg.com/vi/"+t.id+"/hqdefault.jpg"); dados.comerciais.forEach(t=>t.thumb="https://i.ytimg.com/vi/"+t.id+"/hqdefault.jpg");
   Coletor.dados=dados; status("Pauteiro","ok","snapshot carregado (reserva)");
   Partes.iniciar(); Clipes.iniciar(); Curio.iniciar(); Receitas.iniciar();
-  if(Q.get("abertura")==="1") setTimeout(()=>{ Estacao.urgente=Abertura.segmento(); Estacao.proximoSegmento(); }, 1500);
   Shorts.iniciar(); Ficha.iniciar().then(()=>Producao.remontar("fichas do Wikidata")); EmAlta.iniciar();
   tickClock(); renderTicker(dados);
   if(Estacao.videoOn) Video.carregarAPI(); else status("Video","",PODE_VIDEO?"desligado":"só imagem (sem http/https)");
   setPlaying(Q.get("ligar")==="1");
-  Estacao.iniciar(Diretor.montarFila(Roteirista.segmentos(dados))); Watchdog.iniciar();
+  Estacao.iniciar(Montador.inicial()); Watchdog.iniciar(); renderGrade();
+  setTimeout(()=>Extrator.pedir([].concat(dados.noticiasBrasil, dados.noticiasMundo).slice(0,6)), 800);
   if(Q.get("ligar")==="1") $("ligar").classList.add("off");
   if(!PODE_VIDEO) log("Página aberta sem http(s) ("+location.protocol+") — vídeos do YouTube em modo imagem (evita Error 153)");
   Coletor.iniciar(dados);   // 1ª coleta já no boot; depois, ciclo periódico
