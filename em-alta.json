@@ -1,0 +1,203 @@
+{
+ "versao": 1,
+ "gerado_em": "2026-10-30T23:44:00-03:00",
+ "gerado_em_txt": "30/10/2026 23:40–23:44 (horário de Brasília)",
+ "como": "Snapshot MANUAL. Trends: X API get_trends_by_woeid (woeid 23424768 = Brasil) às 23:40 BRT. Posts: X API search_posts_all (últimas horas, -is:retweet -is:reply lang:pt), textos guardados exatamente como retornados. Vídeo de fundo: correspondência por palavra-chave nos títulos dos feeds RSS do YouTube dos canais de notícias verificados (oEmbed 200 às 23:3x BRT).",
+ "trends": [
+  "Corinthians",
+  "#QuemAmaCuida",
+  "BEIJO MALIPE",
+  "KAIO CESAR",
+  "Adrien",
+  "#Jones2030",
+  "#MLBS7Spoilers",
+  "#EmpregoSoComLula",
+  "Garro",
+  "Elvis",
+  "Polônia",
+  "Lila",
+  "harry styles",
+  "Marinette",
+  "Walter",
+  "Amora Mautner",
+  "Seedorf",
+  "Bidu",
+  "I NEED U",
+  "Ingrid",
+  "#submundo808",
+  "Bruno Santos",
+  "Pietro",
+  "Mirtes",
+  "AIRPLANE PT",
+  "Nancy",
+  "Halloween",
+  "Miraculous",
+  "Lyon",
+  "Bran"
+ ],
+ "topicos": [
+  {
+   "id": "corinthians",
+   "titulo": "Corinthians",
+   "trend": "Corinthians",
+   "posicao": 1,
+   "assunto": "Corinthians x Mirassol pelo Brasileirão",
+   "palavras": [
+    "corinthians",
+    "mirassol"
+   ],
+   "busca": "Corinthians Mirassol -is:retweet -is:reply lang:pt (desde 30/10 17:00 BRT)",
+   "posts": [
+    {
+     "id": "2116318773053436199",
+     "handle": "@futebol_info",
+     "nome": "Planeta do Futebol 🌎",
+     "texto": "Repórter do Sportv relata que Rafael Guanaes, técnico do Mirassol, disparou contra a arbitragem após o 1º tempo contra o Corinthians:\n\n\"Se for para continuar desse jeito, dá logo esses 3 pontos para o Corinthians!\"\n\n🗞️ Sportv\n📸 JP Pinheiro/Ag. Mirassol https://t.co/70a8eG4QQU",
+     "criado": "2026-10-30T23:58:09.000Z",
+     "curtidas": 2044,
+     "url": "https://x.com/futebol_info/status/2116318773053436199"
+    },
+    {
+     "id": "2116311030607327288",
+     "handle": "@ThyagoRMCF",
+     "nome": "🗣",
+     "texto": "BRUNO SANTOS, DO MIRASSOL, ESTÁ EXPULSO! 🟥\n\nO Corinthians está com um jogador a mais na partida.\n\nCorinthians 0x0 Mirassol",
+     "criado": "2026-10-30T23:27:23.000Z",
+     "curtidas": 4,
+     "url": "https://x.com/ThyagoRMCF/status/2116311030607327288"
+    },
+    {
+     "id": "2116302194450502025",
+     "handle": "@JovemPanEsporte",
+     "nome": "Jovem Pan Esportes",
+     "texto": "AGORA VALE DE TUDO! Esse é o clima em Itaquera antes de Corinthians x Mirassol!\n\nOs torcedores do Timão jogam sal grosso pelos arredores do estádio pra afastar tudo!\n\nSerá que vai dar certo, galera?\n\n#Corinthians #Mirassol #JovemPanEsportes https://t.co/ZXdmF4pZTx",
+     "criado": "2026-10-30T22:52:16.000Z",
+     "curtidas": 4,
+     "url": "https://x.com/JovemPanEsporte/status/2116302194450502025"
+    },
+    {
+     "id": "2116274535905313005",
+     "handle": "@g_lesnok",
+     "nome": "Guilherme Lesnok",
+     "texto": "O Corinthians tem 100% de aproveitamento contra o Mirassol na Neo Química Arena em toda a história!\n\n6 jogos\n6 vitórias do Corinthians\n12 gols marcados\n1 gol sofrido\n\nO Timão nunca sequer empatou com o Mirassol em Itaquera.\n\n@lance_timao @lancenet",
+     "criado": "2026-10-30T21:02:22.000Z",
+     "curtidas": 4,
+     "url": "https://x.com/g_lesnok/status/2116274535905313005"
+    },
+    {
+     "id": "2116315535982182882",
+     "handle": "@SalvadorGa91428",
+     "nome": "Salvador Gama",
+     "texto": "No Brasileirão, primeiro tempo de Corinthians 0x0 Mirassol.\nO Mirassol teve o atacante Bruno Santos expulso.\nO Corinthians tem um empate e nove derrotas nos últimos dez jogos.\n\n#Brasileirão2026 \n\nMemphis começou no banco na partida de hoje.\nImagem Meu Timão https://t.co/gP8ClYlDc7",
+     "criado": "2026-10-30T23:45:17.000Z",
+     "curtidas": 0,
+     "url": "https://x.com/SalvadorGa91428/status/2116315535982182882"
+    },
+    {
+     "id": "2116304146160660639",
+     "handle": "@sbtnews",
+     "nome": "SBT News",
+     "texto": "➡️ Corinthians x Mirassol: onde assistir ao vivo e horário #sbtnews\n\nCorinthians recebe o Mirassol na Neo Química Arena pela 33ª rodada da Série A do Brasileirão\n\nhttps://t.co/fK1s0Ig5JQ",
+     "criado": "2026-10-30T23:00:02.000Z",
+     "curtidas": 1,
+     "url": "https://x.com/sbtnews/status/2116304146160660639"
+    }
+   ],
+   "video": {
+    "id": "C-ECqgt5r_U",
+    "titulo": "CORINTHIANS x MIRASSOL | AO VIVO! | BRASILEIRÃO | 30/10/2026",
+    "canal": "Jovem Pan News",
+    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
+    "inicio": 60,
+    "verificado": "oEmbed 200 em 30/10/2026 23:49 BRT"
+   },
+   "imagem": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/ARENA_CORINTHIANS.jpg/960px-ARENA_CORINTHIANS.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:ARENA_CORINTHIANS.jpg",
+    "credito": "Alexandre Breveglieri (Flickr), CC BY 2.0, via Wikimedia Commons"
+   }
+  },
+  {
+   "id": "emprego",
+   "titulo": "#EmpregoSoComLula",
+   "trend": "#EmpregoSoComLula",
+   "posicao": 8,
+   "assunto": "Desemprego no menor nível para o 3º trimestre desde 2012 (IBGE)",
+   "palavras": [
+    "desemprego",
+    "emprego",
+    "empregados"
+   ],
+   "busca": "#EmpregoSoComLula -is:retweet -is:reply lang:pt e (#EmpregoSoComLula OR desemprego) (desde 30/10 09:00 BRT)",
+   "posts": [
+    {
+     "id": "2116357706248585223",
+     "handle": "@_lsmatos",
+     "nome": "Leandro Matos",
+     "texto": "Menor desemprego em 14 anos!\nO Brasil escolheu crescer, gerar empregos e criar oportunidades.\nA taxa de desemprego caiu para 5,2%, a menor para um terceiro trimestre desde 2012. São 103,6 milhões de brasileiros ocupados.\n#EmpregoSoComLula https://t.co/Y11cwCTzv1",
+     "criado": "2026-10-31T02:32:51.000Z",
+     "curtidas": 1,
+     "url": "https://x.com/_lsmatos/status/2116357706248585223"
+    },
+    {
+     "id": "2116303816115019975",
+     "handle": "@marcopevieira",
+     "nome": "Marco Vieira",
+     "texto": "Enquanto Flávio escondia seu real projeto, que era a o aumento do desemprego para reduzir o valor da mão de obra numa escala de trabalho 7x0, no governo Lula tivemos redução do desemprego, fim do imposto de renda/redução da alíquota e o fim da escala 6x1.\n\n#EmpregoSoComLula",
+     "criado": "2026-10-30T22:58:43.000Z",
+     "curtidas": 42,
+     "url": "https://x.com/marcopevieira/status/2116303816115019975"
+    },
+    {
+     "id": "2116277056174752010",
+     "handle": "@Lidia_MML",
+     "nome": "Lidia Sem K",
+     "texto": "E a queda do desemprego? Com Lula, isso acontece \n\n#EmpregoSoComLula",
+     "criado": "2026-10-30T21:12:23.000Z",
+     "curtidas": 21,
+     "url": "https://x.com/Lidia_MML/status/2116277056174752010"
+    },
+    {
+     "id": "2116358430625595653",
+     "handle": "@juliavita__",
+     "nome": "Júlia Vita",
+     "texto": "Vejam os números reais, desemprego tá lá embaixo!\n#EmpregoSoComLula",
+     "criado": "2026-10-31T02:35:44.000Z",
+     "curtidas": 0,
+     "url": "https://x.com/juliavita__/status/2116358430625595653"
+    },
+    {
+     "id": "2116292124555846089",
+     "handle": "@DoBairroMarina",
+     "nome": "isn't ironic?",
+     "texto": "Menor desemprego da série histórica #EmpregoSoComLula https://t.co/C33T3f6qdi",
+     "criado": "2026-10-30T22:12:15.000Z",
+     "curtidas": 2,
+     "url": "https://x.com/DoBairroMarina/status/2116292124555846089"
+    },
+    {
+     "id": "2116296963192705266",
+     "handle": "@chanleyla",
+     "nome": "Meu nome é Leyla!",
+     "texto": "O desemprego está caindo, graças a Deus!\n\n#EmpregoSoComLula",
+     "criado": "2026-10-30T22:31:29.000Z",
+     "curtidas": 0,
+     "url": "https://x.com/chanleyla/status/2116296963192705266"
+    }
+   ],
+   "video": {
+    "id": "qimnEcUxb4M",
+    "titulo": "Desemprego atinge menor nível da história, aponta IBGE | Jornal da Band",
+    "canal": "Band Jornalismo",
+    "canal_id": "UCoa-D_VfMkFrCYodrOC9-mA",
+    "inicio": 5,
+    "verificado": "oEmbed 200 em 30/10/2026 23:49 BRT"
+   },
+   "imagem": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Carteiradetrabalho.jpg/960px-Carteiradetrabalho.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Carteiradetrabalho.jpg",
+    "credito": "Marcello Casal Jr/Agência Brasil, CC BY 3.0 BR, via Wikimedia Commons"
+   }
+  }
+ ]
+}
