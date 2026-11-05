@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff2bd6">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>POP! — TV de clipe</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23ffe500' width='64' height='64'/%3E%3Ctext x='6' y='46' font-family='Impact' font-size='32' fill='%23111'%3EPOP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --pink: #ff2bd6;
+  --yellow: #ffe500;
+  --cyan: #3dfff2;
+  --orange: #ff4d1c;
+  --ink: #0b0b0d;
+  --paper: #f6f3ea;
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "Archivo Narrow", "Arial Narrow", Impact, sans-serif;
+  overflow: hidden;
+}
+
+button, a { font: inherit; }
+
+#stage {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+#yt-mount {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+#yt-mount iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 177.78vh;
+  min-height: 56.25vw;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+}
+
+.scan {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.035) 0 1px,
+    transparent 1px 3px
+  );
+  mix-blend-mode: overlay;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.bug {
+  position: absolute;
+  z-index: 6;
+  top: calc(14px + var(--safe-t));
+  right: calc(14px + var(--safe-r));
+  background: var(--yellow);
+  color: #111;
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 0.85;
+  letter-spacing: -0.5px;
+  padding: 7px 10px 5px;
+  transform: rotate(8deg);
+  box-shadow: 5px 5px 0 var(--pink);
+  animation: wiggle 3.6s steps(2, end) infinite;
+}
+
+.bug small {
+  display: block;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+@keyframes wiggle {
+  0%, 80%, 100% { transform: rotate(8deg); }
+  88% { transform: rotate(5deg) translate(-1px, 1px); }
+  94% { transform: rotate(11deg); }
+}
+
+.nownext {
+  position: absolute;
+  z-index: 6;
+  top: calc(14px + var(--safe-t));
+  left: calc(14px + var(--safe-l));
+  max-width: min(460px, calc(100vw - 120px));
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pill {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  background: rgba(8, 8, 10, 0.78);
+  border: 2px solid var(--cyan);
+  padding: 4px 8px 3px;
+  box-shadow: 3px 3px 0 rgba(61, 255, 242, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+.pill b {
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  color: var(--yellow);
+  flex: none;
+}
+
+.pill span {
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pill.next {
+  border-color: var(--pink);
+  box-shadow: 3px 3px 0 rgba(255, 43, 214, 0.35);
+  opacity: 0.92;
+}
+
+.pill.next b { color: var(--pink); }
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff2a2a;
+  box-shadow: 0 0 0 0 rgba(255, 42, 42, 0.7);
+  animation: pulse 1.4s infinite;
+  flex: none;
+  align-self: center;
+}
+
+@keyframes pulse {
+  70% { box-shadow: 0 0 0 7px rgba(255, 42, 42, 0); }
+}
+
+#radio {
+  position: absolute;
+  z-index: 7;
+  top: calc(92px + var(--safe-t));
+  left: calc(14px + var(--safe-l));
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  background: var(--pink);
+  color: #140010;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+  padding: 8px 14px 6px;
+  box-shadow: 4px 4px 0 var(--yellow);
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#radio[aria-pressed="true"] {
+  background: var(--cyan);
+  box-shadow: 4px 4px 0 var(--orange);
+}
+
+#radio:focus-visible, #ligar:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.xcard {
+  position: absolute;
+  z-index: 6;
+  right: calc(14px + var(--safe-r));
+  bottom: calc(108px + var(--safe-b));
+  width: min(340px, calc(100vw - 28px));
+  background: rgba(7, 7, 9, 0.88);
+  color: white;
+  border: 2px solid var(--paper);
+  box-shadow: 6px 6px 0 var(--cyan);
+  padding: 10px 12px 12px;
+  animation: cardin 0.35s ease;
+}
+
+@keyframes cardin {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+.xhead {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.xmark {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  color: #000;
+  font-family: Anton, Impact, sans-serif;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  flex: none;
+}
+
+.xwho { min-width: 0; }
+.xwho strong { display: block; font-size: 15px; line-height: 1.1; }
+.xwho em {
+  font-style: normal;
+  color: var(--cyan);
+  font-size: 13px;
+}
+
+.xtext {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.xmeta {
+  margin-top: 6px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--yellow);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lower {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: stretch;
+  min-height: 72px;
+  padding-bottom: var(--safe-b);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
+}
+
+.block-name {
+  flex: none;
+  background: var(--yellow);
+  color: #111;
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(18px, 3vw, 28px);
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+  padding-right: 28px;
+}
+
+.ticker-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 8px;
+  background: linear-gradient(90deg, var(--pink), #7a12ff 70%, transparent);
+}
+
+.ticker {
+  font-weight: 700;
+  font-size: clamp(16px, 2.4vw, 22px);
+  line-height: 1.2;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tag-trecho {
+  flex: none;
+  align-self: center;
+  margin-right: 12px;
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  font-family: Anton, Impact, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  padding: 3px 6px 1px;
+}
+
+body.is-bumper .lower,
+body.is-bumper .xcard,
+body.is-bumper .nownext {
+  opacity: 0 !important;
+  animation: none !important;
+  pointer-events: none;
+}
+
+#x-embed iframe {
+  width: 100% !important;
+  max-height: 200px;
+}
+
+#bumper {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  background: #07060c;
+  overflow: hidden;
+}
+
+#bumper[hidden], #radio-stage[hidden], #splash[hidden], .xcard[hidden], #radio[hidden] {
+  display: none !important;
+}
+
+.bump-word {
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(64px, 16vw, 180px);
+  letter-spacing: -0.04em;
+  line-height: 0.8;
+  color: var(--yellow);
+  animation: glitch 0.35s steps(2, end) infinite;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.bump-sub {
+  position: absolute;
+  bottom: 12%;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.28em;
+  color: var(--cyan);
+  font-size: clamp(14px, 2vw, 22px);
+}
+
+#bumper::before,
+#bumper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 18%;
+  background: var(--pink);
+  mix-blend-mode: multiply;
+  animation: bars 0.45s steps(2, end) infinite;
+}
+
+#bumper::before { top: 8%; }
+#bumper::after { bottom: 10%; animation-direction: reverse; background: var(--cyan); }
+
+@keyframes glitch {
+  0% { transform: translate(0, 0); text-shadow: 4px 0 var(--pink), -4px 0 var(--cyan); }
+  40% { transform: translate(-6px, 2px) skewX(-6deg); text-shadow: -6px 0 var(--cyan), 6px 0 var(--orange); }
+  70% { transform: translate(5px, -3px); color: var(--paper); }
+  100% { transform: none; }
+}
+
+@keyframes bars {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-4%) scaleY(1.4); }
+  100% { transform: translateX(3%); }
+}
+
+#radio-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 43, 214, 0.4), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(61, 255, 242, 0.25), transparent 42%),
+    #09090d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 120px;
+}
+
+.eq i {
+  display: block;
+  width: clamp(10px, 2vw, 16px);
+  background: linear-gradient(var(--yellow), var(--pink));
+  height: 20%;
+  animation: eq 0.8s ease-in-out infinite alternate;
+}
+
+.eq i:nth-child(odd) { animation-duration: 0.55s; background: linear-gradient(var(--cyan), var(--pink)); }
+.eq i:nth-child(3n) { animation-duration: 0.95s; }
+
+@keyframes eq {
+  from { height: 18%; }
+  to { height: 100%; }
+}
+
+.station {
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(36px, 8vw, 84px);
+  letter-spacing: -0.03em;
+  text-align: center;
+  line-height: 0.9;
+  text-shadow: 4px 4px 0 var(--pink);
+}
+
+.station small {
+  display: block;
+  margin-top: 8px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  text-shadow: none;
+  color: var(--cyan);
+}
+
+#splash {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  padding: 24px;
+  text-align: center;
+  background:
+    linear-gradient(120deg, rgba(255, 43, 214, 0.25), transparent 40%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0, 0, 0, 0.25) 3px 4px),
+    #07060a;
+}
+
+.logo-big {
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(88px, 22vw, 200px);
+  line-height: 0.8;
+  color: var(--yellow);
+  text-shadow: 8px 8px 0 var(--pink), -4px 0 var(--cyan);
+  animation: glitch 0.7s steps(2, end) infinite;
+}
+
+#splash p {
+  margin: 0;
+  max-width: 34ch;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#ligar {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  background: var(--yellow);
+  color: #111;
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(28px, 6vw, 44px);
+  letter-spacing: 0.04em;
+  padding: 12px 28px 8px;
+  box-shadow: 8px 8px 0 var(--pink);
+  min-height: 64px;
+}
+
+#ligar:hover { transform: translate(-2px, -2px); }
+
+.hint {
+  color: var(--cyan);
+  font-size: 14px !important;
+  letter-spacing: 0.04em;
+}
+
+body.is-radio #yt-mount { visibility: hidden; }
+body.is-spot #radio-stage { visibility: hidden; }
+
+@media (max-width: 720px) {
+  .nownext { max-width: calc(100vw - 96px); }
+  .pill span { font-size: 13px; }
+  .xcard {
+    left: calc(10px + var(--safe-l));
+    right: calc(10px + var(--safe-r));
+    width: auto;
+    bottom: calc(112px + var(--safe-b));
+  }
+  .xtext { -webkit-line-clamp: 3; font-size: 14px; }
+  .lower { min-height: 64px; }
+  .block-name { font-size: 16px; padding: 0 10px; }
+  #radio { top: calc(108px + var(--safe-t)); }
+  .tag-trecho { display: none; }
+  .bump-sub { bottom: 18%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div id="stage">
+    <div id="yt-mount"></div>
+    <div id="radio-stage" hidden>
+      <div class="eq" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="station"><span id="station-name">RÁDIO</span><small id="station-tag">POP</small></div>
+    </div>
+    <div id="bumper" hidden>
+      <div class="bump-word" id="bump-word">POP!</div>
+      <div class="bump-sub" id="bump-sub">VINHETA</div>
+    </div>
+    <div class="scan" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="bug" aria-hidden="true">POP!<small>AO VIVO</small></div>
+    <div class="nownext">
+      <div class="pill"><i class="live-dot" aria-hidden="true"></i><b>AGORA</b> <span id="now">sintonizando</span></div>
+      <div class="pill next"><b>A SEGUIR</b> <span id="next">—</span></div>
+    </div>
+    <button id="radio" type="button" hidden aria-pressed="false">RÁDIO</button>
+    <aside class="xcard" id="xcard" hidden>
+      <div class="xhead">
+        <div class="xmark" aria-hidden="true">X</div>
+        <div class="xwho">
+          <strong id="x-name"></strong>
+          <em id="x-user"></em>
+        </div>
+      </div>
+      <p class="xtext" id="x-text"></p>
+      <div class="xmeta" id="x-meta">post original</div>
+      <div id="x-embed" hidden></div>
+    </aside>
+    <div class="lower">
+      <div class="block-name" id="block-name">POP!</div>
+      <div class="ticker-wrap">
+        <div class="ticker" id="ticker" aria-live="polite"></div>
+      </div>
+      <div class="tag-trecho">TRECHO</div>
+    </div>
+    <div id="splash">
+      <div class="logo-big">POP!</div>
+      <p>Clipe, fofoca e intervalo cult. A grade não para.</p>
+      <button id="ligar" type="button">Ligar TV</button>
+      <p class="hint">Um toque libera o som. Sem menu, sem tela parada.</p>
+    </div>
+  </div>
+  <audio id="stream" preload="none" playsinline></audio>
+  <script>
+/* Catálogo da POP! TV.
+   Edite este arquivo para trocar clipes, trailers, posts e rádios.
+   IDs do YouTube foram conferidos na oEmbed (incorporáveis) em 5 nov 2026.
+   Posts: texto integral vindo da API do X e conferido no oEmbed de publish.twitter.com.
+   Não invente texto de post. Se o oEmbed falhar, tire o item da lista. */
+window.TV_CATALOG = {
+  channel: {
+    bug: "POP!",
+    name: "POP!"
+  },
+  bumperMs: 2400,
+  testBumperMs: 550,
+  blocks: [
+    {
+      id: "fofoca",
+      name: "FOFOCA POP",
+      summary: "A mesma história: o clipe de Patient Zero",
+      posts: [
+        {
+          id: "2104383187157725615",
+          url: "https://x.com/taylorswift13/status/2104383187157725615",
+          name: "Taylor Swift",
+          username: "taylorswift13",
+          createdAt: "2026-09-28T01:30:24.000Z",
+          text: "The Patient Zero video is finally out in the world! Getting to work with Emmanuel Lubezki was something out of a dream sequence, and I learned so much from getting to watch his genius in action. I want to thank Dakota and Colin for trusting me with their time, taste, and talent https://t.co/vkLCO167Ea"
+        },
+        {
+          id: "2102458574563840035",
+          url: "https://x.com/taylorswift13/status/2102458574563840035",
+          name: "Taylor Swift",
+          username: "taylorswift13",
+          createdAt: "2026-09-22T18:02:40.000Z",
+          text: "I’ve been impatiently waiting to tell you that my brand new single “Patient Zero” will be out on September 25 (!!!!!!!!!!!!) and it’s available to pre-order now at https://t.co/zSHpnhUTAJ for 24 hours. 0️⃣0️⃣0️⃣0️⃣ https://t.co/RoacpfjjVY"
+        },
+        {
+          id: "2117582631084683692",
+          url: "https://x.com/swiftpage13/status/2117582631084683692",
+          name: "TaylorSwiftPage",
+          username: "swiftpage13",
+          createdAt: "2026-11-03T11:40:16.000Z",
+          text: " | Apple Music listed Taylor Swift's “I Knew It, I Knew You” and “Patient Zero” as two of The “Best of A-List Pop 2026” at #7 and #33! https://t.co/9Ug9Isgh4e"
+        }
+      ],
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "mw3kSNIxjqo",
+          title: "Patient Zero",
+          artist: "Taylor Swift",
+          source: "Taylor Swift",
+          start: 42,
+          end: 96,
+          lines: [
+            "Clipe oficial de Patient Zero, no canal da Taylor Swift.",
+            "No post dela: Dakota, Colin e a fotografia de Emmanuel Lubezki.",
+            "Na Hot 100 de 7 de novembro de 2026, a faixa está em 8º."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "j8pR1tyoRFc",
+          title: "Patient Zero (Expanded Video)",
+          artist: "Taylor Swift",
+          source: "Taylor Swift",
+          start: 18,
+          end: 72,
+          lines: [
+            "Expanded Video oficial, no mesmo canal, sobre o mesmo clipe.",
+            "Taylor publicou o vídeo em 28 de setembro de 2026.",
+            "O single tinha data marcada no post de 22 de setembro: dia 25."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "YZHGzkuzkT4",
+          title: "Travis Kelce no set de Patient Zero",
+          artist: "Entertainment Tonight",
+          source: "Entertainment Tonight",
+          start: 4,
+          end: 48,
+          lines: [
+            "Vídeo do Entertainment Tonight: Travis Kelce no set de Patient Zero.",
+            "Mesma gravação do clipe oficial que abriu o bloco.",
+            "Apple Music listou Patient Zero entre os pops de 2026, segundo a TaylorSwiftPage."
+          ]
+        }
+      ]
+    },
+    {
+      id: "hits",
+      name: "HITS DA SEMANA",
+      summary: "O que está no topo do pop agora",
+      posts: [
+        {
+          id: "2117317858325880987",
+          url: "https://x.com/ChartUpdate_/status/2117317858325880987",
+          name: "Chart Update",
+          username: "ChartUpdate_",
+          createdAt: "2026-11-02T18:08:09.000Z",
+          text: "This week’s Top 10 on the Billboard Hot 100 (Nov. 7)\n\n1. Ella Langley - Choosin’ Texas (=)\n2. Tate McRae - Housewife (=)\n3. Stella Lefty - Boston (+3)\n4. Morgan Wallen - Been By Now (+3)\n5. Tame Impala, JENNIE - Dracula (+3) https://t.co/1taz6XVqrP"
+        },
+        {
+          id: "2091234466350223803",
+          url: "https://x.com/karolg/status/2091234466350223803",
+          name: "LABICHOTA",
+          username: "karolg",
+          createdAt: "2026-08-22T18:42:04.000Z",
+          text: "BbY WOW me gustas demasiao"
+        },
+        {
+          id: "2101711942763102566",
+          url: "https://x.com/KarolGBRA/status/2101711942763102566",
+          name: "KAROL G BRASIL",
+          username: "KarolGBRA",
+          createdAt: "2026-09-20T16:35:49.000Z",
+          text: "\"BbY WOW\" (24 dias), de KAROL G, Judeline e rusowsky, ultrapassou \"Hate That I Made You Love Me\" (22 dias), de Ariana Grande, e se tornou a 3ª música de 2026 com mais dias em #1 no Spotify Global. https://t.co/PPZwnlZIeV"
+        }
+      ],
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "DPEodkHzH-s",
+          title: "Housewife",
+          artist: "Tate McRae",
+          source: "TateMcRaeVEVO",
+          start: 28,
+          end: 82,
+          lines: [
+            "Clipe oficial de Housewife, no canal TateMcRaeVEVO.",
+            "Chart Update: 2º lugar na Hot 100 da semana de 7 de novembro de 2026.",
+            "Trecho curto do clipe, no gancho, pra grade não esfriar."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "82-jTNka3uc",
+          title: "hate that i made you love me",
+          artist: "Ariana Grande",
+          source: "ArianaGrandeVevo",
+          start: 48,
+          end: 102,
+          lines: [
+            "Clipe oficial no ArianaGrandeVevo.",
+            "10ª na Hot 100 da semana de 7 de novembro de 2026.",
+            "KAROL G BRASIL comparou os dias dela em 1º no Spotify com BbY WOW."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "fRIhCiUVaKs",
+          title: "BbY WOW",
+          artist: "KAROL G, Judeline, rusowsky",
+          source: "KarolGVEVO",
+          start: 18,
+          end: 72,
+          lines: [
+            "Visual oficial de BbY WOW no canal KarolGVEVO.",
+            "9ª na Hot 100 da semana de 7 de novembro de 2026.",
+            "No post da própria KAROL G: “BbY WOW me gustas demasiao”."
+          ]
+        }
+      ]
+    },
+    {
+      id: "feat",
+      name: "FEAT. DA VEZ",
+      summary: "Parcerias que estão no rádio",
+      posts: [
+        {
+          id: "2117317858325880987",
+          url: "https://x.com/ChartUpdate_/status/2117317858325880987",
+          name: "Chart Update",
+          username: "ChartUpdate_",
+          createdAt: "2026-11-02T18:08:09.000Z",
+          text: "This week’s Top 10 on the Billboard Hot 100 (Nov. 7)\n\n1. Ella Langley - Choosin’ Texas (=)\n2. Tate McRae - Housewife (=)\n3. Stella Lefty - Boston (+3)\n4. Morgan Wallen - Been By Now (+3)\n5. Tame Impala, JENNIE - Dracula (+3) https://t.co/1taz6XVqrP"
+        }
+      ],
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "xnP7qKxwzjg",
+          title: "Dracula",
+          artist: "Tame Impala",
+          source: "tameimpalaVEVO",
+          start: 32,
+          end: 86,
+          lines: [
+            "Clipe oficial de Dracula, no tameimpalaVEVO.",
+            "A gravação com JENNIE é a que está no ranking.",
+            "Chart Update: 5º na Hot 100 da semana de 7 de novembro, com JENNIE."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "0UPDBODtxzw",
+          title: "Dracula (JENNIE Remix)",
+          artist: "Tame Impala, JENNIE",
+          source: "tameimpalaVEVO",
+          start: 22,
+          end: 76,
+          lines: [
+            "Lyric video oficial do remix com JENNIE, no mesmo canal.",
+            "É a versão que o Chart Update lista no top 5.",
+            "Mesma história do clipe anterior: Dracula atravessou o Halloween no chart."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "gsZauX8gwxo",
+          title: "expectations",
+          artist: "Olivia Rodrigo, Chappell Roan",
+          source: "OliviaRodrigoVEVO",
+          start: 36,
+          end: 90,
+          lines: [
+            "Clipe oficial de expectations, com Chappell Roan, no OliviaRodrigoVEVO.",
+            "7ª na Hot 100 da semana de 7 de novembro de 2026.",
+            "Feat. da vez: duas vozes de pop no mesmo refrão."
+          ]
+        }
+      ]
+    }
+  ],
+  adBreak: {
+    id: "intervalo",
+    name: "INTERVALO CULT",
+    summary: "Trailers do que está em cartaz ou chegando agora"
+  },
+  ads: [
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "kw0YhiqOPFg",
+      title: "Godzilla Minus Zero",
+      artist: "Trailer IMAX",
+      source: "GODZILLA OFFICIAL by TOHO",
+      start: 0,
+      end: 42,
+      lines: [
+        "Trailer IMAX oficial da Toho. Filme de Takashi Yamazaki.",
+        "Japão em 3 de novembro, Estados Unidos em 6. No Brasil, sessões nesta semana.",
+        "Godzilla Day com pré-estreia IMAX, segundo a conta GODZILLA.OFFICIAL."
+      ],
+      posts: [
+        {
+          id: "2117391319928652081",
+          url: "https://x.com/Godzilla_Toho/status/2117391319928652081",
+          name: "GODZILLA.OFFICIAL",
+          username: "Godzilla_Toho",
+          createdAt: "2026-11-02T23:00:04.000Z",
+          text: "The VFX team went all out on #GodzillaMinusZero.\n\nSee it on the biggest screen possible this week, get tickets before they're gone!\nhttps://t.co/2Ktmma6fOa https://t.co/oM0jen5BuD"
+        },
+        {
+          id: "2117331043912986702",
+          url: "https://x.com/Godzilla_Toho/status/2117331043912986702",
+          name: "GODZILLA.OFFICIAL",
+          username: "Godzilla_Toho",
+          createdAt: "2026-11-02T19:00:33.000Z",
+          text: "Godzilla Minus Zero premiered in LA, and now it's coming to @IMAX! #GodzillaMinusZero\n\nGodzilla Day IMAX Early Access on November 3.\nIn theatres November 6.\nhttps://t.co/2Ktmma6fOa https://t.co/fhhe1E7XmC"
+        },
+        {
+          id: "2117270517749322006",
+          url: "https://x.com/g_minus_zero/status/2117270517749322006",
+          name: "『ゴジラ-0.0』【公式】",
+          username: "g_minus_zero",
+          createdAt: "2026-11-02T15:00:03.000Z",
+          text: "『ゴジラ-0.0』本日公開。\n\n三度目はない。\nここで、全て終わらせる。\n\n邦画初【Filmed For IMAX®】作品\n#ゴジラマイナスゼロ #ゴジラ https://t.co/bYDJA6sMqa"
+        }
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "MOU2thjq6Z0",
+      title: "Black Doves — 2ª temporada",
+      artist: "Trailer Netflix",
+      source: "Netflix",
+      start: 0,
+      end: 40,
+      lines: [
+        "Trailer oficial da Netflix. Keira Knightley e Ben Whishaw.",
+        "A 2ª temporada estreia em 5 de novembro de 2026.",
+        "A conta da Netflix postou na véspera: Black Doves volta amanhã."
+      ],
+      posts: [
+        {
+          id: "2118010384061722777",
+          url: "https://x.com/netflix/status/2118010384061722777",
+          name: "Netflix",
+          username: "netflix",
+          createdAt: "2026-11-04T16:00:00.000Z",
+          text: "BLACK DOVES RETURNS TOMORROW 🥂 https://t.co/srCLzlqC6U"
+        },
+        {
+          id: "2103148707306680335",
+          url: "https://x.com/netflix/status/2103148707306680335",
+          name: "Netflix",
+          username: "netflix",
+          createdAt: "2026-09-24T15:45:01.000Z",
+          text: "Old secrets. New faces. \n\nKeira Knightley and Ben Whishaw star in Black Doves Season 2, premiering November 5. https://t.co/SqLwbLGrzO"
+        },
+        {
+          id: "2112906756519039031",
+          url: "https://x.com/netflix/status/2112906756519039031",
+          name: "Netflix",
+          username: "netflix",
+          createdAt: "2026-10-21T14:00:01.000Z",
+          text: "The Hunting Wives \nBlack Doves\nNorth of North \nThe Body \nSteps \nGuarding Stars \nPossible Love\nThe Mosquito Bowl \nObsession \nNFL Netflix Gameday \n\nHere’s what’s next on Netflix in November https://t.co/dYeAkD3uuj"
+        }
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "fS35YSjopjE",
+      title: "Jogos Vorazes: Amanhecer na Colheita",
+      artist: "Trailer Lionsgate",
+      source: "Lionsgate Movies",
+      start: 8,
+      end: 48,
+      lines: [
+        "Trailer oficial da Lionsgate. Haymitch e os 50º Jogos Vorazes.",
+        "Estreia marcada para 20 de novembro de 2026.",
+        "A Lionsgate publicou o guia de leitura da adaptação."
+      ],
+      posts: [
+        {
+          id: "2094455949847396493",
+          url: "https://x.com/Lionsgate/status/2094455949847396493",
+          name: "lionsgate",
+          username: "Lionsgate",
+          createdAt: "2026-08-31T16:03:06.000Z",
+          text: "From page to screen. Explore #TheHungerGames Sunrise on the Reaping with the Official Reader’s Guide: https://t.co/R0TKx8g5zU https://t.co/psjB93iJIo"
+        },
+        {
+          id: "2109509365694673104",
+          url: "https://x.com/cinema21/status/2109509365694673104",
+          name: "Cinema XXI",
+          username: "cinema21",
+          createdAt: "2026-10-12T05:00:00.000Z",
+          text: "It's coming to you~\n\nIni dia deretan film yang siap hadir dengan format Filmed for IMAX #diXXI!\n\nDari STREET FIGHTER, GODZILLA MINUS ZERO, THE HUNGER GAMES: SUNRISE ON THE REAPING, sampai DUNE: PART THREE.\n\nSiap-siap nikmati film-film ini dengan pengalaman layar IMAX 🤩 https://t.co/ewEEeDyVQ0"
+        }
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "KXO21xZdUaM",
+      title: "Hexed",
+      artist: "Trailer Disney",
+      source: "Walt Disney Animation Studios",
+      start: 0,
+      end: 40,
+      lines: [
+        "Trailer oficial da Walt Disney Animation Studios.",
+        "Animação original. Estreia nos cinemas em 25 de novembro de 2026.",
+        "A Disney Animation está chamando o público para comprar ingresso."
+      ],
+      posts: [
+        {
+          id: "2117315813711733106",
+          url: "https://x.com/DisneyAnimation/status/2117315813711733106",
+          name: "Disney Animation",
+          username: "DisneyAnimation",
+          createdAt: "2026-11-02T18:00:02.000Z",
+          text: "✍️✍️✍️\nGet your tickets for Disney's #Hexed NOW and see it in theaters November 25 https://t.co/9D3yHD6PPD"
+        },
+        {
+          id: "2117300708684763378",
+          url: "https://x.com/DisneyAnimation/status/2117300708684763378",
+          name: "Disney Animation",
+          username: "DisneyAnimation",
+          createdAt: "2026-11-02T17:00:01.000Z",
+          text: "she’s got this…maybe? Disney’s #Hexed is in theaters November 25, get your tickets now! https://t.co/2AffM7e550"
+        }
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "Vuv0kqGWjno",
+      title: "O Gatola da Cartola",
+      artist: "Trailer Warner",
+      source: "Warner Bros.",
+      start: 0,
+      end: 40,
+      lines: [
+        "Trailer principal da Warner Bros. para The Cat in the Hat.",
+        "Nos Estados Unidos, estreia em 6 de novembro de 2026.",
+        "No Brasil, O Gatola da Cartola entra na grade desta semana."
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "eHz1DIYqg1M",
+      title: "Os Farofeiros 3",
+      artist: "Trailer nacional",
+      source: "Downtown Filmes",
+      start: 0,
+      end: 40,
+      lines: [
+        "Trailer oficial da Downtown Filmes.",
+        "Estreia em 5 de novembro de 2026.",
+        "A turma viaja para o casamento da filha de Alexandre e cai no hotel mais barato."
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "uJqaGLmZpGo",
+      title: "Duna: Parte Três",
+      artist: "Trailer final",
+      source: "Warner Bros.",
+      start: 0,
+      end: 38,
+      lines: [
+        "Trailer final oficial da Warner Bros.",
+        "Pré-venda no fim de 2026. Cinema XXI listou a sessão IMAX.",
+        "Fecha a trilogia de Denis Villeneuve."
+      ],
+      posts: [
+        {
+          id: "2109509365694673104",
+          url: "https://x.com/cinema21/status/2109509365694673104",
+          name: "Cinema XXI",
+          username: "cinema21",
+          createdAt: "2026-10-12T05:00:00.000Z",
+          text: "It's coming to you~\n\nIni dia deretan film yang siap hadir dengan format Filmed for IMAX #diXXI!\n\nDari STREET FIGHTER, GODZILLA MINUS ZERO, THE HUNGER GAMES: SUNRISE ON THE REAPING, sampai DUNE: PART THREE.\n\nSiap-siap nikmati film-film ini dengan pengalaman layar IMAX 🤩 https://t.co/ewEEeDyVQ0"
+        }
+      ]
+    },
+    {
+      kind: "ad",
+      provider: "youtube",
+      id: "A7lyvgnDuDE",
+      title: "Ebenezer",
+      artist: "Trailer Paramount",
+      source: "Paramount Pictures",
+      start: 0,
+      end: 40,
+      lines: [
+        "Trailer oficial da Paramount, com Johnny Depp.",
+        "Adaptação de Um Conto de Natal. Estreia em novembro de 2026.",
+        "As datas mudam conforme o país: no Brasil, a CNN marcou 12 de novembro."
+      ]
+    }
+  ],
+  adGroups: [[0, 1], [2, 3, 4], [5, 6, 7]],
+  radio: {
+    name: "RÁDIO POP",
+    segmentMs: 70000,
+    testSegmentMs: 6000,
+    lines: [
+      "Rádio pop aberto. A música vem da emissora, ao vivo.",
+      "Esta tela não inventa o nome da faixa: a meta do stream não cruza a página.",
+      "No intervalo, um trailer curto. Depois o rádio volta sozinho."
+    ],
+    streams: [
+      {
+        id: "hunter",
+        name: "Hunter.FM",
+        tag: "O Canal Pop",
+        src: "https://live.hunter.fm/pop_high"
+      },
+      {
+        id: "onefm",
+        name: "1.FM Top 40",
+        tag: "Top 40",
+        src: "https://strm112.1.fm/top40_mobile_mp3"
+      }
+    ],
+    spots: [
+      {
+        kind: "spot",
+        provider: "youtube",
+        id: "n-NDYWPXpKg",
+        title: "Godzilla Minus Zero — teaser",
+        artist: "Toho",
+        source: "GODZILLA OFFICIAL by TOHO",
+        start: 0,
+        end: 24,
+        lines: [
+          "Teaser oficial de 48 segundos, cortado aqui num spot de rádio.",
+          "GODZILLA OFFICIAL by TOHO.",
+          "Depois deste break o pop volta."
+        ]
+      },
+      {
+        kind: "spot",
+        provider: "youtube",
+        id: "zEHK82NBwp0",
+        title: "ゴジラ-0.0 — 特報",
+        artist: "Toho",
+        source: "東宝MOVIEチャンネル",
+        start: 0,
+        end: 28,
+        lines: [
+          "Espote de 30 segundos no canal de filmes da Toho.",
+          "Anúncio da estreia japonesa de 3 de novembro.",
+          "Vinheta de rádio, não um programa."
+        ]
+      },
+      {
+        kind: "spot",
+        provider: "youtube",
+        id: "MPjxijuBuSo",
+        title: "Amanhecer na Colheita — teaser",
+        artist: "Lionsgate",
+        source: "Lionsgate Movies",
+        start: 0,
+        end: 24,
+        lines: [
+          "Teaser oficial da Lionsgate, em janela curta.",
+          "Jogos Vorazes: Amanhecer na Colheita.",
+          "O rádio retoma em seguida."
+        ]
+      }
+    ]
+  }
+};
+
+(function () {
+  "use strict";
+
+  var catalog = window.TV_CATALOG;
+  var TEST = /(?:\?|&)teste=1(?:&|$)/.test(location.search);
+  var schedule = buildSchedule(catalog);
+  var index = 0;
+  var session = 0;
+  var powered = false;
+  var mode = "off";
+  var player = null;
+  var soundOn = false;
+  var log = [];
+  var completedLoop = false;
+  var radioPlaying = false;
+  var activeStream = null;
+  var lineTimer = 0;
+  var postTimer = 0;
+  var lineIndex = 0;
+  var postIndex = 0;
+  var postGen = 0;
+  var currentPosts = [];
+  var apiReady = !!(window.YT && window.YT.Player);
+  var apiWaiters = [];
+
+  var $ = function (id) { return document.getElementById(id); };
+  var audio = $("stream");
+
+  window.onYouTubeIframeAPIReady = function () {
+    apiReady = true;
+    var waiters = apiWaiters.splice(0);
+    waiters.forEach(function (fn) { fn(); });
+  };
+
+  function whenApi() {
+    if (apiReady || (window.YT && window.YT.Player)) {
+      apiReady = true;
+      return Promise.resolve();
+    }
+    return new Promise(function (resolve) { apiWaiters.push(resolve); });
+  }
+
+  function loadApi() {
+    if (document.getElementById("yt-api")) return;
+    var tag = document.createElement("script");
+    tag.id = "yt-api";
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  }
+
+  function buildSchedule(cat) {
+    var items = [];
+    cat.blocks.forEach(function (block, bi) {
+      block.items.forEach(function (item) {
+        items.push({ block: block, item: item, posts: item.posts || block.posts || [] });
+      });
+      var group = (cat.adGroups && cat.adGroups[bi]) || [bi % cat.ads.length];
+      group.forEach(function (ai) {
+        var ad = cat.ads[ai % cat.ads.length];
+        items.push({ block: cat.adBreak, item: ad, posts: ad.posts || [] });
+      });
+    });
+    return items;
+  }
+
+  function labelOf(entry) {
+    if (!entry) return "—";
+    var item = entry.item;
+    return item.title + " — " + item.artist;
+  }
+
+  function pushLog(type, entry, extra) {
+    var row = {
+      t: Date.now(),
+      type: type,
+      id: entry && entry.item ? entry.item.id : "",
+      title: entry ? labelOf(entry) : "",
+      mode: mode
+    };
+    if (extra) row.extra = extra;
+    log.push(row);
+    if (log.length > 400) log.shift();
+  }
+
+  function sleep(ms) {
+    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  function unlockAudio() {
+    soundOn = true;
+    try {
+      var Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      var ctx = new Ctx();
+      var osc = ctx.createOscillator();
+      var gain = ctx.createGain();
+      gain.gain.value = 0.0001;
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.05);
+      ctx.resume();
+    } catch (err) { /* o toque ainda vale como gesto */ }
+  }
+
+  function destroyPlayer() {
+    if (!player) return;
+    try { player.destroy(); } catch (err) { /* já foi */ }
+    player = null;
+    $("yt-mount").innerHTML = "";
+  }
+
+  function windowOf(item) {
+    var start = item.start || 0;
+    var end = item.end || start + 45;
+    if (TEST) end = start + 5;
+    if (end <= start) end = start + 5;
+    return { start: start, end: end };
+  }
+
+  function showBumper(word, sub) {
+    document.body.classList.add("is-bumper");
+    $("bump-word").textContent = word;
+    $("bump-sub").textContent = sub;
+    $("bumper").hidden = false;
+  }
+
+  function hideBumper() {
+    document.body.classList.remove("is-bumper");
+    $("bumper").hidden = true;
+  }
+
+  function bumperCopy(entry) {
+    if (mode === "radio" || (entry && entry.item.kind === "spot")) {
+      return { word: "BREAK", sub: "COMERCIAL DO RÁDIO" };
+    }
+    if (entry && entry.item.kind === "ad") {
+      return { word: "CULT", sub: "INTERVALO" };
+    }
+    var words = ["POP!", "NÃO PISCA", "AO VIVO", "HITZ"];
+    return { word: words[index % words.length], sub: "VINHETA" };
+  }
+
+  function formatDate(iso) {
+    try {
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+      }).format(new Date(iso));
+    } catch (err) {
+      return iso;
+    }
+  }
+
+  function renderChrome(entry, nextEntry) {
+    $("now").textContent = labelOf(entry);
+    $("next").textContent = labelOf(nextEntry);
+    $("block-name").textContent = entry.block.name;
+    var trecho = document.querySelector(".tag-trecho");
+    if (trecho) trecho.hidden = entry.item.kind === "radio";
+    var lines = entry.item.lines || [entry.block.summary || entry.block.name];
+    lineIndex = 0;
+    $("ticker").textContent = lines[0];
+    clearInterval(lineTimer);
+    lineTimer = setInterval(function () {
+      lineIndex = (lineIndex + 1) % lines.length;
+      $("ticker").textContent = lines[lineIndex];
+    }, TEST ? 1200 : 4200);
+    renderPosts(entry.posts || []);
+  }
+
+  function renderPosts(posts) {
+    clearInterval(postTimer);
+    postIndex = 0;
+    currentPosts = posts || [];
+    if (!currentPosts.length) {
+      $("xcard").hidden = true;
+      return;
+    }
+    paintPost(currentPosts[0]);
+    if (posts.length === 1) return;
+    postTimer = setInterval(function () {
+      postIndex = (postIndex + 1) % currentPosts.length;
+      paintPost(currentPosts[postIndex]);
+    }, TEST ? 1500 : 9000);
+  }
+
+  function paintPost(post) {
+    var gen = ++postGen;
+    var card = $("xcard");
+    card.hidden = false;
+    $("x-name").textContent = post.name;
+    $("x-user").textContent = "@" + post.username + " · " + formatDate(post.createdAt);
+    $("x-text").hidden = false;
+    $("x-text").textContent = post.text;
+    $("x-meta").textContent = "post original · @" + post.username;
+    var slot = $("x-embed");
+    slot.innerHTML = "";
+    slot.hidden = true;
+    var widgets = window.twttr && window.twttr.widgets;
+    if (!widgets || !widgets.createTweet) return;
+    widgets.createTweet(post.id, slot, {
+      theme: "dark",
+      dnt: true,
+      conversation: "none",
+      width: 280,
+      align: "center"
+    }).then(function (el) {
+      if (gen !== postGen || !el) return;
+      slot.hidden = false;
+      $("x-text").hidden = true;
+    }).catch(function () { /* fica o texto conferido no catálogo */ });
+  }
+
+  function loadTwitter() {
+    if (document.getElementById("tw-wjs")) return;
+    var s = document.createElement("script");
+    s.id = "tw-wjs";
+    s.async = true;
+    s.src = "https://platform.twitter.com/widgets.js";
+    s.charset = "utf-8";
+    s.onload = function () {
+      if (currentPosts.length) paintPost(currentPosts[postIndex % currentPosts.length]);
+    };
+    document.body.appendChild(s);
+  }
+
+  function playVideo(entry, my) {
+    var span = windowOf(entry.item);
+    var copy = bumperCopy(entry);
+    showBumper(copy.word, copy.sub);
+    pushLog("play", entry);
+    var bumperMs = TEST ? catalog.testBumperMs : catalog.bumperMs;
+    var opened = Date.now();
+
+    return new Promise(function (resolve) {
+      var finished = false;
+      var playing = false;
+      var watch = 0;
+
+      function finish(reason) {
+        if (finished) return;
+        finished = true;
+        clearTimeout(watch);
+        destroyPlayer();
+        var rest = Math.max(0, bumperMs - (Date.now() - opened));
+        setTimeout(function () {
+          pushLog("end", entry, reason);
+          hideBumper();
+          resolve(reason);
+        }, rest);
+      }
+
+      watch = setTimeout(function () { finish("watchdog"); }, TEST ? 9000 : 14000);
+
+      whenApi().then(function () {
+        if (finished || session !== my) return finish("cancel");
+        var holder = "ytp-" + Math.random().toString(36).slice(2, 8);
+        $("yt-mount").innerHTML = '<div id="' + holder + '"></div>';
+        var playerVars = {
+          autoplay: 1,
+          mute: 1,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1,
+          start: span.start,
+          end: span.end,
+          iv_load_policy: 3,
+          cc_load_policy: 0
+        };
+        if (location.protocol !== "file:") playerVars.origin = location.origin;
+        try {
+        player = new YT.Player(holder, {
+          videoId: entry.item.id,
+          host: "https://www.youtube-nocookie.com",
+          playerVars: playerVars,
+          events: {
+            onReady: function (ev) {
+              try {
+                ev.target.mute();
+                ev.target.playVideo();
+              } catch (err) { /* watchdog assume */ }
+            },
+            onStateChange: function (ev) {
+              if (ev.data === YT.PlayerState.PLAYING && !playing) {
+                playing = true;
+                if (soundOn) {
+                  try {
+                    ev.target.unMute();
+                    ev.target.setVolume(90);
+                  } catch (err) { /* segue mudo se o navegador barrar */ }
+                }
+                clearTimeout(watch);
+                var left = (span.end - span.start) * 1000 + 4000;
+                watch = setTimeout(function () { finish("cut"); }, left);
+                var waited = Date.now() - opened;
+                var rest = Math.max(0, bumperMs - waited);
+                setTimeout(function () {
+                  if (!finished) hideBumper();
+                }, rest);
+              }
+              if (ev.data === YT.PlayerState.ENDED) finish("ended");
+            },
+            onError: function (ev) { finish("error:" + (ev && ev.data)); }
+          }
+        });
+        } catch (err) {
+          finish("error");
+        }
+      });
+    });
+  }
+
+  async function startTV(my) {
+    mode = "tv";
+    document.body.classList.remove("is-radio", "is-spot");
+    $("radio-stage").hidden = true;
+    $("radio").textContent = "RÁDIO";
+    $("radio").setAttribute("aria-pressed", "false");
+    radioPlaying = false;
+    stopAudio();
+    var guard = 0;
+    while (session === my && mode === "tv" && guard < 400) {
+      guard += 1;
+      var entry = schedule[index % schedule.length];
+      var nextEntry = schedule[(index + 1) % schedule.length];
+      renderChrome(entry, nextEntry);
+      var before = index;
+      try {
+        await playVideo(entry, my);
+      } catch (err) {
+        pushLog("end", entry, "throw");
+        destroyPlayer();
+        hideBumper();
+      }
+      if (session !== my || mode !== "tv") return;
+      index = before + 1;
+      if (index >= schedule.length) {
+        completedLoop = true;
+        index = 0;
+      }
+    }
+  }
+
+  function stopAudio() {
+    radioPlaying = false;
+    try {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+    } catch (err) { /* sem stream */ }
+  }
+
+  function waitForTime(el, ms) {
+    return new Promise(function (resolve) {
+      var timer = setTimeout(function () { resolve(false); }, ms);
+      var tick = setInterval(function () {
+        if (el.currentTime > 0.25) {
+          clearTimeout(timer);
+          clearInterval(tick);
+          resolve(true);
+        }
+      }, 200);
+    });
+  }
+
+  async function openStream(my) {
+    var list = catalog.radio.streams;
+    for (var i = 0; i < list.length; i += 1) {
+      if (session !== my) return null;
+      var stream = list[i];
+      activeStream = stream;
+      audio.src = stream.src;
+      try {
+        await audio.play();
+      } catch (err) {
+        pushLog("radio-reject", null, stream.id);
+        continue;
+      }
+      var ok = await waitForTime(audio, 7000);
+      if (session !== my) return null;
+      if (ok) {
+        radioPlaying = true;
+        pushLog("radio-on", null, stream.id);
+        return stream;
+      }
+      stopAudio();
+    }
+    radioPlaying = false;
+    return null;
+  }
+
+  function paintStation(stream) {
+    $("station-name").textContent = stream ? stream.name : "SEM SINAL";
+    $("station-tag").textContent = stream ? stream.tag : "tentando de novo na TV";
+  }
+
+  async function startRadio(my) {
+    mode = "radio";
+    document.body.classList.add("is-radio");
+    document.body.classList.remove("is-spot");
+    $("radio-stage").hidden = false;
+    $("radio").textContent = "TV";
+    $("radio").setAttribute("aria-pressed", "true");
+    destroyPlayer();
+    hideBumper();
+    var fake = {
+      block: { name: "NO AR", summary: catalog.radio.name },
+      item: {
+        title: catalog.radio.name,
+        artist: "sintonizando",
+        lines: catalog.radio.lines,
+        kind: "radio"
+      },
+      posts: catalog.blocks[1].posts
+    };
+    renderChrome(fake, schedule[index % schedule.length]);
+    $("now").textContent = "Rádio pop — ao vivo";
+    paintStation(null);
+    var stream = await openStream(my);
+    if (session !== my) return;
+    if (!stream) {
+      $("ticker").textContent = "Sem sinal nas duas emissoras. A TV volta.";
+      await sleep(1600);
+      if (session !== my) return;
+      session += 1;
+      mode = "tv";
+      startTV(session);
+      return;
+    }
+    paintStation(stream);
+    $("now").textContent = stream.name + " — " + stream.tag;
+    var spotAt = 0;
+    var seg = TEST ? catalog.radio.testSegmentMs : catalog.radio.segmentMs;
+    while (session === my && mode === "radio") {
+      var alive = await sleepOrBust(seg, my);
+      if (!alive) return;
+      var spot = catalog.radio.spots[spotAt % catalog.radio.spots.length];
+      spotAt += 1;
+      var entry = {
+        block: { name: "INTERVALO DO RÁDIO", summary: "spot" },
+        item: spot,
+        posts: []
+      };
+      try { audio.pause(); } catch (err) { /* segue o spot */ }
+      radioPlaying = false;
+      document.body.classList.add("is-spot");
+      renderChrome(entry, fake);
+      pushLog("radio-spot", entry);
+      await playVideo(entry, my);
+      if (session !== my || mode !== "radio") return;
+      document.body.classList.remove("is-spot");
+      $("radio-stage").hidden = false;
+      renderChrome(fake, schedule[index % schedule.length]);
+      $("now").textContent = stream.name + " — " + stream.tag;
+      paintStation(stream);
+      try {
+        await audio.play();
+        radioPlaying = true;
+      } catch (err) {
+        var again = await openStream(my);
+        if (!again) break;
+        stream = again;
+      }
+    }
+  }
+
+  function sleepOrBust(ms, my) {
+    return new Promise(function (resolve) {
+      var start = Date.now();
+      var timer = setInterval(function () {
+        if (session !== my || mode !== "radio") {
+          clearInterval(timer);
+          resolve(false);
+        } else if (Date.now() - start >= ms) {
+          clearInterval(timer);
+          resolve(true);
+        }
+      }, 200);
+    });
+  }
+
+  function powerOn() {
+    if (powered) return;
+    powered = true;
+    unlockAudio();
+    $("splash").hidden = true;
+    $("radio").hidden = false;
+    loadTwitter();
+    session += 1;
+    pushLog("on", null, "ligar");
+    startTV(session);
+  }
+
+  function toggleRadio() {
+    if (!powered) return;
+    session += 1;
+    if (mode === "radio") {
+      pushLog("radio-off", null, "");
+      startTV(session);
+    } else {
+      pushLog("radio-ask", null, "");
+      startRadio(session);
+    }
+  }
+
+  $("ligar").addEventListener("click", powerOn);
+  $("radio").addEventListener("click", toggleRadio);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden || !powered) return;
+    if (mode === "radio" && audio.src) {
+      audio.play().catch(function () {});
+    }
+  });
+
+  loadApi();
+
+  window.__TV = {
+    get log() { return log.slice(); },
+    get completedLoop() { return completedLoop; },
+    get mode() { return mode; },
+    get radioPlaying() { return radioPlaying; },
+    get schedule() { return schedule; },
+    get index() { return index; },
+    catalog: catalog
+  };
+})();
+
+</script>
+</body>
+</html>
