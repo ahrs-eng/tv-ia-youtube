@@ -1,0 +1,107 @@
+{
+  "updated": "2026-11-05T22:59:23Z",
+  "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
+  "headlines": [
+    {
+      "text": "Mãe de Abdul Fares defende Marina Ruy Barbosa e diz que a atriz tentou devolver o anel milionário",
+      "source": "Estadão",
+      "date": "2026-11-05",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Pai de Marina Ruy Barbosa sai em defesa da filha em meio a polêmicas: Dor de cotovelo",
+      "source": "Alô Alô Bahia",
+      "date": "2026-11-05",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Luma Costa quebra silêncio sobre polêmica com Marina Ruy Barbosa: Só observo",
+      "source": "O Globo",
+      "date": "2026-11-03",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa volta a ser assunto na internet",
+      "source": "TNH1",
+      "date": "2026-11-05",
+      "hot": true,
+      "theme": "marina",
+      "weight": 2
+    },
+    {
+      "text": "ENTENDA A TRETA ENVOLVENDO NATI VOZZA E MARINA RUY BARBOSA",
+      "source": "@dailygarotinho",
+      "date": "2026-10-27",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Lala Rudge, Nati Vozza, Shantal: quem é quem na treta entre Marina Ruy Barbosa e Luma Costa",
+      "source": "O TEMPO",
+      "date": "2026-11-04",
+      "hot": true,
+      "theme": "marina",
+      "weight": 2
+    },
+    {
+      "text": "Saiba os bastidores do unfollow de Camila Queiroz e Marina Ruy Barbosa",
+      "source": "Metrópoles",
+      "date": "2026-11-02",
+      "hot": true,
+      "theme": "marina",
+      "weight": 2
+    },
+    {
+      "text": "Bi Festinha lança às 21h nas plataformas digitais",
+      "source": "@Ludmilla",
+      "date": "2026-11-04",
+      "hot": true,
+      "theme": "ludmilla",
+      "weight": 2
+    },
+    {
+      "text": "EQUILIBRIVM indicado ao Latin GRAMMYs em Álbum do Ano e Álbum de Pop Contemporâneo em Língua Portuguesa",
+      "source": "@Anitta",
+      "date": "2026-09-16",
+      "hot": true,
+      "theme": "anitta",
+      "weight": 2
+    },
+    {
+      "text": "Godzilla Minus Zero amplia traumas do primeiro filme em história maior, mais dramática e violenta",
+      "source": "@omelete",
+      "date": "2026-11-03",
+      "hot": false,
+      "theme": "cinema",
+      "weight": 1
+    }
+  ],
+  "complaint": {
+    "kicker": "RECLAMAÇÃO DO DIA",
+    "title": "NATI × MARINA",
+    "text": "Não sei como tem coragem, eu teria vergonha",
+    "credit": "Prints no post de @dailygarotinho, 27 out 2026",
+    "url": "https://x.com/dailygarotinho/status/2114869902985019484",
+    "image": "https://pbs.twimg.com/media/HVmG9ZVXQAA7Bwi.jpg"
+  },
+  "remember": {
+    "kicker": "VOCÊ LEMBRA?",
+    "line": "Começar de Novo, 2004. Amizade de Marina e Luma Costa.",
+    "video": "09zuMFQgnW0",
+    "videoTitle": "Começar De Novo (2004-2005) Abertura",
+    "channel": "Marcelo Gabriel Vídeos Novos",
+    "note": "Abertura da novela no YouTube. Não é um quadro conferido da Marina."
+  },
+  "trending": [
+    { "label": "Marina Ruy Barbosa", "theme": "marina", "hot": true },
+    { "label": "Anitta", "theme": "anitta", "hot": true },
+    { "label": "Ludmilla", "theme": "ludmilla", "hot": true }
+  ]
+}

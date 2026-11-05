@@ -1,0 +1,27 @@
+name: tv-pop live
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node tv-pop/fetch-live.mjs
+      - name: Publica o cache se mudou
+        run: |
+          git diff --quiet -- tv-pop/live.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tv-pop/live.json
+          git commit -m "Atualiza o cache ao vivo da POP!"
+          git push

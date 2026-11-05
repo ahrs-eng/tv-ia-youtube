@@ -313,7 +313,7 @@ body.crt-on .scan { opacity: 1; }
   z-index: 6;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 34px;
   display: flex;
   align-items: stretch;
   min-height: 72px;
@@ -697,7 +697,104 @@ body.is-spot #radio-stage { visibility: hidden; }
   overflow: hidden;
 }
 
-body.is-bumper #redes { opacity: 0; pointer-events: none; }
+body.is-bumper #redes,
+body.is-bumper #reclama,
+body.is-bumper #lembra { opacity: 0; pointer-events: none; }
+
+#news-ticker {
+  position: absolute;
+  z-index: 7;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 34px;
+  display: flex;
+  align-items: stretch;
+  background: #0b0b0d;
+  border-top: 3px solid var(--yellow);
+  overflow: hidden;
+}
+
+#news-ticker b {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: var(--pink);
+  color: #140010;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.news-track {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding-left: 16px;
+  white-space: nowrap;
+  animation: newstick 48s linear infinite;
+}
+
+.news-track span { font-weight: 700; font-size: 16px; }
+.news-track .hot { color: var(--yellow); }
+
+@keyframes newstick {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+#reclama, #lembra {
+  position: absolute;
+  z-index: 6;
+  right: calc(14px + var(--safe-r));
+  width: min(280px, calc(100vw - 28px));
+  background: rgba(7, 7, 9, 0.92);
+  border: 2px solid var(--yellow);
+  box-shadow: 5px 5px 0 var(--pink);
+  padding: 8px;
+}
+
+#reclama { top: calc(150px + var(--safe-t)); }
+#lembra { top: calc(150px + var(--safe-t)); }
+
+#reclama[hidden], #lembra[hidden] { display: none !important; }
+
+#reclama .k, #lembra .k {
+  font-family: Anton, Impact, sans-serif;
+  color: var(--pink);
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
+#reclama strong, #lembra strong {
+  display: block;
+  font-family: Anton, Impact, sans-serif;
+  font-size: 20px;
+  line-height: 0.95;
+  margin: 4px 0;
+}
+
+#reclama img, #lembra iframe {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border: 0;
+  background: #000;
+}
+
+#reclama p, #lembra p { margin: 6px 0 0; font-weight: 700; font-size: 14px; line-height: 1.25; }
+#reclama a, #lembra a { color: var(--cyan); }
+
+.em-alta {
+  display: inline-block;
+  margin-right: 6px;
+  background: #ff2a2a;
+  color: #fff;
+  font-family: Anton, Impact, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  padding: 2px 4px 0;
+}
 
 #controle-crt[aria-pressed="true"],
 #sala-crt[aria-pressed="true"] {
@@ -1088,6 +1185,8 @@ body.is-card .xcard {
   outline-offset: 3px;
 }
 
+#controle-sala, #controle-escolha { display: none; }
+
 @media (max-width: 720px) {
   #sala-btn { top: calc(160px + var(--safe-t)); }
   #escolha-btn { top: calc(160px + var(--safe-t)); left: calc(100px + var(--safe-l)); font-size: 15px; }
@@ -1097,7 +1196,46 @@ body.is-card .xcard {
   .cg-flag { display: none; }
   .sala-item { font-size: 15px; }
   .escolha-op { flex-direction: column; }
-  .controle-botoes > button { flex: 1 1 72px; min-width: 64px; }
+  .controle-botoes > button { flex: 1 1 44px; min-width: 44px; min-height: 44px; padding: 4px; }
+  .controle-ico { font-size: 18px; }
+  .controle-leg {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .controle-escolhe { flex: 1 1 120px; min-width: 0; }
+  .controle-escolhe select { min-height: 44px; font-size: 14px; box-shadow: none; }
+  #controle { gap: 4px; padding: 6px 8px calc(6px + var(--safe-b)); }
+  .controle-ar { display: none; }
+  #sala-btn, #escolha-btn, #radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  #controle-sala, #controle-escolha { display: flex; }
+  .nownext { top: calc(8px + var(--safe-t)); max-width: calc(100vw - 132px); }
+  #tv-clock { top: calc(8px + var(--safe-t)); right: calc(8px + var(--safe-r)); padding: 2px 6px; }
+  #tv-clock b { font-size: 16px; }
+  #redes, .xcard { display: none !important; }
+  #news-ticker { height: 28px; }
+  #news-ticker b { font-size: 12px; padding: 0 8px; }
+  .news-track span { font-size: 14px; }
+  .lower { bottom: 28px; min-height: 48px; }
+  .ticker { font-size: 15px; }
+  html, body { overflow-x: hidden; }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  #controle { flex-direction: row; align-items: center; padding-top: 4px; padding-bottom: calc(4px + var(--safe-b)); }
+  .controle-ar { display: none; }
+  #news-ticker { height: 24px; }
+  .lower { bottom: 24px; min-height: 40px; }
+  .bug { display: none; }
+  #sala-btn, #escolha-btn, #radio { display: none; }
 }
 
 #especial-btn {
@@ -1290,10 +1428,14 @@ body.is-card .xcard {
   box-shadow: 8px 8px 0 var(--pink);
 }
 
+@media (max-width: 720px) {
+  #reclama, #lembra { display: none !important; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .wipe.go, .lower.pop, .ticker.swap, .esp-media { animation: none !important; transition: none !important; }
   .yt-layer { transition: none !important; }
-  #tv-live, .live-dot, .bug { animation: none !important; }
+  #tv-live, .live-dot, .bug, .news-track { animation: none !important; }
   .scan { opacity: 0 !important; }
 }
 
@@ -1342,6 +1484,23 @@ body.is-card .xcard {
       <em id="redes-user"></em>
       <p id="redes-text"></p>
     </aside>
+    <aside id="reclama" hidden>
+      <div class="k" id="reclama-k">RECLAMAÇÃO DO DIA</div>
+      <strong id="reclama-title">NATI × MARINA</strong>
+      <img id="reclama-img" alt="Print publicado no X" src="">
+      <p id="reclama-text"></p>
+      <p><a id="reclama-link" href="#" target="_blank" rel="noopener noreferrer">Post original</a></p>
+    </aside>
+    <aside id="lembra" hidden>
+      <div class="k">VOCÊ LEMBRA?</div>
+      <strong id="lembra-title">Começar de Novo</strong>
+      <div id="lembra-video"></div>
+      <p id="lembra-line"></p>
+    </aside>
+    <div id="news-ticker" aria-label="Manchetes">
+      <b>AGORA</b>
+      <div class="news-track" id="news-track"></div>
+    </div>
     <div class="lower" id="lower">
       <div class="lower-bar" id="lower-bar"></div>
       <div class="block-name" id="block-name">POP!</div>
@@ -1397,6 +1556,21 @@ body.is-card .xcard {
         <select id="controle-programa" aria-label="Ir para um programa"></select>
       </label>
       <button type="button" id="controle-radio" aria-pressed="false"><span class="controle-ico" aria-hidden="true">📻</span><span class="controle-leg" id="controle-radio-leg">Rádio</span></button>
+      <label class="controle-escolhe">
+        <span>Som</span>
+        <select id="controle-mix" aria-label="Como ouvir">
+          <option value="tv">TV</option>
+          <option value="bed">Rádio sob a TV</option>
+          <option value="radio">Só rádio</option>
+          <option value="mute">Mudo</option>
+        </select>
+      </label>
+      <label class="controle-escolhe">
+        <span>Emissora</span>
+        <select id="controle-emissora" aria-label="Emissora"></select>
+      </label>
+      <button type="button" id="controle-sala"><span class="controle-ico" aria-hidden="true">▣</span><span class="controle-leg">Sala</span></button>
+      <button type="button" id="controle-escolha"><span class="controle-ico" aria-hidden="true">★</span><span class="controle-leg">Eu escolho</span></button>
       <button type="button" id="especial-btn"><span class="controle-leg">Especial</span></button>
       <button type="button" id="controle-crt" aria-pressed="true"><span class="controle-leg">CRT</span></button>
     </div>
@@ -1419,6 +1593,7 @@ body.is-card .xcard {
       <button type="button" id="sala-radio">Rádio</button>
       <button type="button" id="sala-especial">Especial Marina</button>
       <button type="button" id="sala-crt" aria-pressed="true">CRT</button>
+      <button type="button" id="sala-live">Atualizar agora</button>
     </div>
     <h3>Programação</h3>
     <div id="sala-grade"></div>
@@ -3053,10 +3228,28 @@ window.TV_CATALOG = {
     ],
     streams: [
       {
-        id: "hunter",
-        name: "Hunter.FM",
+        id: "hunter-pop",
+        name: "Hunter.FM Pop",
         tag: "O Canal Pop",
         src: "https://live.hunter.fm/pop_high"
+      },
+      {
+        id: "hunter-rock",
+        name: "Hunter.FM Rock",
+        tag: "Rock",
+        src: "https://live.hunter.fm/rock_high"
+      },
+      {
+        id: "hunter-sert",
+        name: "Hunter.FM Sertanejo",
+        tag: "Sertanejo",
+        src: "https://live.hunter.fm/sertanejo_high"
+      },
+      {
+        id: "hunter-pisa",
+        name: "Hunter.FM Pisadinha",
+        tag: "Pisadinha",
+        src: "https://live.hunter.fm/pisadinha_high"
       },
       {
         id: "onefm",
@@ -3178,6 +3371,7 @@ window.TV_CATALOG = {
   var log = [];
   var completedLoop = false;
   var radioPlaying = false;
+  var mixMode = "tv";
   var activeStream = null;
   var lineTimer = 0;
   var postTimer = 0;
@@ -3660,12 +3854,130 @@ window.TV_CATALOG = {
     redesList = MENCOES[key] || [{ name: "Menção da plateia", username: "", text: "NÃO DEFINIDO" }];
     redesIndex = 0;
     paintMention(redesList[0]);
+    document.body.classList.toggle("tema-marina", key === "marina");
+    showFofocaCards(key);
     if (redesList.length < 2) return;
     redesTimer = setInterval(function () {
       redesIndex = (redesIndex + 1) % redesList.length;
       paintMention(redesList[redesIndex]);
     }, TEST ? 1200 : 8000);
   }
+
+  var liveData = null;
+  var LIVE_FALLBACK = {
+    updated: "2026-11-05T22:59:23Z",
+    headlines: [
+      { text: "Mãe de Abdul Fares defende Marina Ruy Barbosa e diz que a atriz tentou devolver o anel milionário", source: "Estadão", date: "2026-11-05", hot: true, theme: "marina", weight: 3 },
+      { text: "Bi Festinha lança às 21h nas plataformas digitais", source: "@Ludmilla", date: "2026-11-04", hot: true, theme: "ludmilla", weight: 2 },
+      { text: "NÃO DEFINIDO", source: "NÃO DEFINIDO", date: "", hot: false, theme: "", weight: 0 }
+    ],
+    complaint: {
+      kicker: "RECLAMAÇÃO DO DIA",
+      title: "NATI × MARINA",
+      text: "Não sei como tem coragem, eu teria vergonha",
+      credit: "Prints no post de @dailygarotinho, 27 out 2026",
+      url: "https://x.com/dailygarotinho/status/2114869902985019484",
+      image: "https://pbs.twimg.com/media/HVmG9ZVXQAA7Bwi.jpg"
+    },
+    remember: {
+      kicker: "VOCÊ LEMBRA?",
+      line: "Começar de Novo, 2004. Amizade de Marina e Luma Costa.",
+      video: "09zuMFQgnW0",
+      videoTitle: "Começar De Novo (2004-2005) Abertura",
+      channel: "Marcelo Gabriel Vídeos Novos",
+      note: "Abertura da novela no YouTube. Não é um quadro conferido da Marina."
+    },
+    trending: [{ label: "Marina Ruy Barbosa", theme: "marina", hot: true }]
+  };
+
+  function themeIsHot(key) {
+    var list = (liveData && liveData.trending) || [];
+    for (var i = 0; i < list.length; i += 1) {
+      if (list[i].hot && list[i].theme === key) return true;
+    }
+    return false;
+  }
+
+  function paintTicker(items) {
+    var track = $("news-track");
+    if (!track) return;
+    var list = (items || []).slice().sort(function (a, b) { return (b.weight || 0) - (a.weight || 0); });
+    if (!list.length) list = [{ text: "NÃO DEFINIDO", source: "NÃO DEFINIDO", date: "" }];
+    var html = list.concat(list).map(function (item) {
+      var badge = item.hot ? "<i class=\"em-alta\">EM ALTA</i>" : "";
+      return "<span>" + badge + esc(item.date || "") + " · " + esc(item.source || "") + " · " + esc(item.text) + "</span>";
+    }).join("");
+    track.innerHTML = html;
+  }
+
+  function paintComplaint(card) {
+    if (!$("reclama") || !card) return;
+    $("reclama-k").textContent = card.kicker || "RECLAMAÇÃO DO DIA";
+    $("reclama-title").textContent = card.title || "NÃO DEFINIDO";
+    $("reclama-text").textContent = card.text || "NÃO DEFINIDO";
+    $("reclama-link").textContent = card.credit || "Post original";
+    $("reclama-link").href = card.url || "#";
+    var img = $("reclama-img");
+    if (img && img.tagName === "IMG") {
+      img.alt = card.credit || "Print publicado no X";
+      img.src = card.image || "";
+    }
+  }
+
+  function paintRemember(card) {
+    if (!$("lembra") || !card) return;
+    $("lembra-title").textContent = card.kicker || "VOCÊ LEMBRA?";
+    $("lembra-line").textContent = (card.line || "NÃO DEFINIDO") + (card.channel ? " Vídeo: " + card.channel + " — " + (card.videoTitle || "") + "." : " Vídeo: NÃO DEFINIDO.");
+    var box = $("lembra-video");
+    if (!box) return;
+    box.innerHTML = "";
+    if (!card.video) return;
+    var frame = document.createElement("iframe");
+    frame.title = card.videoTitle || "Você lembra?";
+    frame.setAttribute("allow", "autoplay; encrypted-media");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + card.video + "?autoplay=1&mute=1&controls=0&rel=0&playsinline=1";
+    box.appendChild(frame);
+  }
+
+  function showFofocaCards(key) {
+    var on = key === "marina";
+    if ($("reclama")) $("reclama").hidden = !on;
+    if ($("lembra")) {
+      $("lembra").hidden = !on;
+      if (!on && $("lembra-video")) $("lembra-video").innerHTML = "";
+      if (on && liveData && liveData.remember && $("lembra-video") && !$("lembra-video").querySelector("iframe")) {
+        paintRemember(liveData.remember);
+      }
+    }
+  }
+
+  function applyLive(data) {
+    if (!data) return;
+    liveData = data;
+    try { localStorage.setItem("tvpop-live", JSON.stringify(data)); } catch (err) { /* sem storage */ }
+    paintTicker(data.headlines || []);
+    paintComplaint(data.complaint);
+    if (nowEntry) renderRedes(nowEntry);
+  }
+
+  function readStoredLive() {
+    try { return JSON.parse(localStorage.getItem("tvpop-live") || "null"); } catch (err) { return null; }
+  }
+
+  function loadLive() {
+    var bucket = Math.floor(Date.now() / (12 * 60 * 1000));
+    return fetch("live.json?t=" + bucket, { cache: "no-store" }).then(function (res) {
+      if (!res.ok) throw new Error(String(res.status));
+      return res.json();
+    }).then(applyLive).catch(function () {
+      applyLive(readStoredLive() || LIVE_FALLBACK);
+    });
+  }
+
+  applyLive(LIVE_FALLBACK);
+  loadLive();
+  setInterval(loadLive, 12 * 60 * 1000);
+  if (/(?:\?|&)live=1(?:&|$)/.test(location.search)) loadLive();
 
   function renderChrome(entry, nextEntry) {
     nowEntry = entry;
@@ -3675,7 +3987,10 @@ window.TV_CATALOG = {
     $("now").textContent = cg.line;
     $("next").textContent = nextLine;
     $("block-name").textContent = entry.block.name;
-    if ($("cg-flag")) $("cg-flag").textContent = cg.flag;
+    if ($("cg-flag")) {
+      var hot = themeIsHot(mentionKey(entry));
+      $("cg-flag").textContent = (hot ? "EM ALTA · " : "") + cg.flag;
+    }
     var lower = $("lower");
     if (lower) {
       lower.setAttribute("data-block", entry.block.id || "");
@@ -3845,11 +4160,13 @@ window.TV_CATALOG = {
                 if (ev.data === YT.PlayerState.PLAYING && !playing) {
                   playing = true;
                   stuck = 0;
-                  if (soundOn) {
+                  if (soundOn && mixMode === "tv") {
                     try {
                       ev.target.unMute();
                       ev.target.setVolume(90);
                     } catch (err) { /* segue mudo se o navegador barrar */ }
+                  } else {
+                    try { ev.target.mute(); } catch (err) { /* rádio ou mudo */ }
                   }
                   clearTimeout(watch);
                   fadeTo(incoming);
@@ -3994,8 +4311,21 @@ window.TV_CATALOG = {
     });
   }
 
+  function streamOrder() {
+    var list = catalog.radio.streams.slice();
+    var picked = $("controle-emissora") && $("controle-emissora").value;
+    if (!picked) return list;
+    var first = [];
+    var rest = [];
+    list.forEach(function (stream) {
+      if (stream.id === picked) first.push(stream);
+      else rest.push(stream);
+    });
+    return first.concat(rest);
+  }
+
   async function openStream(my) {
-    var list = catalog.radio.streams;
+    var list = streamOrder();
     for (var i = 0; i < list.length; i += 1) {
       if (session !== my) return null;
       var stream = list[i];
@@ -4755,6 +5085,18 @@ window.TV_CATALOG = {
   }
   if ($("controle-crt")) $("controle-crt").addEventListener("click", toggleCrt);
   if ($("sala-crt")) $("sala-crt").addEventListener("click", toggleCrt);
+  if ($("sala-live")) $("sala-live").addEventListener("click", function () { loadLive(); });
+  if ($("controle-sala")) $("controle-sala").addEventListener("click", toggleSala);
+  if ($("controle-escolha")) $("controle-escolha").addEventListener("click", openChoice);
+  if ($("controle-mix")) $("controle-mix").addEventListener("change", function () { setMix($("controle-mix").value); });
+  if ($("controle-emissora")) $("controle-emissora").addEventListener("change", function () {
+    if (mode === "radio") {
+      session += 1;
+      startRadio(session);
+      return;
+    }
+    if (mixMode === "bed") setMix("bed");
+  });
 
   $("especial-btn").addEventListener("click", openEspecial);
   $("sala-especial").addEventListener("click", function () {
@@ -4834,7 +5176,63 @@ window.TV_CATALOG = {
     syncingSelect = false;
   }
 
+  function fillStations() {
+    var sel = $("controle-emissora");
+    if (!sel) return;
+    sel.innerHTML = catalog.radio.streams.map(function (stream) {
+      return '<option value="' + esc(stream.id) + '">' + esc(stream.name) + "</option>";
+    }).join("");
+  }
+
+  async function setMix(value) {
+    mixMode = value || "tv";
+    if ($("controle-mix")) $("controle-mix").value = mixMode;
+    if (mixMode === "radio") {
+      if (mode !== "radio") {
+        if (!powered) startSession("radio");
+        else toggleRadio();
+      }
+      return;
+    }
+    if (mode === "radio") {
+      session += 1;
+      startTV(session);
+    }
+    document.body.classList.toggle("is-bed", mixMode === "bed");
+    document.body.classList.toggle("is-mute", mixMode === "mute");
+    if (mixMode === "mute") {
+      try { audio.pause(); } catch (err) { /* mudo */ }
+      radioPlaying = false;
+      if (player && player.mute) { try { player.mute(); } catch (err) { /* sem player */ } }
+      return;
+    }
+    if (mixMode === "bed") {
+      if (player && player.mute) { try { player.mute(); } catch (err) { /* sem player */ } }
+      var stream = streamOrder()[0];
+      if (!stream) return;
+      audio.volume = 0.45;
+      audio.src = stream.src;
+      try {
+        await audio.play();
+        radioPlaying = true;
+        paintStation(stream);
+        $("now").textContent = stream.name + " sob a TV";
+        renderRemote();
+      } catch (err) {
+        radioPlaying = false;
+        $("ticker").textContent = "Emissora sem sinal. URL não definida como reserva.";
+      }
+      return;
+    }
+    try { audio.pause(); } catch (err) { /* volta o som da TV */ }
+    radioPlaying = false;
+    if (soundOn && player && player.unMute) {
+      try { player.unMute(); player.setVolume(90); } catch (err) { /* segue */ }
+    }
+  }
+
   fillProgramSelect();
+  fillStations();
   renderRemote();
   $("controle-prev").addEventListener("click", prevClip);
   $("controle-skip").addEventListener("click", skipClip);
