@@ -69,6 +69,19 @@ button, a { font: inherit; }
   background: #000;
 }
 
+.yt-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1.5s ease;
+  pointer-events: none;
+}
+
+.yt-layer.live { opacity: 1; z-index: 2; }
+
+body.tv-fast .yt-layer { transition-duration: 0.2s; }
+
 #yt-mount iframe {
   position: absolute;
   top: 50%;
@@ -87,13 +100,16 @@ button, a { font: inherit; }
   inset: 0;
   pointer-events: none;
   z-index: 4;
+  opacity: 0;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.035) 0 1px,
+    rgba(255, 255, 255, 0.045) 0 1px,
     transparent 1px 3px
   );
   mix-blend-mode: overlay;
 }
+
+body.crt-on .scan { opacity: 1; }
 
 .vignette {
   position: absolute;
@@ -589,11 +605,104 @@ body.is-spot #radio-stage { visibility: hidden; }
   position: absolute;
   left: 0;
   top: 0;
-  height: 4px;
+  height: 3px;
   width: 0;
   background: var(--yellow);
+  opacity: 0.9;
   z-index: 2;
   pointer-events: none;
+}
+
+.cg-flag {
+  flex: none;
+  align-self: center;
+  margin-right: 8px;
+  background: #111;
+  color: var(--cyan);
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  padding: 4px 8px 2px;
+  max-width: 42%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#tv-clock {
+  position: absolute;
+  z-index: 7;
+  top: calc(86px + var(--safe-t));
+  right: calc(14px + var(--safe-r));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(7, 7, 9, 0.82);
+  border: 2px solid var(--yellow);
+  padding: 4px 8px 3px;
+  box-shadow: 3px 3px 0 var(--pink);
+}
+
+#tv-clock b {
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(18px, 2.4vw, 26px);
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+#tv-live {
+  color: #ff2a2a;
+  font-family: Anton, Impact, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  animation: liveblink 1.1s steps(2, end) infinite;
+}
+
+@keyframes liveblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+#redes {
+  position: absolute;
+  z-index: 6;
+  left: calc(14px + var(--safe-l));
+  top: calc(258px + var(--safe-t));
+  width: min(300px, calc(100vw - 28px));
+  background: rgba(7, 7, 9, 0.9);
+  border: 2px solid var(--paper);
+  box-shadow: 5px 5px 0 var(--pink);
+  padding: 8px 10px 10px;
+}
+
+#redes[hidden] { display: none !important; }
+
+.redes-kicker {
+  font-family: Anton, Impact, sans-serif;
+  color: var(--yellow);
+  letter-spacing: 0.12em;
+  font-size: 13px;
+}
+
+#redes strong { display: block; font-size: 15px; line-height: 1.1; }
+#redes em { color: var(--cyan); font-style: normal; font-size: 13px; }
+#redes p {
+  margin: 6px 0 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+body.is-bumper #redes { opacity: 0; pointer-events: none; }
+
+#controle-crt[aria-pressed="true"],
+#sala-crt[aria-pressed="true"] {
+  background: var(--cyan);
+  color: #111;
 }
 
 .lower.pop { animation: lowerpop 0.45s cubic-bezier(.2,.8,.2,1); }
@@ -982,6 +1091,10 @@ body.is-card .xcard {
 @media (max-width: 720px) {
   #sala-btn { top: calc(160px + var(--safe-t)); }
   #escolha-btn { top: calc(160px + var(--safe-t)); left: calc(100px + var(--safe-l)); font-size: 15px; }
+  #tv-clock { top: calc(72px + var(--safe-t)); }
+  #redes { top: auto; bottom: calc(86px + var(--safe-b)); left: 10px; right: 10px; width: auto; max-height: 96px; }
+  .xcard { bottom: calc(196px + var(--safe-b)); }
+  .cg-flag { display: none; }
   .sala-item { font-size: 15px; }
   .escolha-op { flex-direction: column; }
   .controle-botoes > button { flex: 1 1 72px; min-width: 64px; }
@@ -1161,7 +1274,7 @@ body.is-card .xcard {
 
 #esp-gate {
   position: absolute;
-  inset: 0;
+  inset: 0 0 150px 0;
   z-index: 2;
   display: grid;
   place-items: center;
@@ -1179,13 +1292,16 @@ body.is-card .xcard {
 
 @media (prefers-reduced-motion: reduce) {
   .wipe.go, .lower.pop, .ticker.swap, .esp-media { animation: none !important; transition: none !important; }
+  .yt-layer { transition: none !important; }
+  #tv-live, .live-dot, .bug { animation: none !important; }
+  .scan { opacity: 0 !important; }
 }
 
 </style>
 </head>
 <body>
   <div id="stage">
-    <div id="yt-mount"></div>
+    <div id="yt-mount"><div class="yt-layer" id="yt-a"></div><div class="yt-layer" id="yt-b"></div></div>
     <div class="wipe" id="wipe" hidden></div>
     <button id="sala-btn" type="button" aria-expanded="false" aria-controls="sala">SALA</button>
     <button id="escolha-btn" type="button" hidden>EU ESCOLHO</button>
@@ -1202,6 +1318,7 @@ body.is-card .xcard {
     <div class="scan" aria-hidden="true"></div>
     <div class="vignette" aria-hidden="true"></div>
     <div class="bug" aria-hidden="true">POP!<small>AO VIVO</small></div>
+    <div id="tv-clock"><b id="tv-clock-time">21:30:00</b><span id="tv-live">AO VIVO</span></div>
     <div class="nownext">
       <div class="pill"><i class="live-dot" aria-hidden="true"></i><b>AGORA</b> <span id="now">sintonizando</span></div>
       <div class="pill next"><b>A SEGUIR</b> <span id="next">—</span></div>
@@ -1219,9 +1336,16 @@ body.is-card .xcard {
       <div class="xmeta" id="x-meta">post original</div>
       <div id="x-embed" hidden></div>
     </aside>
+    <aside id="redes" hidden>
+      <div class="redes-kicker">NAS REDES</div>
+      <strong id="redes-name"></strong>
+      <em id="redes-user"></em>
+      <p id="redes-text"></p>
+    </aside>
     <div class="lower" id="lower">
       <div class="lower-bar" id="lower-bar"></div>
       <div class="block-name" id="block-name">POP!</div>
+      <div class="cg-flag" id="cg-flag">NO AR</div>
       <div class="ticker-wrap">
         <div class="ticker" id="ticker" aria-live="polite"></div>
       </div>
@@ -1257,6 +1381,7 @@ body.is-card .xcard {
           <p>Marina Ruy Barbosa</p>
           <button type="button" id="esp-tocar">TOCAR</button>
           <p>ASSISTIR inicia o narrador e a linha do tempo.</p>
+          <button type="button" id="esp-gate-voltar">Voltar à grade</button>
         </div>
       </div>
     </section>
@@ -1273,6 +1398,7 @@ body.is-card .xcard {
       </label>
       <button type="button" id="controle-radio" aria-pressed="false"><span class="controle-ico" aria-hidden="true">📻</span><span class="controle-leg" id="controle-radio-leg">Rádio</span></button>
       <button type="button" id="especial-btn"><span class="controle-leg">Especial</span></button>
+      <button type="button" id="controle-crt" aria-pressed="true"><span class="controle-leg">CRT</span></button>
     </div>
   </nav>
   <div id="sala" hidden role="dialog" aria-modal="true" aria-labelledby="sala-title">
@@ -1292,6 +1418,7 @@ body.is-card .xcard {
       <button type="button" id="sala-clear">Soltar escolha</button>
       <button type="button" id="sala-radio">Rádio</button>
       <button type="button" id="sala-especial">Especial Marina</button>
+      <button type="button" id="sala-crt" aria-pressed="true">CRT</button>
     </div>
     <h3>Programação</h3>
     <div id="sala-grade"></div>
@@ -3232,11 +3359,179 @@ window.TV_CATALOG = {
     } catch (err) { /* o toque ainda vale como gesto */ }
   }
 
+  var layers = { a: null, b: null };
+  var liveLayer = "";
+  var wantOpen = false;
+  var lastProgramId = "";
+  var bumpCursor = 0;
+  var redesTimer = 0;
+  var redesList = [];
+  var redesIndex = 0;
+  var reduceMotion = false;
+  try {
+    reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  } catch (err) { reduceMotion = false; }
+  if (TEST) document.body.classList.add("tv-fast");
+  if (!reduceMotion) {
+    document.body.classList.add("crt-on");
+  } else {
+    var crtBtn = $("controle-crt");
+    var salaCrt = $("sala-crt");
+    if (crtBtn) crtBtn.setAttribute("aria-pressed", "false");
+    if (salaCrt) salaCrt.setAttribute("aria-pressed", "false");
+  }
+
+  function layerEl(name) { return $("yt-" + name); }
+
+  function destroyLayer(name) {
+    var current = layers[name];
+    layers[name] = null;
+    if (current) {
+      try { current.destroy(); } catch (err) { /* já foi */ }
+    }
+    var el = layerEl(name);
+    if (el) {
+      el.innerHTML = "";
+      el.classList.remove("live");
+    }
+    if (liveLayer === name) liveLayer = "";
+    if (player === current) player = null;
+  }
+
   function destroyPlayer() {
-    if (!player) return;
-    try { player.destroy(); } catch (err) { /* já foi */ }
+    destroyLayer("a");
+    destroyLayer("b");
     player = null;
-    $("yt-mount").innerHTML = "";
+  }
+
+  function pickLayer() {
+    if (liveLayer === "a") return "b";
+    if (liveLayer === "b") return "a";
+    return "a";
+  }
+
+  function fadeTo(name) {
+    var next = layerEl(name);
+    var prev = liveLayer && liveLayer !== name ? liveLayer : "";
+    if (next) next.classList.add("live");
+    liveLayer = name;
+    player = layers[name];
+    if (!prev) return;
+    var old = prev;
+    var oldEl = layerEl(old);
+    if (oldEl) oldEl.classList.remove("live");
+    setTimeout(function () { destroyLayer(old); }, (TEST || reduceMotion) ? 220 : 1500);
+  }
+
+  function paintClock() {
+    var el = $("tv-clock-time");
+    if (!el) return;
+    var now = new Date();
+    function two(n) { return (n < 10 ? "0" : "") + n; }
+    el.textContent = two(now.getHours()) + ":" + two(now.getMinutes()) + ":" + two(now.getSeconds());
+  }
+  paintClock();
+  setInterval(paintClock, 1000);
+
+  function playJingle() {
+    try {
+      var Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      var ctx = new Ctx();
+      var notes = [523.25, 659.25, 783.99, 1046.5];
+      notes.forEach(function (freq, i) {
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.type = "square";
+        osc.frequency.value = freq;
+        var start = ctx.currentTime + i * 0.11;
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.exponentialRampToValueAtTime(0.06, start + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.18);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(start);
+        osc.stop(start + 0.2);
+      });
+    } catch (err) { /* sem áudio */ }
+  }
+
+  function holdScreen(ms, my) {
+    return new Promise(function (resolve) {
+      var done = false;
+      function end(ok) {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        clearInterval(tick);
+        resolve(ok);
+      }
+      var timer = setTimeout(function () { end(session === my && mode === "tv"); }, ms);
+      var tick = setInterval(function () {
+        if (session !== my || mode !== "tv") end(false);
+      }, 120);
+    });
+  }
+
+  function playOpenSting(my) {
+    showBumper("POP!", "NO AR");
+    playJingle();
+    return holdScreen(TEST ? 280 : 1700, my).then(function (ok) {
+      hideBumper();
+      return ok;
+    });
+  }
+
+  function playBlockBumper(entry, my) {
+    var calls = [
+      "já já, na POP!",
+      "a seguir na POP!",
+      "não saia daí",
+      "depois do intervalo",
+      "em seguida",
+      "logo mais",
+      "fica ligado",
+      "daqui a pouco"
+    ];
+    var lead = calls[bumpCursor % calls.length];
+    bumpCursor += 1;
+    showBumper(entry.block.name || "POP!", lead);
+    return holdScreen(TEST ? 320 : 2000, my).then(function (ok) {
+      hideBumper();
+      return ok;
+    });
+  }
+
+  function shouldBumper(entry) {
+    if (!entry || entry.filler) return false;
+    var id = entry.block.id || entry.block.name;
+    if (!lastProgramId) {
+      lastProgramId = id;
+      return false;
+    }
+    if (id === lastProgramId) return false;
+    lastProgramId = id;
+    return true;
+  }
+
+  function cgFor(entry) {
+    var title = (entry && entry.item && entry.item.title) || "POP!";
+    var artist = (entry && entry.item && entry.item.artist) || "";
+    var blob = (title + " " + artist).toLowerCase();
+    var clean = title.replace(/^\dº\s*/, "").split("(")[0].trim();
+    var head = artist ? (artist.split(",")[0] + " · " + clean) : clean;
+    if (entry && entry.block && entry.block.id === "marina") return { flag: "FOFOCA POP · ENTENDA", line: "MARINA RUY BARBOSA" };
+    if (blob.indexOf("anitta") >= 0) return { flag: "BOMBANDO AGORA", line: "ANITTA · " + clean.toUpperCase() };
+    if (blob.indexOf("ludmilla") >= 0 || blob.indexOf("festinha") >= 0) return { flag: "POP BRASIL", line: "LUDMILLA · " + clean.toUpperCase() };
+    if (blob.indexOf("gloria") >= 0) return { flag: "NO AR", line: "GLORIA GROOVE · " + clean.toUpperCase() };
+    if (blob.indexOf("pabllo") >= 0) return { flag: "BOMBANDO AGORA", line: "PABLLO · " + clean.toUpperCase() };
+    if (blob.indexOf("taylor") >= 0 || blob.indexOf("patient") >= 0) return { flag: "FOFOCA POP · ENTENDA", line: "TAYLOR · " + clean.toUpperCase() };
+    if (entry && entry.block && entry.block.id === "cinema") return { flag: "CINEMA", line: clean.toUpperCase() };
+    if (entry && entry.block && entry.block.id === "fofocas") return { flag: "FOFOCA POP · ENTENDA", line: clean.toUpperCase() };
+    if (entry && entry.block && (entry.block.id === "memes" || entry.block.id === "humor" || entry.block.id === "cassetadas")) {
+      return { flag: "NÃO PISCA", line: clean.toUpperCase() };
+    }
+    return { flag: (entry && entry.block && entry.block.name) || "NO AR", line: head.toUpperCase() };
   }
 
   function windowOf(item) {
@@ -3309,14 +3604,78 @@ window.TV_CATALOG = {
     return (from + 1) % schedule.length;
   }
 
+  var MENCOES = {
+    anitta: [
+      { name: "Anitta", username: "Anitta", text: "Muito feliz em ver EQUILIBRIVM indicado ao @LatinGRAMMYs em duas categorias: “Álbum do Ano” e “Álbum de Pop Contemporâneo em Língua Portuguesa”." },
+      { name: "Anitta", username: "Anitta", text: "RIOOOO, PARTIU ENSAIR? As vendas gerais dos Ensaios da Anitta 2027 já estão abertas! Dia 24 de janeiro, espero vocês no Parque Olímpico." },
+      { name: "Anitta", username: "Anitta", text: "Que coisa linda! EQUILIBRIVM no Rock The Mountain. Feliz demais em estar aqui!" }
+    ],
+    ludmilla: [
+      { name: "LUDMILLA", username: "Ludmilla", text: "Bem-vindos ao carnaval! Bi Festinha lança amanhã às 21h em todas as plataformas digitais." },
+      { name: "LUDMILLA", username: "Ludmilla", text: "BI FESTINHA feat. @puterrier_ @hitmaker. 05/11 às 21h em todas as plataformas digitais." },
+      { name: "LUDMILLA", username: "Ludmilla", text: "Quando BI FESTINHA vira, vem um drop que é simplesmente IMPOSSÍVEL ficar parado." }
+    ],
+    gloria: [
+      { name: "Gloria Groove", username: "gloriagroove", text: "O CHÁ – Novos Sabores. 06/11 à meia-noite disponível em todos os aplicativos de música!" },
+      { name: "Gloria Groove", username: "gloriagroove", text: "sírveme tá disponível no YouTube!" }
+    ],
+    karol: [
+      { name: "KAROL G BRASIL", username: "KarolGBRA", text: "\"BbY WOW\" (24 dias), de KAROL G, Judeline e rusowsky, ultrapassou \"Hate That I Made You Love Me\" (22 dias), de Ariana Grande, e se tornou a 3ª música de 2026 com mais dias em #1 no Spotify Global." }
+    ],
+    cinema: [
+      { name: "omelete", username: "omelete", text: "[crítica] Godzilla Minus Zero amplia traumas do primeiro filme em história maior, mais dramática e violenta." },
+      { name: "omelete", username: "omelete", text: "Trilha sonora de Duna: Parte 3 será quase inteiramente nova, diz Hans Zimmer." }
+    ],
+    marina: [
+      { name: "Daily do Garotinho", username: "dailygarotinho", text: "ENTENDA A TRETA ENVOLVENDO NATI VOZZA E MARINA RUY BARBOSA! O clima esquentou entre a influenciadora Nati Vozza e a atriz Marina Ruy Barbosa." },
+      { name: "O TEMPO", username: "otempo", text: "Lala Rudge, Nati Vozza, Shantal... Veja quem é quem na treta entre Marina Ruy Barbosa e Luma Costa." },
+      { name: "Metrópoles", username: "Metropoles", text: "CELEBRIDADES | Saiba os bastidores do unfollow de Camila Queiroz e Marina Ruy Barbosa. Leia mais na coluna @lucaspasin." }
+    ]
+  };
+
+  function mentionKey(entry) {
+    if (!entry || !entry.item) return "";
+    var blob = ((entry.item.title || "") + " " + (entry.item.artist || "") + " " + (entry.block && entry.block.id || "")).toLowerCase();
+    if (blob.indexOf("marina") >= 0) return "marina";
+    if (blob.indexOf("anitta") >= 0 || blob.indexOf("fofocas") >= 0) return "anitta";
+    if (blob.indexOf("ludmilla") >= 0 || blob.indexOf("festinha") >= 0) return "ludmilla";
+    if (blob.indexOf("gloria") >= 0 || blob.indexOf("sírveme") >= 0 || blob.indexOf("sirveme") >= 0) return "gloria";
+    if (blob.indexOf("karol") >= 0 || blob.indexOf("bby") >= 0) return "karol";
+    if (blob.indexOf("cinema") >= 0 || blob.indexOf("godzilla") >= 0 || blob.indexOf("duna") >= 0 || blob.indexOf("farofeir") >= 0 || blob.indexOf("hexed") >= 0) return "cinema";
+    return "";
+  }
+
+  function paintMention(post) {
+    var card = $("redes");
+    if (!card || !post) return;
+    card.hidden = false;
+    $("redes-name").textContent = post.name;
+    $("redes-user").textContent = post.username ? "@" + post.username : "fonte: NÃO DEFINIDO";
+    $("redes-text").textContent = post.text;
+  }
+
+  function renderRedes(entry) {
+    clearInterval(redesTimer);
+    var key = mentionKey(entry);
+    redesList = MENCOES[key] || [{ name: "Menção da plateia", username: "", text: "NÃO DEFINIDO" }];
+    redesIndex = 0;
+    paintMention(redesList[0]);
+    if (redesList.length < 2) return;
+    redesTimer = setInterval(function () {
+      redesIndex = (redesIndex + 1) % redesList.length;
+      paintMention(redesList[redesIndex]);
+    }, TEST ? 1200 : 8000);
+  }
+
   function renderChrome(entry, nextEntry) {
     nowEntry = entry;
-    var nowText = labelOf(entry);
-    var nextText = labelOf(nextEntry);
-    if (pendingIndex !== null) nextText = "sua escolha · " + nextText;
-    $("now").textContent = nowText;
-    $("next").textContent = nextText;
+    var cg = cgFor(entry);
+    var nextLine = nextEntry ? cgFor(nextEntry).line : "—";
+    if (pendingIndex !== null) nextLine = "sua escolha · " + nextLine;
+    $("now").textContent = cg.line;
+    $("next").textContent = nextLine;
     $("block-name").textContent = entry.block.name;
+    if ($("cg-flag")) $("cg-flag").textContent = cg.flag;
     var lower = $("lower");
     if (lower) {
       lower.setAttribute("data-block", entry.block.id || "");
@@ -3330,7 +3689,7 @@ window.TV_CATALOG = {
       trecho.hidden = full || entry.item.trecho === false;
     }
     document.body.classList.toggle("is-card", entry.item.kind === "card");
-    var lines = entry.item.lines || [entry.block.summary || entry.block.name];
+    var lines = [cg.line].concat(entry.item.lines || [entry.block.summary || entry.block.name]);
     lineIndex = 0;
     var ticker = $("ticker");
     ticker.textContent = lines[0];
@@ -3343,9 +3702,9 @@ window.TV_CATALOG = {
       ticker.classList.add("swap");
     }, TEST ? 1200 : 4200);
     renderPosts(entry.posts || []);
-    flashWipe();
     renderSala();
     renderRemote();
+    renderRedes(entry);
   }
 
   function renderPosts(posts) {
@@ -3409,10 +3768,8 @@ window.TV_CATALOG = {
 
   function playVideo(entry, my) {
     var span = windowOf(entry.item);
-    var copy = bumperCopy(entry);
-    showBumper(copy.word, copy.sub);
     pushLog("play", entry);
-    var bumperMs = TEST ? catalog.testBumperMs : catalog.bumperMs;
+    var bumperMs = TEST ? 200 : 1500;
     var opened = Date.now();
 
     return new Promise(function (resolve) {
@@ -3421,6 +3778,7 @@ window.TV_CATALOG = {
       var watch = 0;
       var poll = 0;
       var stuck = 0;
+      var incoming = pickLayer();
 
       function finish(reason) {
         if (finished) return;
@@ -3428,7 +3786,7 @@ window.TV_CATALOG = {
         abortPlay = function () {};
         clearTimeout(watch);
         clearInterval(poll);
-        destroyPlayer();
+        if (!playing) destroyLayer(incoming);
         var fast = reason === "skip" || reason === "jump" || reason === "cancel" || reason === "special-hold" || String(reason).indexOf("error") === 0 || reason === "stuck";
         var rest = fast ? (String(reason).indexOf("error") === 0 || reason === "stuck" ? 280 : 0) : Math.max(0, bumperMs - (Date.now() - opened));
         setTimeout(function () {
@@ -3452,8 +3810,10 @@ window.TV_CATALOG = {
 
       whenApi().then(function () {
         if (finished || session !== my) return finish("cancel");
-        var holder = "ytp-" + Math.random().toString(36).slice(2, 8);
-        $("yt-mount").innerHTML = '<div id="' + holder + '"></div>';
+        var holder = "ytp-" + incoming + "-" + Math.random().toString(36).slice(2, 6);
+        var host = layerEl(incoming);
+        if (!host) return finish("error");
+        host.innerHTML = '<div id="' + holder + '"></div>';
         var playerVars = {
           autoplay: 1,
           mute: 1,
@@ -3470,7 +3830,7 @@ window.TV_CATALOG = {
         };
         if (location.protocol !== "file:") playerVars.origin = location.origin;
         try {
-          player = new YT.Player(holder, {
+          layers[incoming] = new YT.Player(holder, {
             videoId: entry.item.id,
             host: "https://www.youtube-nocookie.com",
             playerVars: playerVars,
@@ -3492,6 +3852,7 @@ window.TV_CATALOG = {
                     } catch (err) { /* segue mudo se o navegador barrar */ }
                   }
                   clearTimeout(watch);
+                  fadeTo(incoming);
                   var left = (span.end - span.start) * 1000 + 4000;
                   watch = setTimeout(function () { finish("cut"); }, left);
                   armBar(left);
@@ -3510,9 +3871,9 @@ window.TV_CATALOG = {
           return;
         }
         poll = setInterval(function () {
-          if (finished || !player || !player.getPlayerState) return;
+          if (finished || !layers[incoming] || !layers[incoming].getPlayerState) return;
           var state = -1;
-          try { state = player.getPlayerState(); } catch (err) { return; }
+          try { state = layers[incoming].getPlayerState(); } catch (err) { return; }
           if (state === YT.PlayerState.PLAYING) stuck = 0;
           else if (state === YT.PlayerState.ENDED) finish("ended");
           else if (state === -1 || state === YT.PlayerState.CUED) {
@@ -3561,12 +3922,21 @@ window.TV_CATALOG = {
     $("radio").setAttribute("aria-pressed", "false");
     radioPlaying = false;
     stopAudio();
+    if (wantOpen) {
+      wantOpen = false;
+      var opened = await playOpenSting(my);
+      if (!opened || session !== my || mode !== "tv") return;
+    }
     var guard = 0;
     while (session === my && mode === "tv" && guard < 800) {
       guard += 1;
       var entry = schedule[index % schedule.length];
       var nextEntry = schedule[nextIndexOf(index)];
       renderChrome(entry, nextEntry);
+      if (shouldBumper(entry)) {
+        var stung = await playBlockBumper(entry, my);
+        if (!stung || session !== my || mode !== "tv") return;
+      }
       var before = index;
       var reason = "end";
       try {
@@ -3761,7 +4131,10 @@ window.TV_CATALOG = {
     session += 1;
     pushLog("on", null, kind === "radio" ? "radio" : "ligar");
     if (kind === "radio") startRadio(session);
-    else startTV(session);
+    else {
+      wantOpen = true;
+      startTV(session);
+    }
   }
 
   function toggleRadio() {
@@ -4324,6 +4697,7 @@ window.TV_CATALOG = {
     specialCap = -1;
     specialMedia = -1;
     hideBumper();
+    destroyPlayer();
     $("especial").hidden = false;
     $("esp-gate").hidden = !!autostart;
     $("esp-play").textContent = autostart ? "Pausar" : "Tocar";
@@ -4372,6 +4746,16 @@ window.TV_CATALOG = {
   }
 
   if (window.speechSynthesis) window.speechSynthesis.getVoices();
+  function toggleCrt() {
+    if (reduceMotion) return;
+    var on = !document.body.classList.contains("crt-on");
+    document.body.classList.toggle("crt-on", on);
+    if ($("controle-crt")) $("controle-crt").setAttribute("aria-pressed", on ? "true" : "false");
+    if ($("sala-crt")) $("sala-crt").setAttribute("aria-pressed", on ? "true" : "false");
+  }
+  if ($("controle-crt")) $("controle-crt").addEventListener("click", toggleCrt);
+  if ($("sala-crt")) $("sala-crt").addEventListener("click", toggleCrt);
+
   $("especial-btn").addEventListener("click", openEspecial);
   $("sala-especial").addEventListener("click", function () {
     closeSala();
@@ -4388,6 +4772,7 @@ window.TV_CATALOG = {
     else seekSpecial(ESPECIAL[si + 1].t);
   });
   $("esp-voltar").addEventListener("click", function () { shutdownSpecial("end"); });
+  $("esp-gate-voltar").addEventListener("click", function () { shutdownSpecial("end"); });
   $("esp-mute").addEventListener("click", function () {
     narratorMuted = !narratorMuted;
     $("esp-mute").textContent = narratorMuted ? "Narrador mudo" : "Narrador";
