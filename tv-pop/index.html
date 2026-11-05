@@ -38,13 +38,28 @@ html, body {
   overflow: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 button, a { font: inherit; }
 
 #stage {
-  position: fixed;
-  inset: 0;
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
   background: #000;
   overflow: hidden;
+}
+
+#stream {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #yt-mount {
@@ -863,11 +878,113 @@ body.is-card .xcard {
   padding: 8px 12px;
 }
 
+#controle {
+  flex: 0 0 auto;
+  z-index: 20;
+  background: #07070b;
+  border-top: 4px solid var(--pink);
+  padding: 8px 10px calc(8px + var(--safe-b));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controle-ar {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controle-ar b {
+  font-family: Anton, Impact, sans-serif;
+  color: var(--yellow);
+  letter-spacing: 0.06em;
+  margin-right: 8px;
+}
+
+.controle-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.controle-botoes > button,
+.controle-escolhe select {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  min-height: 56px;
+  background: var(--yellow);
+  color: #111;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+.controle-botoes > button {
+  min-width: 76px;
+  padding: 6px 10px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.controle-ico { font-size: 26px; line-height: 1; }
+.controle-leg {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+#controle-radio[aria-pressed="true"] {
+  background: var(--cyan);
+  box-shadow: 4px 4px 0 var(--orange);
+}
+
+.controle-escolhe {
+  flex: 1 1 180px;
+  min-width: 160px;
+  display: flex;
+}
+
+.controle-escolhe span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.controle-escolhe select {
+  width: 100%;
+  padding: 0 12px;
+  font-size: 16px;
+  background: #16161c;
+  color: var(--paper);
+  box-shadow: 4px 4px 0 var(--cyan);
+}
+
+#controle button:focus-visible,
+#controle select:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
 @media (max-width: 720px) {
-  #sala-btn { top: calc(158px + var(--safe-t)); }
-  #escolha-btn { top: calc(208px + var(--safe-t)); font-size: 15px; }
+  #sala-btn { top: calc(160px + var(--safe-t)); }
+  #escolha-btn { top: calc(160px + var(--safe-t)); left: calc(100px + var(--safe-l)); font-size: 15px; }
   .sala-item { font-size: 15px; }
   .escolha-op { flex-direction: column; }
+  .controle-botoes > button { flex: 1 1 72px; min-width: 64px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -927,6 +1044,19 @@ body.is-card .xcard {
       <p class="hint">Um toque libera o som. Tecla C abre a sala de controle.</p>
     </div>
   </div>
+  <nav id="controle" aria-label="Controle da TV">
+    <p class="controle-ar"><b>NO AR</b> <span id="controle-now">Fora do ar</span></p>
+    <div class="controle-botoes">
+      <button type="button" id="controle-prev"><span class="controle-ico" aria-hidden="true">⏮</span><span class="controle-leg">Anterior</span></button>
+      <button type="button" id="controle-skip"><span class="controle-ico" aria-hidden="true">⏭</span><span class="controle-leg">Pular</span></button>
+      <button type="button" id="controle-prog"><span class="controle-ico" aria-hidden="true">⏩</span><span class="controle-leg">Programa</span></button>
+      <label class="controle-escolhe">
+        <span>Programa</span>
+        <select id="controle-programa" aria-label="Ir para um programa"></select>
+      </label>
+      <button type="button" id="controle-radio" aria-pressed="false"><span class="controle-ico" aria-hidden="true">📻</span><span class="controle-leg" id="controle-radio-leg">Rádio</span></button>
+    </div>
+  </nav>
   <div id="sala" hidden role="dialog" aria-modal="true" aria-labelledby="sala-title">
     <div class="sala-top">
       <h2 id="sala-title">SALA DE CONTROLE</h2>
@@ -2965,6 +3095,7 @@ window.TV_CATALOG = {
     renderPosts(entry.posts || []);
     flashWipe();
     renderSala();
+    renderRemote();
   }
 
   function renderPosts(posts) {
@@ -3285,6 +3416,7 @@ window.TV_CATALOG = {
     $("now").textContent = "Rádio pop — ao vivo";
     paintStation(null);
     renderSala();
+    renderRemote();
     var stream = await openStream(my);
     if (session !== my) return;
     if (!stream) {
@@ -3299,6 +3431,7 @@ window.TV_CATALOG = {
     paintStation(stream);
     $("now").textContent = stream.name + " — " + stream.tag;
     renderSala();
+    renderRemote();
     var spotAt = 0;
     var seg = TEST ? catalog.radio.testSegmentMs : catalog.radio.segmentMs;
     while (session === my && mode === "radio") {
@@ -3322,6 +3455,7 @@ window.TV_CATALOG = {
       $("radio-stage").hidden = false;
       renderChrome(fake, schedule[index % schedule.length]);
       $("now").textContent = stream.name + " — " + stream.tag;
+      renderRemote();
       paintStation(stream);
       try {
         await audio.play();
@@ -3350,6 +3484,10 @@ window.TV_CATALOG = {
   }
 
   function powerOn() {
+    startSession("tv");
+  }
+
+  function startSession(kind) {
     if (powered) return;
     powered = true;
     unlockAudio();
@@ -3359,12 +3497,16 @@ window.TV_CATALOG = {
     document.body.classList.add("is-on");
     loadTwitter();
     session += 1;
-    pushLog("on", null, "ligar");
-    startTV(session);
+    pushLog("on", null, kind === "radio" ? "radio" : "ligar");
+    if (kind === "radio") startRadio(session);
+    else startTV(session);
   }
 
   function toggleRadio() {
-    if (!powered) return;
+    if (!powered) {
+      startSession("radio");
+      return;
+    }
     session += 1;
     if (mode === "radio") {
       pushLog("radio-off", null, "");
@@ -3408,8 +3550,22 @@ window.TV_CATALOG = {
     return (from + 1) % schedule.length;
   }
 
+  function prevClip() {
+    var dest = (index - 1 + schedule.length) % schedule.length;
+    if (!powered) {
+      index = dest;
+      powerOn();
+      return;
+    }
+    jumpTo(dest);
+  }
+
   function skipClip() {
-    if (!powered) return;
+    if (!powered) {
+      index = (index + 1) % schedule.length;
+      powerOn();
+      return;
+    }
     if (mode !== "tv") {
       session += 1;
       startTV(session);
@@ -3419,10 +3575,6 @@ window.TV_CATALOG = {
   }
 
   function skipBlock() {
-    if (!powered) {
-      powerOn();
-      return;
-    }
     jumpTo(nextBlockIndex(index));
   }
 
@@ -3551,6 +3703,64 @@ window.TV_CATALOG = {
     return null;
   }
 
+  var syncingSelect = false;
+
+  function fillProgramSelect() {
+    var sel = $("controle-programa");
+    if (!sel) return;
+    var seen = {};
+    var html = "";
+    schedule.forEach(function (entry) {
+      if (entry.filler) return;
+      var id = entry.block.id;
+      if (!id || seen[id]) return;
+      seen[id] = true;
+      html += '<option value="' + esc(id) + '">' + esc(entry.block.name) + "</option>";
+    });
+    html += '<option value="radio">RÁDIO POP</option>';
+    sel.innerHTML = html;
+  }
+
+  function renderRemote() {
+    var label = $("controle-now");
+    if (!label) return;
+    label.textContent = powered ? $("now").textContent : "Fora do ar";
+    var radioBtn = $("controle-radio");
+    if (radioBtn) {
+      var on = mode === "radio";
+      radioBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      var leg = $("controle-radio-leg");
+      if (leg) leg.textContent = on ? "Desligar" : "Rádio";
+    }
+    var sel = $("controle-programa");
+    if (!sel) return;
+    var id = mode === "radio" ? "radio" : ((nowEntry && nowEntry.block && nowEntry.block.id) || "");
+    var has = false;
+    for (var i = 0; i < sel.options.length; i += 1) {
+      if (sel.options[i].value === id) has = true;
+    }
+    syncingSelect = true;
+    if (has) sel.value = id;
+    syncingSelect = false;
+  }
+
+  fillProgramSelect();
+  renderRemote();
+  $("controle-prev").addEventListener("click", prevClip);
+  $("controle-skip").addEventListener("click", skipClip);
+  $("controle-prog").addEventListener("click", skipBlock);
+  $("controle-radio").addEventListener("click", toggleRadio);
+  $("controle-programa").addEventListener("change", function () {
+    if (syncingSelect) return;
+    var value = $("controle-programa").value;
+    if (!value) return;
+    if (value === "radio") {
+      if (mode !== "radio") toggleRadio();
+      return;
+    }
+    jumpToBlock(value);
+  });
+
   $("ligar").addEventListener("click", powerOn);
   $("radio").addEventListener("click", toggleRadio);
   $("sala-btn").addEventListener("click", toggleSala);
@@ -3611,6 +3821,7 @@ window.TV_CATALOG = {
     openSala: openSala,
     closeSala: closeSala,
     skipClip: skipClip,
+    prevClip: prevClip,
     skipBlock: skipBlock,
     jumpTo: jumpTo,
     jumpToBlock: jumpToBlock,
