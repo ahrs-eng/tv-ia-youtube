@@ -549,11 +549,339 @@ body.is-spot #radio-stage { visibility: hidden; }
   }
 }
 
+
+.wipe {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(100deg, var(--pink), var(--yellow) 46%, var(--cyan));
+  transform: translateX(-110%);
+}
+
+.wipe.go { animation: wipe 0.5s ease; }
+.xcard.fresh { animation: cardin 0.35s ease; }
+
+@keyframes wipe {
+  0% { transform: translateX(-110%); }
+  42% { transform: translateX(0); }
+  100% { transform: translateX(110%); }
+}
+
+.lower { overflow: hidden; }
+
+.lower-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 0;
+  background: var(--yellow);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.lower.pop { animation: lowerpop 0.45s cubic-bezier(.2,.8,.2,1); }
+
+@keyframes lowerpop {
+  from { transform: translateY(110%); }
+  to { transform: none; }
+}
+
+.ticker.swap { animation: tickin 0.35s ease; }
+
+@keyframes tickin {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.lower[data-block="fofoca"] .block-name,
+.lower[data-block="fofocas"] .block-name { background: var(--pink); color: #fff; }
+.lower[data-block="cinema"] .block-name { background: var(--cyan); color: #111; }
+.lower[data-block="bombando"] .block-name { background: #111; color: var(--cyan); }
+.lower[data-block="humor"] .block-name,
+.lower[data-block="cassetadas"] .block-name,
+.lower[data-block="memes"] .block-name { background: var(--orange); color: #fff; }
+.lower[data-block="curiosidades"] .block-name,
+.lower[data-block="quebra"] .block-name { background: var(--paper); color: #111; }
+.lower[data-block="contagem"] .block-name,
+.lower[data-block="brasil"] .block-name { background: var(--yellow); }
+.lower[data-block="intervalo"] .block-name,
+.lower[data-block="spots"] .block-name { background: var(--paper); color: #111; }
+
+#sala-btn, #escolha-btn {
+  position: absolute;
+  z-index: 12;
+  left: calc(14px + var(--safe-l));
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+  padding: 8px 14px 6px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#sala-btn {
+  top: calc(146px + var(--safe-t));
+  background: var(--yellow);
+  color: #111;
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+#escolha-btn {
+  top: calc(198px + var(--safe-t));
+  background: var(--cyan);
+  color: #111;
+  box-shadow: 4px 4px 0 var(--orange);
+}
+
+#sala-btn:focus-visible, #escolha-btn:focus-visible,
+#sala button:focus-visible, #escolha button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+body.is-card.is-bumper .xcard,
+body.is-card.is-bumper .nownext,
+body.is-card.is-bumper .lower {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+body.is-card #yt-mount { visibility: hidden; }
+body.is-card #stage {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(255, 43, 214, 0.45), transparent 42%),
+    radial-gradient(circle at 80% 70%, rgba(61, 255, 242, 0.28), transparent 40%),
+    #07060c;
+}
+body.is-card .xcard {
+  left: 50%;
+  right: auto;
+  top: 50%;
+  bottom: auto;
+  width: min(520px, calc(100vw - 28px));
+  transform: translate(-50%, -46%);
+  z-index: 8;
+}
+
+#sala[hidden], #escolha[hidden], #escolha-btn[hidden], #wipe[hidden] { display: none !important; }
+
+#sala, #escolha {
+  position: fixed;
+  z-index: 40;
+  color: var(--paper);
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+}
+
+#sala {
+  inset: 0;
+  overflow: auto;
+  background:
+    linear-gradient(180deg, rgba(255, 43, 214, 0.16), transparent 28%),
+    #0b0b0d;
+  padding: calc(14px + var(--safe-t)) calc(14px + var(--safe-r)) calc(24px + var(--safe-b)) calc(14px + var(--safe-l));
+}
+
+.sala-top, .sala-actions, .sala-now {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.sala-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#sala h2, #escolha h2 {
+  margin: 0;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+  font-size: clamp(28px, 6vw, 48px);
+  line-height: 0.9;
+}
+
+#sala h3 {
+  max-width: 880px;
+  margin: 18px auto 8px;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+}
+
+.sala-now {
+  margin-top: 12px;
+  border: 2px solid var(--cyan);
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.sala-now p { margin: 4px 0; font-weight: 700; font-size: 18px; }
+.sala-now b { color: var(--yellow); margin-right: 6px; }
+#sala-status { color: var(--cyan); font-size: 14px !important; }
+
+.sala-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.sala-actions button, #sala-fechar, .sala-block, .sala-item, #escolha button {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.sala-actions button, #sala-fechar {
+  background: var(--pink);
+  color: #140010;
+  min-height: 48px;
+  padding: 8px 12px 6px;
+  box-shadow: 4px 4px 0 var(--yellow);
+  font-size: 16px;
+}
+
+#sala-fechar { background: var(--yellow); color: #111; box-shadow: 4px 4px 0 var(--pink); }
+
+#sala-grade { max-width: 880px; margin: 0 auto 12px; }
+
+.sala-block {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 12px;
+  background: var(--yellow);
+  color: #111;
+  min-height: 44px;
+  padding: 8px 10px 6px;
+  font-size: 18px;
+}
+
+.sala-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  width: 100%;
+  text-align: left;
+  background: #16161c;
+  color: var(--paper);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 48px;
+  padding: 8px 10px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+
+.sala-item small { color: var(--cyan); font-weight: 700; }
+.sala-item .kind {
+  margin-left: auto;
+  color: var(--yellow);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+.sala-item.gap { background: #101218; }
+.sala-item.gap b { font-weight: 700; }
+.sala-item.on, .sala-block.on {
+  background: var(--pink);
+  color: #140010;
+}
+.sala-item.on small, .sala-item.on .kind { color: #140010; }
+
+.sala-keys {
+  max-width: 880px;
+  margin: 8px auto 0;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+#escolha {
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(5, 5, 8, 0.72);
+}
+
+.escolha-card {
+  width: min(560px, 100%);
+  background: #0e0e12;
+  border: 3px solid var(--yellow);
+  box-shadow: 8px 8px 0 var(--pink);
+  padding: 16px;
+  max-height: min(90vh, 720px);
+  overflow: auto;
+}
+
+.escolha-kicker {
+  margin: 0;
+  font-family: Anton, Impact, sans-serif;
+  color: var(--pink);
+  letter-spacing: 0.16em;
+}
+
+.escolha-card p { font-weight: 700; }
+
+.escolha-op {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.escolha-op button {
+  min-height: 52px;
+  background: var(--cyan);
+  color: #111;
+  padding: 8px 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.escolha-op button.agora {
+  flex: none;
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--pink);
+}
+
+.escolha-op button.depois { flex: 1; }
+
+#escolha-fechar {
+  margin-top: 8px;
+  min-height: 48px;
+  background: transparent;
+  color: var(--paper);
+  border: 2px solid var(--paper) !important;
+  padding: 8px 12px;
+}
+
+@media (max-width: 720px) {
+  #sala-btn { top: calc(158px + var(--safe-t)); }
+  #escolha-btn { top: calc(208px + var(--safe-t)); font-size: 15px; }
+  .sala-item { font-size: 15px; }
+  .escolha-op { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wipe.go, .lower.pop, .ticker.swap { animation: none !important; }
+}
+
 </style>
 </head>
 <body>
   <div id="stage">
     <div id="yt-mount"></div>
+    <div class="wipe" id="wipe" hidden></div>
+    <button id="sala-btn" type="button" aria-expanded="false" aria-controls="sala">SALA</button>
+    <button id="escolha-btn" type="button" hidden>EU ESCOLHO</button>
     <div id="radio-stage" hidden>
       <div class="eq" aria-hidden="true">
         <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
@@ -584,7 +912,8 @@ body.is-spot #radio-stage { visibility: hidden; }
       <div class="xmeta" id="x-meta">post original</div>
       <div id="x-embed" hidden></div>
     </aside>
-    <div class="lower">
+    <div class="lower" id="lower">
+      <div class="lower-bar" id="lower-bar"></div>
       <div class="block-name" id="block-name">POP!</div>
       <div class="ticker-wrap">
         <div class="ticker" id="ticker" aria-live="polite"></div>
@@ -593,9 +922,39 @@ body.is-spot #radio-stage { visibility: hidden; }
     </div>
     <div id="splash">
       <div class="logo-big">POP!</div>
-      <p>Clipe, fofoca e intervalo cult. A grade não para.</p>
+      <p>Clipe, fofoca, cinema e intervalo. A grade não para.</p>
       <button id="ligar" type="button">Ligar TV</button>
-      <p class="hint">Um toque libera o som. Sem menu, sem tela parada.</p>
+      <p class="hint">Um toque libera o som. Tecla C abre a sala de controle.</p>
+    </div>
+  </div>
+  <div id="sala" hidden role="dialog" aria-modal="true" aria-labelledby="sala-title">
+    <div class="sala-top">
+      <h2 id="sala-title">SALA DE CONTROLE</h2>
+      <button type="button" id="sala-fechar">Fechar</button>
+    </div>
+    <div class="sala-now">
+      <p><b>NO AR</b> <span id="sala-now-label">—</span></p>
+      <p><b>A SEGUIR</b> <span id="sala-next-label">—</span></p>
+      <p id="sala-status">Se o vídeo falhar, a grade pula sozinha.</p>
+    </div>
+    <div class="sala-actions">
+      <button type="button" id="sala-skip">Adiantar clipe</button>
+      <button type="button" id="sala-block">Próximo programa</button>
+      <button type="button" id="sala-choice">Escolha do público</button>
+      <button type="button" id="sala-clear">Soltar escolha</button>
+      <button type="button" id="sala-radio">Rádio</button>
+    </div>
+    <h3>Programação</h3>
+    <div id="sala-grade"></div>
+    <p class="sala-keys">Atalhos: C sala · N clipe · P programa · E escolha · Esc fecha. A escolha marca o próximo. Agora troca na hora.</p>
+  </div>
+  <div id="escolha" hidden role="dialog" aria-modal="true" aria-labelledby="escolha-title">
+    <div class="escolha-card">
+      <p class="escolha-kicker">PLATEIA</p>
+      <h2 id="escolha-title">Você escolhe o próximo</h2>
+      <p>Um toque marca o que vem a seguir. A grade continua dali. Em Agora, troca na hora.</p>
+      <div id="escolha-ops"></div>
+      <button type="button" id="escolha-fechar">Seguir a grade</button>
     </div>
   </div>
   <audio id="stream" preload="none" playsinline></audio>
@@ -604,7 +963,8 @@ body.is-spot #radio-stage { visibility: hidden; }
    Edite este arquivo para trocar clipes, trailers, posts e rádios.
    IDs do YouTube foram conferidos na oEmbed (incorporáveis) em 5 nov 2026.
    Posts: texto integral vindo da API do X e conferido no oEmbed de publish.twitter.com.
-   Não invente texto de post. Se o oEmbed falhar, tire o item da lista. */
+   Não invente texto de post. Se o oEmbed falhar, tire o item da lista.
+   Blocos novos conferidos em 5 nov 2026: oEmbed do YouTube (incorporável) e texto integral da API do X. */
 window.TV_CATALOG = {
   channel: {
     bug: "POP!",
@@ -827,6 +1187,1154 @@ window.TV_CATALOG = {
             "Clipe oficial de expectations, com Chappell Roan, no OliviaRodrigoVEVO.",
             "7ª na Hot 100 da semana de 7 de novembro de 2026.",
             "Feat. da vez: duas vozes de pop no mesmo refrão."
+          ]
+        }
+      ]
+    },
+{
+      id: "popbr",
+      name: "POP BRASIL",
+      summary: "Clipes oficiais de artistas brasileiros",
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "AevjWsReCtM",
+          title: "Sal Grosso",
+          artist: "Anitta, KBrum",
+          source: "Anitta",
+          start: 32,
+          end: 76,
+          lines: [
+            "Clipe oficial no canal da Anitta.",
+            "Título no YouTube: Anitta, KBrum - Sal Grosso (Official Music Video).",
+            "Trecho curto, no meio do vídeo."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "GtJJj2Zs5FU",
+          title: "Mandinga / Nanã",
+          artist: "Anitta, Marina Sena, Rincon Sapiência, KING Saints",
+          source: "Anitta",
+          start: 28,
+          end: 72,
+          lines: [
+            "Clipe oficial no canal da Anitta.",
+            "Título: Anitta, Marina Sena - Mandinga / Rincon Sapiência, KING Saints - Nanã.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "B_hW6td_dzg",
+          title: "Você Já Sabe",
+          artist: "Anitta",
+          source: "Anitta",
+          start: 18,
+          end: 62,
+          lines: [
+            "Lyric video oficial no canal da Anitta.",
+            "Título: Anitta - Você Já Sabe (Official Lyric Video).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "1gnsDkf3ZeU",
+          title: "Não Me Cutuca",
+          artist: "Anitta",
+          source: "Anitta",
+          start: 16,
+          end: 60,
+          lines: [
+            "Lyric video oficial no canal da Anitta.",
+            "Título: Anitta - Não Me Cutuca (Official Lyric Video).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "CJdhWgebwqA",
+          title: "CAFÉ DA MANHÃ ;P",
+          artist: "Luísa Sonza, Ludmilla",
+          source: "Luísa Sonza",
+          start: 24,
+          end: 68,
+          lines: [
+            "Clipe oficial no canal de Luísa Sonza.",
+            "Título: Luísa Sonza, Ludmilla - CAFÉ DA MANHÃ ;P (Clipe Oficial).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "BpxrvcYDnf4",
+          title: "A QUEDA",
+          artist: "Gloria Groove",
+          source: "Gloria Groove",
+          start: 22,
+          end: 66,
+          lines: [
+            "Clipe oficial no canal de Gloria Groove.",
+            "Título: GLORIA GROOVE - A QUEDA (CLIPE OFICIAL).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "POHe-f_bfuY",
+          title: "Super",
+          artist: "Jão",
+          source: "Jão",
+          start: 20,
+          end: 64,
+          lines: [
+            "Lyric video no canal do Jão.",
+            "Título: Jão - Super (Lyric Video).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "8qnTcfLlS2g",
+          title: "POLIZIA",
+          artist: "Pabllo Vittar, Mahmood",
+          source: "Pabllo Vittar",
+          start: 18,
+          end: 62,
+          lines: [
+            "Lyric video oficial no canal de Pabllo Vittar.",
+            "Título: Pabllo Vittar, Mahmood - POLIZIA (Official Lyric Video).",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "hvlWHkd50Ik",
+          title: "BOTA",
+          artist: "Ludmilla, Emilia, Latto",
+          source: "LUDMILLA",
+          start: 8,
+          end: 52,
+          lines: [
+            "Vídeo de dança no canal da LUDMILLA.",
+            "Título: Ludmilla, Emilia, Latto - BOTA (Vídeo Dance).",
+            "Trecho curto."
+          ]
+        }
+      ]
+    },
+    {
+      id: "contagem",
+      name: "CONTAGEM POP",
+      summary: "Do 5º ao 1º da Hot 100 citada pelo Chart Update",
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "0UPDBODtxzw",
+          title: "5º Dracula (JENNIE Remix)",
+          artist: "Tame Impala, JENNIE",
+          source: "tameimpalaVEVO",
+          start: 22,
+          end: 70,
+          lines: [
+            "Contagem da Hot 100 de 7 de novembro de 2026, no post do Chart Update.",
+            "5º: Tame Impala, JENNIE - Dracula (+3).",
+            "Lyric video oficial do remix no tameimpalaVEVO."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "6q5F7UUiXK0",
+          title: "4º Been By Now",
+          artist: "Morgan Wallen",
+          source: "MorganWallenVEVO",
+          start: 18,
+          end: 62,
+          lines: [
+            "4º na mesma Hot 100: Morgan Wallen - Been By Now (+3).",
+            "Lyric video no canal MorganWallenVEVO.",
+            "A ordem é a do post do Chart Update, de trás pra frente."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "Xh0GyxWgKPs",
+          title: "3º Boston",
+          artist: "Stella Lefty",
+          source: "Stella Lefty",
+          start: 24,
+          end: 68,
+          lines: [
+            "3º na mesma Hot 100: Stella Lefty - Boston (+3).",
+            "Vídeo no canal Stella Lefty: Stella Lefty - Boston.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "DPEodkHzH-s",
+          title: "2º Housewife",
+          artist: "Tate McRae",
+          source: "TateMcRaeVEVO",
+          start: 28,
+          end: 72,
+          lines: [
+            "2º na mesma Hot 100: Tate McRae - Housewife.",
+            "O post do Chart Update marca empate com a semana anterior.",
+            "Clipe oficial no TateMcRaeVEVO."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "nUsrYVxrDwI",
+          title: "1º Choosin' Texas",
+          artist: "Ella Langley",
+          source: "EllaLangleyVEVO",
+          start: 48,
+          end: 96,
+          lines: [
+            "1º na mesma Hot 100: Ella Langley - Choosin' Texas.",
+            "O post do Chart Update marca empate com a semana anterior.",
+            "Clipe oficial no EllaLangleyVEVO."
+          ]
+        }
+      ]
+    },
+    {
+      id: "brasil",
+      name: "O QUE O BRASIL TOCA",
+      summary: "Top 5 do Spotify Brasil em 2 de novembro de 2026",
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "lBDDMrUCz1A",
+          title: "5º Cadeira Cativa",
+          artist: "Zé Neto e Cristiano",
+          source: "Zé Neto e Cristiano",
+          start: 20,
+          end: 64,
+          lines: [
+            "Spotify Top Brasil, ranking diário de 2 de novembro de 2026.",
+            "5º: Cadeira Cativa - Ao Vivo, Zé Neto & Cristiano.",
+            "Vídeo no canal Zé Neto e Cristiano: Cadeira Cativa (Vocês e Deus)."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "q1nA6EYUcwg",
+          title: "4º Mega Hair",
+          artist: "Netto Brito, Luan Pereira",
+          source: "Netto Brito",
+          start: 22,
+          end: 66,
+          lines: [
+            "4º no mesmo ranking: Mega Hair - Ao Vivo, Netto Brito e Luan Pereira.",
+            "Vídeo oficial no canal Netto Brito, ao vivo em São Luís.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "akkCnFdhPWo",
+          title: "3º Flash (Minha Mente)",
+          artist: "Hugo e Guilherme, Zé Vaqueiro",
+          source: "Hugo e Guilherme",
+          start: 18,
+          end: 62,
+          lines: [
+            "3º no mesmo ranking: Flash (Minha Mente), Hugo & Guilherme e Zé Vaqueiro.",
+            "Vídeo no canal Hugo e Guilherme.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "QU8wLdomMv0",
+          title: "2º Postinho de Gasolina",
+          artist: "João Gustavo e Murilo, Grelo",
+          source: "João Gustavo e Murilo",
+          start: 16,
+          end: 60,
+          lines: [
+            "2º no mesmo ranking: Postinho de Gasolina, João Gustavo e Murilo e Grelo.",
+            "Vídeo ao vivo em Goiânia, no canal João Gustavo e Murilo.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "7qcq8wAX9pU",
+          title: "1º Pós",
+          artist: "Felipe e Rodrigo",
+          source: "Felipe e Rodrigo",
+          start: 18,
+          end: 62,
+          lines: [
+            "1º no Spotify Top Brasil de 2 de novembro de 2026: Pós - Ao Vivo.",
+            "Felipe e Rodrigo. O vídeo do canal deles traz #NoSentimento.",
+            "Trecho curto."
+          ]
+        }
+      ]
+    },
+    {
+      id: "fofocas",
+      name: "FOFOCAS E NOVIDADES",
+      summary: "O que as contas oficiais publicaram",
+      posts: [],
+      items: [
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "r20zq0QfVM4",
+          title: "Desgraça",
+          artist: "Anitta",
+          source: "Anitta",
+          start: 36,
+          end: 80,
+          lines: [
+            "Clipe oficial no canal da Anitta: Desgraça.",
+            "No post de 16 de setembro de 2026, ela diz que EQUILIBRIVM foi indicado ao Latin GRAMMYs.",
+            "As categorias no post: Álbum do Ano e Álbum de Pop Contemporâneo em Língua Portuguesa."
+          ],
+          posts: [
+            {
+              id: "2100258885709783190",
+              url: "https://x.com/Anitta/status/2100258885709783190",
+              name: "Anitta",
+              username: "Anitta",
+              createdAt: "2026-09-16T16:21:53.000Z",
+              text: "Muito feliz em ver EQUILIBRIVM indicado ao @LatinGRAMMYs em duas categorias: “Álbum do Ano” e “Álbum de Pop Contemporâneo em Língua Portuguesa”. ❤️\n\nMuito obrigada a todos que fizeram parte desse projeto comigo e ajudaram a tornar esse álbum realidade✨ \n#LatinGRAMMY https://t.co/2lJoGp2K9T"
+            }
+          ]
+        },
+        {
+          kind: "card",
+          id: "2100600899152330993",
+          title: "Ensaios da Anitta 2027",
+          artist: "Anitta",
+          cardMs: 14000,
+          lines: [
+            "Post da Anitta em 17 de setembro de 2026.",
+            "Ela avisa que as vendas gerais dos Ensaios da Anitta 2027 estão abertas.",
+            "No texto: 24 de janeiro, Parque Olímpico, no Rio."
+          ],
+          posts: [
+            {
+              id: "2100600899152330993",
+              url: "https://x.com/Anitta/status/2100600899152330993",
+              name: "Anitta",
+              username: "Anitta",
+              createdAt: "2026-09-17T15:00:56.000Z",
+              text: "RIOOOO, PARTIU ENSAIR? 🎭❤️‍🔥\n\nAs vendas gerais dos Ensaios da Anitta 2027 já estão abertas!\n\nDia 24 de janeiro, espero vocês no Parque Olímpico. Bora fazer história juntos? 🫶🏼\n\nhttps://t.co/LbLgU0xyd9"
+            }
+          ]
+        },
+        {
+          kind: "card",
+          id: "2116692049085038697",
+          title: "Rock the Mountain",
+          artist: "Anitta",
+          cardMs: 14000,
+          lines: [
+            "Posts da Anitta sobre o Rock the Mountain.",
+            "Em 31 de outubro de 2026: “Hoje tem show no Rock the Mountain!”.",
+            "Em 1º de novembro: “EQUILIBRIVM no Rock The Mountain”."
+          ],
+          posts: [
+            {
+              id: "2116692049085038697",
+              url: "https://x.com/Anitta/status/2116692049085038697",
+              name: "Anitta",
+              username: "Anitta",
+              createdAt: "2026-11-01T00:41:25.000Z",
+              text: "Que coisa linda! EQUILIBRIVM no Rock The Mountain. Feliz demais em estar aqui! ❤️ https://t.co/f119VppWYf"
+            },
+            {
+              id: "2116530936909090999",
+              url: "https://x.com/Anitta/status/2116530936909090999",
+              name: "Anitta",
+              username: "Anitta",
+              createdAt: "2026-10-31T14:01:13.000Z",
+              text: "Hoje tem show no Rock the Mountain! Tô muito animadaaa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "bombando",
+      name: "BOMBANDO NO X",
+      summary: "Posts originais das contas do pop brasileiro",
+      items: [
+        {
+          kind: "card",
+          id: "2118101665001971893",
+          title: "Bi Festinha",
+          artist: "Ludmilla",
+          cardMs: 15000,
+          lines: [
+            "Posts da Ludmilla sobre Bi Festinha.",
+            "Em 4 de novembro de 2026: lança amanhã às 21h nas plataformas digitais.",
+            "Em 3 de novembro: feat. @puterrier_ e @hitmaker, 05/11 às 21h."
+          ],
+          posts: [
+            {
+              id: "2118101665001971893",
+              url: "https://x.com/Ludmilla/status/2118101665001971893",
+              name: "LUDMILLA",
+              username: "Ludmilla",
+              createdAt: "2026-11-04T22:02:44.000Z",
+              text: "Bem-vindos ao carnaval! \n\nBi Festinha lança amanhã às 21h em todas as plataformas digitais. 🔥 https://t.co/YQVogO0CHs"
+            },
+            {
+              id: "2117638258897351034",
+              url: "https://x.com/Ludmilla/status/2117638258897351034",
+              name: "LUDMILLA",
+              username: "Ludmilla",
+              createdAt: "2026-11-03T15:21:19.000Z",
+              text: "BI FESTINHA feat. @puterrier_ @hitmaker \n05/11 às 21h em todas as plataformas digitais. 🔥 https://t.co/PTBdMm6IW5"
+            },
+            {
+              id: "2115951941620756682",
+              url: "https://x.com/Ludmilla/status/2115951941620756682",
+              name: "LUDMILLA",
+              username: "Ludmilla",
+              createdAt: "2026-10-29T23:40:30.000Z",
+              text: "Quando BI FESTINHA vira, vem um drop que é simplesmente IMPOSSÍVEL ficar parado 🥵🔥 vcs não tão preparados pro que vem aí"
+            }
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "NlIcSBsyZWA",
+          title: "LOST IN LUST",
+          artist: "Pabllo Vittar",
+          source: "Pabllo Vittar",
+          start: 0,
+          end: 18,
+          lines: [
+            "Teaser oficial no canal de Pabllo Vittar.",
+            "Título: Pabllo Vittar - LOST IN LUST | Short Film Teaser.",
+            "No post de 29 de outubro de 2026: o curta sai sexta, 6 de novembro, 21h no horário de Brasília."
+          ],
+          posts: [
+            {
+              id: "2115896824506507766",
+              url: "https://x.com/pabllovittar/status/2115896824506507766",
+              name: "Pabllo Vittar",
+              username: "pabllovittar",
+              createdAt: "2026-10-29T20:01:29.000Z",
+              text: "𝗟𝗢𝗦𝗧 ⒾⓃ 𝗟𝗨𝗦𝗧 ✰ 𝚃𝙷𝙴 𝚂𝙷𝙾𝚁𝚃 𝙵𝙸𝙻𝙼\n𝙾𝚄𝚃 𝙾𝙽 𝙵𝚁𝙸𝙳𝙰𝚈, 𝙽𝙾𝚅 𝟼𝚃𝙷 - 𝟿𝙿𝙼 𝙱𝚁𝚃 https://t.co/KB7aaWPVpP"
+            }
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "x78qOaGgdMk",
+          title: "O CHÁ",
+          artist: "Gloria Groove",
+          source: "Gloria Groove",
+          start: 20,
+          end: 64,
+          lines: [
+            "Clipe oficial no canal de Gloria Groove: O CHÁ.",
+            "Post de 4 de novembro de 2026: O CHÁ – Novos Sabores.",
+            "No texto: 06/11 à meia-noite, nos aplicativos de música."
+          ],
+          posts: [
+            {
+              id: "2118117422833996051",
+              url: "https://x.com/gloriagroove/status/2118117422833996051",
+              name: "Gloria Groove",
+              username: "gloriagroove",
+              createdAt: "2026-11-04T23:05:20.000Z",
+              text: "olá, gostaria de experimentar também nossos novos sabores? 💁‍♀️\n\nO CHÁ – Novos Sabores 🫖\n\n06/11 à meia-noite disponível em todos os aplicativos de música! 🎧 https://t.co/zuOYVYXTYp"
+            }
+          ]
+        },
+        {
+          kind: "clip",
+          provider: "youtube",
+          id: "ziAtnUz_eHk",
+          title: "Sírveme",
+          artist: "LA CRUZ, Gloria Groove",
+          source: "LA CRUZ",
+          start: 18,
+          end: 62,
+          lines: [
+            "Vídeo oficial no canal LA CRUZ, com Gloria Groove.",
+            "Título: LA CRUZ, Gloria Groove - Sírveme (Official Video).",
+            "No post dela de 18 de setembro de 2026: “sírveme tá disponível no YouTube!”."
+          ],
+          posts: [
+            {
+              id: "2100980509253726711",
+              url: "https://x.com/gloriagroove/status/2100980509253726711",
+              name: "Gloria Groove",
+              username: "gloriagroove",
+              createdAt: "2026-09-18T16:09:22.000Z",
+              text: "sírveme tá disponível no YouTube! 🔥🤤https://t.co/ss1WGGR2dC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "cinema",
+      name: "CINEMA",
+      summary: "Teaser, crítica e notícia de cinema",
+      items: [
+        {
+          kind: "trailer",
+          provider: "youtube",
+          id: "n-NDYWPXpKg",
+          title: "Godzilla Minus Zero — teaser",
+          artist: "Toho",
+          source: "GODZILLA OFFICIAL by TOHO",
+          start: 0,
+          end: 40,
+          takePostsFromAd: "kw0YhiqOPFg",
+          lines: [
+            "Teaser no canal GODZILLA OFFICIAL by TOHO.",
+            "Título: GODZILLA MINUS ZERO | First Look Teaser.",
+            "Os posts da conta GODZILLA.OFFICIAL passam no card."
+          ]
+        },
+        {
+          kind: "card",
+          id: "2117665992977358859",
+          title: "Crítica no Omelete",
+          artist: "omelete",
+          cardMs: 14000,
+          lines: [
+            "Post do Omelete em 3 de novembro de 2026.",
+            "O texto anuncia a crítica de Godzilla Minus Zero.",
+            "A resenha completa está no link do post, não nesta tela."
+          ],
+          posts: [
+            {
+              id: "2117665992977358859",
+              url: "https://x.com/omelete/status/2117665992977358859",
+              name: "omelete",
+              username: "omelete",
+              createdAt: "2026-11-03T17:11:31.000Z",
+              text: "[crítica] Godzilla Minus Zero amplia traumas do primeiro filme em história maior, mais dramática e violenta. Confira!\nhttps://t.co/C2vFlUy1mq"
+            }
+          ]
+        },
+        {
+          kind: "review",
+          provider: "youtube",
+          id: "Tup5hOmaTcI",
+          title: "Godzilla Minus Zero — crítica",
+          artist: "Jeremy Jahns",
+          source: "Jeremy Jahns",
+          start: 20,
+          end: 64,
+          lines: [
+            "Crítica em vídeo no canal Jeremy Jahns.",
+            "Título: Godzilla Minus Zero - Movie Review.",
+            "Trecho. A opinião é a do canal."
+          ]
+        },
+        {
+          kind: "trailer",
+          provider: "youtube",
+          id: "WmPomHPYsII",
+          title: "Os Farofeiros 3",
+          artist: "Trailer ingresso.com",
+          source: "ingresso.com",
+          start: 4,
+          end: 48,
+          lines: [
+            "Trailer no canal ingresso.com.",
+            "Título: Os Farofeiros 3 | Trailer Oficial.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "trailer",
+          provider: "youtube",
+          id: "ppQ5UWpl5p8",
+          title: "Farofa caribenha",
+          artist: "Cena ingresso.com",
+          source: "ingresso.com",
+          start: 0,
+          end: 45,
+          lines: [
+            "Cena publicada pelo ingresso.com.",
+            "Título: Os Farofeiros 3 | Cena | Farofa Caribenha.",
+            "O vídeo dura cerca de um minuto. Aqui entra quase inteiro."
+          ]
+        },
+        {
+          kind: "review",
+          provider: "youtube",
+          id: "OsBV2L9keuU",
+          title: "Farofeiros 3 e Apenas uma Ilusão",
+          artist: "Vida pós Créditos",
+          source: "Vida pós Créditos",
+          start: 18,
+          end: 62,
+          lines: [
+            "Vídeo do canal Vida pós Créditos.",
+            "Título: OS FAROFEIROS 3 e APENAS UMA ILUSÃO: Comédias para todos os gostos chegando aos cinemas | CONFERIDO.",
+            "Trecho. A crítica é a do canal."
+          ]
+        },
+        {
+          kind: "trailer",
+          provider: "youtube",
+          id: "KXO21xZdUaM",
+          title: "Hexed",
+          artist: "Walt Disney Animation Studios",
+          source: "Walt Disney Animation Studios",
+          start: 0,
+          end: 40,
+          takePostsFromAd: "KXO21xZdUaM",
+          lines: [
+            "Trailer oficial da Walt Disney Animation Studios.",
+            "Título: Hexed | Official Trailer.",
+            "Os posts da Disney Animation passam no card."
+          ]
+        },
+        {
+          kind: "card",
+          id: "2117667079864107157",
+          title: "Duna: Parte 3",
+          artist: "omelete",
+          cardMs: 13000,
+          lines: [
+            "Post do Omelete em 3 de novembro de 2026.",
+            "O texto diz que a trilha de Duna: Parte 3 será quase inteiramente nova, segundo Hans Zimmer.",
+            "A reportagem está no link do post."
+          ],
+          posts: [
+            {
+              id: "2117667079864107157",
+              url: "https://x.com/omelete/status/2117667079864107157",
+              name: "omelete",
+              username: "omelete",
+              createdAt: "2026-11-03T17:15:50.000Z",
+              text: "Trilha sonora de Duna: Parte 3 será quase inteiramente nova, diz Hans Zimmer; leia: https://t.co/WeJclSw9cS"
+            }
+          ]
+        },
+        {
+          kind: "trailer",
+          provider: "youtube",
+          id: "MOU2thjq6Z0",
+          title: "Black Doves — 2ª temporada",
+          artist: "Netflix",
+          source: "Netflix",
+          start: 0,
+          end: 40,
+          takePostsFromAd: "MOU2thjq6Z0",
+          lines: [
+            "Trailer oficial no canal da Netflix.",
+            "Título: Black Doves: Season 2 | Official Trailer | Netflix.",
+            "Os posts da Netflix passam no card."
+          ]
+        }
+      ]
+    },
+    {
+      id: "memes",
+      name: "MEMES BR",
+      summary: "Curtas e trechos de meme que estão no YouTube",
+      items: [
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "hVUFM4LWJbg",
+          title: "Belo e Alcione no hino",
+          artist: "Meninos de Ouro",
+          source: "Meninos de Ouro",
+          start: 0,
+          end: 55,
+          lines: [
+            "Vídeo curto no canal Meninos de Ouro.",
+            "Título: Belo e Alcione desafinam e se perdem na melodia no hino do Brasil, no jogo Brasil x Panamá.",
+            "O título é o do próprio vídeo."
+          ]
+        },
+        {
+          kind: "meme",
+          provider: "youtube",
+          id: "3wWhB9Vijic",
+          title: "Alcione e Belo viram meme",
+          artist: "Chiques e Famosos",
+          source: "Chiques e Famosos",
+          start: 0,
+          end: 48,
+          lines: [
+            "Vídeo do canal Chiques e Famosos.",
+            "Título: Alcione e Belo VIRAM MEME ao ERRAR Hino Nacional Antes de Brasil x Panamá!",
+            "Trecho inicial."
+          ]
+        },
+        {
+          kind: "meme",
+          provider: "youtube",
+          id: "Hb7y6YSkn10",
+          title: "Memes brasileiros originais",
+          artist: "Clã Akira0001",
+          source: "Clã Akira0001",
+          start: 12,
+          end: 48,
+          lines: [
+            "Compilado no canal Clã Akira0001.",
+            "Título: Memes brasileiros originais.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "meme",
+          provider: "youtube",
+          id: "duBHMivAH1A",
+          title: "Memes de 2026",
+          artist: "TENTE NÃO RIR _ CLAUDEIR SILVA",
+          source: "TENTE NÃO RIR _ CLAUDEIR SILVA",
+          start: 10,
+          end: 46,
+          lines: [
+            "Compilado no canal TENTE NÃO RIR _ CLAUDEIR SILVA.",
+            "Título: VIDEOS ENGRAÇADOS E MEMES DE 2026 #2.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "meme",
+          provider: "youtube",
+          id: "IRZviFYLmCU",
+          title: "Tente não rir",
+          artist: "Ximbica Edits",
+          source: "Ximbica Edits",
+          start: 8,
+          end: 44,
+          lines: [
+            "Compilado no canal Ximbica Edits.",
+            "Título: TENTE NÃO RIR Nível ULTRA. Melhores memes e vídeos engraçados 2026.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "meme",
+          provider: "youtube",
+          id: "hGGD1SPT4Ms",
+          title: "Memes de pets",
+          artist: "Comédia Brasil",
+          source: "Comédia Brasil",
+          start: 6,
+          end: 42,
+          lines: [
+            "Vídeo no canal Comédia Brasil.",
+            "Título: vídeos engraçados de animais, pets, gatos e cachorros.",
+            "Trecho curto."
+          ]
+        }
+      ]
+    },
+    {
+      id: "cassetadas",
+      name: "VIDEOCASSETADAS",
+      summary: "Quedas e fails que estão no YouTube",
+      items: [
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "T2CVbvsLCW0",
+          title: "Queda de cavalo",
+          artist: "2010novaes",
+          source: "2010novaes",
+          start: 0,
+          end: 14,
+          lines: [
+            "Vídeo curto no canal 2010novaes.",
+            "Título: Video Cassetada (queda de cavalo) Floresta-Pe.",
+            "Dura poucos segundos."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "sYGbtFQ5hW8",
+          title: "Queda de bike",
+          artist: "Joao Pedro Ferreira Silva Melo",
+          source: "Joao Pedro Ferreira Silva Melo",
+          start: 0,
+          end: 15,
+          lines: [
+            "Vídeo curto no canal Joao Pedro Ferreira Silva Melo.",
+            "Título: Vídeo cassetada, queda de bike.",
+            "Dura poucos segundos."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "4rry-yrIgcw",
+          title: "A queda do Pacheco",
+          artist: "Eddy Santana",
+          source: "Eddy Santana",
+          start: 0,
+          end: 31,
+          lines: [
+            "Vídeo no canal Eddy Santana.",
+            "Título: A Queda do PACHECO - VÍDEOS CASSETADAS.",
+            "Entra inteiro."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "2LkByVgGYL8",
+          title: "Queda engraçada",
+          artist: "Darling Dantas",
+          source: "Darling Dantas Especialista em Mega Hair",
+          start: 0,
+          end: 30,
+          lines: [
+            "Vídeo no canal Darling Dantas Especialista em Mega Hair.",
+            "Título: Vídeo cassetada - queda engraçada.",
+            "Entra inteiro."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "G7vUaIND6FI",
+          title: "Queda da noiva",
+          artist: "Marcos Alexandre Souza",
+          source: "Marcos Alexandre Souza",
+          start: 0,
+          end: 45,
+          lines: [
+            "Vídeo no canal Marcos Alexandre Souza.",
+            "Título: Queda da Noiva (Video cassetadas).",
+            "Quase o vídeo todo."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "95DTrcAyF4k",
+          title: "Queda no rio",
+          artist: "Igor Santos",
+          source: "Igor Santos",
+          start: 0,
+          end: 50,
+          lines: [
+            "Vídeo no canal Igor Santos.",
+            "Título: Video Cassetada Queda no Rio.",
+            "Quase o vídeo todo."
+          ]
+        },
+        {
+          kind: "blooper",
+          provider: "youtube",
+          id: "DqSNF3G1S5M",
+          title: "Best Fails of the Year",
+          artist: "FailArmy",
+          source: "FailArmy",
+          start: 40,
+          end: 78,
+          lines: [
+            "Compilado de fails no canal FailArmy.",
+            "Título: Best Fails of the Year | Try Not To Laugh Challenge.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "blooper",
+          provider: "youtube",
+          id: "iVbt1xMZdy8",
+          title: "Cassetadas do sertão",
+          artist: "COMÉDIA SERTÃO",
+          source: "COMÉDIA SERTÃO",
+          start: 15,
+          end: 50,
+          lines: [
+            "Compilado no canal COMÉDIA SERTÃO.",
+            "Título: VÍDEOS CASSETADAS: TENTE NÃO RIR COM AS MELHORES QUEDAS.",
+            "Trecho curto."
+          ]
+        }
+      ]
+    },
+    {
+      id: "humor",
+      name: "HUMOR BR",
+      summary: "Porta dos Fundos, Choque de Cultura, Barbixas e Whindersson",
+      items: [
+        {
+          kind: "humor",
+          provider: "youtube",
+          id: "5CLg0UwNYTc",
+          title: "AJUDINHA",
+          artist: "Porta dos Fundos",
+          source: "Porta dos Fundos",
+          start: 8,
+          end: 48,
+          lines: [
+            "Sketch no canal Porta dos Fundos.",
+            "Título: AJUDINHA.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "humor",
+          provider: "youtube",
+          id: "Y6PBTvajs84",
+          title: "MORTE LINDA",
+          artist: "Porta dos Fundos",
+          source: "Porta dos Fundos",
+          start: 10,
+          end: 50,
+          lines: [
+            "Sketch no canal Porta dos Fundos.",
+            "Título: MORTE LINDA.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "qqECH2Nj1nI",
+          title: "FESTA DA FIRMA",
+          artist: "Porta dos Fundos",
+          source: "Porta dos Fundos",
+          start: 0,
+          end: 50,
+          lines: [
+            "Short no canal Porta dos Fundos.",
+            "Título: FESTA DA FIRMA | PORTA PLANET #06.",
+            "Entra o começo do short."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "uf7vZml1N1o",
+          title: "DEMISSÃO",
+          artist: "Porta dos Fundos",
+          source: "Porta dos Fundos",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short no canal Porta dos Fundos.",
+            "Título: DEMISSÃO - Shorts.",
+            "Entra o começo do short."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "Mw2WhObqS50",
+          title: "BANDIDO HONESTO",
+          artist: "Porta dos Fundos",
+          source: "Porta dos Fundos",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short no canal Porta dos Fundos.",
+            "Título: BANDIDO HONESTO - Shorts.",
+            "Entra o começo do short."
+          ]
+        },
+        {
+          kind: "humor",
+          provider: "youtube",
+          id: "s5-fdzY1JGw",
+          title: "Velozes e Furiosos é arte",
+          artist: "Choque de Cultura",
+          source: "TV Quase",
+          start: 20,
+          end: 60,
+          lines: [
+            "Episódio no canal TV Quase.",
+            "Título: CHOQUE DE CULTURA #3: Velozes e Furiosos é Arte.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "humor",
+          provider: "youtube",
+          id: "3W2HaNNU05s",
+          title: "A árvore mais sozinha do mundo",
+          artist: "Barbixas",
+          source: "Barbixas",
+          start: 16,
+          end: 56,
+          lines: [
+            "Improviso no canal Barbixas.",
+            "Título: A ÁRVORE MAIS SOZINHA DO MUNDO | MUSICAL IMPROVÁVEL #96.",
+            "Trecho curto."
+          ]
+        },
+        {
+          kind: "humor",
+          provider: "youtube",
+          id: "JudZDy7ENNk",
+          title: "EU SOU MUITO BURRO",
+          artist: "Whindersson Nunes",
+          source: "whinderssonnunes",
+          start: 12,
+          end: 52,
+          lines: [
+            "Vídeo no canal whinderssonnunes.",
+            "Título: EU SOU MUITO BURRO.",
+            "Trecho curto."
+          ]
+        }
+      ]
+    },
+    {
+      id: "curiosidades",
+      name: "CURIOSIDADES",
+      summary: "Shorts do Manual do Mundo e do Ciência Todo Dia",
+      items: [
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "xH_-j3Rs-ug",
+          title: "Uma semente com hélice?",
+          artist: "Manual do Mundo",
+          source: "Manual do Mundo",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Manual do Mundo.",
+            "Título: Uma SEMENTE com HÉLICE?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "knA-WLR-19M",
+          title: "Forte em forma de estrela",
+          artist: "Manual do Mundo",
+          source: "Manual do Mundo",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Manual do Mundo.",
+            "Título: Por que esse FORTE tem formato de ESTRELA?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "MK1GR4UZ6TI",
+          title: "Saneamento básico",
+          artist: "Manual do Mundo",
+          source: "Manual do Mundo",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Manual do Mundo.",
+            "Título: Por que o SANEAMENTO BÁSICO salva tantas vidas?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "eqN_9-P5QHk",
+          title: "Carro que solta água",
+          artist: "Manual do Mundo",
+          source: "Manual do Mundo",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Manual do Mundo.",
+            "Título: Esse CARRO DE CORRIDA solta ÁGUA em vez de FUMAÇA!",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "nk-m0HxEDi8",
+          title: "Todo o ouro já minerado",
+          artist: "Ciência Todo Dia",
+          source: "Ciência Todo Dia",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Ciência Todo Dia.",
+            "Título: Qual é o tamanho de TODO o OURO já minerado na HISTÓRIA?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "s4XA4cjXAUE",
+          title: "Torre Eiffel no verão",
+          artist: "Ciência Todo Dia",
+          source: "Ciência Todo Dia",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Ciência Todo Dia.",
+            "Título: Você sabia que a Torre Eiffel fica MAIS ALTA no VERÃO?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "31X-FKRZA2o",
+          title: "Tornados no Brasil",
+          artist: "Ciência Todo Dia",
+          source: "Ciência Todo Dia",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Ciência Todo Dia.",
+            "Título: por que tantos TORNADOS estão acontecendo no BRASIL?",
+            "A resposta fica no vídeo deles."
+          ]
+        },
+        {
+          kind: "short",
+          provider: "youtube",
+          id: "OB5WqVio8CU",
+          title: "O maior buraco negro",
+          artist: "Ciência Todo Dia",
+          source: "Ciência Todo Dia",
+          start: 0,
+          end: 45,
+          lines: [
+            "Short do Ciência Todo Dia.",
+            "Título: o MAIOR BURACO NEGRO do UNIVERSO.",
+            "A resposta fica no vídeo deles."
           ]
         }
       ]
@@ -1136,6 +2644,38 @@ window.TV_CATALOG = {
 
   var catalog = window.TV_CATALOG;
   var TEST = /(?:\?|&)teste=1(?:&|$)/.test(location.search);
+  catalog.gapBlock = {
+    id: "quebra",
+    name: "CURIOSIDADE",
+    summary: "Um curto entre um vídeo e outro."
+  };
+  ["fofoca", "hits", "feat", "contagem", "brasil"].forEach(function (id) {
+    catalog.blocks.forEach(function (block) {
+      if (block.id === id) block.gaps = true;
+    });
+  });
+  catalog.blocks.push({
+    id: "spots",
+    name: "COMERCIAIS DO RÁDIO",
+    summary: "Os mesmos spots do intervalo da rádio.",
+    items: catalog.radio.spots
+  });
+  catalog.blocks.forEach(function (block) {
+    block.items.forEach(function (item) {
+      if (!item.takePostsFromAd) return;
+      catalog.ads.forEach(function (ad) {
+        if (ad.id === item.takePostsFromAd) item.posts = ad.posts || [];
+      });
+    });
+  });
+  var hitsBlock = null;
+  var contagemBlock = null;
+  catalog.blocks.forEach(function (block) {
+    if (block.id === "hits") hitsBlock = block;
+    if (block.id === "contagem") contagemBlock = block;
+  });
+  if (hitsBlock && contagemBlock) contagemBlock.posts = hitsBlock.posts;
+
   var schedule = buildSchedule(catalog);
   var index = 0;
   var session = 0;
@@ -1155,9 +2695,28 @@ window.TV_CATALOG = {
   var currentPosts = [];
   var apiReady = !!(window.YT && window.YT.Player);
   var apiWaiters = [];
+  var pendingIndex = null;
+  var abortPlay = function () {};
+  var nowEntry = null;
+  var choiceOpts = [];
+  var lastReason = "";
+  var forceNextError = false;
 
   var $ = function (id) { return document.getElementById(id); };
   var audio = $("stream");
+
+  var KIND = {
+    clip: "clipe",
+    ad: "trailer",
+    spot: "comercial",
+    review: "crítica",
+    trailer: "trailer",
+    short: "curto",
+    card: "post",
+    meme: "meme",
+    blooper: "cassetada",
+    humor: "humor"
+  };
 
   window.onYouTubeIframeAPIReady = function () {
     apiReady = true;
@@ -1182,16 +2741,45 @@ window.TV_CATALOG = {
   }
 
   function buildSchedule(cat) {
-    var items = [];
-    cat.blocks.forEach(function (block, bi) {
+    var fillers = [];
+    cat.blocks.forEach(function (block) {
+      if (block.id !== "curiosidades") return;
       block.items.forEach(function (item) {
-        items.push({ block: block, item: item, posts: item.posts || block.posts || [] });
+        fillers.push(item);
       });
-      var group = (cat.adGroups && cat.adGroups[bi]) || [bi % cat.ads.length];
-      group.forEach(function (ai) {
-        var ad = cat.ads[ai % cat.ads.length];
-        items.push({ block: cat.adBreak, item: ad, posts: ad.posts || [] });
+    });
+    var items = [];
+    var fi = 0;
+    cat.blocks.forEach(function (block, bi) {
+      block.items.forEach(function (item, ii) {
+        items.push({
+          block: block,
+          item: item,
+          posts: item.posts || block.posts || [],
+          filler: false
+        });
+        if (block.gaps && ii < block.items.length - 1 && fillers.length) {
+          items.push({
+            block: cat.gapBlock,
+            item: fillers[fi % fillers.length],
+            posts: [],
+            filler: true
+          });
+          fi += 1;
+        }
       });
+      var group = cat.adGroups && cat.adGroups[bi];
+      if (group && group.length) {
+        group.forEach(function (ai) {
+          var ad = cat.ads[ai % cat.ads.length];
+          items.push({
+            block: cat.adBreak,
+            item: ad,
+            posts: ad.posts || [],
+            filler: false
+          });
+        });
+      }
     });
     return items;
   }
@@ -1199,7 +2787,7 @@ window.TV_CATALOG = {
   function labelOf(entry) {
     if (!entry) return "—";
     var item = entry.item;
-    return item.title + " — " + item.artist;
+    return item.title + (item.artist ? " — " + item.artist : "");
   }
 
   function pushLog(type, entry, extra) {
@@ -1213,10 +2801,38 @@ window.TV_CATALOG = {
     if (extra) row.extra = extra;
     log.push(row);
     if (log.length > 400) log.shift();
+    if (type === "end") {
+      lastReason = extra || type;
+      var status = $("sala-status");
+      if (status && !$("sala").hidden) status.textContent = "Último corte: " + humanReason(lastReason);
+    }
+  }
+
+  function humanReason(reason) {
+    var map = {
+      ended: "fim do vídeo",
+      cut: "corte no tempo",
+      skip: "clipe adiantado",
+      jump: "troca na sala",
+      card: "fim do post",
+      cancel: "saiu do ar",
+      watchdog: "vídeo sem resposta",
+      stuck: "vídeo travou",
+      play: "entrou no ar"
+    };
+    if (!reason) return "—";
+    if (String(reason).indexOf("error") === 0) return "sem sinal, pulando";
+    return map[reason] || reason;
   }
 
   function sleep(ms) {
     return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  function esc(value) {
+    return String(value || "").replace(/[&<>"]/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[ch];
+    });
   }
 
   function unlockAudio() {
@@ -1263,15 +2879,37 @@ window.TV_CATALOG = {
     $("bumper").hidden = true;
   }
 
+  function flashWipe() {
+    var wipe = $("wipe");
+    if (!wipe) return;
+    wipe.hidden = false;
+    wipe.classList.remove("go");
+    void wipe.offsetWidth;
+    wipe.classList.add("go");
+  }
+
+  function armBar(ms) {
+    var bar = $("lower-bar");
+    if (!bar) return;
+    bar.style.transition = "none";
+    bar.style.width = "0%";
+    void bar.offsetWidth;
+    bar.style.transition = "width " + Math.max(400, ms) + "ms linear";
+    bar.style.width = "100%";
+  }
+
   function bumperCopy(entry) {
     if (mode === "radio" || (entry && entry.item.kind === "spot")) {
       return { word: "BREAK", sub: "COMERCIAL DO RÁDIO" };
     }
-    if (entry && entry.item.kind === "ad") {
+    if (entry && (entry.item.kind === "ad" || entry.item.kind === "trailer")) {
       return { word: "CULT", sub: "INTERVALO" };
     }
+    if (entry && entry.item.kind === "card") {
+      return { word: "X", sub: "NO AR" };
+    }
     var words = ["POP!", "NÃO PISCA", "AO VIVO", "HITZ"];
-    return { word: words[index % words.length], sub: "VINHETA" };
+    return { word: words[index % words.length], sub: entry && entry.filler ? "CURIOSIDADE" : "VINHETA" };
   }
 
   function formatDate(iso) {
@@ -1286,21 +2924,47 @@ window.TV_CATALOG = {
     }
   }
 
+  function nextIndexOf(from) {
+    if (pendingIndex !== null) return ((pendingIndex % schedule.length) + schedule.length) % schedule.length;
+    return (from + 1) % schedule.length;
+  }
+
   function renderChrome(entry, nextEntry) {
-    $("now").textContent = labelOf(entry);
-    $("next").textContent = labelOf(nextEntry);
+    nowEntry = entry;
+    var nowText = labelOf(entry);
+    var nextText = labelOf(nextEntry);
+    if (pendingIndex !== null) nextText = "sua escolha · " + nextText;
+    $("now").textContent = nowText;
+    $("next").textContent = nextText;
     $("block-name").textContent = entry.block.name;
+    var lower = $("lower");
+    if (lower) {
+      lower.setAttribute("data-block", entry.block.id || "");
+      lower.classList.remove("pop");
+      void lower.offsetWidth;
+      lower.classList.add("pop");
+    }
     var trecho = document.querySelector(".tag-trecho");
-    if (trecho) trecho.hidden = entry.item.kind === "radio";
+    if (trecho) {
+      var full = entry.item.kind === "radio" || entry.item.kind === "card" || entry.item.kind === "short";
+      trecho.hidden = full || entry.item.trecho === false;
+    }
+    document.body.classList.toggle("is-card", entry.item.kind === "card");
     var lines = entry.item.lines || [entry.block.summary || entry.block.name];
     lineIndex = 0;
-    $("ticker").textContent = lines[0];
+    var ticker = $("ticker");
+    ticker.textContent = lines[0];
     clearInterval(lineTimer);
     lineTimer = setInterval(function () {
       lineIndex = (lineIndex + 1) % lines.length;
-      $("ticker").textContent = lines[lineIndex];
+      ticker.textContent = lines[lineIndex];
+      ticker.classList.remove("swap");
+      void ticker.offsetWidth;
+      ticker.classList.add("swap");
     }, TEST ? 1200 : 4200);
     renderPosts(entry.posts || []);
+    flashWipe();
+    renderSala();
   }
 
   function renderPosts(posts) {
@@ -1323,6 +2987,9 @@ window.TV_CATALOG = {
     var gen = ++postGen;
     var card = $("xcard");
     card.hidden = false;
+    card.classList.remove("fresh");
+    void card.offsetWidth;
+    card.classList.add("fresh");
     $("x-name").textContent = post.name;
     $("x-user").textContent = "@" + post.username + " · " + formatDate(post.createdAt);
     $("x-text").hidden = false;
@@ -1371,13 +3038,18 @@ window.TV_CATALOG = {
       var finished = false;
       var playing = false;
       var watch = 0;
+      var poll = 0;
+      var stuck = 0;
 
       function finish(reason) {
         if (finished) return;
         finished = true;
+        abortPlay = function () {};
         clearTimeout(watch);
+        clearInterval(poll);
         destroyPlayer();
-        var rest = Math.max(0, bumperMs - (Date.now() - opened));
+        var fast = reason === "skip" || reason === "jump" || reason === "cancel" || String(reason).indexOf("error") === 0 || reason === "stuck";
+        var rest = fast ? (String(reason).indexOf("error") === 0 || reason === "stuck" ? 280 : 0) : Math.max(0, bumperMs - (Date.now() - opened));
         setTimeout(function () {
           pushLog("end", entry, reason);
           hideBumper();
@@ -1385,7 +3057,17 @@ window.TV_CATALOG = {
         }, rest);
       }
 
-      watch = setTimeout(function () { finish("watchdog"); }, TEST ? 9000 : 14000);
+      abortPlay = function (reason) { finish(reason || "skip"); };
+      watch = setTimeout(function () { finish("watchdog"); }, TEST ? 9000 : 20000);
+      setTimeout(function () {
+        if (!finished) hideBumper();
+      }, bumperMs);
+
+      if (forceNextError) {
+        forceNextError = false;
+        setTimeout(function () { finish("error:teste"); }, 40);
+        return;
+      }
 
       whenApi().then(function () {
         if (finished || session !== my) return finish("cancel");
@@ -1407,71 +3089,119 @@ window.TV_CATALOG = {
         };
         if (location.protocol !== "file:") playerVars.origin = location.origin;
         try {
-        player = new YT.Player(holder, {
-          videoId: entry.item.id,
-          host: "https://www.youtube-nocookie.com",
-          playerVars: playerVars,
-          events: {
-            onReady: function (ev) {
-              try {
-                ev.target.mute();
-                ev.target.playVideo();
-              } catch (err) { /* watchdog assume */ }
-            },
-            onStateChange: function (ev) {
-              if (ev.data === YT.PlayerState.PLAYING && !playing) {
-                playing = true;
-                if (soundOn) {
-                  try {
-                    ev.target.unMute();
-                    ev.target.setVolume(90);
-                  } catch (err) { /* segue mudo se o navegador barrar */ }
+          player = new YT.Player(holder, {
+            videoId: entry.item.id,
+            host: "https://www.youtube-nocookie.com",
+            playerVars: playerVars,
+            events: {
+              onReady: function (ev) {
+                try {
+                  ev.target.mute();
+                  ev.target.playVideo();
+                } catch (err) { /* watchdog assume */ }
+              },
+              onStateChange: function (ev) {
+                if (ev.data === YT.PlayerState.PLAYING && !playing) {
+                  playing = true;
+                  stuck = 0;
+                  if (soundOn) {
+                    try {
+                      ev.target.unMute();
+                      ev.target.setVolume(90);
+                    } catch (err) { /* segue mudo se o navegador barrar */ }
+                  }
+                  clearTimeout(watch);
+                  var left = (span.end - span.start) * 1000 + 4000;
+                  watch = setTimeout(function () { finish("cut"); }, left);
+                  armBar(left);
+                  var waited = Date.now() - opened;
+                  setTimeout(function () {
+                    if (!finished) hideBumper();
+                  }, Math.max(0, bumperMs - waited));
                 }
-                clearTimeout(watch);
-                var left = (span.end - span.start) * 1000 + 4000;
-                watch = setTimeout(function () { finish("cut"); }, left);
-                var waited = Date.now() - opened;
-                var rest = Math.max(0, bumperMs - waited);
-                setTimeout(function () {
-                  if (!finished) hideBumper();
-                }, rest);
-              }
-              if (ev.data === YT.PlayerState.ENDED) finish("ended");
-            },
-            onError: function (ev) { finish("error:" + (ev && ev.data)); }
-          }
-        });
+                if (ev.data === YT.PlayerState.ENDED) finish("ended");
+              },
+              onError: function (ev) { finish("error:" + (ev && ev.data)); }
+            }
+          });
         } catch (err) {
           finish("error");
+          return;
         }
+        poll = setInterval(function () {
+          if (finished || !player || !player.getPlayerState) return;
+          var state = -1;
+          try { state = player.getPlayerState(); } catch (err) { return; }
+          if (state === YT.PlayerState.PLAYING) stuck = 0;
+          else if (state === YT.PlayerState.ENDED) finish("ended");
+          else if (state === -1 || state === YT.PlayerState.CUED) {
+            stuck += 1;
+            if (stuck >= (TEST ? 6 : 12)) finish("stuck");
+          }
+        }, 1000);
       });
+    });
+  }
+
+  function playCard(entry, my) {
+    var copy = bumperCopy(entry);
+    showBumper(copy.word, copy.sub);
+    pushLog("play", entry, "card");
+    var ms = TEST ? 900 : (entry.item.cardMs || 12000);
+    armBar(ms);
+    return new Promise(function (resolve) {
+      var finished = false;
+      var timer = 0;
+      function finish(reason) {
+        if (finished) return;
+        finished = true;
+        abortPlay = function () {};
+        clearTimeout(timer);
+        pushLog("end", entry, reason || "card");
+        hideBumper();
+        resolve(reason || "card");
+      }
+      abortPlay = function (reason) { finish(reason || "skip"); };
+      if (session !== my) return finish("cancel");
+      timer = setTimeout(function () {
+        setTimeout(function () { if (!finished) hideBumper(); }, TEST ? 200 : 700);
+        finish("card");
+      }, ms);
+      setTimeout(function () { if (!finished) hideBumper(); }, TEST ? 200 : 700);
     });
   }
 
   async function startTV(my) {
     mode = "tv";
     document.body.classList.remove("is-radio", "is-spot");
+    document.body.classList.add("is-on");
     $("radio-stage").hidden = true;
     $("radio").textContent = "RÁDIO";
     $("radio").setAttribute("aria-pressed", "false");
     radioPlaying = false;
     stopAudio();
     var guard = 0;
-    while (session === my && mode === "tv" && guard < 400) {
+    while (session === my && mode === "tv" && guard < 800) {
       guard += 1;
       var entry = schedule[index % schedule.length];
-      var nextEntry = schedule[(index + 1) % schedule.length];
+      var nextEntry = schedule[nextIndexOf(index)];
       renderChrome(entry, nextEntry);
       var before = index;
       try {
-        await playVideo(entry, my);
+        if (entry.item.kind === "card") await playCard(entry, my);
+        else await playVideo(entry, my);
       } catch (err) {
         pushLog("end", entry, "throw");
         destroyPlayer();
         hideBumper();
       }
       if (session !== my || mode !== "tv") return;
-      index = before + 1;
+      if (pendingIndex !== null) {
+        index = ((pendingIndex % schedule.length) + schedule.length) % schedule.length;
+        pendingIndex = null;
+      } else {
+        index = before + 1;
+      }
       if (index >= schedule.length) {
         completedLoop = true;
         index = 0;
@@ -1535,14 +3265,14 @@ window.TV_CATALOG = {
   async function startRadio(my) {
     mode = "radio";
     document.body.classList.add("is-radio");
-    document.body.classList.remove("is-spot");
+    document.body.classList.remove("is-spot", "is-card");
     $("radio-stage").hidden = false;
     $("radio").textContent = "TV";
     $("radio").setAttribute("aria-pressed", "true");
     destroyPlayer();
     hideBumper();
     var fake = {
-      block: { name: "NO AR", summary: catalog.radio.name },
+      block: { id: "radio", name: "NO AR", summary: catalog.radio.name },
       item: {
         title: catalog.radio.name,
         artist: "sintonizando",
@@ -1554,6 +3284,7 @@ window.TV_CATALOG = {
     renderChrome(fake, schedule[index % schedule.length]);
     $("now").textContent = "Rádio pop — ao vivo";
     paintStation(null);
+    renderSala();
     var stream = await openStream(my);
     if (session !== my) return;
     if (!stream) {
@@ -1567,6 +3298,7 @@ window.TV_CATALOG = {
     }
     paintStation(stream);
     $("now").textContent = stream.name + " — " + stream.tag;
+    renderSala();
     var spotAt = 0;
     var seg = TEST ? catalog.radio.testSegmentMs : catalog.radio.segmentMs;
     while (session === my && mode === "radio") {
@@ -1575,7 +3307,7 @@ window.TV_CATALOG = {
       var spot = catalog.radio.spots[spotAt % catalog.radio.spots.length];
       spotAt += 1;
       var entry = {
-        block: { name: "INTERVALO DO RÁDIO", summary: "spot" },
+        block: { id: "spots", name: "INTERVALO DO RÁDIO", summary: "spot" },
         item: spot,
         posts: []
       };
@@ -1623,6 +3355,8 @@ window.TV_CATALOG = {
     unlockAudio();
     $("splash").hidden = true;
     $("radio").hidden = false;
+    $("escolha-btn").hidden = false;
+    document.body.classList.add("is-on");
     loadTwitter();
     session += 1;
     pushLog("on", null, "ligar");
@@ -1637,18 +3371,225 @@ window.TV_CATALOG = {
       startTV(session);
     } else {
       pushLog("radio-ask", null, "");
+      abortPlay("cancel");
       startRadio(session);
     }
   }
 
+  function jumpTo(raw) {
+    var i = ((Number(raw) % schedule.length) + schedule.length) % schedule.length;
+    if (!powered) {
+      index = i;
+      pendingIndex = null;
+      powerOn();
+      return;
+    }
+    if (mode !== "tv") {
+      pendingIndex = null;
+      index = i;
+      session += 1;
+      startTV(session);
+      return;
+    }
+    pendingIndex = i;
+    abortPlay("jump");
+  }
+
+  function nextBlockIndex(from) {
+    var cur = schedule[from % schedule.length];
+    var curId = cur.block.id || cur.block.name;
+    for (var n = 1; n <= schedule.length; n += 1) {
+      var i = (from + n) % schedule.length;
+      var entry = schedule[i];
+      if (entry.filler) continue;
+      var id = entry.block.id || entry.block.name;
+      if (id !== curId) return i;
+    }
+    return (from + 1) % schedule.length;
+  }
+
+  function skipClip() {
+    if (!powered) return;
+    if (mode !== "tv") {
+      session += 1;
+      startTV(session);
+      return;
+    }
+    abortPlay("skip");
+  }
+
+  function skipBlock() {
+    if (!powered) {
+      powerOn();
+      return;
+    }
+    jumpTo(nextBlockIndex(index));
+  }
+
+  function jumpToBlock(id) {
+    for (var i = 0; i < schedule.length; i += 1) {
+      if (!schedule[i].filler && schedule[i].block.id === id) {
+        jumpTo(i);
+        return;
+      }
+    }
+  }
+
+  function renderSala(scroll) {
+    if ($("sala").hidden) return;
+    var onAir = !powered ? "Fora do ar" : $("now").textContent;
+    $("sala-now-label").textContent = onAir;
+    $("sala-next-label").textContent = powered ? $("next").textContent : "—";
+    $("sala-status").textContent = lastReason ? "Último corte: " + humanReason(lastReason) : "Se o vídeo falhar, a grade pula sozinha.";
+    $("sala-radio").textContent = mode === "radio" ? "Voltar pra TV" : "Rádio";
+    var html = "";
+    var lastName = "";
+    schedule.forEach(function (entry, i) {
+      if (!entry.filler && entry.block.name !== lastName) {
+        html += '<button type="button" class="sala-block" data-jump="' + i + '">' + esc(entry.block.name) + "</button>";
+        lastName = entry.block.name;
+      }
+      var on = powered && mode === "tv" && i === (index % schedule.length);
+      var kind = entry.filler ? "quebra" : (KIND[entry.item.kind] || entry.item.kind || "");
+      html += '<button type="button" class="sala-item' + (entry.filler ? " gap" : "") + (on ? " on" : "") + '" data-jump="' + i + '">' +
+        "<b>" + esc(entry.item.title) + "</b>" +
+        "<small>" + esc(entry.item.artist || "") + "</small>" +
+        '<span class="kind">' + esc(kind) + "</span>" +
+        "</button>";
+    });
+    html += '<button type="button" class="sala-block' + (mode === "radio" ? " on" : "") + '" data-radio="1">RÁDIO POP</button>';
+    catalog.radio.streams.forEach(function (stream) {
+      html += '<button type="button" class="sala-item" data-radio="1"><b>' + esc(stream.name) + "</b><small>" + esc(stream.tag) + '</small><span class="kind">rádio</span></button>';
+    });
+    $("sala-grade").innerHTML = html;
+    if (!scroll) return;
+    var current = $("sala-grade").querySelector(".sala-item.on");
+    if (current && current.scrollIntoView) current.scrollIntoView({ block: "center" });
+  }
+
+  function openSala() {
+    $("sala").hidden = false;
+    $("sala-btn").setAttribute("aria-expanded", "true");
+    renderSala(true);
+  }
+
+  function closeSala() {
+    $("sala").hidden = true;
+    $("sala-btn").setAttribute("aria-expanded", "false");
+  }
+
+  function toggleSala() {
+    if ($("sala").hidden) openSala();
+    else closeSala();
+  }
+
+  function upcoming(n) {
+    var out = [];
+    var from = index;
+    for (var step = 1; step <= schedule.length && out.length < n; step += 1) {
+      var i = (from + step) % schedule.length;
+      out.push({ i: i, entry: schedule[i] });
+    }
+    return out;
+  }
+
+  function openChoice() {
+    if (!powered) powerOn();
+    choiceOpts = upcoming(3);
+    var box = $("escolha-ops");
+    box.innerHTML = "";
+    choiceOpts.forEach(function (opt, n) {
+      var row = document.createElement("div");
+      row.className = "escolha-op";
+      var main = document.createElement("button");
+      main.type = "button";
+      main.className = "depois";
+      main.textContent = opt.entry.item.title + " · " + opt.entry.block.name;
+      main.addEventListener("click", function () { choose(n, false); });
+      var now = document.createElement("button");
+      now.type = "button";
+      now.className = "agora";
+      now.textContent = "Agora";
+      now.addEventListener("click", function () { choose(n, true); });
+      row.appendChild(main);
+      row.appendChild(now);
+      box.appendChild(row);
+    });
+    $("escolha").hidden = false;
+  }
+
+  function closeChoice() {
+    $("escolha").hidden = true;
+  }
+
+  function choose(which, now) {
+    var opt = choiceOpts[which];
+    if (!opt) return;
+    closeChoice();
+    if (now || mode !== "tv") {
+      jumpTo(opt.i);
+      return;
+    }
+    pendingIndex = opt.i;
+    if (nowEntry) renderChrome(nowEntry, schedule[opt.i]);
+    else {
+      $("next").textContent = "sua escolha · " + labelOf(schedule[opt.i]);
+      renderSala();
+    }
+  }
+
+  function clearChoice() {
+    pendingIndex = null;
+    if (nowEntry) renderChrome(nowEntry, schedule[(index + 1) % schedule.length]);
+  }
+
+  function fromControl(node, sel) {
+    while (node && node !== $("sala-grade")) {
+      if (node.matches && node.matches(sel)) return node;
+      node = node.parentNode;
+    }
+    return null;
+  }
+
   $("ligar").addEventListener("click", powerOn);
   $("radio").addEventListener("click", toggleRadio);
+  $("sala-btn").addEventListener("click", toggleSala);
+  $("sala-fechar").addEventListener("click", closeSala);
+  $("escolha-btn").addEventListener("click", openChoice);
+  $("escolha-fechar").addEventListener("click", closeChoice);
+  $("sala-skip").addEventListener("click", skipClip);
+  $("sala-block").addEventListener("click", skipBlock);
+  $("sala-choice").addEventListener("click", openChoice);
+  $("sala-clear").addEventListener("click", clearChoice);
+  $("sala-radio").addEventListener("click", toggleRadio);
+  $("sala-grade").addEventListener("click", function (ev) {
+    var radioBtn = fromControl(ev.target, "[data-radio]");
+    if (radioBtn) {
+      if (mode !== "radio") toggleRadio();
+      return;
+    }
+    var jump = fromControl(ev.target, "[data-jump]");
+    if (jump) jumpTo(Number(jump.getAttribute("data-jump")));
+  });
+
+  document.addEventListener("keydown", function (ev) {
+    if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+    var key = ev.key ? ev.key.toLowerCase() : "";
+    if (key === "escape") {
+      if (!$("escolha").hidden) { closeChoice(); ev.preventDefault(); return; }
+      if (!$("sala").hidden) { closeSala(); ev.preventDefault(); }
+      return;
+    }
+    if (key === "c") { toggleSala(); ev.preventDefault(); return; }
+    if (!powered) return;
+    if (key === "n") { skipClip(); ev.preventDefault(); }
+    else if (key === "p") { skipBlock(); ev.preventDefault(); }
+    else if (key === "e") { openChoice(); ev.preventDefault(); }
+  });
 
   document.addEventListener("visibilitychange", function () {
     if (document.hidden || !powered) return;
-    if (mode === "radio" && audio.src) {
-      audio.play().catch(function () {});
-    }
+    if (mode === "radio" && audio.src) audio.play().catch(function () {});
   });
 
   loadApi();
@@ -1660,10 +3601,26 @@ window.TV_CATALOG = {
     get radioPlaying() { return radioPlaying; },
     get schedule() { return schedule; },
     get index() { return index; },
-    catalog: catalog
+    get pendingIndex() { return pendingIndex; },
+    get salaOpen() { return !$("sala").hidden; },
+    get choiceOpen() { return !$("escolha").hidden; },
+    get nowLabel() { return $("now").textContent; },
+    get nextLabel() { return $("next").textContent; },
+    get blockName() { return $("block-name").textContent; },
+    catalog: catalog,
+    openSala: openSala,
+    closeSala: closeSala,
+    skipClip: skipClip,
+    skipBlock: skipBlock,
+    jumpTo: jumpTo,
+    jumpToBlock: jumpToBlock,
+    openChoice: openChoice,
+    choose: choose,
+    clearChoice: clearChoice,
+    failCurrent: function () { abortPlay("error:teste"); },
+    armError: function () { forceNextError = true; }
   };
 })();
-
 </script>
 </body>
 </html>
