@@ -987,8 +987,198 @@ body.is-card .xcard {
   .controle-botoes > button { flex: 1 1 72px; min-width: 64px; }
 }
 
+#especial-btn {
+  flex: 0 0 auto;
+  min-width: 92px;
+  background: var(--pink) !important;
+  color: #140010 !important;
+  box-shadow: 4px 4px 0 var(--yellow) !important;
+}
+
+#especial[hidden] { display: none !important; }
+
+#especial {
+  position: absolute;
+  inset: 0;
+  z-index: 16;
+  display: flex;
+  flex-direction: column;
+  background: #07060c;
+  color: var(--paper);
+}
+
+.esp-top, .esp-controls, .esp-chapters {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+}
+
+.esp-kicker, .esp-chapter, .esp-time {
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.esp-kicker { color: var(--yellow); font-size: 18px; }
+.esp-chapter { flex: 1; min-width: 0; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.esp-time { color: var(--cyan); font-size: 14px; }
+
+.esp-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0 10px;
+  background: #000;
+  overflow: hidden;
+  border: 2px solid var(--pink);
+}
+
+.esp-media {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  padding: 12px;
+}
+
+.esp-media.on { opacity: 1; }
+
+.esp-media iframe, .esp-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 0;
+  background: #000;
+}
+
+.esp-titlecard, .esp-names, .esp-quote, .esp-sources, .esp-xcard {
+  width: min(720px, 100%);
+  text-align: center;
+}
+
+.esp-titlecard strong, .esp-names b, .esp-quote q, .esp-sources h3 {
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.esp-titlecard strong {
+  display: block;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 0.9;
+  color: var(--yellow);
+  text-shadow: 4px 4px 0 var(--pink);
+}
+
+.esp-names { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.esp-names b {
+  background: var(--yellow);
+  color: #111;
+  padding: 8px 10px 6px;
+  font-size: 16px;
+}
+
+.esp-quote {
+  background: rgba(0, 0, 0, 0.72);
+  border-left: 6px solid var(--cyan);
+  text-align: left;
+  padding: 16px;
+}
+.esp-quote q { font-size: clamp(20px, 3vw, 32px); line-height: 1.15; }
+.esp-quote span { display: block; margin-top: 8px; color: var(--cyan); font-weight: 700; }
+
+.esp-xcard img { width: auto; max-width: 100%; height: auto; max-height: 42vh; }
+.esp-xcard a, .esp-sources a { color: var(--yellow); }
+
+.esp-caption {
+  flex: none;
+  margin: 8px 10px 0;
+  min-height: 64px;
+  background: rgba(0, 0, 0, 0.82);
+  border-top: 3px solid var(--yellow);
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: clamp(16px, 2.4vw, 22px);
+  line-height: 1.25;
+}
+
+.esp-lower {
+  flex: none;
+  display: flex;
+  min-height: 36px;
+  margin: 0 10px;
+}
+.esp-lower b {
+  background: var(--pink);
+  color: #140010;
+  font-family: Anton, Impact, sans-serif;
+  padding: 6px 10px 4px;
+}
+.esp-lower span {
+  flex: 1;
+  background: linear-gradient(90deg, #7a12ff, transparent);
+  padding: 6px 10px;
+  font-weight: 700;
+}
+
+.esp-chapters {
+  overflow-x: auto;
+  gap: 6px;
+}
+.esp-chapters button, .esp-controls button, #esp-tocar {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+  min-height: 40px;
+  background: var(--yellow);
+  color: #111;
+  padding: 6px 10px 4px;
+}
+.esp-chapters button.on { background: var(--pink); color: #140010; }
+
+.esp-controls { gap: 8px; flex-wrap: wrap; }
+.esp-controls input[type="range"] { flex: 1; min-width: 80px; }
+#esp-bar {
+  flex: 1 1 160px;
+  height: 14px;
+  background: #222;
+  border: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+#esp-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--cyan);
+}
+
+#esp-gate {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  background: rgba(5, 5, 8, 0.78);
+  text-align: center;
+  padding: 16px;
+}
+#esp-gate[hidden] { display: none !important; }
+#esp-tocar {
+  font-size: clamp(28px, 6vw, 48px);
+  min-height: 72px;
+  padding: 12px 22px 8px;
+  box-shadow: 8px 8px 0 var(--pink);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .wipe.go, .lower.pop, .ticker.swap { animation: none !important; }
+  .wipe.go, .lower.pop, .ticker.swap, .esp-media { animation: none !important; transition: none !important; }
 }
 
 </style>
@@ -1043,6 +1233,33 @@ body.is-card .xcard {
       <button id="ligar" type="button">Ligar TV</button>
       <p class="hint">Um toque libera o som. Tecla C abre a sala de controle.</p>
     </div>
+    <section id="especial" hidden aria-label="ESPECIAL FOFOCA Marina Ruy Barbosa">
+      <div class="esp-top">
+        <div class="esp-kicker">ESPECIAL FOFOCA</div>
+        <div class="esp-chapter" id="esp-chapter">Marina Ruy Barbosa</div>
+        <div class="esp-time" id="esp-time">0:00</div>
+      </div>
+      <div class="esp-stage" id="esp-stage"></div>
+      <div class="esp-lower"><b id="esp-lower-k">FOFOCA POP</b><span id="esp-lower-t">Marina Ruy Barbosa</span></div>
+      <div class="esp-caption" id="esp-caption" aria-live="polite"></div>
+      <div class="esp-chapters" id="esp-chapters"></div>
+      <div class="esp-controls">
+        <button type="button" id="esp-play">Pausar</button>
+        <button type="button" id="esp-next">Próximo bloco</button>
+        <button type="button" id="esp-bar" aria-label="Progresso do especial"><i id="esp-bar-i"></i></button>
+        <button type="button" id="esp-mute">Narrador</button>
+        <input id="esp-volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume do narrador">
+        <button type="button" id="esp-voltar">Voltar à grade</button>
+      </div>
+      <div id="esp-gate">
+        <div>
+          <p class="esp-kicker">ESPECIAL FOFOCA</p>
+          <p>Marina Ruy Barbosa</p>
+          <button type="button" id="esp-tocar">TOCAR</button>
+          <p>ASSISTIR inicia o narrador e a linha do tempo.</p>
+        </div>
+      </div>
+    </section>
   </div>
   <nav id="controle" aria-label="Controle da TV">
     <p class="controle-ar"><b>NO AR</b> <span id="controle-now">Fora do ar</span></p>
@@ -1055,6 +1272,7 @@ body.is-card .xcard {
         <select id="controle-programa" aria-label="Ir para um programa"></select>
       </label>
       <button type="button" id="controle-radio" aria-pressed="false"><span class="controle-ico" aria-hidden="true">📻</span><span class="controle-leg" id="controle-radio-leg">Rádio</span></button>
+      <button type="button" id="especial-btn"><span class="controle-leg">Especial</span></button>
     </div>
   </nav>
   <div id="sala" hidden role="dialog" aria-modal="true" aria-labelledby="sala-title">
@@ -1073,6 +1291,7 @@ body.is-card .xcard {
       <button type="button" id="sala-choice">Escolha do público</button>
       <button type="button" id="sala-clear">Soltar escolha</button>
       <button type="button" id="sala-radio">Rádio</button>
+      <button type="button" id="sala-especial">Especial Marina</button>
     </div>
     <h3>Programação</h3>
     <div id="sala-grade"></div>
@@ -2785,6 +3004,22 @@ window.TV_CATALOG = {
     });
   });
   catalog.blocks.push({
+    id: "marina",
+    name: "ESPECIAL FOFOCA",
+    summary: "Marina Ruy Barbosa",
+    items: [{
+      kind: "special",
+      id: "marina-especial",
+      title: "Marina Ruy Barbosa",
+      artist: "Especial Fofoca Pop",
+      lines: [
+        "Especial Fofoca Pop: a treta de Marina Ruy Barbosa.",
+        "Narração, legendas e os vídeos públicos. A grade volta no fim.",
+        "Fontes: Extra, O Globo, Quem, UOL Splash, Metrópoles, VEJA, Purepeople e Terra."
+      ]
+    }]
+  });
+  catalog.blocks.push({
     id: "spots",
     name: "COMERCIAIS DO RÁDIO",
     summary: "Os mesmos spots do intervalo da rádio.",
@@ -2831,6 +3066,20 @@ window.TV_CATALOG = {
   var choiceOpts = [];
   var lastReason = "";
   var forceNextError = false;
+  var holdPromise = null;
+  var specialHoldResolve = null;
+  var specialOnDone = null;
+  var specialOpen = false;
+  var specialClock = false;
+  var specialRaf = 0;
+  var specialElapsed = 0;
+  var specialLastTick = 0;
+  var specialSeg = -1;
+  var specialCap = -1;
+  var specialMedia = -1;
+  var narratorMuted = false;
+  var narratorVolume = 1;
+  var specialRadioPaused = false;
 
   var $ = function (id) { return document.getElementById(id); };
   var audio = $("stream");
@@ -2845,7 +3094,8 @@ window.TV_CATALOG = {
     card: "post",
     meme: "meme",
     blooper: "cassetada",
-    humor: "humor"
+    humor: "humor",
+    special: "especial"
   };
 
   window.onYouTubeIframeAPIReady = function () {
@@ -3179,7 +3429,7 @@ window.TV_CATALOG = {
         clearTimeout(watch);
         clearInterval(poll);
         destroyPlayer();
-        var fast = reason === "skip" || reason === "jump" || reason === "cancel" || String(reason).indexOf("error") === 0 || reason === "stuck";
+        var fast = reason === "skip" || reason === "jump" || reason === "cancel" || reason === "special-hold" || String(reason).indexOf("error") === 0 || reason === "stuck";
         var rest = fast ? (String(reason).indexOf("error") === 0 || reason === "stuck" ? 280 : 0) : Math.max(0, bumperMs - (Date.now() - opened));
         setTimeout(function () {
           pushLog("end", entry, reason);
@@ -3318,15 +3568,27 @@ window.TV_CATALOG = {
       var nextEntry = schedule[nextIndexOf(index)];
       renderChrome(entry, nextEntry);
       var before = index;
+      var reason = "end";
       try {
-        if (entry.item.kind === "card") await playCard(entry, my);
-        else await playVideo(entry, my);
+        if (entry.item.kind === "special") reason = await playSpecial(entry, my);
+        else if (entry.item.kind === "card") reason = await playCard(entry, my);
+        else reason = await playVideo(entry, my);
       } catch (err) {
         pushLog("end", entry, "throw");
         destroyPlayer();
         hideBumper();
+        reason = "throw";
       }
       if (session !== my || mode !== "tv") return;
+      if (reason === "special-hold") {
+        if (holdPromise) await holdPromise;
+        holdPromise = null;
+        if (pendingIndex !== null) {
+          index = ((pendingIndex % schedule.length) + schedule.length) % schedule.length;
+          pendingIndex = null;
+        }
+        continue;
+      }
       if (pendingIndex !== null) {
         index = ((pendingIndex % schedule.length) + schedule.length) % schedule.length;
         pendingIndex = null;
@@ -3703,6 +3965,449 @@ window.TV_CATALOG = {
     return null;
   }
 
+  var ESPECIAL = [
+    {
+      title: "VINHETA",
+      dur: 20,
+      lower: "TV POP! ESPECIAL — FOFOCA POP",
+      caps: [
+        "TV POP! Especial. Fofoca Pop.",
+        "A treta de Marina Ruy Barbosa, em novembro de 2026.",
+        "O que está publicado. Os dois lados. O que não foi definido continua não definido."
+      ],
+      media: [{ type: "title", kicker: "TV POP! ESPECIAL", title: "FOFOCA POP", sub: "Marina Ruy Barbosa" }]
+    },
+    {
+      title: "ABERTURA",
+      dur: 60,
+      lower: "Quem entra nesta matéria",
+      caps: [
+        "O que está rolando: um afastamento público no círculo de Marina Ruy Barbosa.",
+        "Os nomes desta edição: Marina, Luma Costa, Nati Vozza, Camila Queiroz, Lala Rudge e João Vicente de Castro.",
+        "Também entram amigos de Tremembé, entre eles Carol Garcia, além de Giullia Buscacio e a mãe de Marina, Gioconda.",
+        "O estopim apontado pelas fontes fica em torno de 25 e 26 de outubro de 2026, no segundo turno.",
+        "Cada fala fica com quem a publicou."
+      ],
+      media: [
+        { type: "names", people: ["Marina Ruy Barbosa", "Luma Costa", "Nati Vozza", "Camila Queiroz", "Lala Rudge", "João Vicente de Castro", "Carol Garcia", "Giullia Buscacio", "Gioconda"] },
+        { type: "yt", id: "USSpePGU7Ks", title: "A TRETA COMPLETA DE MARINA RUY BARBOSA", channel: "Beta Boechat" }
+      ]
+    },
+    {
+      title: "CONTEXTO",
+      dur: 80,
+      lower: "O voto no segundo turno",
+      caps: [
+        "Marina declarou voto em Lula.",
+        "Prints de uma conversa com Nati Vozza circularam.",
+        "A cobertura liga essa declaração ao clima do segundo turno no círculo dela.",
+        "As fontes citadas nesta matéria: Extra, O Globo, Quem, UOL Splash, Metrópoles, VEJA, Purepeople e Terra.",
+        "A TV não escolhe lado. Mostra a declaração, a reação e o que cada pessoa disse depois."
+      ],
+      media: [
+        { type: "quote", who: "Cobertura do segundo turno", text: "Marina declarou voto em Lula.", note: "Estopim apontado em torno de 25 e 26 de outubro de 2026." },
+        { type: "yt", id: "GhMjXI7XxA8", title: "Marina Ruy Barbosa x Amigas Bolsonaristas", channel: "Matheus e Guigo Show" }
+      ]
+    },
+    {
+      title: "PRINTS NATI",
+      dur: 100,
+      lower: "A conversa que circulou",
+      caps: [
+        "Na conversa que circulou, Nati Vozza escreveu: Não sei como tem coragem, eu teria vergonha.",
+        "Marina rebateu. O texto exato dessa resposta: não definido.",
+        "Nati depois acusou Marina de mentir sobre o voto a turmas diferentes e de se vitimizar.",
+        "Os prints estão no post do X usado pela cobertura. As imagens entram na tela.",
+        "O que cada turma ouviu, palavra por palavra, além dessa acusação: não definido."
+      ],
+      media: [
+        { type: "quote", who: "Nati Vozza", text: "Não sei como tem coragem, eu teria vergonha", note: "Frase da conversa que circulou em prints." },
+        { type: "x", id: "2114869902985019484", user: "dailygarotinho", url: "https://x.com/dailygarotinho/status/2114869902985019484", images: ["https://pbs.twimg.com/media/HVmG9ZVXQAA7Bwi.jpg", "https://pbs.twimg.com/media/HVmG9ZOWMAEaojx.jpg", "https://pbs.twimg.com/media/HVmG9ZTW0AAL9oN.jpg", "https://pbs.twimg.com/media/HVmG9a6XwAAnJcL.jpg"] },
+        { type: "yt", id: "B1p84N3t8_s", title: "Polemica da Marina ruy barbosa RESUMIDA", channel: "Resumindo Treta" }
+      ]
+    },
+    {
+      title: "RUPTURA LUMA",
+      dur: 100,
+      lower: "Marina e Luma Costa",
+      caps: [
+        "Por volta de 1º de novembro, Marina e Luma Costa deixaram de se seguir.",
+        "A amizade vinha de 2004, de Começar de Novo.",
+        "Luma foi madrinha do casamento de Marina. Marina foi madrinha do filho de Luma.",
+        "Luma nega que o fim do seguir tenha sido por política.",
+        "Ela disse: Era o álibi perfeito ser sobre política, né? Mas não é.",
+        "E também: Nada foi sobre política.",
+        "Há versões conflitantes. Numa delas, Marina teria mostrado o print da Nati à Luma e esperado acolhimento.",
+        "Nessa versão, Luma teria dito que também sentiu vergonha.",
+        "Luma depois disse que foi removida em surto.",
+        "A TV registra as versões. Não define qual delas fecha o caso."
+      ],
+      media: [
+        { type: "quote", who: "Luma Costa", text: "Era o álibi perfeito ser sobre política, né? Mas não é.", note: "Ela também disse: Nada foi sobre política." },
+        { type: "yt", id: "nXTZwCEo-ZU", title: "Briga entre Luma Costa e Marina Ruy Barbosa", channel: "POPhub Entretenimento" },
+        { type: "yt", id: "7V6Zcm4_8yM", title: "Luma Costa se pronuncia sobre TRETA com Marina Ruy Barbosa", channel: "Fofocar" },
+        { type: "yt", id: "8tmrGXoN0J0", title: "Luma Costa abriu o jogo sobre o fim da amizade com Marina Ruy Barbosa", channel: "Só fofocas88" }
+      ]
+    },
+    {
+      title: "DOMINÓ",
+      dur: 80,
+      lower: "Camila Queiroz e Lala Rudge",
+      caps: [
+        "Camila Queiroz deixou de seguir Marina.",
+        "Camila disse: Ih sobrou até pra mim… Felizmente eu não tenho nada a ver com a treta dos outros.",
+        "Fontes apontam um motivo anterior, na Itália, ligado a uma marca de lingerie. Não necessariamente a mesma treta.",
+        "Lala Rudge criticou publicamente: quem planta narcisismo e hipocrisia colhe solidão.",
+        "E disse para Marina parar de se vitimizar.",
+        "A repercussão seguiu em posts no X e em cobertura no Instagram.",
+        "O que cada uma escreveu fora dessas frases: não definido."
+      ],
+      media: [
+        { type: "quote", who: "Camila Queiroz", text: "Ih sobrou até pra mim… Felizmente eu não tenho nada a ver com a treta dos outros.", note: "Fontes apontam motivo anterior, Itália e marca de lingerie." },
+        { type: "quote", who: "Lala Rudge", text: "Quem planta narcisismo e hipocrisia colhe solidão.", note: "Crítica pública. Também pediu que Marina pare de se vitimizar." },
+        { type: "ig", url: "https://www.instagram.com/p/DfPwDBBmxu9/", label: "Cobertura nanarude sobre Lala" },
+        { type: "x", id: "2117977932400332900", user: "otempo", url: "https://x.com/otempo/status/2117977932400332900", images: [] },
+        { type: "x", id: "2117345056403382654", user: "Metropoles", url: "https://x.com/Metropoles/status/2117345056403382654", images: [] },
+        { type: "yt", id: "PA9_GdilFxI", title: "MARINA RUY BARBOSA EXPÕE MAIS DO AFASTAMENTO DA LUMA COSTA E LALA RUDGE!", channel: "Gabriel Mahalem" }
+      ]
+    },
+    {
+      title: "DEFESA",
+      dur: 60,
+      lower: "Quem saiu em defesa",
+      caps: [
+        "João Vicente de Castro defendeu Marina.",
+        "Ele falou em ataque coordenado e em tentativa de cancelamento por divergência política.",
+        "Amigos de Tremembé, entre eles Carol Garcia, e Giullia Buscacio também saíram em defesa.",
+        "A mãe, Gioconda, pediu paz.",
+        "O texto completo de cada defesa, além do que está dito aqui: não definido."
+      ],
+      media: [
+        { type: "quote", who: "João Vicente de Castro", text: "Ataque coordenado.", note: "Defesa de Marina. Também falou em tentativa de cancelamento por divergência política." },
+        { type: "names", people: ["João Vicente de Castro", "Carol Garcia", "Giullia Buscacio", "Gioconda"] },
+        { type: "yt", id: "GoTniSjOv88", title: "Luma Costa se manifesta sobre rompimento com Marina Ruy Barbosa; João Vicente defende um lado", channel: "Splash" }
+      ]
+    },
+    {
+      title: "FECHAMENTO",
+      dur: 60,
+      lower: "O que ficou em aberto",
+      caps: [
+        "Ficou em aberto qual versão explica o rompimento com Luma.",
+        "Também ficou em aberto se o unfollow de Camila é o mesmo episódio ou o episódio anterior da Itália.",
+        "Fontes: Extra, O Globo, Quem, UOL Splash, Metrópoles com Lucas Pasin, VEJA, Purepeople com Leo Dias, e Terra.",
+        "TV POP! Especial. Fofoca Pop. A grade volta."
+      ],
+      media: [
+        { type: "sources" },
+        { type: "yt", id: "RjFx-t0VShI", title: "Ex-amiga de Marina Ruy Barbosa revela detalhes de desentendimento", channel: "Balanço Geral" },
+        { type: "title", kicker: "ESPECIAL FOFOCA", title: "FIM", sub: "A grade volta" }
+      ]
+    }
+  ];
+  var ESPECIAL_TOTAL = 0;
+  ESPECIAL.forEach(function (seg) {
+    seg.t = ESPECIAL_TOTAL;
+    var weights = seg.caps.map(function (line) { return Math.max(12, line.length); });
+    var sum = 0;
+    weights.forEach(function (w) { sum += w; });
+    var acc = 0;
+    seg.capStarts = weights.map(function (w) {
+      var start = seg.t + seg.dur * (acc / sum);
+      acc += w;
+      return start;
+    });
+    ESPECIAL_TOTAL += seg.dur;
+  });
+
+  function segIndexAt(sec) {
+    var found = 0;
+    for (var i = 0; i < ESPECIAL.length; i += 1) {
+      if (sec >= ESPECIAL[i].t) found = i;
+    }
+    return found;
+  }
+
+  function capIndexAt(seg, sec) {
+    var found = 0;
+    for (var i = 0; i < seg.capStarts.length; i += 1) {
+      if (sec >= seg.capStarts[i]) found = i;
+    }
+    return found;
+  }
+
+  function clockText(sec) {
+    var s = Math.max(0, Math.floor(sec));
+    var m = Math.floor(s / 60);
+    var r = s % 60;
+    return m + ":" + (r < 10 ? "0" : "") + r;
+  }
+
+  function mediaHTML(item) {
+    if (item.type === "title") {
+      return '<div class="esp-titlecard"><p class="esp-kicker">' + esc(item.kicker) + "</p><strong>" + esc(item.title) + "</strong><p>" + esc(item.sub) + "</p></div>";
+    }
+    if (item.type === "names") {
+      return '<div class="esp-names">' + item.people.map(function (name) { return "<b>" + esc(name) + "</b>"; }).join("") + "</div>";
+    }
+    if (item.type === "quote") {
+      return '<div class="esp-quote"><q>' + esc(item.text) + "</q><span>" + esc(item.who) + "</span><p>" + esc(item.note || "") + "</p></div>";
+    }
+    if (item.type === "yt") {
+      var src = "https://www.youtube-nocookie.com/embed/" + item.id + "?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&modestbranding=1";
+      return '<iframe src="' + src + '" title="' + esc(item.title) + '" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+    }
+    if (item.type === "x") {
+      var imgs = (item.images || []).map(function (src) {
+        return '<img alt="Imagem do post de @' + esc(item.user) + '" src="' + esc(src) + '">';
+      }).join("");
+      return '<div class="esp-xcard"><p>Post no X · @' + esc(item.user) + "</p>" + imgs + '<p><a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer">Abrir o post original</a></p><div class="esp-xslot"></div></div>';
+    }
+    if (item.type === "ig") {
+      return '<div class="esp-xcard"><p>' + esc(item.label) + '</p><p>Se o embed do Instagram não abrir, o link é o original.</p><p><a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer">' + esc(item.url) + "</a></p></div>";
+    }
+    return '<div class="esp-sources"><h3>FONTES</h3><p>Extra, O Globo, Quem, UOL Splash, Metrópoles / Lucas Pasin, VEJA, Purepeople / Leo Dias, Terra.</p><p>O que não está nessas coberturas, nesta edição: não definido.</p></div>';
+  }
+
+  function paintMedia(item) {
+    var stage = $("esp-stage");
+    if (!stage) return;
+    var node = document.createElement("div");
+    node.className = "esp-media";
+    node.innerHTML = mediaHTML(item);
+    stage.appendChild(node);
+    var images = node.querySelectorAll("img");
+    for (var i = 0; i < images.length; i += 1) {
+      images[i].addEventListener("error", function () {
+        var card = document.createElement("div");
+        card.className = "esp-titlecard";
+        card.innerHTML = "<strong>" + esc(this.alt || "Foto") + "</strong><p>Imagem não carregou. O crédito fica no post original.</p>";
+        this.replaceWith(card);
+      });
+    }
+    if (item.type === "x") {
+      var slot = node.querySelector(".esp-xslot");
+      var widgets = window.twttr && window.twttr.widgets;
+      if (widgets && widgets.createTweet && slot) {
+        widgets.createTweet(item.id, slot, { theme: "dark", dnt: true, conversation: "none", width: 320 }).catch(function () {});
+      }
+    }
+    requestAnimationFrame(function () { node.classList.add("on"); });
+    var previous = stage.querySelectorAll(".esp-media");
+    if (previous.length > 1) {
+      setTimeout(function () {
+        if (previous[0] && previous[0].parentNode) previous[0].parentNode.removeChild(previous[0]);
+      }, 400);
+    }
+  }
+
+  function paintChapters(active) {
+    var box = $("esp-chapters");
+    if (!box) return;
+    box.innerHTML = "";
+    ESPECIAL.forEach(function (seg, i) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.textContent = seg.title;
+      if (i === active) button.className = "on";
+      button.addEventListener("click", function () { seekSpecial(seg.t); });
+      box.appendChild(button);
+    });
+  }
+
+  function speakLine(text) {
+    if (narratorMuted || !window.speechSynthesis) return;
+    try {
+      window.speechSynthesis.cancel();
+      var utter = new SpeechSynthesisUtterance(text);
+      utter.lang = "pt-BR";
+      utter.rate = 1;
+      utter.volume = narratorVolume;
+      var voices = window.speechSynthesis.getVoices() || [];
+      for (var i = 0; i < voices.length; i += 1) {
+        if (/pt-BR/i.test(voices[i].lang)) { utter.voice = voices[i]; break; }
+      }
+      if (!utter.voice) {
+        for (var j = 0; j < voices.length; j += 1) {
+          if (/^pt/i.test(voices[j].lang)) { utter.voice = voices[j]; break; }
+        }
+      }
+      window.speechSynthesis.speak(utter);
+    } catch (err) { /* a linha do tempo segue sem áudio */ }
+  }
+
+  function renderSpecial(ms, forceSpeak) {
+    var sec = ms / 1000;
+    var si = segIndexAt(sec);
+    var seg = ESPECIAL[si];
+    var ci = capIndexAt(seg, sec);
+    var slices = Math.max(1, seg.media.length);
+    var local = Math.max(0, sec - seg.t);
+    var mi = Math.min(slices - 1, Math.floor(local / (seg.dur / slices)));
+    if (si !== specialSeg) {
+      specialSeg = si;
+      specialMedia = -1;
+      $("esp-chapter").textContent = seg.title + " · Marina Ruy Barbosa";
+      $("esp-lower-t").textContent = seg.lower;
+      paintChapters(si);
+    }
+    if (mi !== specialMedia) {
+      specialMedia = mi;
+      paintMedia(seg.media[mi]);
+    }
+    if (ci !== specialCap || forceSpeak) {
+      specialCap = ci;
+      $("esp-caption").textContent = seg.caps[ci];
+      if (specialClock || forceSpeak) speakLine(seg.caps[ci]);
+    }
+    $("esp-time").textContent = clockText(sec) + " / " + clockText(ESPECIAL_TOTAL);
+    $("esp-bar-i").style.width = Math.min(100, (sec / ESPECIAL_TOTAL) * 100) + "%";
+  }
+
+  function tickSpecial(now) {
+    if (!specialClock) return;
+    var dt = now - specialLastTick;
+    specialLastTick = now;
+    if (dt > 0 && dt < 1000) specialElapsed += dt;
+    if (specialElapsed >= ESPECIAL_TOTAL * 1000) {
+      shutdownSpecial("end");
+      return;
+    }
+    renderSpecial(specialElapsed, false);
+    specialRaf = requestAnimationFrame(tickSpecial);
+  }
+
+  function startClock() {
+    if (!specialOpen) return;
+    $("esp-gate").hidden = true;
+    specialClock = true;
+    specialLastTick = performance.now();
+    $("esp-play").textContent = "Pausar";
+    specialCap = -1;
+    renderSpecial(specialElapsed, true);
+    specialRaf = requestAnimationFrame(tickSpecial);
+  }
+
+  function pauseClock() {
+    specialClock = false;
+    if (specialRaf) cancelAnimationFrame(specialRaf);
+    if (window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (err) { /* sem narrador */ }
+    }
+    $("esp-play").textContent = "Tocar";
+  }
+
+  function seekSpecial(sec) {
+    specialElapsed = Math.max(0, Math.min(ESPECIAL_TOTAL - 0.05, sec)) * 1000;
+    specialSeg = -1;
+    specialCap = -1;
+    specialMedia = -1;
+    renderSpecial(specialElapsed, specialClock);
+  }
+
+  function shutdownSpecial(reason) {
+    if (!specialOpen) return;
+    specialOpen = false;
+    pauseClock();
+    $("especial").hidden = true;
+    $("esp-stage").innerHTML = "";
+    var done = specialOnDone;
+    specialOnDone = null;
+    if (done) done(reason || "end");
+  }
+
+  function launchSpecial(autostart, onDone) {
+    specialOnDone = onDone || null;
+    specialOpen = true;
+    specialElapsed = 0;
+    specialSeg = -1;
+    specialCap = -1;
+    specialMedia = -1;
+    hideBumper();
+    $("especial").hidden = false;
+    $("esp-gate").hidden = !!autostart;
+    $("esp-play").textContent = autostart ? "Pausar" : "Tocar";
+    renderSpecial(0, false);
+    abortPlay = function (reason) { shutdownSpecial(reason || "skip"); };
+    if (autostart) startClock();
+  }
+
+  function playSpecial(entry, my) {
+    return new Promise(function (resolve) {
+      var settled = false;
+      function settle(reason) {
+        if (settled) return;
+        settled = true;
+        abortPlay = function () {};
+        resolve(reason || "end");
+      }
+      if (session !== my) { settle("cancel"); return; }
+      launchSpecial(false, settle);
+    });
+  }
+
+  function openEspecial() {
+    if (specialOpen) {
+      if (!$("esp-gate").hidden) startClock();
+      return;
+    }
+    if (mode === "radio") {
+      try { audio.pause(); } catch (err) { /* sem stream */ }
+      specialRadioPaused = true;
+    }
+    if (powered && mode === "tv") {
+      holdPromise = new Promise(function (resolve) { specialHoldResolve = resolve; });
+      abortPlay("special-hold");
+    }
+    launchSpecial(true, function () {
+      if (specialHoldResolve) specialHoldResolve();
+      specialHoldResolve = null;
+      if (specialRadioPaused) {
+        specialRadioPaused = false;
+        if (mode === "radio") {
+          try { audio.play(); } catch (err) { /* a rádio tenta de novo no fluxo dela */ }
+        }
+      }
+    });
+  }
+
+  if (window.speechSynthesis) window.speechSynthesis.getVoices();
+  $("especial-btn").addEventListener("click", openEspecial);
+  $("sala-especial").addEventListener("click", function () {
+    closeSala();
+    openEspecial();
+  });
+  $("esp-tocar").addEventListener("click", startClock);
+  $("esp-play").addEventListener("click", function () {
+    if (specialClock) pauseClock();
+    else startClock();
+  });
+  $("esp-next").addEventListener("click", function () {
+    var si = segIndexAt(specialElapsed / 1000);
+    if (si >= ESPECIAL.length - 1) shutdownSpecial("end");
+    else seekSpecial(ESPECIAL[si + 1].t);
+  });
+  $("esp-voltar").addEventListener("click", function () { shutdownSpecial("end"); });
+  $("esp-mute").addEventListener("click", function () {
+    narratorMuted = !narratorMuted;
+    $("esp-mute").textContent = narratorMuted ? "Narrador mudo" : "Narrador";
+    if (narratorMuted && window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (err) { /* já estava mudo */ }
+    } else if (specialClock && specialCap >= 0 && specialSeg >= 0) {
+      speakLine(ESPECIAL[specialSeg].caps[specialCap]);
+    }
+  });
+  $("esp-volume").addEventListener("input", function () {
+    narratorVolume = Number($("esp-volume").value);
+    narratorMuted = narratorVolume === 0;
+    $("esp-mute").textContent = narratorMuted ? "Narrador mudo" : "Narrador";
+  });
+  $("esp-bar").addEventListener("click", function (ev) {
+    var rect = $("esp-bar").getBoundingClientRect();
+    var ratio = rect.width ? (ev.clientX - rect.left) / rect.width : 0;
+    seekSpecial(Math.max(0, Math.min(0.999, ratio)) * ESPECIAL_TOTAL);
+  });
+
   var syncingSelect = false;
 
   function fillProgramSelect() {
@@ -3829,7 +4534,11 @@ window.TV_CATALOG = {
     choose: choose,
     clearChoice: clearChoice,
     failCurrent: function () { abortPlay("error:teste"); },
-    armError: function () { forceNextError = true; }
+    armError: function () { forceNextError = true; },
+    openEspecial: openEspecial,
+    get especialOpen() { return specialOpen; },
+    especialCaption: function () { return $("esp-caption") ? $("esp-caption").textContent : ""; },
+    especialChapter: function () { return $("esp-chapter") ? $("esp-chapter").textContent : ""; }
   };
 })();
 </script>
