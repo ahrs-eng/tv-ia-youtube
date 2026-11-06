@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T14:36:03.263Z",
+  "updated": "2026-11-06T15:27:32.227Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,9 +27,9 @@
       "weight": 3
     },
     {
-      "text": "Mãe do noivo de Marina Ruy Barbosa defende atriz: “Lamento muito”",
+      "text": "Scooby defende Marina Ruy Barbosa em polêmica: “Quem ataca é de baixo\"",
       "source": "CNN Brasil",
-      "date": "05 Nov 2026",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -38,6 +38,22 @@
       "text": "Pai de Marina Ruy Barbosa sai em defesa da atriz após polêmica com ex-amigas: 'Dor de cotovelo'",
       "source": "Terra",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Anel de R$ 6 milhões de Marina Ruy Barbosa provoca racha na família de Abdul Fares",
+      "source": "Jornal Correio",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
+      "source": "UOL",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,16 +75,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
+      "text": "Briga por anel milionário de Marina Ruy Barbosa gera racha na família do ex",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Briga por anel milionário de Marina Ruy Barbosa gera racha na família do ex",
-      "source": "Metrópoles",
+      "text": "Primo de Abdul Fares pede prisão de Marina Ruy Barbosa por causa de anel de R$ 6 milhões",
+      "source": "Alô Alô Bahia",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -78,22 +94,6 @@
       "text": "Mãe de Abdul Fares diz que Marina Ruy Barbosa quis devolver anel de R$ 6 mi: “Nunca aceitaríamos”",
       "source": "tmc.com.br",
       "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Anel de R$ 6 milhões de Marina Ruy Barbosa provoca racha na família de Abdul Fares",
-      "source": "Jornal Correio",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
