@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T06:59:04.992Z",
+  "updated": "2026-11-06T08:17:27.433Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,16 +35,16 @@
       "weight": 3
     },
     {
-      "text": "Os bastidores do término de Marina Ruy Barbosa e destino de anel milionário",
-      "source": "Metrópoles",
+      "text": "Outro Canal: Globo busca atores novatos para lançar em novela estrelada por Marina Ruy Barbosa",
+      "source": "UOL",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Outro Canal: Globo busca atores novatos para lançar em novela estrelada por Marina Ruy Barbosa",
-      "source": "UOL",
+      "text": "Os bastidores do término de Marina Ruy Barbosa e destino de anel milionário",
+      "source": "Metrópoles",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
