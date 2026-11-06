@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-06T00:48:35.702Z",
+  "updated": "2026-11-06T02:00:02.663Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "source": "O GLOBO",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "A história do polêmico anel de R$ 6 milhões de Marina Ruy Barbosa",
       "source": "VEJA",
@@ -13,14 +21,6 @@
     {
       "text": "Mãe do noivo de Marina Ruy Barbosa defende atriz: “Lamento muito”",
       "source": "CNN Brasil",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-sogra de Marina Ruy Barbosa deixa recado para atriz e cita anel de R$ 6 milhões",
-      "source": "Extra online",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -43,6 +43,14 @@
       "weight": 3
     },
     {
+      "text": "Os bastidores do término de Marina Ruy Barbosa e destino de anel milionário",
+      "source": "Metrópoles",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Mãe de Abdul Fares diz que Marina Ruy Barbosa quis devolver anel de R$ 6 mi: “Nunca aceitaríamos”",
       "source": "tmc.com.br",
       "date": "05 Nov 2026",
@@ -51,24 +59,16 @@
       "weight": 3
     },
     {
-      "text": "Márcia Sensitiva analisa fase polêmica de Marina Ruy Barbosa: \"Livramento\"",
-      "source": "band.com.br",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Primo de Abdul Fares pede prisão de Marina Ruy Barbosa: \"Estelionato\"",
-      "source": "Metrópoles",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa realmente pode ser presa após acusações de primo de Abdul Fares?",
       "source": "Terra",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Márcia Sensitiva analisa fase polêmica de Marina Ruy Barbosa: \"Livramento\"",
+      "source": "band.com.br",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
