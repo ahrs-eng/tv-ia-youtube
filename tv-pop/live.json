@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:17:27.433Z",
+  "updated": "2026-11-06T09:23:59.991Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,16 +51,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa realmente pode ser presa após acusações de primo de Abdul Fares?",
-      "source": "Terra",
+      "text": "Mãe de Abdul Fares diz que Marina Ruy Barbosa quis devolver anel de R$ 6 mi: “Nunca aceitaríamos”",
+      "source": "tmc.com.br",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares diz que Marina Ruy Barbosa quis devolver anel de R$ 6 mi: “Nunca aceitaríamos”",
-      "source": "tmc.com.br",
+      "text": "Marina Ruy Barbosa realmente pode ser presa após acusações de primo de Abdul Fares?",
+      "source": "Terra",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
