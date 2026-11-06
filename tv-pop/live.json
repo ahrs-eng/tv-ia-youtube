@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T19:58:34.169Z",
+  "updated": "2026-11-06T20:44:37.783Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -21,6 +21,14 @@
     {
       "text": "Pai de Marina Ruy Barbosa sai em defesa da atriz após polêmica com ex-amigas: 'Dor de cotovelo'",
       "source": "Terra",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -51,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Carlinhos Maia aconselha Marina Ruy Barbosa a não devolver anel milionário",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Em meio a polêmicas, Marina Ruy Barbosa abre álbum de fotos: ‘Rodeada de gente legal’",
       "source": "Alô Alô Bahia",
       "date": "06 Nov 2026",
@@ -75,7 +75,7 @@
       "weight": 3
     },
     {
-      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica registros de semana agitada",
+      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
       "source": "Globo",
       "date": "06 Nov 2026",
       "hot": true,
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa finalmente quebra sigilo após acusação grave e barraco em família",
-      "source": "Terra",
+      "text": "Karoline Lima anuncia término com Leo Pereira e cita Marina Ruy Barbosa",
+      "source": "CNN Brasil",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
-      "source": "CNN Brasil",
-      "date": "05 Nov 2026",
+      "text": "Carlinhos Maia aconselha Marina Ruy Barbosa a não devolver anel milionário",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
