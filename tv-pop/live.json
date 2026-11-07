@@ -1,10 +1,26 @@
 {
-  "updated": "2026-11-07T17:27:37.222Z",
+  "updated": "2026-11-07T18:04:57.168Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
       "source": "O GLOBO",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa prepara notificações extrajudiciais para a próxima semana",
+      "source": "O Dia",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -27,14 +43,6 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa causa burburinho ao desfilar com look ousado e música sobre independência financeira",
       "source": "Estrelando",
       "date": "07 Nov 2026",
@@ -43,9 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
-      "source": "CNN Brasil",
-      "date": "05 Nov 2026",
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,17 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa prepara notificações extrajudiciais para a próxima semana",
-      "source": "O Dia",
-      "date": "07 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Quem são as novas amizades de Marina Ruy Barbosa após rompimento com Luma Costa e blogueiras",
-      "source": "Alagoas 24 Horas",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "06 Nov 2026",
+      "text": "Polêmico anel de Marina Ruy Barbosa seria mais caro que o da princesa Diana e do noivado anterior da atriz",
+      "source": "Terra",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
