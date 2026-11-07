@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T21:30:29.225Z",
+  "updated": "2026-11-07T22:16:31.340Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,14 +19,6 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa prepara notificações extrajudiciais para a próxima semana",
-      "source": "O Dia",
-      "date": "07 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
@@ -35,16 +27,16 @@
       "weight": 3
     },
     {
-      "text": "Em meio a polêmicas, Marina Ruy Barbosa aposta em look ousado e música sobre independência",
-      "source": "Terra",
+      "text": "Marina Ruy Barbosa prepara notificações extrajudiciais para a próxima semana",
+      "source": "O Dia",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa causa burburinho ao desfilar com look ousado e música sobre independência financeira",
-      "source": "Estrelando",
+      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
+      "source": "Terra",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -75,6 +67,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa causa burburinho ao desfilar com look ousado e música sobre independência financeira",
+      "source": "Estrelando",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "06 Nov 2026",
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa desfila de calcinha e fãs especulam indireta com música",
-      "source": "UOL",
+      "text": "Em meio a polêmicas, Marina Ruy Barbosa aposta em look ousado e música sobre independência",
+      "source": "Terra",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
-      "source": "CNN Brasil",
-      "date": "05 Nov 2026",
+      "text": "Marina Ruy Barbosa desfila de calcinha e fãs especulam indireta com música",
+      "source": "UOL",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
