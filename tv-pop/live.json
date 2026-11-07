@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:33:00.254Z",
+  "updated": "2026-11-07T12:19:10.858Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,9 +19,9 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "text": "Marina Ruy Barbosa desfila de calcinha e fãs especulam indireta com música",
       "source": "UOL",
-      "date": "06 Nov 2026",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,6 +67,14 @@
       "weight": 3
     },
     {
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "06 Nov 2026",
@@ -78,14 +86,6 @@
       "text": "Marina Ruy Barbosa finalmente quebra sigilo após acusação grave e barraco em família",
       "source": "Terra",
       "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
