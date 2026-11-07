@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T08:29:16.945Z",
+  "updated": "2026-11-07T09:21:21.933Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,16 +11,16 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
+      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
+      "source": "Globo",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
-      "source": "Globo",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,17 +67,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa finalmente quebra sigilo após acusação grave e barraco em família",
-      "source": "Terra",
-      "date": "06 Nov 2026",
+      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "source": "O GLOBO",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
+      "text": "Marina Ruy Barbosa finalmente quebra sigilo após acusação grave e barraco em família",
+      "source": "Terra",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Karoline Lima anuncia término com Leo Pereira e cita Marina Ruy Barbosa",
+      "text": "Mãe do noivo de Marina Ruy Barbosa defende atriz: “Lamento muito”",
       "source": "CNN Brasil",
-      "date": "06 Nov 2026",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
