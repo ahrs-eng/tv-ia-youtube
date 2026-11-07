@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-07T20:15:07.151Z",
+  "updated": "2026-11-07T20:56:22.472Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
-      "source": "CNN Brasil",
+      "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
+      "source": "O GLOBO",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
-      "source": "O GLOBO",
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Polêmico anel de Marina Ruy Barbosa seria mais caro que o da princesa Diana e do noivado anterior da atriz",
-      "source": "Terra",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
+      "source": "CNN Brasil",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
