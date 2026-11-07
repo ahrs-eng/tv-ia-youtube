@@ -1,19 +1,11 @@
 {
-  "updated": "2026-11-07T15:29:01.921Z",
+  "updated": "2026-11-07T16:12:04.377Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
       "source": "O GLOBO",
       "date": "07 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,17 +35,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
-      "source": "CNN Brasil",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "A história do polêmico anel de R$ 6 milhões de Marina Ruy Barbosa",
-      "source": "VEJA",
-      "date": "05 Nov 2026",
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,17 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Quem são as novas amizades de Marina Ruy Barbosa após rompimento com Luma Costa e blogueiras",
-      "source": "Alagoas 24 Horas",
-      "date": "07 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
+      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
+      "source": "CNN Brasil",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +67,33 @@
       "weight": 3
     },
     {
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Polêmico anel de Marina Ruy Barbosa seria mais caro que o da princesa Diana e do noivado anterior da atriz",
       "source": "Terra",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe do noivo de Marina Ruy Barbosa defende atriz: “Lamento muito”",
+      "source": "CNN Brasil",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
