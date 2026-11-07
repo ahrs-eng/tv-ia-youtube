@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T02:06:59.627Z",
+  "updated": "2026-11-07T02:58:03.650Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -67,16 +67,16 @@
       "weight": 3
     },
     {
-      "text": "Em meio a polêmicas, Marina Ruy Barbosa brinca com resumo da semana: 'Foi tranquila'",
-      "source": "Tribuna do Sertão",
-      "date": "06 Nov 2026",
+      "text": "A história do polêmico anel de R$ 6 milhões de Marina Ruy Barbosa",
+      "source": "VEJA",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
+      "text": "Em meio a polêmicas, Marina Ruy Barbosa brinca com resumo da semana: 'Foi tranquila'",
+      "source": "Tribuna do Sertão",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -91,8 +91,8 @@
       "weight": 3
     },
     {
-      "text": "Scooby defende Marina Ruy Barbosa em polêmica: “Quem ataca é de baixo\"",
-      "source": "CNN Brasil",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
