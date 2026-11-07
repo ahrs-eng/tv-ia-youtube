@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T14:13:29.909Z",
+  "updated": "2026-11-07T14:55:10.786Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,7 +27,7 @@
       "weight": 3
     },
     {
-      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
+      "text": "Polêmico anel de Marina Ruy Barbosa seria mais caro que o da princesa Diana e do noivado anterior da atriz",
       "source": "Terra",
       "date": "07 Nov 2026",
       "hot": true,
@@ -67,14 +67,6 @@
       "weight": 3
     },
     {
-      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
-      "source": "Globo",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
@@ -83,9 +75,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa tentou devolver anel de R$ 6 milhões após separação, mas família do ex-noivo recusou",
-      "source": "Terra",
+      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
+      "source": "Globo",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
+      "source": "Terra",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
