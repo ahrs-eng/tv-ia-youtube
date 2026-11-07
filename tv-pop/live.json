@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-07T18:04:57.168Z",
+  "updated": "2026-11-07T18:55:05.874Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
-      "source": "O GLOBO",
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
-      "source": "CNN Brasil",
+      "text": "Em meio a polêmicas, Amora Mautner presta apoio a Marina Ruy Barbosa: 'Amore, você tem tudo'",
+      "source": "O GLOBO",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
