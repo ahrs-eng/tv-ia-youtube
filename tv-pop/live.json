@@ -1,10 +1,26 @@
 {
-  "updated": "2026-11-07T01:10:46.793Z",
+  "updated": "2026-11-07T02:06:59.627Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Trabalho, descanso, apoio dos amigos: Marina Ruy Barbosa publica fotos e cita 'semana tranquila'",
+      "source": "Globo",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -21,22 +37,6 @@
     {
       "text": "Marina Ruy Barbosa tentou devolver anel de R$ 6 milhões após separação, mas família do ex-noivo recusou",
       "source": "Terra",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Em meio a polêmicas, Marina Ruy Barbosa brinca com resumo da semana: 'Foi tranquila'",
-      "source": "Extra online",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,9 +67,17 @@
       "weight": 3
     },
     {
-      "text": "A história do polêmico anel de R$ 6 milhões de Marina Ruy Barbosa",
-      "source": "VEJA",
-      "date": "05 Nov 2026",
+      "text": "Em meio a polêmicas, Marina Ruy Barbosa brinca com resumo da semana: 'Foi tranquila'",
+      "source": "Tribuna do Sertão",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -78,14 +86,6 @@
       "text": "Após semana de polêmicas e separação, Marina Ruy Barbosa surpreende com atitude inesperada",
       "source": "Terra",
       "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
