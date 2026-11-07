@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T13:24:37.797Z",
+  "updated": "2026-11-07T14:13:29.909Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,9 +27,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa tentou devolver anel de R$ 6 milhões após separação, mas família do ex-noivo recusou",
+      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
       "source": "Terra",
-      "date": "06 Nov 2026",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -38,6 +38,14 @@
       "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
       "source": "CNN Brasil",
       "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Quem são as novas amizades de Marina Ruy Barbosa após rompimento com Luma Costa e blogueiras",
+      "source": "Alagoas 24 Horas",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,7 +83,7 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa finalmente quebra sigilo após acusação grave e barraco em família",
+      "text": "Marina Ruy Barbosa tentou devolver anel de R$ 6 milhões após separação, mas família do ex-noivo recusou",
       "source": "Terra",
       "date": "06 Nov 2026",
       "hot": true,
@@ -86,14 +94,6 @@
       "text": "Mãe do noivo de Marina Ruy Barbosa defende atriz: “Lamento muito”",
       "source": "CNN Brasil",
       "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
