@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T04:35:16.483Z",
+  "updated": "2026-11-08T05:31:34.647Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -75,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Além de Marina Ruy Barbosa, relembre famosos que terminaram o noivado",
+      "source": "R7 Entretenimento",
+      "date": "08 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "06 Nov 2026",
@@ -85,14 +93,6 @@
     {
       "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
       "source": "UOL",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa deixou de seguir noivo bilionário? Entenda polêmica",
-      "source": "CNN Brasil",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
