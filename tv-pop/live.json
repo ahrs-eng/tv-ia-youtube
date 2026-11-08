@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T22:47:07.148Z",
+  "updated": "2026-11-08T23:28:28.592Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,17 +35,17 @@
       "weight": 3
     },
     {
-      "text": "Ex-sogra de Marina Ruy Barbosa revela detalhes sobre anel de R$ 6 milhões",
-      "source": "Clube FM Brasil",
-      "date": "08 Nov 2026",
+      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
+      "source": "InfoMoney",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
-      "source": "InfoMoney",
-      "date": "06 Nov 2026",
+      "text": "Ex-sogra de Marina Ruy Barbosa revela detalhes sobre anel de R$ 6 milhões",
+      "source": "Clube FM Brasil",
+      "date": "08 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
