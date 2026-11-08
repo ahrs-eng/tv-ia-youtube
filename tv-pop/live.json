@@ -1,10 +1,18 @@
 {
-  "updated": "2026-11-08T02:31:46.265Z",
+  "updated": "2026-11-08T03:32:58.072Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
+      "source": "Terra",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,14 +75,6 @@
       "weight": 3
     },
     {
-      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
-      "source": "Terra",
-      "date": "07 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "06 Nov 2026",
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa desfila de calcinha e fãs especulam indireta com música",
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
       "source": "UOL",
-      "date": "07 Nov 2026",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
