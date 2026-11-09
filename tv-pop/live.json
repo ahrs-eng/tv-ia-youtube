@@ -1,23 +1,7 @@
 {
-  "updated": "2026-11-09T17:53:50.316Z",
+  "updated": "2026-11-09T18:46:12.869Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
-    {
-      "text": "Justiça manda retirar posts que associam ex-noivo e Marina Ruy Barbosa a crimes envolvendo anel de R$ 6 milhões",
-      "source": "Estado de Minas",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após polêmica com Marina Ruy Barbosa, relembre disputas de famosas por anéis de noivado",
-      "source": "O GLOBO",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
     {
       "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
       "source": "FFW",
@@ -27,8 +11,8 @@
       "weight": 3
     },
     {
-      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
-      "source": "CNN Brasil",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
       "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -43,8 +27,32 @@
       "weight": 3
     },
     {
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
+      "source": "Instagram",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
       "source": "InfoMoney",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
       "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,17 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "text": "Após polêmica com Marina Ruy Barbosa, relembre disputas de famosas por anéis de noivado",
       "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
