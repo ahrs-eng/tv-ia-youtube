@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T04:31:22.661Z",
+  "updated": "2026-11-09T05:41:47.483Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "'Não devolvo': Karoline Lima cita Marina Ruy Barbosa ao falar de anel",
-      "source": "Clube FM Brasil",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
+      "source": "Metrópoles",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
+      "text": "'Não devolvo': Karoline Lima cita Marina Ruy Barbosa ao falar de anel",
+      "source": "Clube FM Brasil",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
