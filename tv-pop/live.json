@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-09T05:41:47.483Z",
+  "updated": "2026-11-09T06:48:03.712Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Após polêmica com Marina Ruy Barbosa, relembre disputas de famosas por anéis de noivado",
+      "source": "O GLOBO",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
@@ -22,14 +30,6 @@
       "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
       "source": "GZH",
       "date": "08 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,17 +67,17 @@
       "weight": 3
     },
     {
-      "text": "'Não devolvo': Karoline Lima cita Marina Ruy Barbosa ao falar de anel",
+      "text": "Ex-sogra de Marina Ruy Barbosa revela detalhes sobre anel de R$ 6 milhões",
       "source": "Clube FM Brasil",
-      "date": "09 Nov 2026",
+      "date": "08 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
-      "date": "05 Nov 2026",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
