@@ -1,11 +1,35 @@
 {
-  "updated": "2026-11-09T20:44:01.520Z",
+  "updated": "2026-11-09T21:35:40.811Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "Terra",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
+      "source": "O Tempo",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -21,14 +45,6 @@
     {
       "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
       "source": "FFW",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Caso Marina Ruy Barbosa: Justiça determina remoção de posts sobre anel de R$ 6 milhões",
-      "source": "Terra",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,14 +75,6 @@
       "weight": 3
     },
     {
-      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
-      "source": "O Tempo",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
       "source": "InfoMoney",
       "date": "06 Nov 2026",
@@ -75,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa teme por segurança após ataques e Abdul oferece proteção",
-      "source": "Metrópoles",
-      "date": "06 Nov 2026",
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "jornaldebarueri.com.br",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -86,14 +94,6 @@
       "text": "Após polêmica com Marina Ruy Barbosa, relembre disputas de famosas por anéis de noivado",
       "source": "O GLOBO",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
-      "source": "Terra",
-      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
