@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T23:14:55.147Z",
+  "updated": "2026-11-09T23:54:19.823Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,6 +19,14 @@
       "weight": 3
     },
     {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "Portal do Val",
       "date": "09 Nov 2026",
@@ -29,14 +37,6 @@
     {
       "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
       "source": "O Tempo",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
