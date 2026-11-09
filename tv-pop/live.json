@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T11:36:03.405Z",
+  "updated": "2026-11-09T12:40:47.315Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -22,14 +22,6 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "08 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -93,6 +85,14 @@
     {
       "text": "Primo de Abdul Fares pede prisão de Marina Ruy Barbosa; entenda",
       "source": "VEJA",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "source": "O GLOBO",
       "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
