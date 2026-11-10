@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T23:08:49.145Z",
+  "updated": "2026-11-10T23:45:24.942Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,7 +11,7 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa estrela campanha da Huawei e revela o segredo da tecnologia ANC",
+      "text": "Marina Ruy Barbosa prestigia a mãe em evento em meio à 'treta das blogueiras'",
       "source": "Globo",
       "date": "10 Nov 2026",
       "hot": true,
@@ -59,8 +59,24 @@
       "weight": 3
     },
     {
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Ex-noivo de Marina Ruy Barbosa vence batalha judicial contra primo após acusações de crimes",
       "source": "TNH1",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Justiça manda primo de noivo de Marina Ruy Barbosa apagar acusações de roubo, fraude e lavagem de dinheiro contra empresário",
+      "source": "Portal 96FM",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -77,22 +93,6 @@
     {
       "text": "Marina Ruy Barbosa vira rosto da Huawei e FreeBuds Neo sai por R$ 549",
       "source": "Jornal de Brasília",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Justiça ordena que posts acusatórios de primo de ex-noivo de Marina Ruy Barbosa sejam apagados",
-      "source": "Midiamax",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Justiça toma decisão sobre ataques de primo do ex-noivo contra Marina Ruy Barbosa #Shorts #HojeEmDia",
-      "source": "R7",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
