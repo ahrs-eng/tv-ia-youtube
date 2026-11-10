@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T21:33:54.881Z",
+  "updated": "2026-11-10T22:22:25.997Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,16 +35,16 @@
       "weight": 3
     },
     {
-      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
-      "source": "ELLE Brasil",
+      "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
+      "source": "Band",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
-      "source": "Band",
+      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
+      "source": "ELLE Brasil",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
