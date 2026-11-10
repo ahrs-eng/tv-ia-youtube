@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-10T01:55:08.961Z",
+  "updated": "2026-11-10T02:43:25.040Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,17 +35,25 @@
       "weight": 3
     },
     {
-      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
-      "source": "O Tempo",
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "redeutv.com.br",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
-      "source": "CNN Brasil",
-      "date": "07 Nov 2026",
+      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
+      "source": "O Tempo",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,16 +75,16 @@
       "weight": 3
     },
     {
-      "text": "Caso Marina Ruy Barbosa: Justiça determina remoção de posts sobre anel de R$ 6 milhões",
-      "source": "Terra",
+      "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
+      "source": "FFW",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
-      "source": "FFW",
+      "text": "Caso Marina Ruy Barbosa: Justiça determina remoção de posts sobre anel de R$ 6 milhões",
+      "source": "Terra",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -86,14 +94,6 @@
       "text": "Justiça determina que primo de Abdul Fares apague posts sobre empresário e Marina Ruy Barbosa, diz colunista",
       "source": "Estrelando",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é o novo rosto da Huawei em campanha de lançamento do FreeBuds Neo",
-      "source": "Drops de Jogos",
-      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
