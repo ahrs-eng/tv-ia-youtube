@@ -1,15 +1,7 @@
 {
-  "updated": "2026-11-10T02:43:25.040Z",
+  "updated": "2026-11-10T03:31:58.746Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
-    {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
     {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
@@ -27,8 +19,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
-      "source": "Portal do Val",
+      "text": "Ex-noivo de Marina Ruy Barbosa obtém decisão judicial",
+      "source": "NaTelinha",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "redeutv.com.br",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -43,16 +43,16 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "redeutv.com.br",
+      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
+      "source": "O Tempo",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
-      "source": "O Tempo",
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "Arena de Notícias",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Justiça determina que primo de Abdul Fares apague posts sobre empresário e Marina Ruy Barbosa, diz colunista",
-      "source": "Estrelando",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa é o novo rosto da Huawei em campanha de lançamento do FreeBuds Neo",
+      "source": "Drops de Jogos",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
