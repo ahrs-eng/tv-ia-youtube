@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T10:47:42.867Z",
+  "updated": "2026-11-10T11:44:37.110Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,9 +27,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
-      "source": "jornaldebarueri.com.br",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa: Justiça manda apagar acusações sobre anel de R$ 6 milhões",
+      "source": "Jornal de Brasília",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
-      "source": "Instagram",
-      "date": "10 Nov 2026",
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "jornaldebarueri.com.br",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
+      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
+      "source": "Instagram",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
-      "source": "O Tempo",
-      "date": "09 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,8 +91,8 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
-      "source": "Arena de Notícias",
+      "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
+      "source": "O Tempo",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
