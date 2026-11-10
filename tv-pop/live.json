@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T19:10:24.317Z",
+  "updated": "2026-11-10T20:00:43.381Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -83,8 +83,8 @@
       "weight": 3
     },
     {
-      "text": "Justiça ordena que posts acusatórios de primo de ex-noivo de Marina Ruy Barbosa sejam apagados",
-      "source": "Midiamax",
+      "text": "Primo acusa noivo de Marina Ruy Barbosa de fraude e Justiça intervém",
+      "source": "O Dia",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
