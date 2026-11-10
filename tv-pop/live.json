@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T08:51:51.299Z",
+  "updated": "2026-11-10T09:49:18.962Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -21,6 +21,14 @@
     {
       "text": "Briga com amigas, prints vazados e anel de R$ 6 milhões: entenda a polêmica envolvendo Marina Ruy Barbosa",
       "source": "Banda B",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Justiça manda apagar posts sobre Marina Ruy Barbosa e anel de R$ 6 mi",
+      "source": "redeutv.com.br",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -51,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "redeutv.com.br",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Justiça manda primo de ex de Marina Ruy Barbosa apagar posts após ataques",
       "source": "O Tempo",
       "date": "09 Nov 2026",
@@ -75,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
+      "source": "InfoMoney",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "Arena de Notícias",
       "date": "09 Nov 2026",
@@ -86,14 +94,6 @@
       "text": "Justiça manda retirar posts que associam ex-noivo e Marina Ruy Barbosa a crimes envolvendo anel de R$ 6 milhões",
       "source": "Estado de Minas",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
-      "source": "InfoMoney",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
