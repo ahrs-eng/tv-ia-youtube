@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T17:24:27.995Z",
+  "updated": "2026-11-10T18:11:42.197Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Primo de ex-noivo de Marina Ruy Barbosa apaga posts polêmicos após ordem judicial",
-      "source": "Terra",
-      "date": "10 Nov 2026",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
+      "text": "Primo de ex-noivo de Marina Ruy Barbosa apaga posts polêmicos após ordem judicial",
+      "source": "Terra",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
