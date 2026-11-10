@@ -1,11 +1,19 @@
 {
-  "updated": "2026-11-10T18:11:42.197Z",
+  "updated": "2026-11-10T19:10:24.317Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa aposta em looks vintage, color blocking e sensuais em campanha e recebe elogios",
+      "source": "Terra",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Primo de ex-noivo de Marina Ruy Barbosa apaga posts polêmicos após ordem judicial",
-      "source": "Terra",
-      "date": "10 Nov 2026",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,16 +91,8 @@
       "weight": 3
     },
     {
-      "text": "Primo de Abdul Fares diz que foi hackeado e pede desculpas a Marina Ruy Barbosa",
-      "source": "RedeTV!",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-noivo de Marina Ruy Barbosa vence na Justiça por polêmica com anel de R$ 6 milhões",
-      "source": "Entretê Spin OFF",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
