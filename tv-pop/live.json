@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-10T00:45:39.217Z",
+  "updated": "2026-11-10T01:55:08.961Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "Caso Marina Ruy Barbosa: Justiça determina remoção de posts sobre anel de R$ 6 milhões",
-      "source": "Terra",
-      "date": "09 Nov 2026",
+      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
+      "source": "Instagram",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
-      "source": "Instagram",
-      "date": "10 Nov 2026",
+      "text": "Caso Marina Ruy Barbosa: Justiça determina remoção de posts sobre anel de R$ 6 milhões",
+      "source": "Terra",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
-      "source": "InfoMoney",
-      "date": "06 Nov 2026",
+      "text": "Marina Ruy Barbosa é o novo rosto da Huawei em campanha de lançamento do FreeBuds Neo",
+      "source": "Drops de Jogos",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
