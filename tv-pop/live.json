@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T07:55:29.019Z",
+  "updated": "2026-11-10T08:51:51.299Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
-      "source": "Instagram",
-      "date": "10 Nov 2026",
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
-      "source": "CNN Brasil",
-      "date": "07 Nov 2026",
+      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
+      "source": "Instagram",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,14 +67,6 @@
       "weight": 3
     },
     {
-      "text": "Justiça manda retirar posts que associam ex-noivo e Marina Ruy Barbosa a crimes envolvendo anel de R$ 6 milhões",
-      "source": "Estado de Minas",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
       "source": "Terra",
       "date": "07 Nov 2026",
@@ -85,6 +77,14 @@
     {
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "Arena de Notícias",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Justiça manda retirar posts que associam ex-noivo e Marina Ruy Barbosa a crimes envolvendo anel de R$ 6 milhões",
+      "source": "Estado de Minas",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
