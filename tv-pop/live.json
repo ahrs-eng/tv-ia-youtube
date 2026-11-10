@@ -1,11 +1,19 @@
 {
-  "updated": "2026-11-10T13:51:30.268Z",
+  "updated": "2026-11-10T14:47:02.915Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,8 +51,8 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
+      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
+      "source": "ELLE Brasil",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,14 +75,6 @@
       "weight": 3
     },
     {
-      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
-      "source": "Instagram",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa: justiça manda primo de ex-noivo da atriz apagar vídeos",
       "source": "tmc.com.br",
       "date": "10 Nov 2026",
@@ -83,16 +83,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
-      "source": "jornaldebarueri.com.br",
-      "date": "09 Nov 2026",
+      "text": "Justiça manda apagar posts sobre Marina Ruy Barbosa e anel de R$ 6 mi",
+      "source": "redeutv.com.br",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Primo do ex de Marina Ruy Barbosa é proibido de falar sobre anel milionário sob risco de multa; entenda",
-      "source": "Jornal Correio",
+      "text": "A Justiça de São Paulo tomou uma decisão sobre as acusações feitas pelo primo de Abdul Fares, ex-noivo de Marina Ruy Barbosa. Segundo a coluna de Li Lacerda, do @estadodeminas, o juiz responsável pela análise do caso se pronunciou em meio a um",
+      "source": "Instagram",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
