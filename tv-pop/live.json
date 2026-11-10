@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T09:49:18.962Z",
+  "updated": "2026-11-10T10:47:42.867Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,17 +19,17 @@
       "weight": 3
     },
     {
-      "text": "Briga com amigas, prints vazados e anel de R$ 6 milhões: entenda a polêmica envolvendo Marina Ruy Barbosa",
-      "source": "Banda B",
+      "text": "Justiça manda apagar posts sobre Marina Ruy Barbosa e anel de R$ 6 mi",
+      "source": "redeutv.com.br",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Justiça manda apagar posts sobre Marina Ruy Barbosa e anel de R$ 6 mi",
-      "source": "redeutv.com.br",
-      "date": "10 Nov 2026",
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "jornaldebarueri.com.br",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,9 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa obtém decisão judicial",
-      "source": "NaTelinha",
-      "date": "09 Nov 2026",
+      "text": "Primo do ex de Marina Ruy Barbosa é proibido de falar sobre anel milionário sob risco de multa; entenda",
+      "source": "Jornal Correio",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -85,14 +93,6 @@
     {
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "Arena de Notícias",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Justiça manda retirar posts que associam ex-noivo e Marina Ruy Barbosa a crimes envolvendo anel de R$ 6 milhões",
-      "source": "Estado de Minas",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
