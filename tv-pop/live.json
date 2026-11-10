@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T15:39:35.499Z",
+  "updated": "2026-11-10T16:30:02.076Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,16 +59,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa vira rosto da Huawei e FreeBuds Neo sai por R$ 549",
-      "source": "Jornal de Brasília",
+      "text": "Primo de ex-noivo de Marina Ruy Barbosa apaga posts polêmicos após ordem judicial",
+      "source": "Terra",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Primo de ex-noivo de Marina Ruy Barbosa apaga posts polêmicos após ordem judicial",
-      "source": "Terra",
+      "text": "Marina Ruy Barbosa vira rosto da Huawei e FreeBuds Neo sai por R$ 549",
+      "source": "Jornal de Brasília",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
