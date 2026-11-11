@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T22:27:15.618Z",
+  "updated": "2026-11-11T23:21:51.969Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo",
-      "source": "Balada IN",
-      "date": "11 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo",
+      "source": "Balada IN",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
+      "source": "ELLE Brasil",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
@@ -83,17 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
-      "source": "FFW",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
-      "source": "Terra",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa aparece dormindo em set de filmagem com maquiagem impecável: 'Talento secreto'",
+      "source": "Globo",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
