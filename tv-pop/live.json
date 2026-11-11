@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T01:55:02.593Z",
+  "updated": "2026-11-11T02:42:08.703Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -22,6 +22,14 @@
       "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
       "source": "FFW",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa vai a evento beneficente da mãe, Gio",
+      "source": "Portal iG",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -69,14 +77,6 @@
     {
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-noivo de Marina Ruy Barbosa vence batalha judicial contra primo após acusações de crimes",
-      "source": "TNH1",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
