@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T15:00:43.768Z",
+  "updated": "2026-11-11T15:59:56.558Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,17 +19,17 @@
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
+      "source": "FFW",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
-      "source": "FFW",
-      "date": "11 Nov 2026",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -54,6 +54,14 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
       "source": "Metrópoles",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel milionário",
+      "source": "Folha Vitória",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -86,14 +94,6 @@
       "text": "'Não devolvo': Karoline Lima cita Marina Ruy Barbosa ao falar de anel",
       "source": "Clube FM Brasil",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
