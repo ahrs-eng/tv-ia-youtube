@@ -1,0 +1,3015 @@
+{
+ "meta": {
+  "gerado_em": "2026-11-10 (America/Sao_Paulo)",
+  "verificacao": "Cada ID veio da página do canal (abas Vídeos/Shorts) em 10/11/2026 e foi conferido com oEmbed HTTP 200 e playableInEmbed=true. Depois, todos foram tocados de verdade pelo YouTube IFrame Player API a partir do endereço público de teste (todos tocaram). Obs.: a partir de 127.0.0.1 os vídeos da Som Livre, Universal e 3 de esporte dão erro 150 — a restrição é por domínio.",
+  "uso": "Somente player oficial incorporado (embed) no site de teste. Não autorizado para retransmissão na live 24h."
+ },
+ "tipos": {
+  "doc": "Documentário",
+  "cie": "Ciência",
+  "via": "Brasil de ponta a ponta",
+  "hum": "Humor",
+  "cur": "Curiosidades",
+  "cli": "Clipes",
+  "sho": "Show",
+  "mpb": "Música brasileira",
+  "rec": "Receitas",
+  "doc2": "Doces",
+  "his": "História do Brasil",
+  "esp": "Praia e aventura",
+  "quiz": "Quiz VivaBr"
+ },
+ "videos": [
+  {
+   "id": "hmjVe4vGI8o",
+   "tipo": "hum",
+   "titulo": "O Cucurucho foi vítima de mais uma fake news | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 321,
+   "formato": "video"
+  },
+  {
+   "id": "qXp2DCfsCa4",
+   "tipo": "hum",
+   "titulo": "Viajar de ônibus à noite é um perigo | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 412,
+   "formato": "video"
+  },
+  {
+   "id": "DkqQtBX3nCU",
+   "tipo": "hum",
+   "titulo": "O Chico da Tiana também colocou marcapasso | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 317,
+   "formato": "video"
+  },
+  {
+   "id": "guY7iIVcrcE",
+   "tipo": "hum",
+   "titulo": "O Mané Marreco passou perrengue no avião | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 319,
+   "formato": "video"
+  },
+  {
+   "id": "1xkzOYJMAr4",
+   "tipo": "hum",
+   "titulo": "O Nhô Moraes não conhecia o Cazalbé | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 240,
+   "formato": "video"
+  },
+  {
+   "id": "aS52HNRM8WQ",
+   "tipo": "hum",
+   "titulo": "Canarinho pegou o Maguila de jeito | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 318,
+   "formato": "video"
+  },
+  {
+   "id": "tijnQKFRH0I",
+   "tipo": "hum",
+   "titulo": "A rotina do Kilbert no cruzeiro | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 431,
+   "formato": "video"
+  },
+  {
+   "id": "Mt3UAoEjbU4",
+   "tipo": "hum",
+   "titulo": "Os segredos de uma boa faxina durante o casamento | A Praça é Nossa",
+   "canal": "A Praça É Nossa",
+   "canal_url": "https://www.youtube.com/@APracaENossa",
+   "dur": 336,
+   "formato": "video"
+  },
+  {
+   "id": "f6StZnemVv0",
+   "tipo": "hum",
+   "titulo": "Carro Movido A Empurrão | Câmeras Escondidas (08/11/26)",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 294,
+   "formato": "video"
+  },
+  {
+   "id": "hmdEalQ4GUs",
+   "tipo": "hum",
+   "titulo": "Pés Iguais | Câmeras Escondidas (01/11/2026)",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 340,
+   "formato": "video"
+  },
+  {
+   "id": "baNB4LJ3594",
+   "tipo": "hum",
+   "titulo": "Ivo Borracheiro | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 236,
+   "formato": "video"
+  },
+  {
+   "id": "hTNoHIxKT0A",
+   "tipo": "hum",
+   "titulo": "Chuva de Meteoros | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 248,
+   "formato": "video"
+  },
+  {
+   "id": "TpmPltbbeFs",
+   "tipo": "hum",
+   "titulo": "Garçom Derruba Bife | Câmeras Escondidas (18/10/26)",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 392,
+   "formato": "video"
+  },
+  {
+   "id": "Yqqi8JzWkck",
+   "tipo": "hum",
+   "titulo": "Bilhete Premiado | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 303,
+   "formato": "video"
+  },
+  {
+   "id": "D8OGybwdhR0",
+   "tipo": "hum",
+   "titulo": "Ivo na Escada Rolante | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 113,
+   "formato": "video"
+  },
+  {
+   "id": "RGhrlAYsHqM",
+   "tipo": "hum",
+   "titulo": "Ivo Molha Bolacha | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 217,
+   "formato": "video"
+  },
+  {
+   "id": "OR2rEsipIlQ",
+   "tipo": "hum",
+   "titulo": "O Picapau Amarelo - A Gula de Rabicó | Câmeras Escondidas (11/10/26)",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 689,
+   "formato": "video"
+  },
+  {
+   "id": "Qk5sdn2hNzQ",
+   "tipo": "hum",
+   "titulo": "Bonecos Vivos - Compilado | Câmeras Escondidas",
+   "canal": "Câmeras Escondidas",
+   "canal_url": "https://www.youtube.com/@CamerasEscondidasSBT",
+   "dur": 775,
+   "formato": "video"
+  },
+  {
+   "id": "_1fc7HFtv90",
+   "tipo": "hum",
+   "titulo": "Polêmica: é chimia ou é geléia?",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 182,
+   "formato": "video"
+  },
+  {
+   "id": "3wDLIE4tj0w",
+   "tipo": "hum",
+   "titulo": "Gostinho de terra",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 200,
+   "formato": "video"
+  },
+  {
+   "id": "pH0rO7H886Q",
+   "tipo": "hum",
+   "titulo": "Mixaria na festa da firma | A Vila do Mixaria",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 788,
+   "formato": "video"
+  },
+  {
+   "id": "N5IQno3gqpw",
+   "tipo": "hum",
+   "titulo": "Roda de carteado e causos | A Vila do Mixaria",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 802,
+   "formato": "video"
+  },
+  {
+   "id": "SxMdGWPJOxQ",
+   "tipo": "hum",
+   "titulo": "Antigamente Era Melhor? Só Se For o Kisuco! | A Vila do Mixaria",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 871,
+   "formato": "video"
+  },
+  {
+   "id": "7GvpG81h_40",
+   "tipo": "hum",
+   "titulo": "A CONFUSÃO DO PIX… 👀💸💰",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 209,
+   "formato": "video"
+  },
+  {
+   "id": "LK8nmXzB0yc",
+   "tipo": "hum",
+   "titulo": "Quero a janelinha no avião",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 235,
+   "formato": "video"
+  },
+  {
+   "id": "LRP0MdxaYUY",
+   "tipo": "hum",
+   "titulo": "Tô colhendo mais chuchu na horta da minha vida",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 364,
+   "formato": "video"
+  },
+  {
+   "id": "i_fHcviSCpU",
+   "tipo": "hum",
+   "titulo": "Ano Novo, Alegrias Novas.",
+   "canal": "Paulinho Mixaria",
+   "canal_url": "https://www.youtube.com/@PaulinhoMixariaOficial",
+   "dur": 193,
+   "formato": "video"
+  },
+  {
+   "id": "UFloRfi9m0o",
+   "tipo": "hum",
+   "titulo": "Nome de Filha - CANAL CORTA! (Jonathan Nemer)",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 265,
+   "formato": "video"
+  },
+  {
+   "id": "LV53j6l4gV4",
+   "tipo": "hum",
+   "titulo": "Entrevista de Emprego Invertida - CORTA! (Jonathan Nemer)",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 231,
+   "formato": "video"
+  },
+  {
+   "id": "VZibJRmTeVQ",
+   "tipo": "hum",
+   "titulo": "Chá 1 vez por ano - Stand Up com Jonathan Nemer",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 243,
+   "formato": "video"
+  },
+  {
+   "id": "Hae_D1VCZSI",
+   "tipo": "hum",
+   "titulo": "A criança mais comédia que já foi no show - JONATHAN NEMER",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 207,
+   "formato": "video"
+  },
+  {
+   "id": "07IxnrXLh_E",
+   "tipo": "hum",
+   "titulo": "Compras no Paraguai? ECONOMIA OU CILADA? - JONATHAN NEMER",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 396,
+   "formato": "video"
+  },
+  {
+   "id": "fH2vzgLG57Q",
+   "tipo": "hum",
+   "titulo": "Supermercado da Copa do Mundo no Qatar - Jonathan Nemer",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 671,
+   "formato": "video"
+  },
+  {
+   "id": "7S_ygom5o20",
+   "tipo": "hum",
+   "titulo": "CAMISA ORIGINAL OU OLISSINAU? - Jonathan Nemer",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 312,
+   "formato": "video"
+  },
+  {
+   "id": "FFDL4EreZYo",
+   "tipo": "hum",
+   "titulo": "VICIADO EM COMPRAR LIVRO - Jonathan Nemer",
+   "canal": "Jonathan Nemer",
+   "canal_url": "https://www.youtube.com/@JonathanNemer",
+   "dur": 267,
+   "formato": "video"
+  },
+  {
+   "id": "9WjMI1qyvTk",
+   "tipo": "hum",
+   "titulo": "I.A. NAS ESCOLAS | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 261,
+   "formato": "video"
+  },
+  {
+   "id": "nt3Jqcni8oA",
+   "tipo": "hum",
+   "titulo": "VICIADO EM IA | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 240,
+   "formato": "video"
+  },
+  {
+   "id": "VYDBpl60Kag",
+   "tipo": "hum",
+   "titulo": "SEMANA DA CRIANÇA | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 267,
+   "formato": "video"
+  },
+  {
+   "id": "fzoDsDxP_AI",
+   "tipo": "hum",
+   "titulo": "CRIANÇA NÃO PAGA | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 150,
+   "formato": "video"
+  },
+  {
+   "id": "neTCUrBRF2U",
+   "tipo": "hum",
+   "titulo": "RICO DE VERDADE | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 726,
+   "formato": "video"
+  },
+  {
+   "id": "AAJnnNNkWDQ",
+   "tipo": "hum",
+   "titulo": "CONFIA NO DOUTOR | EMBRULHA PRA VIAGEM",
+   "canal": "Embrulha Pra Viagem",
+   "canal_url": "https://www.youtube.com/@EmbrulhaPraViagem",
+   "dur": 497,
+   "formato": "video"
+  },
+  {
+   "id": "xfBSkMOzT1w",
+   "tipo": "doc",
+   "titulo": "Elas em Campo: sonhos em jogo | Caminhos da Reportagem",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 1759,
+   "formato": "video"
+  },
+  {
+   "id": "B_MLOxf8drc",
+   "tipo": "doc",
+   "titulo": "Muito além da inteligência: os caminhos das altas habilidades | Caminhos da Reportagem",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 1759,
+   "formato": "video"
+  },
+  {
+   "id": "3T35nUk-Zvg",
+   "tipo": "doc",
+   "titulo": "Luz para os povos da floresta | Caminhos da Reportagem",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 1563,
+   "formato": "video"
+  },
+  {
+   "id": "evwG_hdNelI",
+   "tipo": "doc",
+   "titulo": "Sônia Alfaia: a cientista que combina ciência e saberes na Amazônia",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 565,
+   "formato": "video"
+  },
+  {
+   "id": "E2oZFTmAQXg",
+   "tipo": "doc",
+   "titulo": "Fotógrafo Adriano Gambarini relata 35 anos de registros e conservação",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 705,
+   "formato": "video"
+  },
+  {
+   "id": "f6s48JKfHWI",
+   "tipo": "doc",
+   "titulo": "Artista Mundano usa o “artivismo” para defender o meio ambiente",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 794,
+   "formato": "video"
+  },
+  {
+   "id": "KwkjHKMW5MU",
+   "tipo": "doc",
+   "titulo": "SOS Mata Atlântica completa 40 anos de atuação",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 847,
+   "formato": "video"
+  },
+  {
+   "id": "tWiy_3dfnr0",
+   "tipo": "doc",
+   "titulo": "A MAIOR HISTÓRIA de SOBREVIVÊNCIA da HUMANIDADE | Você Sabia?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 954,
+   "formato": "video"
+  },
+  {
+   "id": "j6araU1KJDE",
+   "tipo": "doc",
+   "titulo": "A PORTA do TITANIC que NINGUÉM CONSEGUIU ABRIR",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 683,
+   "formato": "video"
+  },
+  {
+   "id": "-JNQeUENYb8",
+   "tipo": "via",
+   "titulo": "MEU PEDAÇO DO BRASIL: Distrito Federal | Arquitetura e Urbanismo",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 1661,
+   "formato": "video"
+  },
+  {
+   "id": "Dt3s4OBmRZ8",
+   "tipo": "via",
+   "titulo": "Morador cria floresta urbana na Zona Leste de São Paulo",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 790,
+   "formato": "video"
+  },
+  {
+   "id": "uIIDHZBGt9U",
+   "tipo": "via",
+   "titulo": "Desertificação avança e ameaça a Caatinga",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 668,
+   "formato": "video"
+  },
+  {
+   "id": "qjpqKJEsX_I",
+   "tipo": "via",
+   "titulo": "Da cozinha à floresta: a ideia que transformou o babaçu em oportunidade",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 704,
+   "formato": "video"
+  },
+  {
+   "id": "plE3-1m3ODU",
+   "tipo": "via",
+   "titulo": "Como criar uma horta urbana em casa ou apartamento?",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 400,
+   "formato": "video"
+  },
+  {
+   "id": "98RsJN7fDjw",
+   "tipo": "via",
+   "titulo": "Pesquisadores desenvolvem calçadas que absorvem água contra enchentes",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 411,
+   "formato": "video"
+  },
+  {
+   "id": "t_8woM9TAM8",
+   "tipo": "via",
+   "titulo": "Microplásticos ameaçam o planeta e o impacto do El Niño no Sergipe",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 442,
+   "formato": "video"
+  },
+  {
+   "id": "N2E8JYtQkWI",
+   "tipo": "via",
+   "titulo": "Muito vento e diversão no parque aquático em Cumbuco | Estradas da Aventura | Episódio 7| Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 1528,
+   "formato": "video"
+  },
+  {
+   "id": "Ec2coE7RKPU",
+   "tipo": "via",
+   "titulo": "Paraíso natural e muita curtição com Sylvio e família | Estradas da Aventura | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 1514,
+   "formato": "video"
+  },
+  {
+   "id": "jA0GPh8zGyM",
+   "tipo": "via",
+   "titulo": "Altas ondas e muito vento na costa pernambucana | Estradas da Aventura | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 1530,
+   "formato": "video"
+  },
+  {
+   "id": "9SGlfkx-nvE",
+   "tipo": "via",
+   "titulo": "Sylvio Mancusi e Luiz Avena dão rolezinho de foil em Itacimirim | Estradas da Aventura | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 1582,
+   "formato": "video"
+  },
+  {
+   "id": "BDVORRbi9gI",
+   "tipo": "cie",
+   "titulo": "Como é uma FÁBRICA de FARINHA de TRIGO? #Boravê",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 747,
+   "formato": "video"
+  },
+  {
+   "id": "0HpTJiS1mDY",
+   "tipo": "cie",
+   "titulo": "COMO é FABRICADA a COMIDA do seu PET? #Boravê",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 751,
+   "formato": "video"
+  },
+  {
+   "id": "OiZSedIB1GM",
+   "tipo": "cie",
+   "titulo": "COMO são FEITAS as SEMENTES TRANSGÊNICAS? #Boravê",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 597,
+   "formato": "video"
+  },
+  {
+   "id": "zgHpba509sI",
+   "tipo": "cie",
+   "titulo": "COMO esse brinquedo SABE que você TOCOU nele?",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 912,
+   "formato": "video"
+  },
+  {
+   "id": "6v4CO4hn7v8",
+   "tipo": "cie",
+   "titulo": "PILOTAMOS um CARRO DE CORRIDA movido a HIDROGÊNIO!",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 945,
+   "formato": "video"
+  },
+  {
+   "id": "aAfFAdkf0ZU",
+   "tipo": "cie",
+   "titulo": "Por que CARROS não têm GERADOR na RODA?",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 876,
+   "formato": "video"
+  },
+  {
+   "id": "g511VvOIsWI",
+   "tipo": "cie",
+   "titulo": "A invenção BRASILEIRA que está prestes a DESAPARECER!",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 952,
+   "formato": "video"
+  },
+  {
+   "id": "qeiYrLOg5xk",
+   "tipo": "cie",
+   "titulo": "GALÁXIAS são muito MAIORES do que pensávamos",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 573,
+   "formato": "video"
+  },
+  {
+   "id": "nZnDiSVAeW8",
+   "tipo": "cie",
+   "titulo": "A LUA vale 1 QUATRILHÃO de DÓLARES?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 876,
+   "formato": "video"
+  },
+  {
+   "id": "HbIjoSDtqPU",
+   "tipo": "cie",
+   "titulo": "A ISS está com os dias contados",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 778,
+   "formato": "video"
+  },
+  {
+   "id": "rrc7-DX7PUQ",
+   "tipo": "cie",
+   "titulo": "Como será a primeira BASE LUNAR?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 722,
+   "formato": "video"
+  },
+  {
+   "id": "lq2gDMx2ABE",
+   "tipo": "cie",
+   "titulo": "Detectamos 6.298 NOVOS PLANETAS e isso é só o começo!",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 644,
+   "formato": "video"
+  },
+  {
+   "id": "vjUHN_YTG_s",
+   "tipo": "cie",
+   "titulo": "A FÍSICA por trás do CHUTE PERFEITO",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 605,
+   "formato": "video"
+  },
+  {
+   "id": "6zpLka5s6Xg",
+   "tipo": "cie",
+   "titulo": "Já descobrimos TODOS os elementos da TABELA PERIÓDICA?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 549,
+   "formato": "video"
+  },
+  {
+   "id": "F0pufMtOnNk",
+   "tipo": "cie",
+   "titulo": "A história de como DECIFRAMOS os HIERÓGLIFOS",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 881,
+   "formato": "video"
+  },
+  {
+   "id": "YkFClXIwIko",
+   "tipo": "cie",
+   "titulo": "POR QUE foi tão DIFÍCIL INVENTAR A TV COLORIDA?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 687,
+   "formato": "video"
+  },
+  {
+   "id": "HJraHp_zqd4",
+   "tipo": "cie",
+   "titulo": "A HISTÓRIA DA TERRA - 4.5 bilhões de anos em 15 minutos",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 815,
+   "formato": "video"
+  },
+  {
+   "id": "5eNuxKxNQKU",
+   "tipo": "cie",
+   "titulo": "Por Que Crocodilos Vivem Em Usina Nuclear?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 575,
+   "formato": "video"
+  },
+  {
+   "id": "iqfTgZMHP9w",
+   "tipo": "cur",
+   "titulo": "Octavio Guedes conta história do Burro Canário, personagem presente em seu livro 'Heróis por Acaso'",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 139,
+   "formato": "short"
+  },
+  {
+   "id": "DcIXZJqnU5Y",
+   "tipo": "cur",
+   "titulo": "Criaturas do Grande Azul: Albatrozes alimentam seus filhotes",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 72,
+   "formato": "short"
+  },
+  {
+   "id": "wfO84_Idyrc",
+   "tipo": "cur",
+   "titulo": "Arquiteto conta como foi feito o Terminal Rodoviário de Brasília",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 127,
+   "formato": "short"
+  },
+  {
+   "id": "J18S-qSNfLY",
+   "tipo": "cur",
+   "titulo": "Thalita Rebouças conta sua estratégia para atrair a atenção de jovens leitores",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 73,
+   "formato": "short"
+  },
+  {
+   "id": "cmwNDezlLEo",
+   "tipo": "cur",
+   "titulo": "Thaina Schwan Karls explica como a feijoada se tornou um símbolo da identidade nacional",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 130,
+   "formato": "short"
+  },
+  {
+   "id": "DJt35SqVsZ8",
+   "tipo": "cur",
+   "titulo": "Você sabia que as baleias são aliadas no combate às mudanças climáticas?",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 98,
+   "formato": "short"
+  },
+  {
+   "id": "7rzOS7LuL0g",
+   "tipo": "cur",
+   "titulo": "O que um jardim pode transformar em uma cidade?",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 103,
+   "formato": "short"
+  },
+  {
+   "id": "ANxy443T24I",
+   "tipo": "cur",
+   "titulo": "Santuário no MT acolhe elefantes idosos e doentes | #Shorts",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 117,
+   "formato": "short"
+  },
+  {
+   "id": "34qU36NrK0c",
+   "tipo": "cur",
+   "titulo": "Estratégia de relacionamento garante sobrevivência das belugas | #Shorts",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 85,
+   "formato": "short"
+  },
+  {
+   "id": "BCMhKMKclqA",
+   "tipo": "cur",
+   "titulo": "A ilha na Noruega que aboliu o uso de relógios tradicionais | #Shorts",
+   "canal": "Repórter Eco",
+   "canal_url": "https://www.youtube.com/channel/UCxXiasLNEA7gO3k22qRsaUA",
+   "dur": 89,
+   "formato": "short"
+  },
+  {
+   "id": "nWsgEWdqi28",
+   "tipo": "cur",
+   "titulo": "Como o PIZZAIOLO consegue GIRAR a MASSA da PIZZA?",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 105,
+   "formato": "short"
+  },
+  {
+   "id": "OoYLCewUMT0",
+   "tipo": "cur",
+   "titulo": "O ANIMAL que funciona como um SUBMARINO!",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 113,
+   "formato": "short"
+  },
+  {
+   "id": "xH_-j3Rs-ug",
+   "tipo": "cur",
+   "titulo": "Uma SEMENTE com HÉLICE?",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 46,
+   "formato": "short"
+  },
+  {
+   "id": "knA-WLR-19M",
+   "tipo": "cur",
+   "titulo": "Por que esse FORTE tem formato de ESTRELA?",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 62,
+   "formato": "short"
+  },
+  {
+   "id": "eqN_9-P5QHk",
+   "tipo": "cur",
+   "titulo": "Esse CARRO DE CORRIDA solta ÁGUA em vez de FUMAÇA!",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 89,
+   "formato": "short"
+  },
+  {
+   "id": "Z-iMGyMSMHk",
+   "tipo": "cur",
+   "titulo": "O OBJETO que engana seus OLHOS!",
+   "canal": "Manual do Mundo",
+   "canal_url": "https://www.youtube.com/@manualdomundo",
+   "dur": 46,
+   "formato": "short"
+  },
+  {
+   "id": "4FMy8hb08jU",
+   "tipo": "cur",
+   "titulo": "Quanto espaço TODA a HUMANIDADE ocupa?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 59,
+   "formato": "short"
+  },
+  {
+   "id": "nk-m0HxEDi8",
+   "tipo": "cur",
+   "titulo": "Qual é o tamanho de TODO o OURO já minerado na HISTÓRIA?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 51,
+   "formato": "short"
+  },
+  {
+   "id": "s4XA4cjXAUE",
+   "tipo": "cur",
+   "titulo": "Você sabia que a Torre Eiffel fica MAIS ALTA no VERÃO?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 70,
+   "formato": "short"
+  },
+  {
+   "id": "Gv2ucxDeL_E",
+   "tipo": "cur",
+   "titulo": "por que é tão DIFÍCIL quebrar ESPAGUETE em DOIS?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 80,
+   "formato": "short"
+  },
+  {
+   "id": "tjs6xoPsAnU",
+   "tipo": "cur",
+   "titulo": "Quanto tempo levaria para DIRIGIR até a ESTRELA mais próxima?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 83,
+   "formato": "short"
+  },
+  {
+   "id": "SJvqFAezNf4",
+   "tipo": "cur",
+   "titulo": "um CUPCAKE tem mais ENERGIA do que uma BOMBA NUCLEAR?",
+   "canal": "Ciência Todo Dia",
+   "canal_url": "https://www.youtube.com/@CienciaTodoDia",
+   "dur": 98,
+   "formato": "short"
+  },
+  {
+   "id": "YP2KOUpsqCg",
+   "tipo": "cur",
+   "titulo": "Será que dá pra ir até a praia com um carro 100% elétrico?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 82,
+   "formato": "short"
+  },
+  {
+   "id": "mnHWv_ddLDk",
+   "tipo": "cur",
+   "titulo": "Em que ano você descobriu isso? Quantas pessoas seriam necessárias PARA CHEGAR À LUA?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 58,
+   "formato": "short"
+  },
+  {
+   "id": "JT0jwtMiNe8",
+   "tipo": "cur",
+   "titulo": "Com QUANTOS ANOS VOCÊ DESCOBRIU a origem do Número Pi",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 44,
+   "formato": "short"
+  },
+  {
+   "id": "MINBdjUUn8Q",
+   "tipo": "cur",
+   "titulo": "BRASIL NO CENTRO DO MUNDO? Com quantos anos você DESCOBRIU?",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 47,
+   "formato": "short"
+  },
+  {
+   "id": "-T2IRE4jIOg",
+   "tipo": "cur",
+   "titulo": "ESSE HOMEM TROCOU 10.000 BITCOINS POR DUAS PIZZAS",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 60,
+   "formato": "short"
+  },
+  {
+   "id": "YKO1d05QlME",
+   "tipo": "cur",
+   "titulo": "Com QUANTOS ANOS VOCÊ DESCOBRIU O objeto de vidro mais resistente do Mundo",
+   "canal": "Você Sabia?",
+   "canal_url": "https://www.youtube.com/@vocesabia",
+   "dur": 54,
+   "formato": "short"
+  },
+  {
+   "id": "xcaJx7ABjPs",
+   "tipo": "mpb",
+   "titulo": "RECORDAR TV | Luiz Gonzaga",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 1691,
+   "formato": "video"
+  },
+  {
+   "id": "RpADVD_HnaU",
+   "tipo": "mpb",
+   "titulo": "Ngá convida Izzy Gordon | Apresentação musical",
+   "canal": "Instituto Moreira Salles",
+   "canal_url": "https://www.youtube.com/@imoreirasalles",
+   "dur": 917,
+   "formato": "video"
+  },
+  {
+   "id": "mquX5UmGtxs",
+   "tipo": "sho",
+   "titulo": "SEM CENSURA | ESPECIAL JORGE VERCILLO",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 6708,
+   "formato": "video"
+  },
+  {
+   "id": "RRK-dTypr9U",
+   "tipo": "sho",
+   "titulo": "SEM CENSURA | ESPECIAL ELIZETH CARDOSO",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 6554,
+   "formato": "video"
+  },
+  {
+   "id": "0Tqh18MB6ZE",
+   "tipo": "sho",
+   "titulo": "SEM CENSURA | ESPECIAL VANESSA DA MATA",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 6561,
+   "formato": "video"
+  },
+  {
+   "id": "nD-8eHmnC3o",
+   "tipo": "rec",
+   "titulo": "Rita Lobo ensina o SEGREDO do picadinho de carne bem macio e saboroso",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 138,
+   "formato": "video"
+  },
+  {
+   "id": "QDBlHI20xV8",
+   "tipo": "rec",
+   "titulo": "Reaproveitamento de casca de batata!",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 114,
+   "formato": "video"
+  },
+  {
+   "id": "vMGORQJBHR0",
+   "tipo": "rec",
+   "titulo": "Surpreenda com uma galinhada a jato!",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 242,
+   "formato": "video"
+  },
+  {
+   "id": "B_ZhePFZ1xI",
+   "tipo": "rec",
+   "titulo": "PIZZA COM AS CRIANÇAS!  🍕❤️",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 193,
+   "formato": "video"
+  },
+  {
+   "id": "8EUcIC3wPqU",
+   "tipo": "rec",
+   "titulo": "ALERTA DE TEMPERO PRO FEIJÃO: COMINHO!",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 95,
+   "formato": "video"
+  },
+  {
+   "id": "NUiSiCRLc_U",
+   "tipo": "rec",
+   "titulo": "MASSA FRESCA DE BETERRABA",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 155,
+   "formato": "video"
+  },
+  {
+   "id": "Hww37AhEZNQ",
+   "tipo": "rec",
+   "titulo": "CARNE E CANELA: QUE ENCONTRO DELICIOS0!",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 74,
+   "formato": "video"
+  },
+  {
+   "id": "_no2v9EXBlk",
+   "tipo": "rec",
+   "titulo": "Marmita colorida | Salada de macarrão com molho de beterraba e salmão | Rita Lobo para Senac",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 76,
+   "formato": "video"
+  },
+  {
+   "id": "f-93QCLMbbc",
+   "tipo": "rec",
+   "titulo": "Rondelli com massa de pastel: esse prato parece de restaurante chique, mas é muito simples",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 102,
+   "formato": "video"
+  },
+  {
+   "id": "yTLoFZOL_fw",
+   "tipo": "rec",
+   "titulo": "MUITO queijo, molho e crocância: esse sanduíche de parmegiana fica uma DELÍCIA",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 147,
+   "formato": "video"
+  },
+  {
+   "id": "ztl76rSKNGw",
+   "tipo": "rec",
+   "titulo": "Parece prato de restaurante, mas esse peixe ao leite de coco é fácil de fazer!",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 82,
+   "formato": "video"
+  },
+  {
+   "id": "rj8JznFy3JQ",
+   "tipo": "rec",
+   "titulo": "NHOQUE DE ABÓBORA: UMA RECEITA TÃO GOSTOSA QUE VAI VIRAR A SUA FAVORITA!",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 128,
+   "formato": "video"
+  },
+  {
+   "id": "pB4jF9_W9o4",
+   "tipo": "rec",
+   "titulo": "ARROZ ARRETADO: o tipo de receita que conquista na primeira garfada",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 90,
+   "formato": "video"
+  },
+  {
+   "id": "OU9vf1HYLYg",
+   "tipo": "rec",
+   "titulo": "BOLINHA DE QUEIJO: o salgadinho perfeito para qualquer ocasião",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 82,
+   "formato": "video"
+  },
+  {
+   "id": "AXrZlTFHKJ0",
+   "tipo": "rec",
+   "titulo": "7 receitas com carne moída para deixar o almoço ou jantar muito mais gostoso!",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 573,
+   "formato": "video"
+  },
+  {
+   "id": "IZ-6gEHgVXY",
+   "tipo": "rec",
+   "titulo": "8 receitas de bolinhos fáceis e deliciosos",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 533,
+   "formato": "video"
+  },
+  {
+   "id": "jzEPDMxgDgk",
+   "tipo": "rec",
+   "titulo": "10 receitas deliciosas com frango",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 711,
+   "formato": "video"
+  },
+  {
+   "id": "DxUrAAlTCxw",
+   "tipo": "rec",
+   "titulo": "7 receitas de sanduíches para o seu lanche da tarde",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 553,
+   "formato": "video"
+  },
+  {
+   "id": "T00voKJCjak",
+   "tipo": "rec",
+   "titulo": "10 Receitas de Torta Salgada Fáceis e Deliciosas",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 856,
+   "formato": "video"
+  },
+  {
+   "id": "d4xTuSb2RRA",
+   "tipo": "rec",
+   "titulo": "Receitas com polenta fáceis e deliciosas",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 263,
+   "formato": "video"
+  },
+  {
+   "id": "QmkiWRLftcU",
+   "tipo": "rec",
+   "titulo": "Carne de panela com Canjica | Me ajuda, Tastemade",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 327,
+   "formato": "video"
+  },
+  {
+   "id": "NonEn8sfIiA",
+   "tipo": "doc2",
+   "titulo": "UMA MASSA, MUITOS MUFFINS",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 106,
+   "formato": "video"
+  },
+  {
+   "id": "j4ZuLb4TI2c",
+   "tipo": "doc2",
+   "titulo": "RECEITA DE MUFFIN DE MIRTILO",
+   "canal": "Panelinha",
+   "canal_url": "https://www.youtube.com/@panelinha",
+   "dur": 179,
+   "formato": "video"
+  },
+  {
+   "id": "zxLseqpljcU",
+   "tipo": "doc2",
+   "titulo": "Todo mundo me pede a receita dessa ROSCA DE COCO perfeita!",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 168,
+   "formato": "video"
+  },
+  {
+   "id": "6mKNEXLeHAc",
+   "tipo": "doc2",
+   "titulo": "Coloque tudo no liquidificador e prepare o BOLO DE MILHO MAIS CREMOSO DE TODOS",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 47,
+   "formato": "video"
+  },
+  {
+   "id": "CoT6RCKvFCA",
+   "tipo": "doc2",
+   "titulo": "Quando faz muito calor, corro para preparar esse doce gelado de coco com chocolate",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 62,
+   "formato": "video"
+  },
+  {
+   "id": "1SiQoTW2iW8",
+   "tipo": "doc2",
+   "titulo": "Esse bolo de coco invertido fica tão lindo que dá até pena de cortar",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 112,
+   "formato": "video"
+  },
+  {
+   "id": "QKBK7TppPmY",
+   "tipo": "doc2",
+   "titulo": "Pão de mel no micro-ondas: fica pronto rapidinho e é delicioso",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 105,
+   "formato": "video"
+  },
+  {
+   "id": "WlT-FrzHZyo",
+   "tipo": "doc2",
+   "titulo": "PAVÊ DE CHOCOLATE: UMA CAMADA MAIS GOSTOSA QUE A OUTRA",
+   "canal": "TudoGostoso",
+   "canal_url": "https://www.youtube.com/@tudogostoso",
+   "dur": 113,
+   "formato": "video"
+  },
+  {
+   "id": "ZWw9M783m1M",
+   "tipo": "doc2",
+   "titulo": "10 receitas de pudim fáceis e deliciosas",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 624,
+   "formato": "video"
+  },
+  {
+   "id": "i9nJAtmrX3I",
+   "tipo": "doc2",
+   "titulo": "5 Receitas de Pães Doces Caseiros que Você Precisa Fazer",
+   "canal": "Tastemade Brasil",
+   "canal_url": "https://www.youtube.com/@tastemadebr",
+   "dur": 398,
+   "formato": "video"
+  },
+  {
+   "id": "QtEZnV9dbhY",
+   "tipo": "his",
+   "titulo": "\"A Mais Sólida Mansão\"",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 367,
+   "formato": "video"
+  },
+  {
+   "id": "Yd3bhEjxpfc",
+   "tipo": "his",
+   "titulo": "Aldir Blanc",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 100,
+   "formato": "video"
+  },
+  {
+   "id": "ZEF5mYkmqW4",
+   "tipo": "his",
+   "titulo": "Eva Todor (1977)",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 46,
+   "formato": "video"
+  },
+  {
+   "id": "KErnAFvjxFo",
+   "tipo": "his",
+   "titulo": "Beth Carvalho",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 61,
+   "formato": "video"
+  },
+  {
+   "id": "J4MbwEChra0",
+   "tipo": "his",
+   "titulo": "São Jorge",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 96,
+   "formato": "video"
+  },
+  {
+   "id": "iwAxheY6990",
+   "tipo": "his",
+   "titulo": "Gracindo Júnior",
+   "canal": "Arquivo Nacional",
+   "canal_url": "https://www.youtube.com/@ArquivoNacionalBrasil",
+   "dur": 36,
+   "formato": "video"
+  },
+  {
+   "id": "N98YPwPBxys",
+   "tipo": "his",
+   "titulo": "Zumví Arquivo Afro Fotográfico no IMS Paulista",
+   "canal": "Instituto Moreira Salles",
+   "canal_url": "https://www.youtube.com/@imoreirasalles",
+   "dur": 195,
+   "formato": "video"
+  },
+  {
+   "id": "fcj_SzzaWUs",
+   "tipo": "his",
+   "titulo": "Raquel Barreto e Renata Sampaio apresentam a exposição 'Dignidade e luta: Laudelina de Campos Mello'",
+   "canal": "Instituto Moreira Salles",
+   "canal_url": "https://www.youtube.com/@imoreirasalles",
+   "dur": 210,
+   "formato": "video"
+  },
+  {
+   "id": "2Ko6XEGOvvM",
+   "tipo": "his",
+   "titulo": "\"Vidas secas\", de Graciliano Ramos, por Rachel Valença | IMS no vestibular",
+   "canal": "Instituto Moreira Salles",
+   "canal_url": "https://www.youtube.com/@imoreirasalles",
+   "dur": 1197,
+   "formato": "video"
+  },
+  {
+   "id": "Hu0RapfJTSo",
+   "tipo": "his",
+   "titulo": "\"O alienista\", de Machado de Assis, por Márcio Hilário | IMS no vestibular",
+   "canal": "Instituto Moreira Salles",
+   "canal_url": "https://www.youtube.com/@imoreirasalles",
+   "dur": 1032,
+   "formato": "video"
+  },
+  {
+   "id": "mEBN_GxmwIk",
+   "tipo": "esp",
+   "titulo": "ANUAR CHIAR | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 61,
+   "formato": "video"
+  },
+  {
+   "id": "aShpxObDc4U",
+   "tipo": "esp",
+   "titulo": "IAGO BELLOTTI | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 90,
+   "formato": "video"
+  },
+  {
+   "id": "rFWITITcn7A",
+   "tipo": "esp",
+   "titulo": "LUCA MESSENGER | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 65,
+   "formato": "video"
+  },
+  {
+   "id": "7xMag4JZ8a4",
+   "tipo": "esp",
+   "titulo": "ALEXIA OLIVEIRA | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 82,
+   "formato": "video"
+  },
+  {
+   "id": "kxy7lGBiv3Q",
+   "tipo": "esp",
+   "titulo": "FRANCISCO WILLIAM | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 58,
+   "formato": "video"
+  },
+  {
+   "id": "Wa47MiOR09g",
+   "tipo": "esp",
+   "titulo": "FERNANDO MEDINA | SURF BRASIL BASE",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 58,
+   "formato": "video"
+  },
+  {
+   "id": "GXoUVwAQXVI",
+   "tipo": "esp",
+   "titulo": "SURF BRASIL NO AR EPISÓDIO 14",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 715,
+   "formato": "video"
+  },
+  {
+   "id": "AJ04Oa6EO9U",
+   "tipo": "esp",
+   "titulo": "SURF BRASIL NO AR EPISÓDIO 10",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 871,
+   "formato": "video"
+  },
+  {
+   "id": "txgTI813eOU",
+   "tipo": "esp",
+   "titulo": "ETAPA CHALLENGER DE VÔLEI DE PRAIA - SORRISO (MT) - FEMININO - HEGÊ E VITÓRIA",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 51,
+   "formato": "video"
+  },
+  {
+   "id": "fySNNRkcttY",
+   "tipo": "esp",
+   "titulo": "Liga das Nações feminina 2026 - Semana 1 - Brasília (DF)",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 155,
+   "formato": "video"
+  },
+  {
+   "id": "4W4tTnLAqoo",
+   "tipo": "esp",
+   "titulo": "Carol Solberg e Rebecca, campeãs da 3ª etapa do Circuito Brasileiro de vôlei de praia em Saquarema",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 73,
+   "formato": "video"
+  },
+  {
+   "id": "7BLrH4_iUDo",
+   "tipo": "esp",
+   "titulo": "André e Renato, campeões da 1ª etapa do Circuito Brasileiro de vôlei de praia 2026, em Navegantes-SC",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 74,
+   "formato": "video"
+  },
+  {
+   "id": "dyrhDLx1_mY",
+   "tipo": "esp",
+   "titulo": "1ª etapa do Circuito Brasileiro de vôlei de praia 2026 - Navegantes (SC)",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 109,
+   "formato": "video"
+  },
+  {
+   "id": "Ch40fmo-iic",
+   "tipo": "esp",
+   "titulo": "O BRASIL JOGA JUNTO!!!",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 83,
+   "formato": "video"
+  },
+  {
+   "id": "r2fzteObvvU",
+   "tipo": "esp",
+   "titulo": "SOU DO VÔLEI - A MAIOR COMUNIDADE DO VÔLEI BRASILEIRO",
+   "canal": "Canal Vôlei Brasil",
+   "canal_url": "https://www.youtube.com/@VoleiBrasil1",
+   "dur": 53,
+   "formato": "video"
+  },
+  {
+   "id": "hX4JwnO8YsM",
+   "tipo": "esp",
+   "titulo": "Movimento Surfistas Negras e Nordestinas reune 100 SURFISTAS em Maracaípe | OFF Makers | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 104,
+   "formato": "video"
+  },
+  {
+   "id": "JHrsAU3Ajtc",
+   "tipo": "esp",
+   "titulo": "Nilo Peçanha conhece vários PICOS: Do skate ao surfe 🤩 | Mó Viagem | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 431,
+   "formato": "video"
+  },
+  {
+   "id": "jMxweF_3wVY",
+   "tipo": "esp",
+   "titulo": "Nilo Peçanha e Italo Penarrubia exploram picos de surfe e skate do Rio | Mó Viagem | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 507,
+   "formato": "video"
+  },
+  {
+   "id": "oPxoiGL6EPM",
+   "tipo": "esp",
+   "titulo": "HENRIQUE AVANCINI: Esporte individual com resultados coletivos | Efeito Avancini | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 465,
+   "formato": "video"
+  },
+  {
+   "id": "hjZJIvt1zXk",
+   "tipo": "esp",
+   "titulo": "CHICO BARRETO: DO TABLADO OLÍMPICO À BEIRA DO GINÁSIO COMO TREINADOR",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 186,
+   "formato": "video"
+  },
+  {
+   "id": "5uglfCzR778",
+   "tipo": "esp",
+   "titulo": "IURI SOUZA LEVA TRADIÇÃO INDÍGENA AO TIRO COM ARCO REPRESENTANDO RORAIMA NO JOGOS DA JUVENTUDE CAIXA",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 161,
+   "formato": "video"
+  },
+  {
+   "id": "nSH359vlnlI",
+   "tipo": "esp",
+   "titulo": "JOGAMOS PALPITE CERTO COM OS ATLETAS NOS JOGOS DA JUVENTUDE",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 771,
+   "formato": "video"
+  },
+  {
+   "id": "bklNzvtgJ6M",
+   "tipo": "esp",
+   "titulo": "ATLETA E ARTISTA! ALAYA BALDE PRESENTEIA OS JOGOS DA JUVENTUDE COM PINTURA DA MASCOTE BAMBA",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 168,
+   "formato": "video"
+  },
+  {
+   "id": "Vd1kShvG3c0",
+   "tipo": "esp",
+   "titulo": "BOLA NA MÃO, GOL CIDADÃO: PROJETO SOCIAL DE HANDEBOL DO PIAUÍ VIRA REFERÊNCIA DA MODALIDADE",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 165,
+   "formato": "video"
+  },
+  {
+   "id": "zlgVILo3qFs",
+   "tipo": "esp",
+   "titulo": "FLÁVIA SARAIVA CONQUISTA O BRONZE NO MUNDIAL DE GINÁSTICA ARTÍSTICA!",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 147,
+   "formato": "video"
+  },
+  {
+   "id": "xzEL1MsYuYc",
+   "tipo": "esp",
+   "titulo": "Filhos do Rio: projeto de Roraima que encantou nos Jogos da Juventude CAIXA",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 670,
+   "formato": "video"
+  },
+  {
+   "id": "Pvx09FSPizw",
+   "tipo": "esp",
+   "titulo": "IPPON! MELHORES MOMENTOS DE CLARICE RIBEIRO NO MUNDIAL DE JUDÔ 2026",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 47,
+   "formato": "video"
+  },
+  {
+   "id": "1o26F56JKug",
+   "tipo": "esp",
+   "titulo": "PASSAMOS 24 HORAS COM O BOXE! TODOS OS BASTIDORES DOS JOGOS SUL-AMERICANOS",
+   "canal": "Time Brasil TV",
+   "canal_url": "https://www.youtube.com/@TimeBrasil",
+   "dur": 702,
+   "formato": "video"
+  },
+  {
+   "id": "RvaQqKmPvhs",
+   "tipo": "sho",
+   "titulo": "Cena Musical | Gabi da Pele Preta",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 3312,
+   "formato": "video"
+  },
+  {
+   "id": "SfXd0OEUnBw",
+   "tipo": "sho",
+   "titulo": "Cena Musical | Caxtrinho",
+   "canal": "TV Brasil",
+   "canal_url": "https://www.youtube.com/@tvbrasil",
+   "dur": 3052,
+   "formato": "video"
+  },
+  {
+   "id": "H8dRHN7Z4mA",
+   "tipo": "mpb",
+   "titulo": "Zeca Pagodinho - A Paisagem",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 241,
+   "formato": "video"
+  },
+  {
+   "id": "zL2wf_ptLM0",
+   "tipo": "via",
+   "titulo": "Sylvio Mancusi e família exploram o famoso vento da Bahia | Estradas da Aventura | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 1507,
+   "formato": "video"
+  },
+  {
+   "id": "OGeib3JsLPM",
+   "tipo": "cli",
+   "titulo": "Zeca Pagodinho - A Distância",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 248,
+   "formato": "video"
+  },
+  {
+   "id": "sk09N6ZqsB0",
+   "tipo": "mpb",
+   "titulo": "Zeca Pagodinho - Coração Em Desalinho",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 171,
+   "formato": "video"
+  },
+  {
+   "id": "Pe4lW0cxNEs",
+   "tipo": "esp",
+   "titulo": "SURF BRASIL NO AR EPISÓDIO 08",
+   "canal": "Surf Brasil TV",
+   "canal_url": "https://www.youtube.com/@surfbrasiltv",
+   "dur": 985,
+   "formato": "video"
+  },
+  {
+   "id": "q_RXj6-eNDs",
+   "tipo": "cli",
+   "titulo": "Dona Onete - Boto Namorador (Lyric Video/Letra)",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 251,
+   "formato": "video"
+  },
+  {
+   "id": "Kem3YVkBpdQ",
+   "tipo": "cli",
+   "titulo": "Zeca Pagodinho - Maneiras",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 181,
+   "formato": "video"
+  },
+  {
+   "id": "8L_ALrTx3do",
+   "tipo": "cli",
+   "titulo": "Zé Neto & Cristiano - Notificação Preferida (Letra/Legendado)",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 185,
+   "formato": "video"
+  },
+  {
+   "id": "UeeuSyT7Wxg",
+   "tipo": "cli",
+   "titulo": "Zeca Pagodinho - Hoje É Dia De Festa",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 236,
+   "formato": "video"
+  },
+  {
+   "id": "5Ue0tUucqlo",
+   "tipo": "esp",
+   "titulo": "O SURFE transforma vidas: Conheça essas histórias. 🤩 | Onda da Esperança | Canal OFF",
+   "canal": "Canal OFF",
+   "canal_url": "https://www.youtube.com/@CanalOff",
+   "dur": 721,
+   "formato": "video"
+  },
+  {
+   "id": "yNacrbqYGIw",
+   "tipo": "sho",
+   "titulo": "Discos N'Agulha #21 - 1 ANO! Com Jorge Ben, Djavan, Marcos Valle, Black Rio, D2, Nação Zumbi",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 3786,
+   "formato": "video"
+  },
+  {
+   "id": "HSljUpuaoNA",
+   "tipo": "mpb",
+   "titulo": "Zeca Pagodinho - Faixa Amarela",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 297,
+   "formato": "video"
+  },
+  {
+   "id": "dR0YkJXOOmA",
+   "tipo": "cli",
+   "titulo": "Alceu Valença - Como Dois Animais",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 234,
+   "formato": "video"
+  },
+  {
+   "id": "18zmUwf46IY",
+   "tipo": "cli",
+   "titulo": "Zeca Pagodinho - Pagodeiro Fino-Trato",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 238,
+   "formato": "video"
+  },
+  {
+   "id": "SLzI9OTlrPk",
+   "tipo": "cli",
+   "titulo": "Alceu Valença - Cavalo De Pau",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 217,
+   "formato": "video"
+  },
+  {
+   "id": "wzETNhFg_GE",
+   "tipo": "cli",
+   "titulo": "Xuxa - Lua De Cristal (Letra/Legendado)",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 263,
+   "formato": "video"
+  },
+  {
+   "id": "YOk8xMMI0RA",
+   "tipo": "cli",
+   "titulo": "Will Santt - Quando Chover (Ao Vivo No Slap Session)",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 227,
+   "formato": "video"
+  },
+  {
+   "id": "8j7IPHY2uoQ",
+   "tipo": "cli",
+   "titulo": "Zeca Pagodinho - Seu Balancê",
+   "canal": "Universal Music Brasil",
+   "canal_url": "https://www.youtube.com/@umusicbrasil",
+   "dur": 222,
+   "formato": "video"
+  },
+  {
+   "id": "4PIyEbBuU3M",
+   "tipo": "cli",
+   "titulo": "Tiago Iorc -Tudo que a Fé Pode Tocar (Letra/Legendado)",
+   "canal": "Som Livre",
+   "canal_url": "https://www.youtube.com/@somlivre",
+   "dur": 220,
+   "formato": "video"
+  }
+ ],
+ "grade": {
+  "fonte": "agentes/coordenacao/grade-v3-proposta.json (proposta, não aprovada)",
+  "util": {
+   "6": [
+    [
+     "via",
+     25
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "rec",
+     5
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "cli",
+     4
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "7": [
+    [
+     "hum",
+     10
+    ],
+    [
+     "rec",
+     5
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "doc",
+     26
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "esp",
+     5
+    ]
+   ],
+   "8": [
+    [
+     "doc",
+     28
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "cli",
+     4
+    ],
+    [
+     "doc2",
+     4
+    ]
+   ],
+   "9": [
+    [
+     "cur",
+     5
+    ],
+    [
+     "doc2",
+     8
+    ],
+    [
+     "via",
+     25
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "mpb",
+     10
+    ]
+   ],
+   "10": [
+    [
+     "his",
+     25
+    ],
+    [
+     "cli",
+     4
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "cur",
+     4
+    ],
+    [
+     "quiz",
+     3
+    ]
+   ],
+   "11": [
+    [
+     "rec",
+     5
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "doc",
+     26
+    ],
+    [
+     "cli",
+     4
+    ],
+    [
+     "doc2",
+     8
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "12": [
+    [
+     "esp",
+     10
+    ],
+    [
+     "rec",
+     5
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "via",
+     25
+    ],
+    [
+     "cli",
+     6
+    ]
+   ],
+   "13": [
+    [
+     "sho",
+     45
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "hum",
+     6
+    ]
+   ],
+   "14": [
+    [
+     "his",
+     25
+    ],
+    [
+     "doc2",
+     6
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "15": [
+    [
+     "doc",
+     26
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "esp",
+     8
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "rec",
+     6
+    ],
+    [
+     "quiz",
+     3
+    ]
+   ],
+   "16": [
+    [
+     "rec",
+     6
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "via",
+     25
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "doc2",
+     5
+    ]
+   ],
+   "17": [
+    [
+     "esp",
+     15
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "mpb",
+     14
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "18": [
+    [
+     "hum",
+     15
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "his",
+     20
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "rec",
+     5
+    ],
+    [
+     "esp",
+     6
+    ]
+   ],
+   "19": [
+    [
+     "cie",
+     25
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "via",
+     11
+    ]
+   ],
+   "20": [
+    [
+     "fil",
+     40
+    ],
+    [
+     "quiz",
+     3
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "21": [
+    [
+     "doc",
+     28
+    ],
+    [
+     "hum",
+     15
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "cur",
+     8
+    ]
+   ],
+   "22": [
+    [
+     "sho",
+     45
+    ],
+    [
+     "hum",
+     6
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "23": [
+    [
+     "mpb",
+     25
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "via",
+     15
+    ],
+    [
+     "cli",
+     6
+    ]
+   ]
+  },
+  "fds": {
+   "6": [
+    [
+     "via",
+     25
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "doc2",
+     8
+    ],
+    [
+     "cie",
+     12
+    ],
+    [
+     "cli",
+     6
+    ]
+   ],
+   "7": [
+    [
+     "hum",
+     15
+    ],
+    [
+     "rec",
+     5
+    ],
+    [
+     "doc",
+     26
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "8": [
+    [
+     "doc2",
+     10
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "via",
+     25
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "cli",
+     6
+    ]
+   ],
+   "9": [
+    [
+     "esp",
+     25
+    ],
+    [
+     "rec",
+     6
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "cie",
+     10
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "10": [
+    [
+     "doc",
+     28
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "doc2",
+     8
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "11": [
+    [
+     "rec",
+     8
+    ],
+    [
+     "hum",
+     15
+    ],
+    [
+     "his",
+     20
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "quiz",
+     3
+    ]
+   ],
+   "12": [
+    [
+     "esp",
+     20
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "rec",
+     6
+    ],
+    [
+     "via",
+     15
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "13": [
+    [
+     "sho",
+     45
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "hum",
+     6
+    ]
+   ],
+   "14": [
+    [
+     "doc2",
+     8
+    ],
+    [
+     "hum",
+     20
+    ],
+    [
+     "doc",
+     28
+    ]
+   ],
+   "15": [
+    [
+     "esp",
+     15
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "cie",
+     15
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "rec",
+     6
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "16": [
+    [
+     "via",
+     25
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "doc2",
+     8
+    ],
+    [
+     "mpb",
+     8
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "17": [
+    [
+     "mpb",
+     25
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "esp",
+     10
+    ],
+    [
+     "cur",
+     5
+    ],
+    [
+     "rec",
+     6
+    ]
+   ],
+   "18": [
+    [
+     "sho",
+     45
+    ],
+    [
+     "hum",
+     6
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "19": [
+    [
+     "doc",
+     28
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "cie",
+     8
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "20": [
+    [
+     "fil",
+     40
+    ],
+    [
+     "quiz",
+     3
+    ],
+    [
+     "hum",
+     8
+    ],
+    [
+     "cli",
+     5
+    ]
+   ],
+   "21": [
+    [
+     "hum",
+     25
+    ],
+    [
+     "cli",
+     5
+    ],
+    [
+     "his",
+     20
+    ],
+    [
+     "cur",
+     6
+    ]
+   ],
+   "22": [
+    [
+     "sho",
+     45
+    ],
+    [
+     "hum",
+     6
+    ],
+    [
+     "cur",
+     5
+    ]
+   ],
+   "23": [
+    [
+     "mpb",
+     25
+    ],
+    [
+     "hum",
+     10
+    ],
+    [
+     "via",
+     15
+    ],
+    [
+     "cli",
+     6
+    ]
+   ]
+  },
+  "madrugada": {
+   "util": {
+    "0": 19,
+    "1": 14,
+    "2": 13,
+    "3": 16,
+    "4": 12,
+    "5": 18
+   },
+   "fds": {
+    "0": 21,
+    "1": 13,
+    "2": 10,
+    "3": 16,
+    "4": 9,
+    "5": 17
+   }
+  },
+  "quiz_horas": {
+   "util": [
+    10,
+    15,
+    20
+   ],
+   "fds": [
+    11,
+    20
+   ]
+  },
+  "substituicoes": {
+   "fil": "doc"
+  }
+ },
+ "quiz": [
+  {
+   "id": "r-caatinga",
+   "pergunta": "Qual bioma existe só dentro do território brasileiro?",
+   "alternativas": [
+    "Pantanal",
+    "Caatinga",
+    "Pampa",
+    "Cerrado"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "O nome vem do tupi e quer dizer 'mata branca'.",
+   "fonte_nome": "Wikipédia — Caatinga",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Caatinga",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q01-brasilia",
+   "pergunta": "Em que dia Brasília foi inaugurada como capital do Brasil?",
+   "alternativas": [
+    "7 de setembro de 1960",
+    "21 de abril de 1960",
+    "15 de novembro de 1959",
+    "1º de janeiro de 1961"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "A data foi escolhida por coincidir com o Dia de Tiradentes.",
+   "fonte_nome": "Wikipédia — Inauguração de Brasília",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Inaugura%C3%A7%C3%A3o_de_Bras%C3%ADlia",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-cerrado-df",
+   "pergunta": "Qual unidade da federação fica 100% dentro do Cerrado?",
+   "alternativas": [
+    "Goiás",
+    "Tocantins",
+    "Distrito Federal",
+    "Mato Grosso"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "O Cerrado aparece em todas as regiões do Brasil.",
+   "fonte_nome": "IBGE Agência de Notícias — mapa de Biomas (30/10/2019)",
+   "fonte_url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25798-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-asa-branca",
+   "pergunta": "Quem compôs 'Asa Branca' junto com Luiz Gonzaga?",
+   "alternativas": [
+    "Dominguinhos",
+    "Humberto Teixeira",
+    "Sivuca",
+    "Zé Dantas"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "A canção foi composta em 1947.",
+   "fonte_nome": "Wikipédia — Asa Branca",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Asa_Branca",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-tiradentes",
+   "pergunta": "Em que dia de 1792 Tiradentes foi executado, no Rio?",
+   "alternativas": [
+    "7 de setembro",
+    "13 de maio",
+    "21 de abril",
+    "15 de novembro"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "A data virou feriado nacional: o Dia de Tiradentes.",
+   "fonte_nome": "Wikipédia — Tiradentes",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Tiradentes",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q07-pico-da-neblina",
+   "pergunta": "Qual é o ponto mais alto do Brasil?",
+   "alternativas": [
+    "Pico da Bandeira",
+    "Pico da Neblina",
+    "Monte Roraima",
+    "Pico das Agulhas Negras"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "São 2.995,3 metros, no Amazonas, segundo o IBGE.",
+   "fonte_nome": "IBGE — Anuário Estatístico 2024, Pontos mais altos do Brasil",
+   "fonte_url": "https://anuario.ibge.gov.br/images/aeb/2024/s1/2_pdf/s1t3201.pdf",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q06-pao-de-queijo",
+   "pergunta": "Qual é a base do pão de queijo mineiro?",
+   "alternativas": [
+    "Farinha de trigo",
+    "Polvilho de mandioca",
+    "Fubá de milho",
+    "Farinha de arroz"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "Surgiu em Minas Gerais, por volta de 1750.",
+   "fonte_nome": "Wikipédia — Pão de queijo",
+   "fonte_url": "https://pt.wikipedia.org/wiki/P%C3%A3o_de_queijo",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q08-amazonia-bioma",
+   "pergunta": "Qual bioma ocupa quase metade do território brasileiro?",
+   "alternativas": [
+    "Cerrado",
+    "Amazônia",
+    "Mata Atlântica",
+    "Caatinga"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "São 49,5% do país. O menor bioma é o Pantanal, com 1,8%.",
+   "fonte_nome": "IBGE Agência de Notícias — mapa de Biomas (30/10/2019)",
+   "fonte_url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25798-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-rebeca",
+   "pergunta": "Em Paris 2024, Rebeca Andrade foi ouro em qual prova?",
+   "alternativas": [
+    "Salto",
+    "Trave",
+    "Solo",
+    "Barras"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "É a maior medalhista olímpica do Brasil: 6 medalhas.",
+   "fonte_nome": "Wikipédia — Rebeca Andrade",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Rebeca_Andrade",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-monica",
+   "pergunta": "Quais foram os primeiros personagens de Mauricio de Sousa, em 1959?",
+   "alternativas": [
+    "Bidu e Franjinha",
+    "Mônica e Cebolinha",
+    "Chico Bento e Zé Lelé"
+   ],
+   "resposta_indice": 0,
+   "curiosidade": "A Mônica só foi criada em 1963.",
+   "fonte_nome": "Wikipédia — Turma da Mônica",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Turma_da_M%C3%B4nica",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q05-brigadeiro",
+   "pergunta": "De onde vem, na versão mais aceita, o nome do doce brigadeiro?",
+   "alternativas": [
+    "Uma receita do Exército",
+    "Campanha de Eduardo Gomes",
+    "O formato de uma medalha"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "No Rio Grande do Sul, o doce é chamado de negrinho.",
+   "fonte_nome": "Wikipédia — Brigadeiro (doce)",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Brigadeiro_(doce)",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-rayssa",
+   "pergunta": "Que medalha Rayssa Leal ganhou no skate em Paris 2024?",
+   "alternativas": [
+    "Ouro",
+    "Prata",
+    "Bronze"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Ela garantiu o pódio com 88,83 pontos.",
+   "fonte_nome": "Wikipédia — Rayssa Leal",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Rayssa_Leal",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-tv-tupi",
+   "pergunta": "Em que ano foi inaugurada a TV Tupi, 1º canal de TV do Brasil?",
+   "alternativas": [
+    "1939",
+    "1950",
+    "1962",
+    "1945"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "Foi em 18 de setembro, em São Paulo.",
+   "fonte_nome": "Wikipédia — Televisão no Brasil",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Televis%C3%A3o_no_Brasil",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q03-palma-de-ouro",
+   "pergunta": "Qual filme brasileiro ganhou a Palma de Ouro em Cannes, em 1962?",
+   "alternativas": [
+    "Central do Brasil",
+    "O Pagador de Promessas",
+    "Vidas Secas",
+    "Cidade de Deus"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "Dirigido por Anselmo Duarte, foi o 1º brasileiro indicado ao Oscar.",
+   "fonte_nome": "Wikipédia — O Pagador de Promessas (filme)",
+   "fonte_url": "https://pt.wikipedia.org/wiki/O_Pagador_de_Promessas_(filme)",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-rapadura",
+   "pergunta": "A rapadura é feita a partir de quê?",
+   "alternativas": [
+    "Mel de abelha",
+    "Caldo de cana",
+    "Leite condensado",
+    "Fubá de milho"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "O caldo é fervido, moldado e depois secado.",
+   "fonte_nome": "Wikipédia — Rapadura",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Rapadura",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-marta",
+   "pergunta": "Quantas vezes Marta foi eleita a melhor jogadora do mundo?",
+   "alternativas": [
+    "Três",
+    "Quatro",
+    "Seis",
+    "Oito"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Cinco delas foram seguidas: um recorde.",
+   "fonte_nome": "Wikipédia — Marta (futebolista)",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Marta_(futebolista)",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q02-lei-aurea",
+   "pergunta": "Quem sancionou a Lei Áurea, em 13 de maio de 1888?",
+   "alternativas": [
+    "Dom Pedro II",
+    "Princesa Isabel",
+    "Deodoro da Fonseca",
+    "Dom João VI"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "A lei que acabou com a escravidão tinha só dois artigos.",
+   "fonte_nome": "Wikipédia — Lei Áurea",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Lei_%C3%81urea",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-apollo",
+   "pergunta": "Em que ano a Apollo 11 pousou na Lua?",
+   "alternativas": [
+    "1961",
+    "1965",
+    "1969",
+    "1972"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Neil Armstrong foi o 1º humano a pisar na Lua.",
+   "fonte_nome": "Wikipédia — Apollo 11",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Apollo_11",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-q04-primeiro-oscar",
+   "pergunta": "Qual filme deu ao Brasil o seu primeiro Oscar, em 2025?",
+   "alternativas": [
+    "Ainda Estou Aqui",
+    "Central do Brasil",
+    "O Quatrilho"
+   ],
+   "resposta_indice": 0,
+   "curiosidade": "Levou Melhor Filme Internacional, com direção de Walter Salles.",
+   "fonte_nome": "Agência Brasil — Ainda Estou Aqui vence Oscar",
+   "fonte_url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2025-03/ainda-estou-aqui-vence-oscar-de-melhor-filme-estrangeiro",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-machado",
+   "pergunta": "O conto 'Um Apólogo' é de qual escritor brasileiro?",
+   "alternativas": [
+    "José de Alencar",
+    "Monteiro Lobato",
+    "Machado de Assis",
+    "Graciliano Ramos"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Saiu em 1885 com o título 'A Agulha e a Linha'.",
+   "fonte_nome": "Wikipédia — Várias Histórias",
+   "fonte_url": "https://pt.wikipedia.org/wiki/V%C3%A1rias_Hist%C3%B3rias",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "r-chapada",
+   "pergunta": "Desde quando a Chapada dos Veadeiros é Patrimônio Mundial?",
+   "alternativas": [
+    "1988",
+    "1995",
+    "2001",
+    "2012"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "O parque fica no Cerrado, no nordeste de Goiás.",
+   "fonte_nome": "Wikipédia — Parque Nacional da Chapada dos Veadeiros",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Parque_Nacional_da_Chapada_dos_Veadeiros",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "q2-01-roda-de-capoeira",
+   "pergunta": "Em que ano a UNESCO declarou a Roda de Capoeira patrimônio da humanidade?",
+   "alternativas": [
+    "2004",
+    "2014",
+    "1994",
+    "2022"
+   ],
+   "resposta_indice": 1,
+   "curiosidade": "Em 2008, o IPHAN já tinha registrado a roda como bem cultural do Brasil.",
+   "fonte_nome": "Wikipédia — Capoeira",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Capoeira",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "q2-02-terezinha-londres",
+   "pergunta": "Em que cidade Terezinha Guilhermina ganhou ouro nos 100 m, em 2012?",
+   "alternativas": [
+    "Pequim",
+    "Atenas",
+    "Londres",
+    "Rio de Janeiro"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Na final, ela foi guiada pelo atleta-guia Guilherme Santana.",
+   "fonte_nome": "Wikipédia — Terezinha Guilhermina",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Terezinha_Guilhermina",
+   "verificado_em": "2026-10-31"
+  },
+  {
+   "id": "q2-03-estacao-espacial",
+   "pergunta": "Quantas voltas na Terra a Estação Espacial Internacional dá por dia?",
+   "alternativas": [
+    "Cerca de 2",
+    "Cerca de 6",
+    "Mais de 15",
+    "Mais de 40"
+   ],
+   "resposta_indice": 2,
+   "curiosidade": "Ela voa a 27.700 km/h, em média, e dá para vê-la a olho nu.",
+   "fonte_nome": "Wikipédia — Estação Espacial Internacional",
+   "fonte_url": "https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Espacial_Internacional",
+   "verificado_em": "2026-10-31"
+  }
+ ],
+ "letreiro": {
+  "avisos": [
+   "Siga o Canal VivaBr",
+   "Responda o quiz nos comentários",
+   "O canal do tamanho do Brasil",
+   "Procure por Canal VivaBr no YouTube"
+  ],
+  "curiosidades": [
+   "A Caatinga é o único bioma que existe só no Brasil. O nome vem do tupi e quer dizer 'mata branca'",
+   "O ponto mais alto do Brasil é o Pico da Neblina, no Amazonas: 2.995,3 metros, segundo o IBGE",
+   "O Distrito Federal fica inteirinho dentro do Cerrado",
+   "Brasília foi inaugurada em 21 de abril de 1960, no Dia de Tiradentes",
+   "A Amazônia ocupa 49,5% do Brasil. O menor bioma é o Pantanal, com 1,8%",
+   "A TV Tupi, primeiro canal de TV do Brasil, estreou em 18 de setembro de 1950, em São Paulo",
+   "No Rio Grande do Sul, o brigadeiro é chamado de negrinho",
+   "O pão de queijo mineiro é feito com polvilho de mandioca",
+   "A Estação Espacial Internacional dá mais de 15 voltas na Terra por dia",
+   "'Asa Branca', de Luiz Gonzaga e Humberto Teixeira, foi composta em 1947"
+  ]
+ }
+}
