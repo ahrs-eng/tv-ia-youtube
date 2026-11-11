@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T05:39:06.073Z",
+  "updated": "2026-11-11T06:41:17.654Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa vai a evento beneficente da mãe, Gio",
-      "source": "Portal iG",
-      "date": "11 Nov 2026",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa vai a evento beneficente da mãe, Gio",
+      "source": "Portal iG",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,9 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Decisão na Justiça para ex-noivo de Marina Ruy Barbosa: briga por anel milionário",
-      "source": "VEJA",
-      "date": "10 Nov 2026",
+      "text": "Justiça manda primo de noivo de Marina Ruy Barbosa apagar acusações de roubo, fraude e lavagem de dinheiro contra empresário",
+      "source": "Portal 96FM",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -61,6 +61,14 @@
     {
       "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
       "source": "ELLE Brasil",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Decisão na Justiça para ex-noivo de Marina Ruy Barbosa: briga por anel milionário",
+      "source": "VEJA",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -86,14 +94,6 @@
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
