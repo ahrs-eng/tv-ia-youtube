@@ -1,0 +1,4 @@
+Fontes usadas no Canal VivaBr (todas gratuitas, SIL Open Font License 1.1):
+- Fredoka (peso 300–700, variável) — fonte do site e do logo (letras C A N A L, V, i, v, a). Arquivo: Fredoka-var.woff2 (Google Fonts, subconjunto latino). Licença: OFL-Fredoka.txt
+- Nunito Black (900) — só as letras "B" e "r" do logo, convertidas em curvas dentro de logo.svg (o arquivo da fonte não é servido). Licença: OFL-Nunito.txt
+- Inter — reserva para caracteres que a Fredoka não tem (ex.: ′ no painel). Licença: OFL.txt
