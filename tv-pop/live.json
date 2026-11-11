@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T02:42:08.703Z",
+  "updated": "2026-11-11T03:34:36.549Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -36,8 +36,16 @@
     },
     {
       "text": "Decisão na Justiça para ex-noivo de Marina Ruy Barbosa: briga por anel milionário",
-      "source": "Assine Abril",
+      "source": "VEJA",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,14 +67,6 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa aposta em looks vintage, color blocking e sensuais em campanha e recebe elogios",
       "source": "Terra",
       "date": "10 Nov 2026",
@@ -83,16 +83,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa vira rosto da Huawei e FreeBuds Neo sai por R$ 549",
-      "source": "Jornal de Brasília",
-      "date": "10 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "'Tenho um cuidado redobrado e mantenho rotina rigorosa': Marina Ruy Barbosa revela segredo do cabelo ruivo impecável em meio a 3 projetos e entrega produtos usados em casa",
-      "source": "Purepeople",
+      "text": "Marina Ruy Barbosa vira rosto da Huawei e FreeBuds Neo sai por R$ 549",
+      "source": "Jornal de Brasília",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
