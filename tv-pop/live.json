@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T07:57:51.633Z",
+  "updated": "2026-11-11T08:53:23.841Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,6 +59,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa aposta em looks vintage, color blocking e sensuais em campanha e recebe elogios",
+      "source": "Terra",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Decisão na Justiça para ex-noivo de Marina Ruy Barbosa: briga por anel milionário",
       "source": "VEJA",
       "date": "10 Nov 2026",
@@ -67,9 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em looks vintage, color blocking e sensuais em campanha e recebe elogios",
-      "source": "Terra",
-      "date": "10 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
+      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
+      "source": "jornaldebarueri.com.br",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
