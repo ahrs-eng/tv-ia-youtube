@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T04:39:11.109Z",
+  "updated": "2026-11-11T05:39:06.073Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,17 +35,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
-      "source": "FFW",
-      "date": "10 Nov 2026",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
+      "source": "FFW",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
