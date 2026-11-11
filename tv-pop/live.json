@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T12:53:40.047Z",
+  "updated": "2026-11-11T14:08:25.537Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,14 +43,6 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa vai a evento beneficente da mãe, Gio",
-      "source": "Portal iG",
-      "date": "11 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
@@ -62,6 +54,14 @@
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "jornaldebarueri.com.br",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Em meio à polêmica entre blogueiras, Marina Ruy Barbosa prestigia evento da mãe",
+      "source": "Portal iG",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
+      "source": "InfoMoney",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixa barriga à mostra, posa na cama e canta com Marina Sena; vídeo",
-      "source": "Gshow",
-      "date": "09 Nov 2026",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
