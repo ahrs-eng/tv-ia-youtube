@@ -1,11 +1,19 @@
 {
-  "updated": "2026-11-12T17:46:08.913Z",
+  "updated": "2026-11-12T18:44:25.545Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
       "source": "GZH",
       "date": "12 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -30,14 +38,6 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
       "source": "Metrópoles",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
-      "source": "FFW",
-      "date": "10 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
