@@ -1,19 +1,11 @@
 {
-  "updated": "2026-11-12T12:28:19.280Z",
+  "updated": "2026-11-12T13:47:55.174Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
       "source": "GZH",
       "date": "12 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -27,17 +19,17 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
       "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo - Portal IN",
-      "source": "Pompeu Vasconcelos",
-      "date": "11 Nov 2026",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
+      "source": "Metrópoles",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -54,6 +46,14 @@
       "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
       "source": "jornaldebarueri.com.br",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo - Portal IN",
+      "source": "Pompeu Vasconcelos",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
