@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T22:19:21.658Z",
+  "updated": "2026-11-12T23:12:32.726Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,14 +51,6 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo - Portal IN",
-      "source": "Pompeu Vasconcelos",
-      "date": "11 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
       "source": "Band",
       "date": "10 Nov 2026",
@@ -94,6 +86,14 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
+      "source": "FFW",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
