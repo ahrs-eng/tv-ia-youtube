@@ -1,26 +1,10 @@
 {
-  "updated": "2026-11-11T23:21:51.969Z",
+  "updated": "2026-11-12T00:15:30.435Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
       "source": "CNN Brasil",
-      "date": "11 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
-      "source": "FFW",
       "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,16 +19,24 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo",
-      "source": "Balada IN",
+      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
+      "source": "FFW",
       "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em verde-oliva para vestido e bolsa de R$ 10,6 mil",
-      "source": "Terra",
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo",
+      "source": "Balada IN",
       "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -54,6 +46,14 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
       "source": "Metrópoles",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa aposta em verde-oliva para vestido e bolsa de R$ 10,6 mil",
+      "source": "Terra",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,14 +75,6 @@
       "weight": 3
     },
     {
-      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
-      "source": "ELLE Brasil",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
@@ -91,9 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aparece dormindo em set de filmagem com maquiagem impecável: 'Talento secreto'",
-      "source": "Globo",
-      "date": "11 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
+      "source": "FFW",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
