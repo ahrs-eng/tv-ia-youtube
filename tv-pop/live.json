@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T13:47:55.174Z",
+  "updated": "2026-11-12T14:48:29.510Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa protagoniza campanha de áudio da Huawei",
-      "source": "jornaldebarueri.com.br",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
+      "source": "FFW",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -53,14 +53,6 @@
     {
       "text": "Marina Ruy Barbosa apoia projeto de moda circular da mãe e disponibiliza peças do próprio acervo - Portal IN",
       "source": "Pompeu Vasconcelos",
-      "date": "11 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa usa look verde-oliva com bolsa de 18 mil em brechó da mãe, Gioconda",
-      "source": "FFW",
       "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -75,6 +67,14 @@
       "weight": 3
     },
     {
+      "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
+      "source": "Band",
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "'Só quero ganhar muito dinheiro...': após polêmica com 'ex-amigas', Marina Ruy Barbosa dispensa o textão, deixa calcinha à mostra e desfila ao som de música sugestiva; web aponta indireta",
       "source": "Terra",
       "date": "07 Nov 2026",
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
-      "date": "11 Nov 2026",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
