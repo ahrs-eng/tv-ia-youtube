@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T20:22:06.217Z",
+  "updated": "2026-11-13T21:16:50.427Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -14,14 +14,6 @@
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
       "source": "CNN Brasil",
       "date": "11 Nov 2026",
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa chama atenção com máscara de cristais e vestido de decote profundo nos bastidores de novo filme",
-      "source": "Globo",
-      "date": "10 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
