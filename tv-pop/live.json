@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T06:58:44.306Z",
+  "updated": "2026-11-13T08:18:38.035Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,6 +35,14 @@
       "weight": 3
     },
     {
+      "text": "Camisa em tom vibrante: Marina Ruy Barbosa, Fernanda Lima e mais famosas entram na trend",
+      "source": "Terra",
+      "date": "13 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa brilha com vestido blazer e sandália ankle strap em bastidores de filme",
       "source": "FFW",
       "date": "10 Nov 2026",
@@ -43,16 +51,16 @@
       "weight": 3
     },
     {
-      "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
-      "source": "Band",
+      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
+      "source": "ELLE Brasil",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
-      "source": "ELLE Brasil",
+      "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
+      "source": "Band",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -78,14 +86,6 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
-      "source": "FFW",
-      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
