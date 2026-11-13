@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T09:27:18.950Z",
+  "updated": "2026-11-13T10:28:39.217Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
       "source": "UOL",
-      "date": "06 Nov 2026",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
