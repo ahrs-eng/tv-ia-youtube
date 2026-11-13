@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T17:24:30.873Z",
+  "updated": "2026-11-13T18:16:03.769Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,14 +51,6 @@
       "weight": 3
     },
     {
-      "text": "Decisão na Justiça para ex-noivo de Marina Ruy Barbosa: briga por anel milionário",
-      "source": "VEJA",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
@@ -94,6 +86,14 @@
       "text": "Marina Ruy Barbosa chama atenção com máscara de cristais e vestido de decote profundo nos bastidores de novo filme",
       "source": "Globo",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
