@@ -1,23 +1,7 @@
 {
-  "updated": "2026-11-13T01:59:06.007Z",
+  "updated": "2026-11-13T02:47:29.976Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "12 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
     {
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
@@ -30,6 +14,14 @@
       "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -53,14 +45,6 @@
     {
       "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
       "source": "Band",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
-      "source": "ELLE Brasil",
       "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -94,6 +78,22 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "A calça skinny voltou! Marina Ruy Barbosa mostra como usar o jeans com bota e mocassim",
+      "source": "FFW",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
+      "source": "CNN Brasil",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
