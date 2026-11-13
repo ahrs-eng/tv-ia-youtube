@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T15:28:18.237Z",
+  "updated": "2026-11-13T16:26:46.508Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,14 +51,6 @@
       "weight": 3
     },
     {
-      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
-      "source": "ELLE Brasil",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Ex de Marina Ruy Barbosa vai à Justiça após polêmica com anel de R$ 6 milhões",
       "source": "Band",
       "date": "10 Nov 2026",
@@ -94,6 +86,14 @@
       "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa chama atenção com máscara de cristais e vestido de decote profundo nos bastidores de novo filme",
+      "source": "Globo",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
