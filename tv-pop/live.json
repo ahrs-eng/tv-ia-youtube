@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T03:45:20.886Z",
+  "updated": "2026-11-13T04:51:24.108Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,9 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa terá de devolver anel de R$ 6 milhões? Veja o que diz a lei",
-      "source": "InfoMoney",
-      "date": "06 Nov 2026",
+      "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
+      "source": "ELLE Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
