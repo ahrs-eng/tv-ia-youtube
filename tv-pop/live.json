@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T10:13:57.173Z",
+  "updated": "2026-11-14T10:58:22.420Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,17 +19,17 @@
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
-      "source": "UOL",
-      "date": "03 Nov 2026",
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "source": "UOL",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
