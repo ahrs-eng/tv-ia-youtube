@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T13:25:26.239Z",
+  "updated": "2026-11-14T14:15:06.253Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,9 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
-      "date": "11 Nov 2026",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
       "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "date": "11 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
