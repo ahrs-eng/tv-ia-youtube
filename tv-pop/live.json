@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T00:19:43.470Z",
+  "updated": "2026-11-14T01:35:54.611Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -30,14 +30,6 @@
       "text": "Com Marina Ruy Barbosa como rosto da campanha, HUAWEI lança novo FreeBuds Neo com cancelamento ativo de ruído",
       "source": "ELLE Brasil",
       "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Camisa em tom vibrante: Marina Ruy Barbosa, Fernanda Lima e mais famosas entram na trend",
-      "source": "Terra",
-      "date": "13 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Caso Marina Ruy Barbosa reacende debate: qual é o limite entre crítica e linchamento virtual?",
+      "source": "O GLOBO",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
