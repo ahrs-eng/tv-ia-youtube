@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:58:30.830Z",
+  "updated": "2026-11-14T15:36:30.430Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -13,6 +13,14 @@
     {
       "text": "Marina Ruy Barbosa aposta em transparência e sobrancelhas descoloridas em look all black",
       "source": "Globo",
+      "date": "14 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
+      "source": "VEJA SÃO PAULO",
       "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -86,14 +94,6 @@
       "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
       "source": "CNN Brasil",
       "date": "11 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
