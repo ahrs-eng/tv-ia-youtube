@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T16:36:38.577Z",
+  "updated": "2026-11-15T17:19:40.668Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,12 +27,12 @@
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "text": "Amizades rompidas: relembre famosos que cortaram a relação",
       "source": "CNN Brasil",
-      "date": "10 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
+      "date": "15 Nov 2026",
+      "hot": false,
+      "theme": "pop",
+      "weight": 1
     },
     {
       "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
@@ -59,7 +59,7 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
       "hot": true,
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa posta foto dormindo em set com look intacto: \"Talento\"",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
-      "date": "11 Nov 2026",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
