@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T17:19:40.668Z",
+  "updated": "2026-11-15T18:01:55.817Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -19,20 +19,20 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Amizades rompidas: relembre famosos que cortaram a relação",
       "source": "CNN Brasil",
       "date": "15 Nov 2026",
       "hot": false,
       "theme": "pop",
       "weight": 1
+    },
+    {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
     },
     {
       "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
@@ -51,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Longe das polêmicas, Marina Ruy Barbosa surge nos bastidores de ‘O Mistério do 5 Estrelas’",
-      "source": "Globo",
-      "date": "14 Nov 2026",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,9 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
