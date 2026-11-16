@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T11:10:22.356Z",
+  "updated": "2026-11-16T12:22:47.844Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -21,14 +21,6 @@
     {
       "text": "Solteira, Marina Ruy Barbosa treina sem make e ganha elogio de personal",
       "source": "UOL",
-      "date": "16 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Sem maquiagem, Marina Ruy Barbosa exibe beleza natural em vídeo na academia e personal elogia: 'Essa mulher é um fenômeno'",
-      "source": "Terra",
       "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -94,6 +86,14 @@
       "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
