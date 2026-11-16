@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T03:46:48.619Z",
+  "updated": "2026-11-16T05:25:54.735Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -51,14 +51,6 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão contra primo na Justiça",
-      "source": "Metrópoles",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Solteira e sem make, Marina Ruy Barbosa treina e personal elogia: 'Máquina de beleza'",
       "source": "Globo",
       "date": "15 Nov 2026",
@@ -75,12 +67,12 @@
       "weight": 3
     },
     {
-      "text": "Amizades rompidas: relembre famosos que cortaram a relação",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
-      "date": "15 Nov 2026",
-      "hot": false,
-      "theme": "pop",
-      "weight": 1
+      "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
     },
     {
       "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
@@ -91,9 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "source": "UOL",
+      "date": "03 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Indireta? Marina Ruy Barbosa usa hit viral em meio a polêmicas",
       "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
