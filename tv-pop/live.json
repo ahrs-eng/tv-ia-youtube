@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T23:21:00.734Z",
+  "updated": "2026-11-16T00:10:54.037Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,9 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
+      "text": "Solteira e sem make, Marina Ruy Barbosa treina e personal elogia: 'Máquina de beleza'",
+      "source": "Globo",
+      "date": "15 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
