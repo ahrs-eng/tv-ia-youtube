@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T10:41:14.982Z",
+  "updated": "2026-11-17T11:30:31.664Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -75,9 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Solteira, Marina Ruy Barbosa treina sem make e ganha elogio de personal",
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
       "source": "UOL",
-      "date": "16 Nov 2026",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "text": "Solteira, Marina Ruy Barbosa treina sem make e ganha elogio de personal",
       "source": "UOL",
-      "date": "03 Nov 2026",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
