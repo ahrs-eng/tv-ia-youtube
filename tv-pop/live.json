@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-17T05:40:59.879Z",
+  "updated": "2026-11-17T06:45:38.634Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "'Romance em SP': Marina Ruy Barbosa vai se envolver com Ronald Sotto e Renato Góes em nova novela",
-      "source": "O GLOBO",
-      "date": "17 Nov 2026",
+      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
+      "source": "VEJA SÃO PAULO",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
-      "source": "VEJA SÃO PAULO",
-      "date": "16 Nov 2026",
+      "text": "'Romance em SP': Marina Ruy Barbosa vai se envolver com Ronald Sotto e Renato Góes em nova novela",
+      "source": "O GLOBO",
+      "date": "17 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,15 +75,15 @@
       "weight": 3
     },
     {
-      "text": "Solteira, Marina Ruy Barbosa treina sem make e ganha elogio de personal",
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
       "source": "UOL",
-      "date": "16 Nov 2026",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "De Sininho, Marina Ruy Barbosa canta com João Guilherme no karaokê; vídeo",
+      "text": "Vestida de Sininho, Marina Ruy Barbosa canta com João Guilherme no karaokê; vídeo",
       "source": "Globo",
       "date": "17 Nov 2026",
       "hot": true,
