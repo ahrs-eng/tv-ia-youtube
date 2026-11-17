@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T12:37:08.398Z",
+  "updated": "2026-11-17T13:56:21.997Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Solteira, Marina Ruy Barbosa treina sem make e ganha elogio de personal",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
-      "date": "16 Nov 2026",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
