@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T10:40:39.716Z",
+  "updated": "2026-11-18T11:39:12.103Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,6 +43,14 @@
       "weight": 3
     },
     {
+      "text": "Sem maquiagem, Marina Ruy Barbosa recebe elogios de personal: 'Ela é um fenômeno'",
+      "source": "Terra",
+      "date": "16 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
       "source": "Extra online",
       "date": "04 Nov 2026",
@@ -59,7 +67,7 @@
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
       "hot": true,
@@ -78,14 +86,6 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
