@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T09:31:50.211Z",
+  "updated": "2026-11-18T10:40:39.716Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -38,14 +38,6 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Sem maquiagem, Marina Ruy Barbosa recebe elogios de personal: 'Ela é um fenômeno'",
-      "source": "Terra",
-      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Longe das polêmicas, Marina Ruy Barbosa surge nos bastidores de ‘O Mistério do 5 Estrelas’",
+      "source": "Globo",
+      "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
