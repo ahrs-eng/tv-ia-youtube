@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T12:40:51.981Z",
+  "updated": "2026-11-18T13:57:17.648Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -67,7 +67,7 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
       "hot": true,
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Longe das polêmicas, Marina Ruy Barbosa surge nos bastidores de ‘O Mistério do 5 Estrelas’",
-      "source": "Globo",
-      "date": "14 Nov 2026",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
