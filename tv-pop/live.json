@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T05:56:18.826Z",
+  "updated": "2026-11-18T07:05:44.458Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,16 +11,16 @@
       "weight": 3
     },
     {
-      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
-      "source": "FFW",
-      "date": "14 Nov 2026",
+      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
+      "source": "VEJA SÃO PAULO",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
-      "source": "VEJA SÃO PAULO",
+      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
+      "source": "FFW",
       "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
-      "source": "FFW",
-      "date": "16 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
       "source": "UOL",
       "date": "03 Nov 2026",
@@ -75,7 +67,7 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
       "source": "CNN Brasil",
       "date": "10 Nov 2026",
       "hot": true,
@@ -94,6 +86,14 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
