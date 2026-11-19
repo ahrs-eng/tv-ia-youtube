@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T11:37:42.409Z",
+  "updated": "2026-11-19T12:43:54.098Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,9 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "text": "Conheça blogueiras que ficaram contra Marina Ruy Barbosa em polêmica",
       "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,17 +75,17 @@
       "weight": 3
     },
     {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
+      "source": "UOL",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
+      "text": "Do noivado à Justiça: entenda caso do anel de R$ 6 mi de Marina Ruy Barbosa",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
