@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:30:40.502Z",
+  "updated": "2026-11-19T10:39:49.077Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
+      "text": "'Romance em SP': Marina Ruy Barbosa vai se envolver com Ronald Sotto e Renato Góes em nova novela",
+      "source": "O GLOBO",
+      "date": "17 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,9 +67,9 @@
       "weight": 3
     },
     {
-      "text": "'Romance em SP': Marina Ruy Barbosa vai se envolver com Ronald Sotto e Renato Góes em nova novela",
-      "source": "O GLOBO",
-      "date": "17 Nov 2026",
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Caso Marina Ruy Barbosa reacende debate: qual é o limite entre crítica e linchamento virtual?",
+      "text": "Marina Ruy Barbosa x Luma Costa: prints de conversas, 'unfollows' e textões nas redes; entenda a 'treta' entre as ex-amigas",
       "source": "O GLOBO",
-      "date": "05 Nov 2026",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
