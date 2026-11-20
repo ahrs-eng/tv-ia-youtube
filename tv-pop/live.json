@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-20T10:32:00.471Z",
+  "updated": "2026-11-20T11:38:09.535Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
@@ -11,9 +19,9 @@
       "weight": 3
     },
     {
-      "text": "Mule com salto anabela: Marina Ruy Barbosa combina sapato Ferragamo e casaco de tweed",
+      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
       "source": "FFW",
-      "date": "17 Nov 2026",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -35,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Mule com salto anabela: Marina Ruy Barbosa combina sapato Ferragamo e casaco de tweed",
+      "source": "FFW",
+      "date": "17 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -86,14 +94,6 @@
       "text": "'Romance em SP': Marina Ruy Barbosa vai se envolver com Ronald Sotto e Renato Góes em nova novela",
       "source": "O GLOBO",
       "date": "17 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
