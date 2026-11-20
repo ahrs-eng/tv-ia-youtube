@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T21:32:05.850Z",
+  "updated": "2026-11-20T22:27:19.864Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,8 +11,8 @@
       "weight": 3
     },
     {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
+      "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
+      "source": "UOL",
       "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -27,17 +27,9 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
+      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
       "source": "FFW",
-      "date": "14 Nov 2026",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,25 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
-      "source": "FFW",
-      "date": "16 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa rouba a cena com figurino decotado e brilhante: 'Nova personagem'",
-      "source": "Globo",
-      "date": "20 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
-      "date": "06 Nov 2026",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +67,33 @@
       "weight": 3
     },
     {
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
       "source": "O GLOBO",
       "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
+      "source": "UOL",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa aposta em transparência e sobrancelhas descoloridas em look all black",
+      "source": "Globo",
+      "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
