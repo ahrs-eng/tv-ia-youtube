@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T22:09:49.901Z",
+  "updated": "2026-11-21T22:51:56.280Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Jeans preto e sapato tratorado: Marina Ruy Barbosa usa combo em gravação com João Guilherme",
-      "source": "FFW",
-      "date": "16 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
       "source": "Gshow",
       "date": "20 Nov 2026",
@@ -94,6 +86,14 @@
       "text": "Marina Ruy Barbosa rouba a cena com figurino decotado e brilhante: 'Nova personagem'",
       "source": "Globo",
       "date": "20 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
