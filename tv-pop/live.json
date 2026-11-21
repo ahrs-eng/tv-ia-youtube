@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T18:58:47.472Z",
+  "updated": "2026-11-21T19:46:16.466Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa publica vídeo com música sugestiva após término de noivado e polêmicas nas redes",
-      "source": "R7 Entretenimento",
-      "date": "21 Nov 2026",
+      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
+      "source": "FFW",
+      "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
-      "source": "FFW",
-      "date": "14 Nov 2026",
+      "text": "Marina Ruy Barbosa publica vídeo com música sugestiva após término de noivado e polêmicas nas redes",
+      "source": "R7 Entretenimento",
+      "date": "21 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,9 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
-      "date": "20 Nov 2026",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,9 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
       "source": "UOL",
-      "date": "09 Nov 2026",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
