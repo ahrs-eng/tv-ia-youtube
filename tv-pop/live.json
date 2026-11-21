@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-21T08:44:57.815Z",
+  "updated": "2026-11-21T09:32:48.143Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "21 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
       "source": "Gshow",
@@ -19,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
-      "source": "VEJA SÃO PAULO",
-      "date": "16 Nov 2026",
+      "text": "Marina Ruy Barbosa publica vídeo com música sugestiva após término de noivado e polêmicas nas redes",
+      "source": "R7 Entretenimento",
+      "date": "21 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa publica vídeo com música sugestiva após término de noivado e polêmicas nas redes",
-      "source": "R7 Entretenimento",
-      "date": "21 Nov 2026",
+      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
+      "source": "VEJA SÃO PAULO",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,6 +51,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa aposta em look ousado e intriga fãs com vídeo: 'Por que você é tão obcecado por mim?'",
+      "source": "Globo",
+      "date": "21 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
       "source": "UOL",
       "date": "20 Nov 2026",
@@ -51,17 +67,9 @@
       "weight": 3
     },
     {
-      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
-      "source": "FFW",
-      "date": "14 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa usa look ousado e chama atenção com música sugestiva: 'Por que você é tão obcecado por mim?'",
-      "source": "Globo",
-      "date": "21 Nov 2026",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,14 +83,6 @@
       "weight": 3
     },
     {
-      "text": "Mule com salto anabela: Marina Ruy Barbosa combina sapato Ferragamo e casaco de tweed",
-      "source": "FFW",
-      "date": "17 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
       "date": "09 Nov 2026",
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
-      "source": "UOL",
-      "date": "06 Nov 2026",
+      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "source": "O GLOBO",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
