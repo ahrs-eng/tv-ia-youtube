@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T21:21:07.708Z",
+  "updated": "2026-11-21T22:09:49.901Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,9 +35,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa publica vídeo com música sugestiva após término de noivado e polêmicas nas redes",
-      "source": "R7 Entretenimento",
-      "date": "21 Nov 2026",
+      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
+      "source": "CNN Brasil",
+      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Mule com salto anabela: Marina Ruy Barbosa combina sapato Ferragamo e casaco de tweed",
-      "source": "FFW",
-      "date": "17 Nov 2026",
+      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "source": "UOL",
+      "date": "06 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa look ousado e chama atenção com música sugestiva: 'Por que você é tão obcecado por mim?'",
+      "text": "Marina Ruy Barbosa rouba a cena com figurino decotado e brilhante: 'Nova personagem'",
       "source": "Globo",
-      "date": "21 Nov 2026",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
