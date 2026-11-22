@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-22T10:29:48.235Z",
+  "updated": "2026-11-22T11:18:55.263Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "22 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
       "source": "Terra",
@@ -43,9 +51,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é elogiada por personal: \"Um fenômeno\"",
-      "source": "CNN Brasil",
-      "date": "16 Nov 2026",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
+      "date": "21 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa mostra visual para papel em nova série; foto",
+      "source": "NaTelinha",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
