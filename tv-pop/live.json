@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T00:18:59.959Z",
+  "updated": "2026-11-22T01:44:28.163Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -30,14 +30,6 @@
       "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
       "source": "FFW",
       "date": "13 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Noivo de Marina Ruy Barbosa consegue decisão na Justiça por anel de R$ 6 mi",
-      "source": "CNN Brasil",
-      "date": "10 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -78,6 +70,14 @@
       "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
       "source": "UOL",
       "date": "06 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
+      "source": "UOL",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
