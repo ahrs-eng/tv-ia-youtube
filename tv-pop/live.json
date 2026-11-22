@@ -1,15 +1,7 @@
 {
-  "updated": "2026-11-22T14:57:42.745Z",
+  "updated": "2026-11-22T15:42:28.076Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "22 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
     {
       "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
       "source": "Terra",
@@ -51,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
-      "source": "GZH",
-      "date": "22 Nov 2026",
+      "text": "Marina Ruy Barbosa é elogiada por personal: \"Um fenômeno\"",
+      "source": "CNN Brasil",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa mostra visual para papel em nova série; foto",
-      "source": "NaTelinha",
-      "date": "20 Nov 2026",
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
+      "source": "UOL",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "source": "UOL",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
