@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T23:30:21.716Z",
+  "updated": "2026-11-22T00:18:59.959Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa rouba a cena com figurino decotado e brilhante: 'Nova personagem'",
-      "source": "Globo",
-      "date": "20 Nov 2026",
+      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
+      "source": "Extra online",
+      "date": "04 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Solteira! Marina Ruy Barbosa e Abdul Fares terminam noivado após três anos",
-      "source": "Extra online",
-      "date": "04 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
