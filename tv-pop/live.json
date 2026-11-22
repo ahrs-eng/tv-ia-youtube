@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T01:44:28.163Z",
+  "updated": "2026-11-22T02:38:10.472Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa look ousado e dubla música: 'Obcecado por mim'",
+      "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
       "source": "UOL",
-      "date": "21 Nov 2026",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,9 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
+      "text": "Marina Ruy Barbosa usa look ousado e dubla música: 'Obcecado por mim'",
       "source": "UOL",
-      "date": "20 Nov 2026",
+      "date": "21 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
