@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-23T16:40:48.112Z",
+  "updated": "2026-11-23T17:39:36.954Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
+      "source": "O GLOBO",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -21,7 +21,7 @@
     {
       "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
       "source": "FFW",
-      "date": "13 Nov 2026",
+      "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,9 +43,9 @@
       "weight": 3
     },
     {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
