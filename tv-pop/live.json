@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T17:39:36.954Z",
+  "updated": "2026-11-23T18:35:42.351Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,17 +27,17 @@
       "weight": 3
     },
     {
-      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
-      "source": "VEJA SÃO PAULO",
-      "date": "16 Nov 2026",
+      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
+      "source": "Terra",
+      "date": "22 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
-      "source": "Terra",
-      "date": "22 Nov 2026",
+      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
+      "source": "VEJA SÃO PAULO",
+      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
