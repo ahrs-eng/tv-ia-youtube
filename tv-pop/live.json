@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T21:45:33.756Z",
+  "updated": "2026-11-23T22:45:31.783Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -30,14 +30,6 @@
       "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
       "source": "Terra",
       "date": "22 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Gabi Lopes e Marina Ruy Barbosa gravam série do Prime Video",
-      "source": "VEJA SÃO PAULO",
-      "date": "16 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
       "source": "O GLOBO",
       "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "source": "UOL",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
