@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T05:40:37.219Z",
+  "updated": "2026-11-23T06:50:18.861Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -14,14 +14,6 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
-      "source": "Terra",
-      "date": "22 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,6 +35,14 @@
       "weight": 3
     },
     {
+      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
+      "source": "Terra",
+      "date": "22 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
       "source": "O GLOBO",
       "date": "05 Nov 2026",
@@ -59,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa look ousado e dubla música: 'Obcecado por mim'",
-      "source": "UOL",
-      "date": "21 Nov 2026",
+      "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
+      "source": "Gshow",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa usa look ousado e dubla música: 'Obcecado por mim'",
+      "source": "UOL",
+      "date": "21 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em transparência e sobrancelhas descoloridas em look all black",
-      "source": "Globo",
-      "date": "14 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Caso Marina Ruy Barbosa reacende debate: qual é o limite entre crítica e linchamento virtual?",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
+      "text": "Marina Ruy Barbosa aposta em transparência e sobrancelhas descoloridas em look all black",
+      "source": "Globo",
+      "date": "14 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
