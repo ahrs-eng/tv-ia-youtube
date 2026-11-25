@@ -1,15 +1,7 @@
 {
-  "updated": "2026-11-25T14:16:48.218Z",
+  "updated": "2026-11-25T15:31:41.909Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
     {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
@@ -43,14 +35,6 @@
       "weight": 3
     },
     {
-      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
-      "source": "GZH",
-      "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
       "source": "O GLOBO",
       "date": "05 Nov 2026",
@@ -62,14 +46,6 @@
       "text": "Camila Queiroz volta a dizer que não tem qualquer relação com a polêmica de Marina Ruy Barbosa: ‘Me tirem dessa’",
       "source": "Terra",
       "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Transparência e elegância: o look de renda preta de Marina Ruy Barbosa na sexta-feira 13",
-      "source": "FFW",
-      "date": "13 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -91,9 +67,33 @@
       "weight": 3
     },
     {
-      "text": "Mãe de Abdul Fares sai em defesa de Marina Ruy Barbosa em meio a racha na família",
+      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
       "source": "UOL",
-      "date": "06 Nov 2026",
+      "date": "05 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
+      "source": "Terra",
+      "date": "22 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
+      "source": "UOL",
+      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
