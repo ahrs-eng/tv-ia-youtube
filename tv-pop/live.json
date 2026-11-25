@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T02:03:36.392Z",
+  "updated": "2026-11-25T03:08:56.367Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,17 +11,17 @@
       "weight": 3
     },
     {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
+      "text": "Camila Queiroz volta a dizer que não tem qualquer relação com a polêmica de Marina Ruy Barbosa: ‘Me tirem dessa’",
+      "source": "Terra",
+      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Camila Queiroz volta a dizer que não tem qualquer relação com a polêmica de Marina Ruy Barbosa: ‘Me tirem dessa’",
-      "source": "Terra",
-      "date": "25 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
