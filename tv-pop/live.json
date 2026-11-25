@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T15:31:41.909Z",
+  "updated": "2026-11-25T16:45:15.069Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -59,9 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
-      "source": "Gshow",
-      "date": "20 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -75,17 +75,9 @@
       "weight": 3
     },
     {
-      "text": "De Marina Ruy Barbosa a Virginia: veja as famosas que já tiveram o nome ligado a pilotos da Stock Car",
-      "source": "Terra",
-      "date": "22 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "text": "Caso Marina Ruy Barbosa reacende debate: qual é o limite entre crítica e linchamento virtual?",
       "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
       "source": "UOL",
       "date": "03 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
+      "source": "Gshow",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
