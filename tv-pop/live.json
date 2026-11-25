@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T20:36:41.750Z",
+  "updated": "2026-11-25T21:41:13.614Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -67,9 +67,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
-      "source": "Gshow",
-      "date": "20 Nov 2026",
+      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
+      "source": "O GLOBO",
+      "date": "07 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é citada em disputa por joia milionária: até onde vai o direito de quem ganha um presente?",
-      "source": "O GLOBO",
-      "date": "07 Nov 2026",
+      "text": "Marina Ruy Barbosa exibe corpo torneado em selfie no espelho",
+      "source": "Gshow",
+      "date": "20 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
