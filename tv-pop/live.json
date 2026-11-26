@@ -1,7 +1,23 @@
 {
-  "updated": "2026-11-26T14:14:40.301Z",
+  "updated": "2026-11-26T15:22:05.092Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Dez ou zero? Vestido semitransparente de Marina Ruy Barbosa rouba a cena; veja",
+      "source": "Terra",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
       "source": "Pompeu Vasconcelos",
@@ -22,14 +38,6 @@
       "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
       "source": "FFW",
       "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
-      "source": "Terra",
-      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,6 +67,22 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
+      "source": "Terra",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
       "source": "FFW",
       "date": "24 Nov 2026",
@@ -70,30 +94,6 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
       "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é cotada para viver Rita Lee no cinema",
-      "source": "Extra online",
-      "date": "26 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
