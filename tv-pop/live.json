@@ -1,18 +1,10 @@
 {
-  "updated": "2026-11-26T16:33:34.882Z",
+  "updated": "2026-11-26T17:36:13.341Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
       "source": "GZH",
-      "date": "26 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Dez ou zero? Vestido semitransparente de Marina Ruy Barbosa rouba a cena; veja",
-      "source": "Terra",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,9 +27,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em look semitransparente para evento em São Paulo",
-      "source": "Gshow",
-      "date": "25 Nov 2026",
+      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica",
+      "source": "Jornal O Sul",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -45,6 +37,14 @@
     {
       "text": "Marina Ruy Barbosa pode interpretar Rita Lee no cinema",
       "source": "O Tempo",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
+      "source": "Terra",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,25 +67,17 @@
       "weight": 3
     },
     {
-      "text": "João Guilherme revela conselhos a Marina Ruy Barbosa após críticas por posicionamento político",
-      "source": "UOL",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa aposta em look semitransparente para evento em São Paulo",
+      "source": "Gshow",
       "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica; confira!",
-      "source": "Globo",
-      "date": "26 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
-      "source": "Terra",
-      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
       "source": "FFW",
       "date": "24 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa é cotada para viver Rita Lee no cinema",
+      "source": "Extra online",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
