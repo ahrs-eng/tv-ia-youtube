@@ -1,11 +1,19 @@
 {
-  "updated": "2026-11-26T11:38:44.915Z",
+  "updated": "2026-11-26T12:46:18.190Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Marina Ruy Barbosa aposta em look semitransparente para evento em São Paulo",
       "source": "Gshow",
       "date": "25 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -19,8 +27,8 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
-      "source": "Pompeu Vasconcelos",
+      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
+      "source": "Terra",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa brilha de look à la Barbie semitransparente em evento",
+      "source": "Globo",
+      "date": "25 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
       "date": "09 Nov 2026",
@@ -75,25 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
       "source": "O GLOBO",
       "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Mãe de Marina Ruy Barbosa se manifesta após briga da atriz com Luma Costa",
-      "source": "UOL",
-      "date": "03 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
