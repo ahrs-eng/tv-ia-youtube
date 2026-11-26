@@ -1,9 +1,17 @@
 {
-  "updated": "2026-11-26T22:49:06.205Z",
+  "updated": "2026-11-26T23:48:52.323Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Como Marina Ruy Barbosa vai viver Rita Lee em filme se não suporta mexer no cabelo?",
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa é cotada para viver Rita Lee em cinebiografia sobre a cantora",
       "source": "R7 Entretenimento",
       "date": "26 Nov 2026",
       "hot": true,
@@ -19,16 +27,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
-      "source": "Pompeu Vasconcelos",
+      "text": "Marina Ruy Barbosa pode interpretar Rita Lee em filme sobre a cantora",
+      "source": "Jornal Correio",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa pode interpretar Rita Lee em filme sobre a cantora",
-      "source": "Jornal Correio",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -43,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
-      "source": "Terra",
+      "text": "Giovana Cordeiro faz festão de 30 anos; lista vai de Bianca Andrade e Marina Ruy Barbosa a Huck e Angélica",
+      "source": "Gshow",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
-      "source": "UOL",
-      "date": "09 Nov 2026",
+      "text": "Marina Ruy Barbosa volta aos anos 2000 com vestido rosa semitransparente de paetês em São Paulo",
+      "source": "Terra",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -67,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
+      "source": "UOL",
+      "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa pode viver Rita Lee em filme",
       "source": "n3news.com.br",
       "date": "26 Nov 2026",
@@ -75,25 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em look rosa para jantar de gala",
-      "source": "O Dia",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
       "date": "26 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
-      "source": "G1",
-      "date": "09 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
-      "source": "FFW",
-      "date": "24 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
