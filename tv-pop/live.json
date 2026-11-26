@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-26T21:47:19.048Z",
+  "updated": "2026-11-26T22:49:06.205Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
-      "source": "Pompeu Vasconcelos",
+      "text": "Como Marina Ruy Barbosa vai viver Rita Lee em filme se não suporta mexer no cabelo?",
+      "source": "R7 Entretenimento",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -19,16 +19,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa pode interpretar Rita Lee em filme sobre a cantora",
-      "source": "Jornal Correio",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Como Marina Ruy Barbosa vai viver Rita Lee em filme se não suporta mexer no cabelo?",
-      "source": "R7 Entretenimento",
+      "text": "Marina Ruy Barbosa pode interpretar Rita Lee em filme sobre a cantora",
+      "source": "Jornal Correio",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,17 +59,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa pode viver Rita Lee em filme",
-      "source": "n3news.com.br",
-      "date": "26 Nov 2026",
+      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
+      "source": "FFW",
+      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
-      "source": "FFW",
-      "date": "25 Nov 2026",
+      "text": "Marina Ruy Barbosa pode viver Rita Lee em filme",
+      "source": "n3news.com.br",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,9 +83,9 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa aposta em look semitransparente para evento em São Paulo",
-      "source": "Gshow",
-      "date": "25 Nov 2026",
+      "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
+      "source": "G1",
+      "date": "09 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
