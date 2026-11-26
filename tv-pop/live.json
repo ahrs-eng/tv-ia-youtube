@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-26T03:06:57.263Z",
+  "updated": "2026-11-26T05:31:43.017Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
-      "source": "FFW",
-      "date": "25 Nov 2026",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -19,8 +19,24 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
+      "source": "FFW",
+      "date": "25 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa aposta em look rosa para jantar de gala",
       "source": "O Dia",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "A Barbie está diferente! Sensualíssima, Marina Ruy Barbosa exibe braços torneados em vestido rosa de paetês com transparência e decote de tirar o fôlego; fotos!",
+      "source": "Terra",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -43,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Camila Queiroz volta a dizer que não tem qualquer relação com a polêmica de Marina Ruy Barbosa: ‘Me tirem dessa’",
-      "source": "Terra",
-      "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
       "source": "FFW",
       "date": "24 Nov 2026",
@@ -67,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Camila Queiroz volta a dizer que não tem qualquer relação com a polêmica de Marina Ruy Barbosa: ‘Me tirem dessa’",
+      "source": "Terra",
+      "date": "25 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Após acusar Marina Ruy Barbosa de roubar anel de R$ 6 milhões da família, primo de ex-noivo tem publicações retiradas das redes por ordem judicial",
       "source": "G1",
       "date": "09 Nov 2026",
@@ -78,22 +94,6 @@
       "text": "Marina Ruy Barbosa surge com look cavado para viver estrela de conteúdo +18",
       "source": "UOL",
       "date": "20 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Ex-sogra deixa mensagem para Marina Ruy Barbosa sobre anel de R$ 6 milhões: 'Dado por amor pelo meu filho'",
-      "source": "O GLOBO",
-      "date": "05 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa deixa de seguir Abdul Fares em meio a rumores de fim do noivado",
-      "source": "UOL",
-      "date": "05 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
