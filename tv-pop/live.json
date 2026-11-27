@@ -1,19 +1,11 @@
 {
-  "updated": "2026-11-27T11:50:50.375Z",
+  "updated": "2026-11-27T13:01:19.628Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
       "text": "Marina Ruy Barbosa 'madruga' na academia e exibe músculos após treino: 'A hora que deu'",
       "source": "Globo",
       "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -43,16 +35,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
-      "source": "Pompeu Vasconcelos",
+      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica",
+      "source": "Jornal O Sul",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica",
-      "source": "Jornal O Sul",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -83,9 +75,9 @@
       "weight": 3
     },
     {
-      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
-      "source": "GZH",
-      "date": "26 Nov 2026",
+      "text": "Anel de noivado de Marina Ruy Barbosa vale R$ 6 milhões? Especialistas respondem",
+      "source": "Globo",
+      "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Ex-noivo de Marina Ruy Barbosa consegue decisão na Justiça após briga por anel de R$ 6 milhões",
       "source": "UOL",
       "date": "09 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Como Marina Ruy Barbosa vai viver Rita Lee em filme se não suporta mexer no cabelo?",
+      "source": "R7 Entretenimento",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
