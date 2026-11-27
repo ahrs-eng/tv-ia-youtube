@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T13:01:19.628Z",
+  "updated": "2026-11-27T14:26:17.983Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -43,8 +43,8 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
-      "source": "Pompeu Vasconcelos",
+      "text": "Marina Ruy Barbosa pode viver Rita Lee nos cinemas e assumir papel icônico da Rainha do Rock",
+      "source": "O Tempo",
       "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,14 +59,6 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa pode viver Rita Lee nos cinemas e assumir papel icônico da Rainha do Rock",
-      "source": "O Tempo",
-      "date": "26 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Marina Ruy Barbosa pode viver Rita Lee em filme",
       "source": "n3news.com.br",
       "date": "26 Nov 2026",
@@ -75,7 +67,15 @@
       "weight": 3
     },
     {
-      "text": "Anel de noivado de Marina Ruy Barbosa vale R$ 6 milhões? Especialistas respondem",
+      "text": "Marina Ruy Barbosa aposta em look rosa para jantar de gala",
+      "source": "O Dia",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Diogo Vilela sobre afinidade com Marina Ruy Barbosa: 'Mistério que não tem explicação'",
       "source": "Globo",
       "date": "27 Nov 2026",
       "hot": true,
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Como Marina Ruy Barbosa vai viver Rita Lee em filme se não suporta mexer no cabelo?",
-      "source": "R7 Entretenimento",
-      "date": "26 Nov 2026",
+      "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
+      "source": "FFW",
+      "date": "24 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
