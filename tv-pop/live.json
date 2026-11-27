@@ -1,26 +1,10 @@
 {
-  "updated": "2026-11-27T19:42:42.570Z",
+  "updated": "2026-11-27T20:37:27.463Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Diogo Vilela revela conexão especial com Marina Ruy Barbosa; atriz reage",
       "source": "Metrópoles",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,7 +19,15 @@
       "weight": 3
     },
     {
-      "text": "Anel de noivado de Marina Ruy Barbosa vale R$ 6 milhões? Especialistas respondem",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
+      "source": "BNews Alagoas",
+      "date": "27 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa 'madruga' na academia e exibe músculos após treino: 'A hora que deu'",
       "source": "Globo",
       "date": "27 Nov 2026",
       "hot": true,
@@ -59,17 +51,17 @@
       "weight": 3
     },
     {
-      "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
-      "source": "FFW",
-      "date": "24 Nov 2026",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos - Portal IN",
+      "source": "Pompeu Vasconcelos",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica",
-      "source": "Rádio Pampa",
-      "date": "26 Nov 2026",
+      "text": "A calça capri de renda voltou! Marina Ruy Barbosa usa casaco peplum e renda da Self-Portrait",
+      "source": "FFW",
+      "date": "24 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -83,17 +75,25 @@
       "weight": 3
     },
     {
-      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
-      "source": "GZH",
-      "date": "27 Nov 2026",
+      "text": "Marina Ruy Barbosa pode interpretar Rita Lee em filme sobre a cantora",
+      "source": "Jornal Correio",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa 'madruga' na academia e exibe músculos após treino: 'A hora que deu'",
-      "source": "Globo",
-      "date": "27 Nov 2026",
+      "text": "Marina Ruy Barbosa usa vestido de renda com transparência estratégica",
+      "source": "Jornal O Sul",
+      "date": "26 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa aposta em look rosa para jantar de gala",
+      "source": "O Dia",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
