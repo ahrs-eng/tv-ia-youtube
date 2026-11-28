@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:03:29.798Z",
+  "updated": "2026-11-28T04:07:55.747Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,6 +27,14 @@
       "weight": 3
     },
     {
+      "text": "Marina Ruy Barbosa rebateu as críticas à série #Tremembé e antecipou novidades sobre a segunda temporada. Em entrevista ao UOL, nesta sexta-feira (27), a atriz defendeu a produção e destacou que a trama vai além do entretenimento, ao propor reflexõe",
+      "source": "Instagram",
+      "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Ator se declara à Marina Ruy Barbosa e chama atenção nas redes: ‘Te amo’",
       "source": "Jornal Correio",
       "date": "27 Nov 2026",
@@ -43,16 +51,16 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
+      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
+      "source": "Terra",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
-      "source": "Terra",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
+      "source": "BNews Alagoas",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -78,14 +86,6 @@
       "text": "Marina Ruy Barbosa é cotada para viver Rita Lee no cinema",
       "source": "SBT",
       "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
-      "source": "FFW",
-      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
