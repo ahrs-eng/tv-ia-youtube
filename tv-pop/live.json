@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-28T04:07:55.747Z",
+  "updated": "2026-11-28T05:13:02.248Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "27 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo",
       "source": "Gshow",
@@ -67,25 +75,9 @@
       "weight": 3
     },
     {
-      "text": "De biquíni, Marina Ruy Barbosa exibe barriga trincada em pool party em São Paulo",
-      "source": "R7 Entretenimento",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Anel de noivado de Marina Ruy Barbosa pode valer R$ 6 milhões? Especialistas explicam",
-      "source": "NSC Total",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é cotada para viver Rita Lee no cinema",
-      "source": "SBT",
-      "date": "27 Nov 2026",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
+      "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Marina Ruy Barbosa exibe tanquinho em evento em São Paulo",
       "source": "UOL",
       "date": "27 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa canta com IZA e brinca após participação em show: 'Espero que não tenha virado meme'",
+      "source": "Globo",
+      "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
