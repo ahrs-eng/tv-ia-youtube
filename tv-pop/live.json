@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T02:00:08.588Z",
+  "updated": "2026-11-28T03:03:29.798Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -11,17 +11,9 @@
       "weight": 3
     },
     {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa exibe tanquinho em evento em São Paulo",
+      "text": "'Nenhum condenado é remunerado': Marina Ruy Barbosa rebate críticas a 'Tremembé'",
       "source": "UOL",
-      "date": "27 Nov 2026",
+      "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -51,16 +43,16 @@
       "weight": 3
     },
     {
-      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
-      "source": "Terra",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
+      "source": "BNews Alagoas",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
+      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
+      "source": "Terra",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -91,9 +83,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa canta 'Dona de Mim' em participação surpresa em show de Iza",
+      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
+      "source": "FFW",
+      "date": "25 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa exibe tanquinho em evento em São Paulo",
       "source": "UOL",
-      "date": "28 Nov 2026",
+      "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
