@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T16:23:21.831Z",
+  "updated": "2026-11-28T17:17:16.279Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -13,6 +13,14 @@
     {
       "text": "'Nunca esteve tão bonita': Marina Ruy Barbosa viraliza após dueto com IZA; veja reações!",
       "source": "Globo",
+      "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa solta a voz ao lado de Iza",
+      "source": "O Dia",
       "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,17 +43,17 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em filme sobre a vida da cantora",
-      "source": "Teoria Cultural",
-      "date": "27 Nov 2026",
+      "text": "Recém-solteira, Marina Ruy Barbosa tira roupa no palco e canta com IZA",
+      "source": "Gazeta Carajás",
+      "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Recém-solteira, Marina Ruy Barbosa tira roupa no palco e canta com IZA",
-      "source": "Gazeta Carajás",
-      "date": "28 Nov 2026",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em filme sobre a vida da cantora",
+      "source": "Teoria Cultural",
+      "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -86,14 +94,6 @@
       "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo; veja fotos",
       "source": "Gshow",
       "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "João Guilherme revela conselhos a Marina Ruy Barbosa após críticas por posicionamento político",
-      "source": "UOL",
-      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
