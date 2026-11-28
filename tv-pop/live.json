@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-28T14:42:02.949Z",
+  "updated": "2026-11-28T16:23:21.831Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
+    {
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
+      "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
     {
       "text": "'Nunca esteve tão bonita': Marina Ruy Barbosa viraliza após dueto com IZA; veja reações!",
       "source": "Globo",
@@ -35,6 +43,22 @@
       "weight": 3
     },
     {
+      "text": "Recém-solteira, Marina Ruy Barbosa tira roupa no palco e canta com IZA",
+      "source": "Gazeta Carajás",
+      "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "'Nenhum condenado é remunerado': Marina Ruy Barbosa rebate críticas a 'Tremembé'",
+      "source": "UOL",
+      "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Ator se declara à Marina Ruy Barbosa e chama atenção nas redes: ‘Te amo’",
       "source": "Jornal Correio",
       "date": "27 Nov 2026",
@@ -43,40 +67,8 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
-      "source": "FFW",
-      "date": "25 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "De biquíni, Marina Ruy Barbosa exibe barriga trincada em pool party em São Paulo",
-      "source": "R7 Entretenimento",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo; veja fotos",
-      "source": "Gshow",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "Marina Ruy Barbosa canta com IZA e brinca após participação em show: 'Espero que não tenha virado meme'",
-      "source": "Globo",
+      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
+      "source": "GZH",
       "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -85,6 +77,14 @@
     {
       "text": "Marina Ruy Barbosa exibe tanquinho em evento em São Paulo",
       "source": "UOL",
+      "date": "27 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo; veja fotos",
+      "source": "Gshow",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
