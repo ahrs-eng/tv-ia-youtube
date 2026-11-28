@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T07:37:20.592Z",
+  "updated": "2026-11-28T08:35:46.096Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -27,16 +27,16 @@
       "weight": 3
     },
     {
-      "text": "'Nenhum condenado é remunerado': Marina Ruy Barbosa rebate críticas a 'Tremembé'",
-      "source": "UOL",
+      "text": "Marina Ruy Barbosa rebateu as críticas à série #Tremembé e antecipou novidades sobre a segunda temporada. Em entrevista ao UOL, nesta sexta-feira (27), a atriz defendeu a produção e destacou que a trama vai além do entretenimento, ao propor reflexõe",
+      "source": "Instagram",
       "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa rebateu as críticas à série #Tremembé e antecipou novidades sobre a segunda temporada. Em entrevista ao UOL, nesta sexta-feira (27), a atriz defendeu a produção e destacou que a trama vai além do entretenimento, ao propor reflexõe",
-      "source": "Instagram",
+      "text": "'Nenhum condenado é remunerado': Marina Ruy Barbosa rebate críticas a 'Tremembé'",
+      "source": "UOL",
       "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -59,16 +59,16 @@
       "weight": 3
     },
     {
-      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
-      "source": "Terra",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
+      "source": "BNews Alagoas",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
+      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
+      "source": "Terra",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
