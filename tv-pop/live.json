@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T12:35:27.401Z",
+  "updated": "2026-11-28T13:49:51.730Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
@@ -35,17 +35,17 @@
       "weight": 3
     },
     {
-      "text": "Diogo Vilela revela conexão especial com Marina Ruy Barbosa; atriz reage",
-      "source": "Metrópoles",
-      "date": "27 Nov 2026",
+      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
+      "source": "FFW",
+      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa traz glamour Y2K em vestido rosa de paetês para jantar da Daslu",
-      "source": "FFW",
-      "date": "25 Nov 2026",
+      "text": "Diogo Vilela revela conexão especial com Marina Ruy Barbosa; atriz reage",
+      "source": "Metrópoles",
+      "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -59,17 +59,9 @@
       "weight": 3
     },
     {
-      "text": "Diogo Vilela se declara para Marina Ruy Barbosa: 'Só posso dizer aqui que amo'",
-      "source": "Terra",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
-      "text": "De biquíni, Marina Ruy Barbosa exibe barriga trincada em pool party em São Paulo",
-      "source": "R7 Entretenimento",
-      "date": "27 Nov 2026",
+      "text": "Marina Ruy Barbosa resgata o brilho dos anos 2000 com look da Bottega Veneta - Portal IN - Pompeu Vasconcelos",
+      "source": "Balada IN",
+      "date": "26 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
@@ -94,6 +86,14 @@
       "text": "Marina Ruy Barbosa canta com IZA e brinca após participação em show: 'Espero que não tenha virado meme'",
       "source": "Globo",
       "date": "28 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
+      "text": "João Guilherme revela conselhos a Marina Ruy Barbosa após críticas por posicionamento político",
+      "source": "UOL",
+      "date": "25 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
