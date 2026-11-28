@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-28T00:34:31.481Z",
+  "updated": "2026-11-28T02:00:08.588Z",
   "note": "Cache editorial para o GitHub Pages. O navegador não raspa o X nem guarda chave. Atualize com node tv-pop/fetch-live.mjs (RSS público do Google Notícias). Fontes e o que respondeu no teste: tv-pop/FONTES.md.",
   "headlines": [
     {
-      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
-      "source": "GZH",
+      "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo",
+      "source": "Gshow",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa exibe barriga trincada em evento em São Paulo",
-      "source": "Gshow",
+      "text": "Por que Marina Ruy Barbosa deixou de seguir Luma Costa nas redes sociais?",
+      "source": "GZH",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -35,14 +35,6 @@
       "weight": 3
     },
     {
-      "text": "Diogo Vilela revela conexão especial com Marina Ruy Barbosa; atriz reage",
-      "source": "Metrópoles",
-      "date": "27 Nov 2026",
-      "hot": true,
-      "theme": "marina",
-      "weight": 3
-    },
-    {
       "text": "Ator se declara à Marina Ruy Barbosa e chama atenção nas redes: ‘Te amo’",
       "source": "Jornal Correio",
       "date": "27 Nov 2026",
@@ -51,8 +43,8 @@
       "weight": 3
     },
     {
-      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
-      "source": "BNews Alagoas",
+      "text": "Diogo Vilela revela conexão especial com Marina Ruy Barbosa; atriz reage",
+      "source": "Metrópoles",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -67,8 +59,8 @@
       "weight": 3
     },
     {
-      "text": "Anel de noivado de Marina Ruy Barbosa pode valer R$ 6 milhões? Especialistas explicam",
-      "source": "NSC Total",
+      "text": "Marina Ruy Barbosa é cotada para interpretar Rita Lee em cinebiografia da cantora",
+      "source": "BNews Alagoas",
       "date": "27 Nov 2026",
       "hot": true,
       "theme": "marina",
@@ -83,6 +75,14 @@
       "weight": 3
     },
     {
+      "text": "Anel de noivado de Marina Ruy Barbosa pode valer R$ 6 milhões? Especialistas explicam",
+      "source": "NSC Total",
+      "date": "27 Nov 2026",
+      "hot": true,
+      "theme": "marina",
+      "weight": 3
+    },
+    {
       "text": "Marina Ruy Barbosa é cotada para viver Rita Lee no cinema",
       "source": "SBT",
       "date": "27 Nov 2026",
@@ -91,9 +91,9 @@
       "weight": 3
     },
     {
-      "text": "Quem é Luma Costa, atriz e empresária que se afastou de Marina Ruy Barbosa",
-      "source": "GZH",
-      "date": "27 Nov 2026",
+      "text": "Marina Ruy Barbosa canta 'Dona de Mim' em participação surpresa em show de Iza",
+      "source": "UOL",
+      "date": "28 Nov 2026",
       "hot": true,
       "theme": "marina",
       "weight": 3
